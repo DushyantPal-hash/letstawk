@@ -25,6 +25,7 @@
     </svg>
     <div data-component="navbar"></div>
     <main>
+        <!-- Banner -->
         <section class="page-hero">
             <div class="wrap">
                 <div class="page-kicker">Contact us</div>
@@ -33,6 +34,7 @@
                     and supports your team.</p>
             </div>
         </section>
+        <!-- Contact and Form -->
         <section class="page-section">
             <div class="wrap contact-grid">
                 <aside class="contact-details">
@@ -86,6 +88,7 @@
                 </form>
             </div>
         </section>
+        <!-- What happens next -->
         <section class="page-section tint contact-assurance-section">
             <div class="wrap">
                 <div class="sec-head sec-head-left">
@@ -110,6 +113,7 @@
                 </div>
             </div>
         </section>
+        <!-- Location -->
         <section class="location-section">
             <div class="wrap location-grid">
                 <div class="location-copy">
@@ -129,6 +133,255 @@
                 </div>
             </div>
         </section>
+        <!-- Testimonials -->
+        <style>
+            .feature-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            .feature-card {
+                background: white;
+                border-radius: 32px;
+                padding: 20px 15px;
+                box-shadow: var(--card-shadow);
+                transition: all 0.25s ease;
+                border: 1px solid rgba(0, 0, 0, 0.03);
+                position: relative;
+            }
+
+            .feature-card p {
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.65;
+            }
+
+            .feature-card::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 0%;
+                width: 4px;
+                background: var(--bg-gradient-green);
+                border-radius: 20px;
+                transition: all 0.4s ease;
+            }
+
+            .feature-card:hover::before {
+                height: 80%;
+            }
+
+            .feature-card:hover {
+                transform: translateY(-10px) scale(1.03);
+            }
+
+            .feature-icon {
+                width: 56px;
+                height: 56px;
+                background: #e6f7ec;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 24px;
+                font-size: 28px;
+                color: var(--wa-teal);
+                transition: all 0.3s ease;
+            }
+
+            .feature-card:hover .feature-icon {
+                transform: rotate(5deg) scale(1.1);
+            }
+
+            .stats-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 32px;
+                margin-top: 40px;
+            }
+
+            .stat-card {
+                background: white;
+                border-radius: 40px;
+                padding: 32px;
+                text-align: center;
+                flex: 1;
+                min-width: 180px;
+                box-shadow: var(--card-shadow);
+            }
+
+            .stat-number {
+                font-size: 2.8rem;
+                font-weight: 800;
+                color: var(--wa-teal);
+            }
+
+            .feature-card .quote-icon {
+                font-size: 28px;
+                color: var(--violet);
+                /* opacity: 0.2; */
+                margin-bottom: 10px;
+            }
+
+            .feature-author {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-top: 16px;
+            }
+
+            .feature-author img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                background: #eef2f6;
+            }
+        </style>
+        <section class="page-section tint contact-assurance-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: none;text-align: center;">
+                    <div class="sec-eyebrow">Testimonials</div>
+                    <h2>Trusted by Teams Worldwide</h2>
+                    <p>
+                        Don't just take our word for it
+                    </p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"HeyDoot transformed how our support team handles WhatsApp. We've cut response times by 70%
+                            and
+                            our agents love the shared inbox. The ability to assign chats and add internal notes has
+                            been a
+                            game-changer."</p>
+                        <div class="feature-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Support Director, TechFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Managing 15 different WhatsApp numbers across 6 countries was chaotic. HeyDoot brought
+                            everything into one dashboard. Our sales team now responds 3x faster and we've seen a 40%
+                            increase in conversions."</p>
+                        <div class="feature-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Sales Director, GlobalTrade</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"The automation features alone are worth the price. We've automated 80% of our customer
+                            queries,
+                            allowing our team to focus on complex issues. Setup was incredibly easy and their support
+                            team
+                            is amazing."</p>
+                        <div class="feature-author">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <p>Operations Head, EduTech India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <style>
+            .cta-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .cta-image {
+                flex: 0.5;
+                min-width: 280px;
+            }
+
+            .cta-image img {
+                width: 100%;
+                border-radius: 32px;
+                box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+            }
+
+            .cta-text {
+                flex: 1;
+                text-align: center;
+            }
+
+            .feature-pair-image {
+                flex: 1;
+                background: radial-gradient(ellipse at 30% 40%, rgba(37, 211, 102, 0.08), rgba(0, 161, 224, 0.05));
+                border-radius: 64px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .feature-pair-image img {
+                max-width: 100%;
+                border-radius: 48px;
+                box-shadow: 0 35px 55px -20px rgba(0, 0, 0, 0.25);
+                transition: transform 0.3s ease;
+                background: white;
+                border: 2px solid rgba(255, 255, 255, 0.6);
+            }
+
+            .feature-pair-image img:hover {
+                transform: scale(1.01);
+            }
+
+            @media(max-width:900px) {
+                .cta-container {
+                    flex-direction: column-reverse;
+                }
+
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="cta-container">
+                    <div class="cta-text">
+                        <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px;">
+                            Still Not Sure Where to Start?
+                        </h2>
+                        <p style="color: #5a6b7e; font-size: 1.1rem; max-width: 600px; margin: 0 auto 32px;">
+                            Connect with Caller Digital's business inquiry voice AI platform for your operational needs
+                        </p>
+                        <div class="hero-actions" style="justify-content: center;">
+                            <a class="btn btn-whatsapp btn-lg"
+                                href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk%20features"
+                                target="_blank"><i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i>
+                                Book a Free Demo
+                            </a>
+                            <a class="btn btn-primary btn-lg" href="tel:+91-95000 69296"><i
+                                    class="fas fa-mobile-alt"></i>
+                                Talk to Our Experts
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-image feature-pair-image">
+                        <img src="images\letstawk.png" alt="Why Choose HeyDoot">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- F&Q -->
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
         {
