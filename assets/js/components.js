@@ -82,8 +82,37 @@
     if (header) window.addEventListener('scroll', function () { header.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
   }
 
+  function initialiseFaq() {
+    var faqTarget = document.querySelector('[data-component="faq"]');
+    var dataNode = document.getElementById('faqData');
+    if (!faqTarget || !dataNode) return;
+
+    var faqData;
+    try {
+      faqData = JSON.parse(dataNode.textContent);
+    } catch (error) {
+      console.error('Unable to read FAQ data', error);
+      return;
+    }
+
+    var title = faqTarget.querySelector('#faq-title');
+    var description = faqTarget.querySelector('#faq-description');
+    var list = faqTarget.querySelector('#faqList');
+    if (!list || !Array.isArray(faqData.items)) return;
+
+    if (title && faqData.title) title.textContent = faqData.title;
+    if (description && faqData.description) description.textContent = faqData.description;
+    list.innerHTML = faqData.items.map(function (item, index) {
+      return '<details class="faq-item"' + (index === 0 ? ' open' : '') + '><summary>' + item.question + '<span class="faq-icon" aria-hidden="true"></span></summary><p>' + item.answer + '</p></details>';
+    }).join('');
+  }
+
   Promise.all([
     loadComponent('[data-component="navbar"]', 'components/navbar.html'),
-    loadComponent('[data-component="footer"]', 'components/footer.html')
-  ]).then(initialiseNavbar).catch(function (error) { console.error(error); });
+    loadComponent('[data-component="footer"]', 'components/footer.html'),
+    loadComponent('[data-component="faq"]', 'components/faq.html')
+  ]).then(function () {
+    initialiseNavbar();
+    initialiseFaq();
+  }).catch(function (error) { console.error(error); });
 }());
