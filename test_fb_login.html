@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WABA Embedded Signup — new-tab test</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:24px; line-height:1.5; background:#0b1020; color:#e6e9f2; }
+  @media (prefers-color-scheme: light){ body{ background:#f5f7fb; color:#1a2138; } }
+  .wrap{ max-width:860px; margin:0 auto; }
+  h1{ font-size:1.35rem; margin:0 0 4px; }
+  .sub{ opacity:.7; margin:0 0 20px; font-size:.92rem; }
+  .card{ background:rgba(127,127,127,.10); border:1px solid rgba(127,127,127,.25); border-radius:12px; padding:16px 18px; margin-bottom:16px; }
+  label{ display:block; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; opacity:.7; margin-bottom:4px; }
+  input{ width:100%; padding:9px 11px; border-radius:8px; font-size:.95rem; border:1px solid rgba(127,127,127,.4);
+    background:rgba(127,127,127,.08); color:inherit; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  .row3{ display:grid; grid-template-columns:2fr 2fr 1fr; gap:12px; }
+  .field + .field{ margin-top:12px; }
+  button{ background:#1877f2; color:#fff; border:0; border-radius:9px; padding:13px 20px; font-size:1rem; font-weight:600; cursor:pointer; }
+  button:disabled{ opacity:.5; cursor:default; }
+  button.alt{ background:#7b46f2; }
+  button.ghost{ background:rgba(127,127,127,.25); color:inherit; padding:8px 14px; font-size:.85rem; font-weight:500; }
+  .btns{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .origin{ font-family:ui-monospace,monospace; font-weight:600; }
+  pre{ white-space:pre-wrap; word-break:break-all; margin:0; font-size:.82rem;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; max-height:260px; overflow:auto; }
+  .log{ background:#05070f; color:#9fe7b0; border-radius:8px; padding:12px; }
+  @media (prefers-color-scheme: light){ .log{ background:#0b1020; color:#9fe7b0; } }
+  .ok{ color:#39d98a; } .bad{ color:#ff6b6b; } .warn{ color:#ffcb5b; }
+  .pill{ display:inline-block; padding:2px 8px; border-radius:999px; font-size:.72rem; font-weight:600; }
+  .pill.g{ background:rgba(57,217,138,.18); color:#39d98a; } .pill.r{ background:rgba(255,107,107,.18); color:#ff6b6b; }
+  .hint{ font-size:.85rem; opacity:.8; }
+  code{ background:rgba(127,127,127,.2); padding:1px 5px; border-radius:4px; font-size:.85em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>WhatsApp Embedded Signup — new-tab test</h1>
+  <p class="sub">Tests whether this domain can obtain an authorization <b>code</b> for Salesforce's Meta app.
+  Two modes: the JS-SDK flow (opens in a new tab), and the raw OAuth dialog (opens in a new tab and redirects the code back here).</p>
+
+  <div class="card">
+    <label>This page's origin</label>
+    <div class="origin" id="origin">—</div>
+    <p class="hint" id="originHint"></p>
+  </div>
+
+  <div class="card">
+    <div class="row3">
+      <div class="field"><label>Meta App ID</label><input id="appId" value="1606817853046599" /></div>
+      <div class="field"><label>Embedded Signup Config ID</label><input id="configId" value="1366055358128820" /></div>
+      <div class="field"><label>Graph version</label><input id="version" value="v20.0" /></div>
+    </div>
+    <div class="field" style="margin-top:12px">
+      <label>Redirect URI (for the raw-OAuth mode — must be allow-listed in the app)</label>
+      <input id="redirectUri" />
+    </div>
+    <p class="hint" style="margin-top:10px">Pre-filled with Salesforce Marketing Cloud's values. Redirect URI defaults to this page's URL.</p>
+  </div>
+
+  <div class="card">
+    <label>Run a test</label>
+    <div class="btns" style="margin-top:8px">
+      <button id="sdkBtn" disabled>Mode A — FB.login (JS SDK), new tab</button>
+      <button id="oauthBtn" class="alt">Mode B — Raw OAuth dialog, new tab</button>
+    </div>
+    <p class="hint" id="sdkState" style="margin:10px 0 0">Loading Facebook SDK…</p>
+  </div>
+
+  <div class="card">
+    <label>Result</label>
+    <div id="verdict" style="margin:6px 0 12px">Pick a mode above.</div>
+    <div class="field" id="codeBox" style="display:none">
+      <label>Authorization code (send to backend → registerWaba)</label>
+      <pre id="code"></pre>
+      <button class="ghost" id="copyCode" style="margin-top:8px">Copy code</button>
+    </div>
+    <div class="field" id="siBox" style="display:none">
+      <label>Meta SESSION_INFO (WA_EMBEDDED_SIGNUP)</label>
+      <pre id="sessionInfo"></pre>
+    </div>
+  </div>
+
+  <div class="card">
+    <label>Event log</label>
+    <pre class="log" id="log"></pre>
+  </div>
+
+  <div class="card">
+    <label>How to read it</label>
+    <p class="hint">
+      ✅ A <code>code</code> appears → this domain can mint a code for Salesforce's app. Build the server flow.<br/>
+      ❌ <b>Mode A</b> → “JSSDK Unknown Host domain” = your domain isn't in the app's JS-SDK host list (expected).<br/>
+      ❌ <b>Mode B</b> → “URL Blocked / redirect_uri is not allowed” = your redirect URI isn't in Salesforce's app.<br/>
+      Either failure confirms the code can only be minted on Salesforce's own page → use the streamed-popup approach.
+    </p>
+  </div>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const logEl = $('log');
+  function log(msg, cls){
+    const t = new Date().toISOString().substr(11,8);
+    logEl.innerHTML += (cls?`<span class="${cls}">`:"") + `[${t}] ${msg}` + (cls?"</span>":"") + "\n";
+    logEl.scrollTop = logEl.scrollHeight; console.log(`[${t}] ${msg}`);
+  }
+
+  // --- Force any window.open() to open a TAB (strip popup features) ---
+  (function(){
+    const _open = window.open;
+    window.open = function(url, name, features){
+      try { return _open.call(window, url, name || '_blank', ''); }
+      catch(e){ return _open.call(window, url); }
+    };
+  })();
+
+  // origin + redirect default
+  $('origin').textContent = window.location.origin;
+  $('redirectUri').value = window.location.origin + window.location.pathname;
+  (function(){
+    const o = window.location;
+    $('originHint').textContent =
+      (o.protocol!=="https:" && o.hostname!=="localhost")
+        ? "⚠️ Facebook requires HTTPS. Serve this over https on your real domain."
+        : (o.hostname==="localhost"||o.hostname==="127.0.0.1")
+          ? "⚠️ localhost is not allow-listed for a production app. Host on your real domain."
+          : "This is the domain/redirect Facebook checks against Salesforce's app.";
+  })();
+
+  // If we came back from Mode B redirect, show code/error from the URL
+  (function(){
+    const q = new URLSearchParams(window.location.search);
+    if (q.get('code')) {
+      $('verdict').innerHTML = '<span class="pill g">SUCCESS</span> Facebook redirected a code back to this page.';
+      $('codeBox').style.display='block'; $('code').textContent = q.get('code');
+      log("✅ code received via redirect ("+q.get('code').length+" chars)", "ok");
+    } else if (q.get('error')) {
+      $('verdict').innerHTML = '<span class="pill r">ERROR</span> ' + (q.get('error_description')||q.get('error'));
+      log("❌ redirect error: "+q.get('error')+" — "+(q.get('error_description')||''), "bad");
+    }
+  })();
+
+  // Capture Meta SESSION_INFO postMessage
+  window.addEventListener('message', (event) => {
+    if (event.origin !== "https://www.facebook.com" && event.origin !== "https://web.facebook.com") return;
+    try {
+      const data = JSON.parse(event.data);
+      if (data.type === 'WA_EMBEDDED_SIGNUP') {
+        log("SESSION_INFO: " + JSON.stringify(data), "ok");
+        $('siBox').style.display='block'; $('sessionInfo').textContent = JSON.stringify(data, null, 2);
+      }
+    } catch(e){}
+  });
+
+  // ---- Mode A: FB.login via JS SDK (now opens in a tab because of the override) ----
+  window.fbAsyncInit = function(){
+    FB.init({ appId: $('appId').value.trim(), autoLogAppEvents:true, xfbml:false, version: $('version').value.trim() });
+    log("FB SDK initialised", "ok");
+    $('sdkState').textContent = "Facebook SDK ready.";
+    $('sdkBtn').disabled = false;
+  };
+  (function(d,s,id){ let js, fjs=d.getElementsByTagName(s)[0];
+    if(d.getElementById(id))return; js=d.createElement(s); js.id=id;
+    js.src="https://connect.facebook.net/en_US/sdk.js";
+    js.onerror=()=>log("Failed to load Facebook SDK.", "bad");
+    fjs.parentNode.insertBefore(js,fjs);
+  }(document,'script','facebook-jssdk'));
+
+  $('sdkBtn').addEventListener('click', () => {
+    const configId = $('configId').value.trim();
+    $('verdict').textContent = "Mode A: launching FB.login in a new tab…";
+    log("Mode A: FB.login config_id="+configId);
+    FB.login((response) => {
+      log("FB.login callback: " + JSON.stringify(response));
+      const ar = response && response.authResponse;
+      if (ar && ar.code) {
+        $('verdict').innerHTML = '<span class="pill g">SUCCESS</span> code returned via JS SDK.';
+        $('codeBox').style.display='block'; $('code').textContent = ar.code;
+        log("✅ CODE ("+ar.code.length+" chars)", "ok");
+      } else {
+        $('verdict').innerHTML = '<span class="pill r">NO CODE</span> status='+(response&&response.status)+' — see log / popup message.';
+        log("❌ no code (status="+(response&&response.status)+")", "bad");
+      }
+    }, { config_id: configId, response_type:'code', override_default_response_type:true,
+         extras:{ feature:'whatsapp_embedded_signup', setup:{} } });
+  });
+
+  // ---- Mode B: raw OAuth dialog URL opened directly in a new tab ----
+  $('oauthBtn').addEventListener('click', () => {
+    const appId = $('appId').value.trim();
+    const configId = $('configId').value.trim();
+    const version = $('version').value.trim();
+    const redirect = $('redirectUri').value.trim();
+    const state = 'st_' + Math.random().toString(36).slice(2);
+    const extras = encodeURIComponent(JSON.stringify({ feature:'whatsapp_embedded_signup', setup:{} }));
+    const url =
+      `https://www.facebook.com/${version}/dialog/oauth` +
+      `?client_id=${appId}` +
+      `&config_id=${configId}` +
+      `&response_type=code` +
+      `&override_default_response_type=true` +
+      `&redirect_uri=${encodeURIComponent(redirect)}` +
+      `&state=${state}` +
+      `&scope=${encodeURIComponent('business_management,whatsapp_business_management')}` +
+      `&extras=${extras}` +
+      `&display=page`;
+    log("Mode B: opening OAuth dialog in new tab → " + url);
+    $('verdict').textContent = "Mode B: a new tab opened with Facebook's OAuth dialog. Complete it; the code (or error) will come back here.";
+    window.open(url, '_blank');
+  });
+
+  $('copyCode').addEventListener('click', () => {
+    navigator.clipboard.writeText($('code').textContent).then(()=>log("code copied"));
+  });
+</script>
+</body>
+</html>
