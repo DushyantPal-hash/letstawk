@@ -1042,7 +1042,7 @@ select {
 }
 
 select option {
-  color: #101114
+  color: #fff
 }
 
 .checkbox-row {
@@ -1781,7 +1781,7 @@ footer {
 .page-hero h1 {
   max-width: 760px;
   margin-top: 14px;
-  font-size: clamp(42px, 6vw, 68px)
+  font-size: clamp(42px, 6vw, 55px)
 }
 
 .page-hero p {
@@ -2143,7 +2143,7 @@ footer {
 .industry-hero h1 {
   max-width: 680px;
   margin-top: 21px;
-  font-size: clamp(44px, 5.5vw, 68px)
+  font-size: clamp(44px, 5.5vw, 55px)
 }
 
 .industry-lead {
@@ -2260,6 +2260,10 @@ footer {
   color: #a9d9c2;
   font-size: 11px;
   font-style: normal
+}
+
+.banner-img img {
+  width: 100%;
 }
 
 .industry-problem-grid {
