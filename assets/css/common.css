@@ -329,7 +329,7 @@ header.nav {
 }
 
 .hero h1 {
-  font-size: clamp(42px, 5.6vw, 68px);
+  font-size: clamp(42px, 5.6vw, 55px);
   font-weight: 800;
   letter-spacing: -0.03em
 }
@@ -786,7 +786,8 @@ section.block {
   justify-content: center;
   align-items: flex-start;
   padding: 28px;
-  border-color: transparent
+  border-color: transparent;
+  grid-column: span 3;
 }
 
 .ind.more .kicker {
