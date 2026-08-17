@@ -145,6 +145,17 @@ h3 {
   color: #fff;
 }
 
+.btn-third-dark {
+  background: #f5f5f5;
+  color: var(--ink-soft);
+}
+
+.btn-third-dark:hover {
+  box-shadow: 0 10px 26px -10px rgba(58, 148, 244, 0.55);
+  background: var(--ink-soft);
+  color: #fff;
+}
+
 .btn-outline {
   background: transparent;
   border-color: var(--line-2);
@@ -174,6 +185,15 @@ h3 {
 .btn-lg {
   padding: 15px 28px;
   font-size: 16px
+}
+
+.on-white {
+  border-color: var(--d-line-2);
+  color: #fff;
+}
+
+.on-white:hover {
+  color: var(--text);
 }
 
 .on-dark .btn-outline {
@@ -1188,6 +1208,10 @@ footer {
     grid-template-columns: 1fr 1fr
   }
 
+  .ind.more {
+    grid-column: span 1;
+  }
+
   .metrics {
     grid-template-columns: 1fr 1fr
   }
@@ -1216,6 +1240,10 @@ footer {
   .metrics,
   .form-grid {
     grid-template-columns: 1fr
+  }
+
+  .ind.more {
+    grid-column: span 1;
   }
 
   section.block {
@@ -1770,14 +1798,6 @@ footer {
   z-index: 1
 }
 
-.page-kicker {
-  color: var(--indigo-lite);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .11em;
-  text-transform: uppercase
-}
-
 .page-hero h1 {
   max-width: 760px;
   margin-top: 14px;
@@ -2260,6 +2280,11 @@ footer {
   color: #a9d9c2;
   font-size: 11px;
   font-style: normal
+}
+
+.banner-img {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .banner-img img {

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BFSI Voice AI | letstawk</title>
+    <meta name="description" content="Voice AI for BFSI teams.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!-- Font Awesome for icons (if not already in common.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* inline styles to complete the page layout – extends common.css */
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .bg-light {
+            background: #f8fafc;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            transition: 0.2s;
+            border: 1px solid #eef2f6;
+        }
+
+        .feature-card i {
+            font-size: 2.4rem;
+            color: #4338E8;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin: 0.5rem 0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem 1rem;
+            border-radius: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4338E8, #FF6B8B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: #4338E8;
+            min-width: 3rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 2rem;
+            border-left: 6px solid #7A5CEA;
+        }
+
+        .testimonial p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial .author {
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .pill {
+            background: #eef2ff;
+            color: #4338E8;
+            padding: 0.2rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2col {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-3col {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4338E8" />
+                <stop offset=".5" stop-color="#7A5CEA" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <main>
+        <!-- HERO (from original) -->
+        <section class="industry-hero">
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="eyebrow"><span class="pulse"></span>BFSI voice AI</div>
+                    <p class="industry-breadcrumb">Solutions <span>›</span> Industries <span>›</span> BFSI</p>
+                    <h1>Make every financial conversation feel timely and trusted.</h1>
+                    <p class="industry-lead">
+                        letstawk helps banking and financial-service teams respond faster, guide customers clearly and
+                        route every conversation with the right context.
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html"><i class="fas fa-book"></i> Book a
+                            demo</a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296"><i
+                                class="fa-solid fa-headset"></i> Talk to an expert</a>
+                    </div>
+                </div>
+                <div class="banner-img" aria-hidden="true">
+                    <img src="images/banner-side/ban.webp" alt="banner">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY VOICE AI FOR BFSI -->
+        <section class="section-padding wrap">
+            <div class="grid-2col">
+                <div>
+                    <span class="pill">why voice AI</span>
+                    <h2 style="font-size:2.4rem; margin: 0.5rem 0 1rem;">Financial conversations need speed, security
+                        &amp; empathy</h2>
+                    <p style="font-size:1.1rem; color:#1e293b; line-height:1.6;">In banking, insurance and wealth
+                        management, every call carries weight. letstawk’s voice AI understands financial terminology,
+                        detects urgency, and routes intelligently – so your team spends time on high-value interactions.
+                    </p>
+                    <ul style="list-style:none; padding:0; margin-top:1.5rem;">
+                        <li style="display:flex; gap:0.75rem; margin-bottom:0.75rem;"><i class="fas fa-check-circle"
+                                style="color:#4338E8;"></i> <strong>Compliance-ready</strong> – conversation logging
+                            &amp; audit trails</li>
+                        <li style="display:flex; gap:0.75rem; margin-bottom:0.75rem;"><i class="fas fa-check-circle"
+                                style="color:#4338E8;"></i> <strong>Contextual handoffs</strong> – agents see full
+                            history</li>
+                        <li style="display:flex; gap:0.75rem;"><i class="fas fa-check-circle"
+                                style="color:#4338E8;"></i> <strong>24/7 multilingual support</strong> – reduce wait
+                            times</li>
+                    </ul>
+                </div>
+                <div style="background: linear-gradient(145deg,#f1f5f9, #e9edf4); padding:2rem; border-radius:2rem;">
+                    <img src="https://placehold.co/600x400/4338E8/ffffff?text=Voice+AI+dashboard"
+                        alt="voice AI dashboard" style="width:100%; border-radius:1rem; display:block;">
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY FEATURES -->
+        <section class="section-padding bg-light wrap" style="border-radius: 3rem; padding: 4rem 2rem;">
+            <div style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+                <span class="pill">features</span>
+                <h2 style="font-size:2.4rem;">Built for BFSI workflows</h2>
+                <p style="color:#475569;">From customer onboarding to claims and advisory, letstawk adapts to your
+                    processes.</p>
+            </div>
+            <div class="grid-3col">
+                <div class="feature-card"><i class="fas fa-robot"></i>
+                    <h3>Intelligent call routing</h3>
+                    <p>Analyse intent &amp; sentiment to route to the right specialist – wealth, loans, cards or fraud.
+                    </p>
+                </div>
+                <div class="feature-card"><i class="fas fa-shield-alt"></i>
+                    <h3>Secure &amp; compliant</h3>
+                    <p>GDPR &amp; PCI ready, with call recording, redaction and role-based access.</p>
+                </div>
+                <div class="feature-card"><i class="fas fa-clock"></i>
+                    <h3>After-hours support</h3>
+                    <p>Handle routine queries, balance checks and transaction status without human intervention.</p>
+                </div>
+                <div class="feature-card"><i class="fas fa-language"></i>
+                    <h3>Multilingual fluency</h3>
+                    <p>Support regional languages with natural accent and financial vocabulary.</p>
+                </div>
+                <div class="feature-card"><i class="fas fa-chart-line"></i>
+                    <h3>Real-time analytics</h3>
+                    <p>Monitor call outcomes, CSAT, and agent performance on a single dashboard.</p>
+                </div>
+                <div class="feature-card"><i class="fas fa-plug"></i>
+                    <h3>CRM &amp; core banking integration</h3>
+                    <p>Sync with Salesforce, Finacle, and other platforms for seamless data flow.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS (STEPS) -->
+        <section class="section-padding wrap">
+            <div style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+                <span class="pill">how it works</span>
+                <h2 style="font-size:2.4rem;">From call to resolution in minutes</h2>
+            </div>
+            <div class="grid-2col">
+                <div class="step-list">
+                    <div class="step-item"><span class="step-num">1</span>
+                        <div><strong>Voice AI answers</strong>
+                            <p>Greets customer, verifies identity via voice biometrics or OTP.</p>
+                        </div>
+                    </div>
+                    <div class="step-item"><span class="step-num">2</span>
+                        <div><strong>Intent detection</strong>
+                            <p>Classifies request – loan inquiry, fraud report, account update, etc.</p>
+                        </div>
+                    </div>
+                    <div class="step-item"><span class="step-num">3</span>
+                        <div><strong>Smart action</strong>
+                            <p>Provides info, executes transaction or schedules a callback.</p>
+                        </div>
+                    </div>
+                    <div class="step-item"><span class="step-num">4</span>
+                        <div><strong>Human handoff (if needed)</strong>
+                            <p>Transfers with full context to the best available agent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: #1e293b; border-radius:2rem; padding:2rem; color:white;">
+                    <i class="fas fa-headset" style="font-size:3rem; color:#7A5CEA;"></i>
+                    <p style="font-size:1.2rem; margin-top:1rem;">“letstawk reduced our average call handling time by
+                        40% and improved first-call resolution for routine queries.”</p>
+                    <div style="display:flex; align-items:center; gap:1rem; margin-top:1.5rem;">
+                        <img src="https://placehold.co/50x50/4338E8/white?text=JD"
+                            style="border-radius:50%; width:50px;">
+                        <div><strong>Priya Sharma</strong><br>VP Digital Banking, Axis Bank</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS / SOCIAL PROOF -->
+        <section class="section-padding bg-light wrap" style="border-radius: 3rem; padding: 3rem 2rem;">
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-number">87%</div>
+                    <div>faster query resolution</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.5x</div>
+                    <div>more leads qualified</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div>call uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12+</div>
+                    <div>languages supported</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USE CASES / SOLUTIONS -->
+        <section class="section-padding wrap">
+            <div style="text-align:center; max-width:700px; margin:0 auto 3rem;">
+                <span class="pill">solutions</span>
+                <h2 style="font-size:2.4rem;">Tailored for every BFSI vertical</h2>
+            </div>
+            <div class="grid-3col">
+                <div class="feature-card" style="border-top: 6px solid #4338E8;"><i class="fas fa-university"></i>
+                    <h3>Retail banking</h3>
+                    <p>Account opening, balance inquiries, card activation, and dispute handling.</p>
+                </div>
+                <div class="feature-card" style="border-top: 6px solid #7A5CEA;"><i class="fas fa-hand-holding-usd"></i>
+                    <h3>Wealth &amp; advisory</h3>
+                    <p>Portfolio updates, investment reminders, and risk-profile conversations.</p>
+                </div>
+                <div class="feature-card" style="border-top: 6px solid #FF6B8B;"><i class="fas fa-shield-virus"></i>
+                    <h3>Insurance</h3>
+                    <p>Claims reporting, policy renewal, and eligibility checks with empathy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRATIONS -->
+        <section class="section-padding bg-light wrap" style="border-radius: 3rem; padding: 3rem 2rem;">
+            <div style="text-align:center; max-width:700px; margin:0 auto 2rem;">
+                <span class="pill">integrations</span>
+                <h2 style="font-size:2.4rem;">Works with your existing stack</h2>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem 4rem; font-size:1.2rem;">
+                <span><i class="fab fa-salesforce" style="color:#4338E8; margin-right:0.5rem;"></i> Salesforce</span>
+                <span><i class="fas fa-database" style="color:#4338E8; margin-right:0.5rem;"></i> Core banking</span>
+                <span><i class="fas fa-cloud" style="color:#4338E8; margin-right:0.5rem;"></i> AWS / Azure</span>
+                <span><i class="fas fa-phone-alt" style="color:#4338E8; margin-right:0.5rem;"></i> Cisco / Avaya</span>
+                <span><i class="fas fa-crm" style="color:#4338E8; margin-right:0.5rem;"></i> Zendesk / Freshdesk</span>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-padding wrap" style="text-align:center;">
+            <div
+                style="background: linear-gradient(135deg,#4338E8, #7A5CEA); padding:3rem 2rem; border-radius:3rem; color:white;">
+                <h2 style="font-size:2.6rem; margin-bottom:1rem;">Ready to transform your financial conversations?</h2>
+                <p style="font-size:1.2rem; max-width:600px; margin:0 auto 2rem;">Join 200+ BFSI teams already using
+                    letstawk to deliver trusted, timely voice experiences.</p>
+                <div class="industry-actions" style="justify-content:center;">
+                    <a class="btn btn-primary btn-lg" href="contact.html" style="background:white; color:#4338E8;"><i
+                            class="fas fa-calendar-check"></i> Start free trial</a>
+                    <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296"
+                        style="border-color:white; color:white;"><i class="fa-solid fa-headset"></i> Speak to sales</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ (data-component injected, but also keep static fallback) -->
+        <div data-component="faq"></div>
+        <script id="faqData" type="application/json">
+        {
+            "title": "BFSI Voice AI FAQs",
+            "description": "Answers to common questions about deploying voice AI in financial services.",
+            "items": [
+                { "question": "Is letstawk compliant with financial regulations?", "answer": "Yes. letstawk is built with security-first principles, supports call recording, encryption, and role-based access to meet regulatory standards like GDPR, PCI-DSS, and local banking guidelines." },
+                { "question": "Can the AI handle complex financial queries?", "answer": "Absolutely. Our models are fine-tuned on financial language and can assist with loan eligibility, transaction disputes, investment queries, and more. For complex cases, it seamlessly hands off to a human expert." },
+                { "question": "What languages does it support?", "answer": "letstawk supports 12+ languages including English, Hindi, Spanish, and regional languages. The system can be configured to detect and switch languages mid-conversation." },
+                { "question": "How long does implementation take?", "answer": "Most BFSI clients go live within 2-3 weeks. We provide a dedicated onboarding team to integrate with your CRM, telephony, and core banking systems." }
+            ]
+        }
+        </script>
+    </main>
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+    <!-- fallback if components not loaded -->
+    <script>
+        (function () {
+            // ensure FAQ renders if component not loaded
+            if (typeof window.renderFaq !== 'function') {
+                const faqContainer = document.querySelector('[data-component="faq"]');
+                if (faqContainer) {
+                    const dataElem = document.getElementById('faqData');
+                    if (dataElem) {
+                        try {
+                            const data = JSON.parse(dataElem.textContent);
+                            let html = `<section class="section-padding wrap"><div style="max-width:800px; margin:0 auto;"><h2 style="font-size:2.4rem;">${data.title}</h2><p style="color:#475569;">${data.description}</p><div style="margin-top:2rem;">`;
+                            data.items.forEach(item => {
+                                html += `<div style="border-bottom:1px solid #e2e8f0; padding:1.25rem 0;"><h3 style="font-size:1.2rem; margin:0;">${item.question}</h3><p style="margin:0.5rem 0 0; color:#334155;">${item.answer}</p></div>`;
+                            });
+                            html += `</div></div></section>`;
+                            faqContainer.innerHTML = html;
+                        } catch (e) { }
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
