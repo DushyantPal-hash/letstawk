@@ -11,10 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body><svg width="0" height="0" style="position:absolute">
+<body>
+    <svg width="0" height="0" style="position:absolute">
         <defs>
             <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#4338E8" />
@@ -24,70 +25,142 @@
         </defs>
     </svg>
     <div data-component="navbar"></div>
+
     <main>
         <!-- Banner -->
-        <section class="page-hero">
-            <div class="wrap">
-                <div class="page-kicker">Contact us</div>
-                <h1>Let's talk about your calls.</h1>
-                <p>Tell us what your customers need. We will help you explore a voice experience that serves callers
-                    and supports your team.</p>
+        <section class="industry-hero">
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="eyebrow"><span class="pulse"></span>Contact us</div>
+                    <p class="industry-breadcrumb"><a href="index.html">Home</a> <span>›</span> Contact us</p>
+                    <h1>Let's talk about your calls.</h1>
+                    <p class="industry-lead">
+                        <!-- Tell us what your customers need. We will help you explore a voice experience that serves
+                        callers and supports your team. -->
+                        Whether you are looking for Voice AI Automation or have a question, Get in touch with Caller
+                        Digital. We provide all the necessary information required.
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html">
+                            <i class="fas fa-book"></i> Book a demo
+                        </a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                            <i class="fa-solid fa-headset"></i> Talk to an expert
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img" aria-hidden="true">
+                    <img src="images/banner-side/contact.webp" alt="banner">
+                </div>
+            </div>
+            <div class="stats-grid wrap">
+                <div class="stat-item">
+                    <div class="number">4.9★</div>
+                    <div class="label">Avg. Customer Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">200+</div>
+                    <div class="label">Businesses Trust Us</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">97%</div>
+                    <div class="label">Call Resolution Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">24/7</div>
+                    <div class="label">Always Available</div>
+                </div>
             </div>
         </section>
         <!-- Contact and Form -->
         <section class="page-section">
             <div class="wrap contact-grid">
                 <aside class="contact-details">
-                    <div class="sec-eyebrow">Speak with our team</div>
+                    <div class="eyebrow">Speak with our team</div>
                     <h2>Start with one conversation.</h2>
                     <p>Whether you are exploring voice AI for the first time or refining an existing call journey, our
                         team is ready to listen.</p>
-                    <div class="contact-link-list"><a href="mailto:hello@letstawk.ai"><span>Email
-                                us</span>hello@letstawk.ai</a><a href="tel:+919500069296"><span>Call us</span>+91 95000
-                            69296</a><a
-                            href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk"
-                            target="_blank" rel="noopener"><span>WhatsApp</span>Start a conversation</a></div>
+                    <div class="contact-link-list">
+                        <a href="mailto:hello@letstawk.ai">
+                            <span>Email us</span>
+                            <span style="color: var(--indigo-lite);"><i class="fas fa-envelope"
+                                    style="font-size: 18px; color: #fff;"></i>
+                                &nbsp;hello@letstawk.ai</span>
+                        </a>
+                        <a href="tel:+919500069296">
+                            <span>Call us</span>
+                            <span style="color: var(--indigo-lite);"><i class="fas fa-mobile-alt"
+                                    style="font-size: 18px; color: #f22929;"></i>
+                                &nbsp;+91 95000 69296</span>
+                        </a>
+                        <a href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk"
+                            target="_blank" rel="noopener">
+                            <span>WhatsApp</span>
+                            <span style="color: var(--indigo-lite);"><i class="si si-whatsapp"
+                                    style="font-size: 18px; color: #25D366;"></i>
+                                &nbsp;Start a conversation
+                            </span>
+                        </a>
+                    </div>
                     <div class="contact-note"><strong>A useful first conversation</strong>
-                        <p>Share the types of calls you receive, the outcomes you want and the tools your team already
-                            uses.</p>
+                        <p>
+                            Share the types of calls you receive, the outcomes you want and the tools your team already
+                            uses.
+                        </p>
                     </div>
                 </aside>
                 <form class="contact-form" id="contactForm">
                     <div class="form-intro">
                         <div class="sec-eyebrow">Tell us a little more</div>
                         <h2>We’ll help you find the right next step.</h2>
-                        <p>Our team will use these details to make the conversation more useful from the start.</p>
+                        <p>
+                            Our team will use these details to make the conversation more useful from the start.
+                        </p>
                     </div>
                     <div class="form-row">
-                        <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name"
-                                required placeholder="Your name"></div>
-                        <div class="field"><label for="contact-company">Company</label><input id="contact-company"
-                                name="company" placeholder="Company name"></div>
+                        <div class="field">
+                            <label for="contact-name">Name</label>
+                            <input id="contact-name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="field">
+                            <label for="contact-company">Company</label>
+                            <input id="contact-company" name="company" placeholder="Company name">
+                        </div>
                     </div>
                     <div class="form-row">
-                        <div class="field"><label for="contact-email">Work email</label><input id="contact-email"
-                                name="email" type="email" required placeholder="you@company.com"></div>
-                        <div class="field"><label for="contact-phone">Phone number</label><input id="contact-phone"
-                                name="phone" type="tel" placeholder="Your phone number"></div>
+                        <div class="field">
+                            <label for="contact-email">Work email</label>
+                            <input id="contact-email" name="email" type="email" required placeholder="you@company.com">
+                        </div>
+                        <div class="field">
+                            <label for="contact-phone">Phone number</label>
+                            <input id="contact-phone" name="phone" type="tel" placeholder="Your phone number">
+                        </div>
                     </div>
-                    <div class="field"><label for="contact-interest">What would you like help with?</label><select
-                            id="contact-interest" name="interest">
-                            <option value="">Select an option</option>
-                            <option>Book a product demo</option>
-                            <option>Inbound customer support</option>
-                            <option>Lead qualification or follow-up</option>
-                            <option>Appointments or bookings</option>
-                            <option>Something else</option>
-                        </select></div>
-                    <div class="field"><label for="contact-message">How can we help?</label><textarea
-                            id="contact-message" name="message" required
-                            placeholder="Tell us about your calls, workflows and goals"></textarea></div>
+                    <div class="field">
+                        <label for="contact-interest">What would you like help with?</label>
+                        <select id="contact-interest" name="interest">
+                            <option class="black" value="">Select an option.....</option>
+                            <option class="black">Book a product demo</option>
+                            <option class="black">Inbound customer support</option>
+                            <option class="black">Lead qualification or follow-up</option>
+                            <option class="black">Appointments or bookings</option>
+                            <option class="black">Something else</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="contact-message">How can we help?</label>
+                        <textarea id="contact-message" name="message" required
+                            placeholder="Tell us about your calls, workflows and goals">
+                        </textarea>
+                    </div>
                     <button class="btn btn-primary" type="submit">
                         <i class="fa-solid fa-paper-plane"></i>
                         Send message
                     </button>
-                    <p class="form-message" id="contactMessage">Thanks — your message is ready to send. Our team will be
-                        in touch soon.</p>
+                    <p class="form-message" id="contactMessage">
+                        Thanks — your message is ready to send. Our team will be in touch soon.
+                    </p>
                 </form>
             </div>
         </section>
@@ -247,7 +320,7 @@
         </style>
         <section class="page-section tint contact-assurance-section">
             <div class="wrap">
-                <div class="sec-head" style="max-width: none;text-align: center;">
+                <div class="sec-head" style="max-width: none;">
                     <div class="sec-eyebrow">Testimonials</div>
                     <h2>Trusted by Teams Worldwide</h2>
                     <p>
@@ -399,9 +472,17 @@
         }
         </script>
     </main>
+
     <div data-component="footer"></div>
     <script src="assets/js/components.js"></script>
-    <script>document.getElementById('contactForm').addEventListener('submit', function (e) { e.preventDefault(); document.getElementById('contactMessage').classList.add('show'); this.reset(); });</script>
+    <script>
+        document.getElementById('contactForm')
+            .addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('contactMessage').classList.add('show');
+                this.reset();
+            });
+    </script>
 </body>
 
 </html>

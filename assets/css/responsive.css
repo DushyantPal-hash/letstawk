@@ -1,0 +1,267 @@
+/* responsive.css - All media queries */
+
+@media(max-width:1024px) {
+    .nav-dropdown-menu {
+        min-width: 560px;
+        gap: 24px;
+        padding: 20px 24px;
+    }
+}
+
+@media(max-width:960px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 44px
+    }
+
+    .feat-grid,
+    .steps,
+    .ind-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .ind.more {
+        grid-column: span 1;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .cta-card {
+        grid-template-columns: 1fr
+    }
+
+    .nav-links {
+        display: none
+    }
+
+    .menu-toggle {
+        display: inline-flex
+    }
+
+    .site-nav .nav-links {
+        display: none;
+    }
+
+    .site-nav .nav-cta .nav-login {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .site-nav {
+        height: 56px;
+    }
+}
+
+@media(max-width:800px) {
+    .page-hero {
+        padding: 100px 0 64px
+    }
+
+    .page-section {
+        padding: 64px 0
+    }
+
+    .page-grid,
+    .stats-grid,
+    .contact-grid,
+    .faq-layout,
+    .story-grid,
+    .approach-grid,
+    .expectation-grid,
+    .location-grid,
+    .industry-hero-grid,
+    .industry-problem-grid,
+    .industry-use-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-details,
+    .contact-form {
+        padding: 28px
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0
+    }
+
+    .inner-cta {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px
+    }
+
+    .location-section {
+        padding: 64px 0
+    }
+
+    .location-grid {
+        gap: 32px
+    }
+
+    .map-container {
+        min-height: 300px
+    }
+
+    .industry-hero {
+        padding: 100px 0 64px
+    }
+
+    .property-visual {
+        min-height: 360px
+    }
+
+    .journey-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .real-estate-feature-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .industry-cta {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 32px
+    }
+
+    .faq-section {
+        padding: 64px 0
+    }
+
+    .faq-intro {
+        position: static
+    }
+
+    .faq-list {
+        margin-top: 4px
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        font-size: 16px
+    }
+
+    .feat-grid,
+    .steps,
+    .ind-grid,
+    .metrics,
+    .form-grid {
+        grid-template-columns: 1fr
+    }
+
+    .ind.more {
+        grid-column: span 1;
+    }
+
+    section.block {
+        padding: 64px 0
+    }
+
+    .cta-copy,
+    .form-side {
+        padding: 32px 24px
+    }
+
+    .compare-row {
+        grid-template-columns: 1.4fr 1fr
+    }
+
+    .compare-row .them:last-child {
+        display: none
+    }
+
+    .hero {
+        padding: 100px 0 60px
+    }
+
+    .site-header {
+        padding: 12px 0;
+    }
+
+    .site-nav {
+        padding: 0 16px;
+    }
+
+    .site-nav .logo-mark {
+        width: 30px;
+        height: 30px;
+    }
+
+    .site-nav .wordmark {
+        font-size: 20px;
+    }
+
+    .nav-demo-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .mobile-menu-panel {
+        padding: 20px;
+    }
+
+    .custom-cta {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:500px) {
+    .btn-lg {
+        width: 100%;
+    }
+
+    .property-visual {
+        min-height: 300px
+    }
+
+    .property-building-main {
+        right: 28px;
+        width: 164px;
+        height: 224px;
+        padding: 20px;
+        gap: 11px
+    }
+
+    .property-building-main i {
+        height: 23px
+    }
+
+    .property-building-back {
+        left: 20px;
+        width: 130px;
+        height: 120px
+    }
+
+    .property-card {
+        left: 20px;
+        bottom: 20px;
+        width: 224px
+    }
+
+    .journey-grid,
+    .stats-grid,
+    .real-estate-feature-grid {
+        grid-template-columns: 1fr
+    }
+
+    .industry-actions {
+        flex-direction: column
+    }
+
+    .industry-actions .btn {
+        width: 100%
+    }
+
+    .mob-span {
+        width: 100%;
+        text-align: center;
+    }
+}
