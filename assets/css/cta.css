@@ -1,0 +1,246 @@
+/* cta.css - CTA section and form styles */
+
+/* CTA / FORM */
+.cta-block {
+    padding: 20px 0 96px
+}
+
+.cta-card {
+    background: var(--ink);
+    color: var(--d-text);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    box-shadow: 0 40px 90px -40px rgba(16, 17, 20, .6);
+    position: relative
+}
+
+.cta-card::before {
+    content: "";
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(67, 56, 232, .35), transparent 62%);
+    top: -160px;
+    left: -120px;
+    pointer-events: none
+}
+
+.cta-card::after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 107, 139, .26), transparent 60%);
+    bottom: -150px;
+    right: -110px;
+    pointer-events: none
+}
+
+.cta-copy {
+    padding: 52px 44px;
+    position: relative;
+    z-index: 1
+}
+
+.cta-copy .sec-eyebrow {
+    color: var(--indigo-lite);
+    margin-bottom: 14px
+}
+
+.cta-copy h2 {
+    font-size: clamp(28px, 3.4vw, 40px);
+    color: var(--d-text)
+}
+
+.cta-copy p {
+    color: var(--d-muted);
+    margin-top: 16px;
+    font-size: 16px
+}
+
+.cta-list {
+    list-style: none;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px
+}
+
+.cta-list li {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    font-size: 15px;
+    color: var(--d-text)
+}
+
+.cta-list li svg {
+    width: 18px;
+    height: 18px;
+    color: var(--indigo-lite);
+    flex: none
+}
+
+.form-side {
+    padding: 44px;
+    background: #0C0D11;
+    position: relative;
+    z-index: 1
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.field.full {
+    grid-column: 1/-1
+}
+
+label {
+    font-size: 13px;
+    color: var(--d-muted);
+    font-weight: 500
+}
+
+input,
+select,
+textarea {
+    background: #16181F;
+    border: 1px solid var(--d-line-2);
+    border-radius: 11px;
+    padding: 12px 13px;
+    color: var(--d-text);
+    font-family: 'Manrope';
+    font-size: 15px;
+    width: 100%;
+    transition: border-color .2s
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #5A5F6E
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--indigo-lite)
+}
+
+textarea {
+    resize: vertical;
+    min-height: 74px
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23A4A9B8' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 13px center
+}
+
+select option {
+    color: #fff
+}
+
+.black {
+    color: #000 !important;
+}
+
+.checkbox-row {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--d-muted)
+}
+
+.checkbox-row input {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    accent-color: var(--indigo)
+}
+
+.form-submit {
+    grid-column: 1/-1;
+    margin-top: 4px
+}
+
+.form-submit .btn {
+    width: 100%
+}
+
+.form-note {
+    grid-column: 1/-1;
+    font-size: 12px;
+    color: var(--muted-2);
+    text-align: center;
+    margin-top: 2px
+}
+
+.form-success {
+    display: none;
+    text-align: center;
+    padding: 36px 10px
+}
+
+.form-success.show {
+    display: block
+}
+
+.form-success .check {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(67, 56, 232, .18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px
+}
+
+.form-success h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--d-text)
+}
+
+.form-success p {
+    color: var(--d-muted)
+}
+
+.hp {
+    position: absolute;
+    left: -9999px
+}
+
+.form-message {
+    display: none;
+    margin-top: 16px;
+    color: var(--indigo);
+    font-weight: 600
+}
+
+.form-message.show {
+    display: block
+}
+
+.custom-cta {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}

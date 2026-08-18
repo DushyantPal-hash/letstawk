@@ -1,0 +1,180 @@
+/* call-card.css - Call card and transcript styles */
+
+/* CALL CARD (signature) */
+.call-card {
+    background: linear-gradient(180deg, #191B22, #121319);
+    border: 1px solid var(--d-line-2);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .8)
+}
+
+.call-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--d-line)
+}
+
+.call-who {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--indigo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Schibsted Grotesk';
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px
+}
+
+.call-who .n {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--d-text)
+}
+
+.call-who .s {
+    font-size: 12px;
+    color: var(--muted-2)
+}
+
+.call-live {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .1em;
+    color: var(--indigo-lite);
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.call-live .rec {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--indigo);
+    animation: blink 1.2s infinite
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .25
+    }
+}
+
+.wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 44px;
+    margin: 16px 0 4px
+}
+
+.wave i {
+    width: 3px;
+    background: var(--indigo-lite);
+    border-radius: 3px;
+    height: 20%;
+    transition: height .12s
+}
+
+.wave i:nth-child(even) {
+    background: var(--coral-lite)
+}
+
+.transcript {
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 8px
+}
+
+.turn {
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: rise .4s forwards
+}
+
+@keyframes rise {
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.turn .tag {
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: .06em;
+    color: var(--muted-2);
+    width: 44px;
+    flex: none;
+    padding-top: 9px
+}
+
+.bubble {
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 14.5px;
+    line-height: 1.45
+}
+
+.turn.caller .bubble {
+    background: rgba(245, 246, 250, 0.07);
+    border: 1px solid var(--d-line);
+    border-top-left-radius: 4px;
+    color: var(--d-text)
+}
+
+.turn.agent {
+    flex-direction: row-reverse
+}
+
+.turn.agent .tag {
+    text-align: right;
+    color: var(--indigo-lite)
+}
+
+.turn.agent .bubble {
+    background: rgba(67, 56, 232, 0.18);
+    border: 1px solid rgba(124, 139, 245, 0.4);
+    border-top-right-radius: 4px;
+    color: var(--d-text)
+}
+
+.call-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--d-line);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--muted-2)
+}
+
+.call-foot .chip {
+    color: var(--indigo-lite)
+}

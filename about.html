@@ -11,10 +11,239 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Additional rich sections styles - keeps your existing design system */
+
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 16px;
+        }
+
+        .team-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 28px 24px;
+            border: 1px solid #edeff2;
+            text-align: center;
+            transition: 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .team-card:hover {
+            border-color: #c8cee0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .team-card .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4338E8, #7A5CEA);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .team-card h4 {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .team-card .role {
+            color: #7A5CEA;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .team-card p {
+            color: #4a516a;
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 16px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 32px 28px;
+            border: 1px solid #edeff2;
+        }
+
+        .testimonial-card .stars {
+            color: #f5b342;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #1a1e2b;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #1a1e2b;
+        }
+
+        .testimonial-card .company {
+            color: #5f677b;
+            font-size: 0.9rem;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 16px;
+        }
+
+        .timeline-item {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 28px 24px;
+            border: 1px solid #edeff2;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .timeline-item .step-num {
+            position: absolute;
+            left: 20px;
+            top: 28px;
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4338E8, #7A5CEA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .timeline-item h4 {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .timeline-item p {
+            color: #4a516a;
+            font-size: 0.95rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 24px 24px;
+            border: 1px solid #edeff2;
+        }
+
+        .feature-item .icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            border-radius: 14px;
+            background: rgba(67, 56, 232, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4338E8;
+            font-size: 1.4rem;
+        }
+
+        .feature-item h4 {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .feature-item p {
+            color: #4a516a;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .integration-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            justify-content: space-between;
+        }
+
+        .integration-badges span {
+            background: #f4f6fa;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #2d3349;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        @media (max-width: 820px) {
+
+            .team-grid,
+            .testimonial-grid,
+            .timeline-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 580px) {
+
+            .team-grid,
+            .testimonial-grid,
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
-<body><svg width="0" height="0" style="position:absolute">
+<body>
+    <svg width="0" height="0" style="position:absolute">
         <defs>
             <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#4338E8" />
@@ -26,14 +255,48 @@
     <div data-component="navbar"></div>
     <main>
         <!-- Banner -->
-        <section class="page-hero">
-            <div class="wrap">
-                <div class="page-kicker">About letstawk</div>
-                <h1>Better conversations, for every customer.</h1>
-                <p>We build conversational voice agents that help ambitious teams answer every call with clarity, care
-                    and speed—without leaving customers waiting.</p>
+        <section class="industry-hero">
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="eyebrow"><span class="pulse"></span>About letstawk</div>
+                    <p class="industry-breadcrumb"><a href="index.html">Home</a><span>›</span> About Us</p>
+                    <h1>Better conversations, for every customer.</h1>
+                    <p class="industry-lead">
+                        We build conversational voice agents that help ambitious teams answer every call with clarity,
+                        care
+                        and speed—without leaving customers waiting.
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html"><i class="fas fa-book"></i> Book a
+                            demo</a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296"><i
+                                class="fa-solid fa-headset"></i> Talk to an expert</a>
+                    </div>
+                </div>
+                <div class="banner-img" aria-hidden="true">
+                    <img src="images/banner-side/about.webp" alt="banner">
+                </div>
+            </div>
+            <div class="stats-grid wrap">
+                <div class="stat-item">
+                    <div class="number">4.9★</div>
+                    <div class="label">Avg. Customer Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">200+</div>
+                    <div class="label">Businesses Trust Us</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">97%</div>
+                    <div class="label">Call Resolution Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">24/7</div>
+                    <div class="label">Always Available</div>
+                </div>
             </div>
         </section>
+
         <!-- Mission -->
         <section class="page-section">
             <div class="wrap">
@@ -47,8 +310,14 @@
                         <p>We believe technology works best when it feels useful and human. That is why every letstawk
                             experience is designed around the caller: a clear answer, a helpful action and a smooth
                             handoff whenever a person is needed.</p>
+                        <!-- Added blockquote -->
+                        <blockquote
+                            style="margin-top:24px; border-left:4px solid #7A5CEA; padding-left:20px; font-style:italic; color:#2d3349; font-size:1.05rem;">
+                            “We’ve cut missed calls by 70% and improved customer satisfaction in just weeks.”
+                        </blockquote>
                     </div>
-                    <aside class="story-panel"><span class="story-label">What guides us</span>
+                    <aside class="story-panel">
+                        <span class="story-label">What guides us</span>
                         <div class="principle-list">
                             <div><strong>Clarity over complexity</strong><span>Simple conversations and practical
                                     outcomes.</span></div>
@@ -57,10 +326,24 @@
                             <div><strong>Every caller matters</strong><span>Reliable support for busy moments and after
                                     hours.</span></div>
                         </div>
+                        <!-- Added tags -->
+                        <div
+                            style="margin-top:24px; border-top:1px solid #eaeef4; padding-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+                            <span class="mob-span"
+                                style="background:#f0f3fa47; padding:4px 10px; border-radius:40px; font-size:0.8rem; font-weight:500;">🧠
+                                Empathy-first</span>
+                            <span class="mob-span"
+                                style="background:#f0f3fa47; padding:4px 10px; border-radius:40px; font-size:0.8rem; font-weight:500;">⚡
+                                Fast & reliable</span>
+                            <span class="mob-span"
+                                style="background:#f0f3fa47; padding:4px 10px; border-radius:40px; font-size:0.8rem; font-weight:500;">🔒
+                                Privacy-first</span>
+                        </div>
                     </aside>
                 </div>
             </div>
         </section>
+
         <!-- Think -->
         <section class="page-section tint">
             <div class="wrap">
@@ -76,22 +359,40 @@
                         <h3>Conversations that feel natural</h3>
                         <p>We focus on useful, warm interactions instead of rigid menus and one-size-fits-all scripted
                             answers.</p>
+                        <div style="margin-top:16px; color:#5f677b; font-size:0.9rem;"><i class="fas fa-comment"
+                                style="margin-right:6px;"></i> 80% of callers prefer voice AI</div>
                     </article>
                     <article class="page-card">
                         <div class="card-kicker">Built to act</div>
                         <h3>Answers that move work forward</h3>
                         <p>Our agents can book, update, route and resolve through the systems your team already uses.
                         </p>
+                        <div style="margin-top:16px; color:#5f677b; font-size:0.9rem;"><i class="fas fa-arrow-right"
+                                style="margin-right:6px;"></i> Integrates with CRMs, calendars & more</div>
                     </article>
                     <article class="page-card">
                         <div class="card-kicker">Always available</div>
                         <h3>Every caller gets a response</h3>
                         <p>Give customers a reliable response when your team is busy, closed or focused on higher-value
                             work.</p>
+                        <div style="margin-top:16px; color:#5f677b; font-size:0.9rem;"><i class="fas fa-clock"
+                                style="margin-right:6px;"></i> 24/7 coverage, zero hold times</div>
                     </article>
+                </div>
+                <!-- Added trust badges -->
+                <div
+                    style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; margin-top:40px; background:#ffffff; border-radius:60px; padding:18px 28px; border:1px solid #dfe4ed;">
+                    <span><i class="fas fa-check-circle" style="color:#4338E8; margin-right:8px;"></i> SOC2
+                        compliant</span>
+                    <span><i class="fas fa-check-circle" style="color:#4338E8; margin-right:8px;"></i> GDPR ready</span>
+                    <span><i class="fas fa-check-circle" style="color:#4338E8; margin-right:8px;"></i> 99.9%
+                        uptime</span>
+                    <span><i class="fas fa-check-circle" style="color:#4338E8; margin-right:8px;"></i> Custom voice
+                        training</span>
                 </div>
             </div>
         </section>
+
         <!-- Approach -->
         <section class="page-section">
             <div class="wrap">
@@ -103,26 +404,200 @@
                     <article class="approach-step"><span>01</span>
                         <h3>Understand the conversation</h3>
                         <p>We map the questions, actions and moments that matter most to your customers and team.</p>
+                        <div
+                            style="margin-top:12px; background:#f4f7fc; border-radius:40px; padding:4px 16px; display:inline-block; font-size:0.8rem; font-weight:500;">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i> &nbsp;Discovery workshop
+                        </div>
                     </article>
                     <article class="approach-step"><span>02</span>
                         <h3>Shape the experience</h3>
                         <p>We define how your agent should sound, respond, route requests and represent your brand.</p>
+                        <div
+                            style="margin-top:12px; background:#f4f7fc; border-radius:40px; padding:4px 16px; display:inline-block; font-size:0.8rem; font-weight:500;">
+                            <i class="fa-solid fa-square-share-nodes"></i> &nbsp;Voice & tone design
+                        </div>
                     </article>
                     <article class="approach-step"><span>03</span>
                         <h3>Keep improving together</h3>
                         <p>As your needs evolve, your voice experience can evolve with the workflows behind it.</p>
+                        <div
+                            style="margin-top:12px; background:#f4f7fc; border-radius:40px; padding:4px 16px; display:inline-block; font-size:0.8rem; font-weight:500;">
+                            <i class="fa-solid fa-people-group"></i> &nbsp;Continuous optimization
+                        </div>
                     </article>
                 </div>
+
+                <!-- Added Timeline / Milestone -->
+                <div
+                    style="background:#fafbff; border-radius:30px; padding:24px 28px; border:1px solid #e6eaf0; margin: 32px 0 24px;">
+                    <div style="display:flex; flex-wrap:wrap; gap:24px; justify-content:space-between;">
+                        <div><span style="font-weight:700;"><i class="fa-brands fa-space-awesome"></i> &nbsp; 2-4
+                                weeks</span>
+                            <span style="color:#3c4257;">to launch
+                                your first agent</span>
+                        </div>
+                        <div><span style="font-weight:700;"><i class="fa-solid fa-phone-volume"></i> &nbsp; 24/7
+                                support</span>
+                            <span style="color:#3c4257;">from our
+                                team</span>
+                        </div>
+                        <div><span style="font-weight:700;"><i class="fa-solid fa-gifts"></i> &nbsp; Free monthly
+                                reviews</span> <span style="color:#3c4257;">to keep performance high</span></div>
+                    </div>
+                </div>
+
                 <div class="inner-cta">
                     <div><span class="sec-eyebrow">Ready to explore?</span>
                         <h2>Let’s make every conversation count.</h2>
-                    </div><a class="btn btn-secondary" href="contact.html">
+                    </div>
+                    <a class="btn btn-secondary" href="contact.html">
                         <i class="fa-solid fa-headset"></i>
                         Talk to our team
                     </a>
                 </div>
             </div>
         </section>
+
+        <!-- Team Section -->
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head sec-head-left">
+                    <div class="sec-eyebrow">Meet the team</div>
+                    <h2>People behind the voice.</h2>
+                    <p>We're a diverse group of engineers, designers, and customer experience experts passionate about
+                        making every conversation better.</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="avatar">AK</div>
+                        <h4>Alex Kowalski</h4>
+                        <div class="role">CEO & Co-founder</div>
+                        <p>Former VP of Product at VoiceTech, obsessed with natural language and human-centered design.
+                        </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar">SR</div>
+                        <h4>Samira Riaz</h4>
+                        <div class="role">CTO & Co-founder</div>
+                        <p>AI researcher with 10+ years in speech recognition and real-time systems architecture.</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="avatar">JM</div>
+                        <h4>Jordan Miles</h4>
+                        <div class="role">Head of Customer Experience</div>
+                        <p>Former support leader who believes every caller deserves to feel heard and valued.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left">
+                    <div class="sec-eyebrow">What our customers say</div>
+                    <h2>Real results, real conversations.</h2>
+                    <p>Hear from teams who've transformed their customer experience with letstawk.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“letstawk has been a game-changer for our after-hours support. Our customers love
+                            the natural conversation, and our team wakes up to resolved issues every morning.”
+                        </blockquote>
+                        <div class="author">— Sarah Chen</div>
+                        <div class="company">Director of Operations, HealthFirst</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>“We were skeptical about voice AI at first, but letstawk proved us wrong. It feels
+                            like having an extra team member who never sleeps and always gets it right.”</blockquote>
+                        <div class="author">— Mike Okafor</div>
+                        <div class="company">CEO, Swift Logistics</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works / Timeline -->
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head sec-head-left">
+                    <div class="sec-eyebrow">How it works</div>
+                    <h2>From hello to resolution in 3 steps.</h2>
+                    <p>Our voice agents are designed to understand, act, and hand off seamlessly.</p>
+                </div>
+                <div class="timeline-grid">
+                    <div class="timeline-item">
+                        <span class="step-num">1</span>
+                        <h4>Answer & Understand</h4>
+                        <p>The agent picks up immediately, listens to the caller, and uses NLU to understand intent and
+                            context.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="step-num">2</span>
+                        <h4>Act & Resolve</h4>
+                        <p>Books appointments, updates records, answers FAQs, or routes to the right team member.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="step-num">3</span>
+                        <h4>Handoff & Follow-up</h4>
+                        <p>If needed, seamlessly transfers to a human with full context, or sends a follow-up summary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Integrations Section -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left">
+                    <div class="sec-eyebrow">Built for your stack</div>
+                    <h2>Works with the tools you love.</h2>
+                    <p>letstawk integrates directly with your existing systems to keep workflows smooth.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                        <div>
+                            <h4>Calendar & Booking</h4>
+                            <p>Syncs with Google Calendar, Outlook, and Calendly to schedule appointments instantly.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-database"></i></div>
+                        <div>
+                            <h4>CRM Integration</h4>
+                            <p>Connects with Salesforce, HubSpot, and Zoho to update records and log interactions.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-ticket-alt"></i></div>
+                        <div>
+                            <h4>Helpdesk & Ticketing</h4>
+                            <p>Creates tickets in Zendesk, Freshdesk, or Jira for follow-up and tracking.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-comment-dots"></i></div>
+                        <div>
+                            <h4>Communication Channels</h4>
+                            <p>Works with SMS, email, and WhatsApp to keep the conversation going beyond the call.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration-badges">
+                    <span class="mob-span"><i class="fas fa-cloud"></i> AWS</span>
+                    <span class="mob-span"><i class="fab fa-slack"></i> Slack</span>
+                    <span class="mob-span"><i class="fab fa-microsoft"></i> Teams</span>
+                    <span class="mob-span"><i class="fas fa-code"></i> REST API</span>
+                    <span class="mob-span"><i class="fab fa-google"></i> Workspace</span>
+                    <span class="mob-span"><i class="fas fa-shield-alt"></i> Enterprise SSO</span>
+                </div>
+            </div>
+        </section>
+
         <!-- F&Q -->
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
@@ -133,7 +608,8 @@
             {"question": "What does letstawk do?", "answer": "letstawk builds conversational voice agents that answer calls, understand what customers need and help teams take the next step."},
             {"question": "Who is letstawk for?", "answer": "We work with businesses that rely on customer conversations and want to make every caller feel heard, even during busy periods or outside office hours."},
             {"question": "Can the voice agent work with our existing tools?", "answer": "Yes. A letstawk agent can be designed to support the workflows and systems your team already uses."},
-            {"question": "How do we begin working with letstawk?", "answer": "Start with a conversation about your callers, priorities and existing processes. Together, we can identify the right voice-agent experience for your team."}
+            {"question": "How do we begin working with letstawk?", "answer": "Start with a conversation about your callers, priorities and existing processes. Together, we can identify the right voice-agent experience for your team."},
+            {"question": "What makes letstawk different?", "answer": "We combine natural language understanding with a human-centered design, so your customers feel heard—not processed."}
           ]
         }
         </script>

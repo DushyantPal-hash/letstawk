@@ -1,0 +1,344 @@
+/* sections.css - Features, steps, industries, metrics, compare */
+
+/* SECTIONS */
+section.block {
+    position: relative;
+    padding: 96px 0
+}
+
+.block.tint {
+    background: var(--paper)
+}
+
+.sec-head {
+    max-width: 660px;
+    margin-bottom: 52px
+}
+
+.sec-head h2 {
+    font-size: clamp(30px, 4vw, 46px)
+}
+
+.sec-head p {
+    color: var(--muted);
+    font-size: 18px;
+    margin-top: 16px
+}
+
+/* FEATURES */
+.feat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.feat {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 26px;
+    transition: border-color .2s, transform .2s, box-shadow .2s
+}
+
+.feat:hover {
+    border-color: var(--line-2);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -28px rgba(16, 17, 20, .4)
+}
+
+.block.tint .feat {
+    background: var(--white)
+}
+
+.feat .ic {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(67, 56, 232, .12), rgba(255, 107, 139, .12));
+    margin-bottom: 18px
+}
+
+.feat h3 {
+    font-size: 19px;
+    margin-bottom: 9px
+}
+
+.feat p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.55
+}
+
+.feat svg {
+    width: 22px;
+    height: 22px
+}
+
+/* STEPS */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px
+}
+
+.step {
+    position: relative;
+    padding-top: 30px
+}
+
+.step .num {
+    font-family: 'Schibsted Grotesk';
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    background: var(--indigo);
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.step h3 {
+    font-size: 21px;
+    margin: 14px 0 10px
+}
+
+.step p {
+    color: var(--muted);
+    font-size: 15.5px
+}
+
+.step-line {
+    height: 2px;
+    background: linear-gradient(90deg, var(--indigo), var(--coral) 55%, transparent);
+    margin: 24px 0 8px;
+    border-radius: 2px
+}
+
+.step .t {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .05em;
+    color: var(--muted-2);
+    text-transform: uppercase
+}
+
+/* INDUSTRIES */
+.ind-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.ind {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--white)
+}
+
+.ind-top {
+    padding: 24px 24px 8px
+}
+
+.ind .kicker {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--indigo);
+    text-transform: uppercase;
+    letter-spacing: .09em
+}
+
+.ind h3 {
+    font-size: 20px;
+    margin: 12px 0 10px
+}
+
+.ind p {
+    color: var(--muted);
+    font-size: 15px
+}
+
+.ind ul {
+    list-style: none;
+    padding: 16px 24px 24px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px
+}
+
+.ind li {
+    font-size: 14px;
+    color: var(--text);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start
+}
+
+.ind li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--indigo);
+    margin-top: 8px;
+    flex: none
+}
+
+.ind.more {
+    background: var(--ink);
+    color: var(--d-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 28px;
+    border-color: transparent;
+    grid-column: span 3;
+}
+
+.ind.more .kicker {
+    color: var(--indigo-lite)
+}
+
+.ind.more h3 {
+    margin: 8px 0 12px;
+    color: var(--d-text)
+}
+
+.ind.more span {
+    font-size: 14px;
+    color: var(--d-muted);
+    line-height: 1.6
+}
+
+/* COMPARE */
+.compare {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden
+}
+
+.compare-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    align-items: center
+}
+
+.compare-row>div {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--line)
+}
+
+.compare-head>div {
+    font-family: 'Schibsted Grotesk';
+    font-weight: 700;
+    font-size: 15px;
+    background: var(--paper)
+}
+
+.compare-head .us {
+    background: var(--grad-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--indigo)
+}
+
+.compare-row .lbl {
+    color: var(--muted);
+    font-size: 15px
+}
+
+.compare-row .us {
+    font-weight: 600
+}
+
+.compare-row .them {
+    color: var(--muted-2);
+    font-size: 14px
+}
+
+.yes {
+    color: var(--indigo);
+    font-weight: 700
+}
+
+/* METRICS */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center
+}
+
+.metric .big {
+    font-family: 'Schibsted Grotesk';
+    font-weight: 800;
+    font-size: clamp(36px, 5vw, 52px);
+    letter-spacing: -.03em;
+    background: var(--grad-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--indigo)
+}
+
+.metric .big span {
+    color: inherit;
+    -webkit-text-fill-color: transparent
+}
+
+.metric .lbl {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 6px
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-top: 45px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.stat-item {
+    text-align: center;
+    background: #8b88885c;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-8px);
+}
+
+.stat-item .number {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: var(--grad-brand1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.stat-item .label {
+    font-size: 0.95rem;
+    color: var(--d-muted);
+    font-weight: 500;
+}

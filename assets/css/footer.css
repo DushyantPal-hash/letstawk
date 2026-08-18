@@ -1,0 +1,63 @@
+/* footer.css - Footer styles */
+
+/* FOOTER */
+footer {
+    background: var(--ink);
+    color: var(--d-text);
+    padding: 56px 0 40px
+}
+
+.foot-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap
+}
+
+.foot-brand {
+    max-width: 300px
+}
+
+.foot-brand p {
+    color: var(--muted-2);
+    font-size: 14px;
+    margin-top: 14px
+}
+
+.foot-cols {
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap
+}
+
+.foot-col h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted-2);
+    margin-bottom: 14px;
+    font-weight: 700
+}
+
+.foot-col a {
+    display: block;
+    color: var(--d-muted);
+    font-size: 15px;
+    padding: 5px 0
+}
+
+.foot-col a:hover {
+    color: var(--indigo-lite)
+}
+
+.foot-bottom {
+    margin-top: 44px;
+    padding-top: 22px;
+    border-top: 1px solid var(--d-line);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: var(--muted-2);
+    font-size: 13px
+}
