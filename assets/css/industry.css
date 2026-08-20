@@ -123,16 +123,37 @@
     line-height: 1.75
 }
 
-.problem-list {
+/* .problem-list {
     border-top: 1px solid var(--line-2)
-}
+} */
 
-.problem-list div {
-    display: grid;
+.problem-list {
+    /* display: grid;
     grid-template-columns: 42px 1fr;
     gap: 15px;
     padding: 21px 0;
-    border-bottom: 1px solid var(--line-2)
+    border-bottom: 1px solid var(--line-2); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: stretch;
+    justify-content: space-between;
+}
+
+.list-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 10px 20px;
+    background: #f8f8fc;
+    border-radius: 16px;
+    border-left: 3px solid #4338E8;
+    transition: all 0.3s ease;
+}
+
+.list-card:hover {
+    background: #f0f0f8;
+    transform: translateX(4px);
 }
 
 .problem-list span {
@@ -158,7 +179,7 @@
 
 .journey-grid article {
     min-height: 255px;
-    padding: 26px;
+    padding: 20px;
     border-radius: var(--radius);
     background: #fff;
     border: 1px solid var(--line)
@@ -178,8 +199,8 @@
 }
 
 .journey-grid h3 {
-    margin-top: 46px;
-    font-size: 21px
+    margin-top: 20px;
+    font-size: 18px
 }
 
 .journey-grid p {
@@ -201,7 +222,8 @@
     padding: 25px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    transition: transform .2s, box-shadow .2s
+    transition: transform .2s, box-shadow .2s;
+    background: var(--paper);
 }
 
 .real-estate-feature-grid article:hover {
@@ -242,9 +264,9 @@
 
 .industry-use-grid {
     display: grid;
-    grid-template-columns: .85fr 1.15fr;
-    gap: 85px;
-    align-items: center
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
 }
 
 .industry-use-grid .sec-eyebrow {

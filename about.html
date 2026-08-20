@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>About Us | letstawk</title>
+    <base href="/">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        /* Additional rich sections styles - keeps your existing design system */
-
-
         .team-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -243,6 +241,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <svg width="0" height="0" style="position:absolute">
         <defs>
             <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
@@ -253,6 +252,7 @@
         </defs>
     </svg>
     <div data-component="navbar"></div>
+    <!-- Page Body -->
     <main>
         <!-- Banner -->
         <section class="industry-hero">
@@ -614,6 +614,7 @@
         }
         </script>
     </main>
+    <!-- Footer  -->
     <div data-component="footer"></div>
     <script src="assets/js/components.js"></script>
 </body>

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Contact Us | letstawk</title>
+    <base href="/">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <svg width="0" height="0" style="position:absolute">
         <defs>
             <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
@@ -25,7 +27,7 @@
         </defs>
     </svg>
     <div data-component="navbar"></div>
-
+    <!-- Page Body -->
     <main>
         <!-- Banner -->
         <section class="industry-hero">
@@ -41,10 +43,12 @@
                         Digital. We provide all the necessary information required.
                     </p>
                     <div class="industry-actions on-dark">
-                        <a class="btn btn-primary btn-lg" href="contact.html">
-                            <i class="fas fa-book"></i> Book a demo
+                        <a class="btn btn-whatsapp btn-lg"
+                            href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk%20features"
+                            target="_blank">
+                            <i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i> Chat on WhatsApp
                         </a>
-                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                        <a class="btn btn-primary on-dark btn-lg" href="tel:+919500069296">
                             <i class="fa-solid fa-headset"></i> Talk to an expert
                         </a>
                     </div>
@@ -472,8 +476,9 @@
         }
         </script>
     </main>
-
+    <!-- Footer  -->
     <div data-component="footer"></div>
+    <!-- Scripts -->
     <script src="assets/js/components.js"></script>
     <script>
         document.getElementById('contactForm')

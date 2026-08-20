@@ -1,5 +1,3 @@
-/* theme.css - Root variables, reset, and base styles */
-
 :root {
     --ink: #101114;
     --ink-soft: #1A1C22;
@@ -28,6 +26,8 @@
     --radius: 16px;
     --radius-lg: 24px;
     --maxw: 1160px;
+    --dark-grand: linear-gradient(to right, #71717B, #57534D, #18181B);
+    --linear-bg: linear-gradient(120deg, #eeedff, #fdf4f7);
 }
 
 * {
@@ -72,4 +72,8 @@ h3 {
 
 .accent {
     color: var(--indigo)
+}
+
+.text-center {
+    text-align: center;
 }
