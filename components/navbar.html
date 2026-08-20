@@ -2,35 +2,35 @@
 <script id="navbarData" type="application/json">
 {
   "items": [
-    {"title":"Home","href":"index.html#top"},
-    {"title":"About Us","href":"about.html"},
+    {"title":"Home","href":"/index.html"},
+    {"title":"About Us","href":"/about.html"},
     {
       "title":"Solutions",
       "groups":[
                   {
                     "title":"Industries",
                     "links":[
-                              ["Real Estate","real-estate.html"],
-                              ["BFSI","bfsi.html"],
-                              ["Healthcare","contact.html"],
-                              ["Retail & Ecommerce","contact.html"],
-                              ["Insurance","contact.html"],
-                              ["Travel & Tourism","contact.html"],
-                              ["Education (EdTech)","contact.html"],
-                              ["Telecom","contact.html"]
+                              ["Real Estate","/industries/real-estate.html"],
+                              ["BFSI","/industries/bfsi.html"],
+                              ["Healthcare","/contact.html"],
+                              ["Retail & Ecommerce","/contact.html"],
+                              ["Insurance","/contact.html"],
+                              ["Travel & Tourism","/contact.html"],
+                              ["Education (EdTech)","/contact.html"],
+                              ["Telecom","/contact.html"]
                             ]
                   },
                   {
                     "title":"Use Cases",
                     "links":[
-                             ["Lead Qualification","contact.html"],
-                              ["Customer Support","contact.html"],
-                              ["Appointment Booking","contact.html"],
-                              ["Order Confirmation","contact.html"],
-                              ["Cart Recovery","contact.html"],
-                              ["Payment Reminders","contact.html"],
-                              ["Feedback & Surveys","contact.html"],
-                              ["Event Promotions","contact.html"]
+                             ["Lead Qualification","/contact.html"],
+                              ["Customer Support","/contact.html"],
+                              ["Appointment Booking","/contact.html"],
+                              ["Order Confirmation","/contact.html"],
+                              ["Cart Recovery","/contact.html"],
+                              ["Payment Reminders","/contact.html"],
+                              ["Feedback & Surveys","/contact.html"],
+                              ["Event Promotions","/contact.html"]
                             ]
                     }
                 ]
@@ -41,27 +41,27 @@
                     {
                       "title":"Platforms",
                       "links":[
-                                ["Salesforce","contact.html"],
-                                ["HubSpot","contact.html"],
-                                ["Zendesk","contact.html"],
-                                ["Shopify","contact.html"],
-                                ["WordPress","contact.html"],
-                                ["Slack","contact.html"]
+                                ["Salesforce","/contact.html"],
+                                ["HubSpot","/contact.html"],
+                                ["Zendesk","/contact.html"],
+                                ["Shopify","/contact.html"],
+                                ["WordPress","/contact.html"],
+                                ["Slack","/contact.html"]
                                 ]
                     },
                     {
                       "title":"APIs",
                       "links":[
-                                ["REST API","contact.html"],
-                                ["Webhooks","contact.html"],
-                                ["SDKs","contact.html"],
-                                ["Custom Connectors","contact.html"]
+                                ["REST API","/contact.html"],
+                                ["Webhooks","/contact.html"],
+                                ["SDKs","/contact.html"],
+                                ["Custom Connectors","/contact.html"]
                               ]
                     }
                   ]
     },
-    {"title":"Case Study","href":"case-studies.html"},
-    {"title":"Contact Us","href":"contact.html"}
+    {"title":"Case Study","href":"/case-studies.html"},
+    {"title":"Contact Us","href":"/contact.html"}
   ]
 }
 </script>
@@ -85,9 +85,12 @@
       </svg>
       <span class="wordmark">lets<span class="wm-tawk">tawk</span></span>
     </a>
-    <ul class="nav-links" id="desktopNav"></ul>
+    <div class="main-nav">
+      <ul class="nav-links" id="desktopNav"></ul>
+    </div>
+
     <div class="nav-cta">
-      <a href="https://app.letstawk.ai" class="nav-login">Log in</a>
+      <a href="https://app.letstawk.ai" class="nav-link nav-login">Log in</a>
       <a class="btn nav-demo-btn" href="tel:+91-95000 69296">Book a Demo</a>
     </div>
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false">

@@ -32,8 +32,13 @@
         grid-template-columns: 1fr
     }
 
-    .nav-links {
+    .nav-links,
+    .main-nav {
         display: none
+    }
+
+    .site-nav .nav-link {
+        display: none;
     }
 
     .menu-toggle {

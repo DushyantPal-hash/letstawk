@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Case Studies | letstawk</title>
+    <base href="/">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,524 @@
         href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* =========================================
+   FEATURED CASE STUDIES
+========================================= */
+
+        .case-study-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .case-study-feature {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* min-height: 530px; */
+            overflow: hidden;
+            border-radius: 30px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .07);
+        }
+
+        .case-study-feature.reverse .case-study-content {
+            order: 2;
+        }
+
+        .case-study-feature.reverse .case-study-visual {
+            order: 1;
+        }
+
+        .case-study-content {
+            /* padding: clamp(36px, 6vw, 72px); */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .case-study-content h3 {
+            margin: 12px 0 20px;
+            font-size: clamp(1rem, 3vw, 2.5rem);
+            line-height: 1;
+            letter-spacing: -.045em;
+        }
+
+        .case-study-content h3 span {
+            display: block;
+            opacity: .45;
+        }
+
+        .case-study-content>p {
+            opacity: .72;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 10px 0;
+            padding: 0;
+            display: grid;
+            gap: 6px;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 26px;
+            font-size: .95rem;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: 800;
+        }
+
+        .case-study-content .btn {
+            align-self: flex-start;
+        }
+
+        .case-study-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background:
+                radial-gradient(circle at 30% 20%,
+                    rgba(122, 92, 234, .35),
+                    transparent 38%),
+                linear-gradient(135deg, #16152a, #29245a);
+        }
+
+        .visual-card {
+            /* width: min(100%, 390px); */
+            padding: 20px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, .96);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .25);
+        }
+
+        .visual-label {
+            display: block;
+            margin-bottom: 18px;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            opacity: .5;
+        }
+
+        .visual-card>strong {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 1.3;
+            margin-bottom: 26px;
+        }
+
+        .conversation-line {
+            padding: 18px;
+            border-radius: 15px;
+            background: #f4f4f7;
+        }
+
+        .conversation-line span {
+            display: block;
+            margin-bottom: 7px;
+            font-size: .72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            opacity: .5;
+        }
+
+        .conversation-line p {
+            margin: 0;
+            font-size: .9rem;
+            line-height: 1.55;
+        }
+
+        .conversation-status {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .85rem;
+            font-weight: 700;
+        }
+
+
+        /* =========================================
+   STEPS
+========================================= */
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .step-number {
+            position: absolute;
+            top: 22px;
+            right: 25px;
+            font-size: .82rem;
+            font-weight: 800;
+            /* opacity: .35; */
+            color: var(--indigo-deep) !important;
+        }
+
+        .step-icon {
+            color: var(--indigo-deep);
+        }
+
+
+        /* =========================================
+   DARK OUTCOMES SECTION
+========================================= */
+
+        .dark-section {
+            background: #11101c;
+            color: #fff;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 90px;
+            align-items: center;
+        }
+
+        .outcomes-intro h2 {
+            margin: 15px 0 22px;
+            font-size: clamp(2.5rem, 4vw, 2.9rem);
+            /* line-height: .98; */
+            letter-spacing: -.05em;
+        }
+
+        .outcomes-intro p {
+            max-width: 500px;
+            line-height: 1.75;
+            opacity: .65;
+            margin-bottom: 32px;
+        }
+
+        .outcomes-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .outcome-item {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 22px;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+            align-items: center;
+        }
+
+        .outcome-icon {
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, .08);
+        }
+
+        .outcome-item h3 {
+            margin: 0 0 7px;
+            font-size: 1.2rem;
+        }
+
+        .outcome-item p {
+            margin: 0;
+            line-height: 1.6;
+            opacity: .58;
+        }
+
+
+        /* =========================================
+   USE CASE GRID
+========================================= */
+
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .use-case-card {
+            padding: 20px;
+            /* min-height: 260px; */
+            border-radius: 24px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .07);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .use-case-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+        }
+
+        .use-case-card>i {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .use-case-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .use-case-card p {
+            margin: 0;
+            line-height: 1.65;
+            opacity: .62;
+        }
+
+
+        /* =========================================
+   TESTIMONIAL
+========================================= */
+
+        .testimonial-card {
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 32px;
+            background: #f2f0ff;
+        }
+
+        .testimonial-mark {
+            font-size: 4rem;
+            line-height: .6;
+            font-weight: 900;
+            opacity: .25;
+        }
+
+        .testimonial-card blockquote {
+            max-width: 850px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .left {
+            text-align: end;
+        }
+
+        .testimonial-person {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .testimonial-avatar {
+            width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #fff;
+            font-weight: 800;
+        }
+
+        .testimonial-person div:last-child {
+            text-align: left;
+        }
+
+        .testimonial-person strong,
+        .testimonial-person span {
+            display: block;
+        }
+
+        .testimonial-person span {
+            margin-top: 3px;
+            font-size: .8rem;
+            opacity: .55;
+        }
+
+
+        /* =========================================
+   INDUSTRIES
+========================================= */
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            overflow: hidden;
+            border-radius: 25px;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .industry-card {
+            /* min-height: 220px; */
+            padding: 25px;
+            background: #fff;
+        }
+
+        .industry-card span {
+            font-size: .7rem;
+            font-weight: 800;
+            opacity: .35;
+        }
+
+        .industry-card h3 {
+            margin: 10px 0;
+        }
+
+        .industry-card p {
+            opacity: .6;
+        }
+
+
+        /* =========================================
+   FINAL CTA
+========================================= */
+
+        .final-cta {
+            padding-bottom: 100px;
+        }
+
+        .cta-card-case {
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            border-radius: 35px;
+            color: #fff;
+            text-align: center;
+            background:
+                radial-gradient(circle at 80% 20%,
+                    rgba(255, 107, 139, .35),
+                    transparent 30%),
+                radial-gradient(circle at 20% 80%,
+                    rgba(67, 56, 232, .45),
+                    transparent 35%),
+                #17152b;
+        }
+
+        .cta-card-case h2 {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .cta-card-case p {
+            color: var(--d-text);
+        }
+
+        .cta-card-case .industry-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 0;
+            justify-content: center;
+        }
+
+        .cta-card-case .sec-head {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        .cta-card-case .sec-eyebrow {
+            color: var(--muted-2);
+            border: 1px solid var(--muted-2);
+        }
+
+
+        /* =========================================
+   RESPONSIVE
+========================================= */
+
+        @media (max-width: 1000px) {
+
+            .stats-grid,
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .case-study-feature {
+                grid-template-columns: 1fr;
+            }
+
+            .case-study-feature.reverse .case-study-content,
+            .case-study-feature.reverse .case-study-visual {
+                order: initial;
+            }
+
+            .case-study-visual {
+                min-height: 420px;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .use-case-grid,
+            .industry-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .stats-grid,
+            .steps-grid,
+            .use-case-grid,
+            .industry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-study-content {
+                padding: 35px 25px;
+            }
+
+            .case-study-visual {
+                padding: 25px;
+                min-height: 350px;
+            }
+
+            .visual-card {
+                padding: 25px;
+            }
+
+            .section-heading {
+                margin-bottom: 35px;
+            }
+
+            .industry-card {
+                min-height: 190px;
+            }
+
+            .industry-card h3 {
+                margin-top: 35px;
+            }
+
+            .cta-card-case {
+                padding: 45px 28px;
+            }
+
+            .cta-card-case h2 {
+                font-size: 3rem;
+            }
+
+            .outcome-item {
+                grid-template-columns: 45px 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 
-<body><svg width="0" height="0" style="position:absolute">
+<body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute">
         <defs>
             <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#4338E8" />
@@ -24,6 +540,7 @@
         </defs>
     </svg>
     <div data-component="navbar"></div>
+    <!-- Page Body -->
     <main>
         <!-- Banner -->
         <section class="page-hero">
@@ -51,28 +568,554 @@
                 </div>
             </div>
         </section>
+
+        <!-- ================================
+            Case Study Stats
+        ================================= -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: max-content;margin-bottom: 20px;">
+                    <div class="sec-eyebrow">Built for real conversations</div>
+                    <h2>One voice agent. Multiple business outcomes.</h2>
+                    <p>
+                        From answering questions to completing actions, letstawk helps
+                        teams handle more conversations without adding more workload.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item" style="background: var(--ink-soft);">
+                        <div class="number">24/7</div>
+                        <div class="label">Conversation coverage</div>
+                    </div>
+                    <div class="stat-item" style="background: var(--ink-soft);">
+                        <div class="number">100%</div>
+                        <div class="label">Consistent brand voice</div>
+                    </div>
+                    <div class="stat-item" style="background: var(--ink-soft);">
+                        <div class="number">∞</div>
+                        <div class="label">Scalable conversations</div>
+                    </div>
+                    <div class="stat-item" style="background: var(--ink-soft);">
+                        <div class="number">1:1</div>
+                        <div class="label">Personalized caller experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Featured Case Studies
+        ================================= -->
         <section class="page-section tint">
             <div class="wrap">
-                <div class="page-grid">
-                    <article class="page-card">
-                        <div class="card-kicker">Retail & ecommerce</div>
-                        <h3>Support that protects every sale</h3>
-                        <p>Order updates, delivery queries and return requests handled in a natural conversation.</p>
+                <div class="sec-head sec-head-left" style="max-width: max-content;">
+                    <div class="sec-eyebrow">Featured use cases</div>
+                    <h2>What happens when conversations become automated?</h2>
+                    <p>
+                        Explore practical examples of how voice agents can take
+                        repetitive conversations off your team's plate.
+                    </p>
+                </div>
+
+                <div class="case-study-list">
+                    <!-- Case Study 1 -->
+                    <article class="case-study-feature">
+                        <div class="case-study-content">
+                            <div class="card-kicker">Retail & Ecommerce</div>
+                            <h3>
+                                Turning support calls into
+                                <span>sales opportunities.</span>
+                            </h3>
+                            <p>
+                                Customers don't want to wait for an email response
+                                when they need an order update. A voice agent can
+                                answer questions, check order status and guide
+                                customers through the next step instantly.
+                            </p>
+                            <ul class="feature-list">
+                                <li>Order and delivery updates</li>
+                                <li>Return and exchange requests</li>
+                                <li>Product information</li>
+                                <li>Escalation to human support</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">
+                                Explore this use case
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="case-study-visual">
+                            <div class="visual-card">
+                                <span class="visual-label">Customer call</span>
+                                <strong>“Where is my order?”</strong>
+
+                                <div class="conversation-line">
+                                    <span>Agent</span>
+                                    <p>
+                                        Your order is currently out for delivery
+                                        and should arrive today.
+                                    </p>
+                                </div>
+
+                                <div class="conversation-status">
+                                    <i class="fas fa-check-circle"></i>
+                                    Request resolved
+                                </div>
+                            </div>
+                        </div>
                     </article>
-                    <article class="page-card">
-                        <div class="card-kicker">Education</div>
-                        <h3>Every applicant answered</h3>
-                        <p>Admissions questions, counselling bookings and deadline reminders without a waiting queue.
-                        </p>
+                    <!-- Case Study 2 -->
+                    <article class="case-study-feature reverse">
+
+                        <div class="case-study-content">
+                            <div class="card-kicker">Education</div>
+
+                            <h3>
+                                Every applicant gets
+                                <span>an answer.</span>
+                            </h3>
+
+                            <p>
+                                Admissions teams receive the same questions every
+                                day. Let your voice agent handle routine enquiries,
+                                counselling bookings and reminders while your team
+                                focuses on students who need personal attention.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li>Course and admission enquiries</li>
+                                <li>Counselling appointment booking</li>
+                                <li>Application status updates</li>
+                                <li>Deadline and document reminders</li>
+                            </ul>
+
+                            <a href="contact.html" class="btn btn-primary">
+                                Explore this use case
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="case-study-visual">
+                            <div class="visual-card education">
+                                <span class="visual-label">Admissions call</span>
+
+                                <strong>
+                                    “Can I book a counselling session?”
+                                </strong>
+
+                                <div class="conversation-line">
+                                    <span>Agent</span>
+                                    <p>
+                                        Absolutely. I have availability tomorrow
+                                        at 11 AM and 3 PM.
+                                    </p>
+                                </div>
+
+                                <div class="conversation-status">
+                                    <i class="fas fa-calendar-check"></i>
+                                    Appointment booked
+                                </div>
+                            </div>
+                        </div>
+
                     </article>
-                    <article class="page-card">
-                        <div class="card-kicker">Hospitality</div>
-                        <h3>Guest service at every hour</h3>
-                        <p>Reservations, changes and local recommendations for guests across time zones.</p>
+                    <!-- Case Study 3 -->
+                    <article class="case-study-feature">
+
+                        <div class="case-study-content">
+                            <div class="card-kicker">Hospitality</div>
+
+                            <h3>
+                                A better guest experience,
+                                <span>around the clock.</span>
+                            </h3>
+
+                            <p>
+                                Guests shouldn't have to wait until the morning
+                                to get an answer. Voice agents can help with
+                                reservations, changes, FAQs and local information
+                                at any hour.
+                            </p>
+
+                            <ul class="feature-list">
+                                <li>Reservation enquiries</li>
+                                <li>Booking modifications</li>
+                                <li>Hotel information</li>
+                                <li>Local recommendations</li>
+                            </ul>
+
+                            <a href="contact.html" class="btn btn-primary">
+                                Explore this use case
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="case-study-visual">
+                            <div class="visual-card hospitality">
+                                <span class="visual-label">Guest call</span>
+
+                                <strong>
+                                    “Can I change my reservation?”
+                                </strong>
+
+                                <div class="conversation-line">
+                                    <span>Agent</span>
+                                    <p>
+                                        Of course. Let me check your booking and
+                                        help you update the dates.
+                                    </p>
+                                </div>
+
+                                <div class="conversation-status">
+                                    <i class="fas fa-check-circle"></i>
+                                    Booking updated
+                                </div>
+                            </div>
+                        </div>
+
                     </article>
                 </div>
             </div>
         </section>
+
+        <!-- ================================
+            How It Works
+        ================================= -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: max-content;">
+                    <div class="sec-eyebrow">How it works</div>
+                    <h2>From first hello to finished task.</h2>
+                    <p>
+                        A voice agent doesn't just answer calls. It can understand
+                        intent, take action and keep the conversation moving.
+                    </p>
+                </div>
+                <div class="steps-grid">
+                    <div class="feat" style="padding: 20px 10px;">
+                        <div class="ic step-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="step-number">01</span>
+                        <h3>Understand</h3>
+                        <p>
+                            The agent listens to what the caller needs and
+                            understands the intent behind the conversation.
+                        </p>
+                    </div>
+                    <div class="feat" style="padding: 20px 10px;">
+                        <div class="ic step-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="step-number">02</span>
+                        <h3>Respond</h3>
+                        <p>
+                            It responds naturally using your brand's tone,
+                            knowledge and conversation rules.
+                        </p>
+                    </div>
+                    <div class="feat" style="padding: 20px 10px;">
+                        <div class="ic step-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="step-number">03</span>
+                        <h3>Take action</h3>
+                        <p>
+                            The agent can collect information, schedule meetings,
+                            update requests and trigger workflows.
+                        </p>
+                    </div>
+                    <div class="feat" style="padding: 20px 10px;">
+                        <div>
+                            <div class="ic step-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span class="step-number">04</span>
+                        </div>
+                        <h3>Improve</h3>
+                        <p>
+                            Conversation insights help your team identify patterns,
+                            improve service and find new opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Business Outcomes
+        ================================= -->
+        <section class="page-section dark-section">
+            <div class="wrap">
+                <div class="outcomes-grid">
+                    <div class="outcomes-intro">
+                        <div class="eyebrow">
+                            Business impact
+                        </div>
+
+                        <h2>
+                            More conversations.
+                            <br>
+                            Less operational drag.
+                        </h2>
+
+                        <p>
+                            The goal isn't simply to automate calls. It's to make
+                            every conversation more useful for both your customer
+                            and your team.
+                        </p>
+
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            See what we can automate
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="outcomes-list">
+
+                        <div class="outcome-item">
+                            <div class="outcome-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Faster response times</h3>
+                                <p>
+                                    Give callers an immediate answer instead of
+                                    putting them into another queue.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="outcome-item">
+                            <div class="outcome-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+
+                            <div>
+                                <h3>More productive teams</h3>
+                                <p>
+                                    Let people focus on complex conversations
+                                    while agents handle repetitive requests.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="outcome-item">
+                            <div class="outcome-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+
+                            <div>
+                                <h3>Better customer experience</h3>
+                                <p>
+                                    Make every caller feel heard with consistent,
+                                    helpful and conversational support.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="outcome-item">
+                            <div class="outcome-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+
+                            <div>
+                                <h3>Actionable insights</h3>
+                                <p>
+                                    Turn conversations into useful signals about
+                                    what customers actually need.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Use Cases
+        ================================= -->
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: max-content;">
+                    <div class="sec-eyebrow">Built around your workflow</div>
+                    <h2>What can your voice agent do?</h2>
+                    <p>
+                        Start with one repetitive conversation and expand as your
+                        team discovers more opportunities.
+                    </p>
+                </div>
+
+                <div class="use-case-grid">
+                    <article class="use-case-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Customer support</h3>
+                        <p>
+                            Answer FAQs, troubleshoot common issues and route
+                            complex cases to the right team.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Appointments</h3>
+                        <p>
+                            Let callers book, reschedule or cancel appointments
+                            without waiting for an employee.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <i class="fas fa-phone-volume"></i>
+                        <h3>Outbound calls</h3>
+                        <p>
+                            Handle reminders, follow-ups, confirmations and
+                            customer re-engagement at scale.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Lead qualification</h3>
+                        <p>
+                            Ask the right questions, qualify prospects and
+                            pass high-intent leads to your sales team.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Notifications</h3>
+                        <p>
+                            Keep customers informed about orders, bookings,
+                            payments and important updates.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <i class="fas fa-route"></i>
+                        <h3>Call routing</h3>
+                        <p>
+                            Understand the caller's intent and connect them with
+                            the right person or workflow.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Testimonial
+        ================================= -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="testimonial-card">
+                    <div class="testimonial-mark">❝</div>
+                    <blockquote>
+                        The biggest change isn't that our calls are automated.
+                        It's that customers now get an answer whenever they need
+                        one, while our team can spend more time on conversations
+                        that genuinely require a human.
+                    </blockquote>
+                    <div class="testimonial-mark left">❞</div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-avatar">A</div>
+
+                        <div>
+                            <strong>Operations Leader</strong>
+                            <span>Customer Experience Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Industries
+        ================================= -->
+        <section class="page-section tint" style="background: var(--dark-grand);">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: max-content;">
+                    <div class="eyebrow" style="color: #f4f4f4; border: 1px solid rgb(245 246 250 / 64% );">Across
+                        industries</div>
+                    <h2 style="color: #fff;">Where conversations drive the business.</h2>
+                    <!-- <p>
+                        Start with one repetitive conversation and expand as your
+                        team discovers more opportunities.
+                    </p> -->
+                </div>
+                <div class="industry-grid">
+
+                    <div class="industry-card">
+                        <span>01</span>
+                        <h3>Retail</h3>
+                        <p>Orders, returns, product questions and support.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <span>02</span>
+                        <h3>Education</h3>
+                        <p>Admissions, counselling and student engagement.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <span>03</span>
+                        <h3>Hospitality</h3>
+                        <p>Reservations, guest support and booking changes.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <span>04</span>
+                        <h3>Healthcare</h3>
+                        <p>Appointments, reminders and patient enquiries.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <span>05</span>
+                        <h3>Real Estate</h3>
+                        <p>Lead qualification, property enquiries and follow-ups.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <span>06</span>
+                        <h3>Financial Services</h3>
+                        <p>Customer enquiries, reminders and service workflows.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+            Final CTA
+        ================================= -->
+        <section class="page-section final-cta">
+            <div class="wrap">
+                <div class="cta-card-case">
+                    <div class="sec-head sec-head-left">
+                        <div class="sec-eyebrow">Ready to explore your use case?</div>
+                        <h2>Your next great
+                            customer conversation
+                            could start here.</h2>
+                        <p>
+                            Tell us what your team spends time answering today.
+                            We'll help you find the conversations worth automating.
+                        </p>
+                    </div>
+                    <div class="industry-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-book"></i>
+                            Book a demo
+                        </a>
+                        <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
+                            <i class="fa-solid fa-headset"></i>
+                            Talk to an expert
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- F&Q -->
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
@@ -87,6 +1130,7 @@
         }
         </script>
     </main>
+    <!-- Footer  -->
     <div data-component="footer"></div>
     <script src="assets/js/components.js"></script>
 </body>

@@ -135,8 +135,9 @@
 
 .industry-hero-grid {
     display: grid;
-    grid-template-columns: 1.06fr .94fr;
-    gap: 60px;
+    /* grid-template-columns: 1.06fr .94fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     align-items: center
 }
 

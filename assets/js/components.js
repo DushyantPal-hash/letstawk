@@ -1,7 +1,41 @@
 (function () {
+  // Get the base path for the current page
+  function getBasePath() {
+    // Get the current path
+    var path = window.location.pathname;
+    // Remove the filename and trailing slash to get the directory
+    var pathParts = path.split("/");
+    // Remove empty parts and the last part (filename or empty)
+    var dirParts = pathParts.filter(function (part) {
+      return part !== "";
+    });
+    // Remove the last part if it's a file (has extension)
+    if (dirParts.length > 0 && dirParts[dirParts.length - 1].includes(".")) {
+      dirParts.pop();
+    }
+    // Build the path to go back to root
+    var depth = dirParts.length;
+    var basePath = "";
+    for (var i = 0; i < depth; i++) {
+      basePath += "../";
+    }
+    return basePath || "./";
+  }
+
   function loadComponent(selector, url) {
     var target = document.querySelector(selector);
     if (!target) return Promise.resolve();
+
+    // Make the URL relative to the current page's location
+    var basePath = getBasePath();
+    // If URL already starts with / or http, don't modify it
+    if (url.startsWith("/") || url.startsWith("http")) {
+      // URL is absolute, don't modify
+    } else {
+      // Make URL relative to current page
+      url = basePath + url;
+    }
+
     return fetch(url)
       .then(function (response) {
         if (!response.ok) throw new Error("Unable to load " + url);
@@ -27,7 +61,18 @@
             "</h3>" +
             group.links
               .map(function (link) {
-                return '<a href="' + link[1] + '">' + link[0] + "</a>";
+                // Make navigation links relative to current page
+                var linkHref = link[1];
+                // If link is absolute (starts with / or http), keep as is
+                if (!linkHref.startsWith("/") && !linkHref.startsWith("http")) {
+                  // If link is a filename like contact.html, make it relative
+                  if (linkHref.includes(".html") && !linkHref.includes("/")) {
+                    // For subdirectory pages, we need to go back to root
+                    var basePath = getBasePath();
+                    linkHref = basePath + linkHref;
+                  }
+                }
+                return '<a href="' + linkHref + '">' + link[0] + "</a>";
               })
               .join("") +
             "</div>"
@@ -35,12 +80,22 @@
         })
         .join("");
     }
+
+    // Process navigation items
     navData.items.forEach(function (item, index) {
       if (item.href) {
+        // Make navigation links relative to current page
+        var linkHref = item.href;
+        if (!linkHref.startsWith("/") && !linkHref.startsWith("http")) {
+          if (linkHref.includes(".html") && !linkHref.includes("/")) {
+            var basePath = getBasePath();
+            linkHref = basePath + linkHref;
+          }
+        }
         desktopNav.insertAdjacentHTML(
           "beforeend",
           '<li><a href="' +
-            item.href +
+            linkHref +
             '" class="nav-link">' +
             item.title +
             "</a></li>",
@@ -48,7 +103,7 @@
         mobileNav.insertAdjacentHTML(
           "beforeend",
           '<a href="' +
-            item.href +
+            linkHref +
             '" class="mobile-nav-link">' +
             item.title +
             "</a>",
@@ -205,10 +260,22 @@
       .join("");
   }
 
+  // Get the base path for component loading
+  var componentBasePath = getBasePath();
+
   Promise.all([
-    loadComponent('[data-component="navbar"]', "components/navbar.html"),
-    loadComponent('[data-component="footer"]', "components/footer.html"),
-    loadComponent('[data-component="faq"]', "components/faq.html"),
+    loadComponent(
+      '[data-component="navbar"]',
+      componentBasePath + "components/navbar.html",
+    ),
+    loadComponent(
+      '[data-component="footer"]',
+      componentBasePath + "components/footer.html",
+    ),
+    loadComponent(
+      '[data-component="faq"]',
+      componentBasePath + "components/faq.html",
+    ),
   ])
     .then(function () {
       initialiseNavbar();
