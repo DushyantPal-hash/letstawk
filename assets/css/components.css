@@ -115,7 +115,8 @@
     border: 1px solid var(--d-line-2);
     padding: 7px 14px;
     border-radius: 999px;
-    margin-bottom: 26px
+    margin-bottom: 26px;
+    width: max-content;
 }
 
 .eyebrow .pulse {
