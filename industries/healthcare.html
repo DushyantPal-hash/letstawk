@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <title>AI Voice Agent for Healthcare | Patient Calls & Appointment Automation | Letstawk</title>
+    <meta name="description"
+        content="Automate healthcare calls with Letstawk AI voice agents. Handle patient enquiries, appointment booking, reminders, follow-ups, FAQs and call routing with natural AI conversations.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--indigo)" />
+                <stop offset=".5" stop-color="var(--violet)" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <style>
+            .banner-img2 {
+                background: url("/images/pages/healthcare/ban.webp") center center / cover no-repeat;
+            }
+        </style>
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom: 0px;margin-top: 10px;">
+                    <span class="pulse"></span>Healthcare voice AI
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Solutions <span>›</span>
+                    Industries <span>›</span>
+                    Healthcare
+                </p>
+                <h1 style="max-width: 100%; margin-bottom: 20px;">
+                    Make Every Patient Conversation Faster, Simpler, and More Human.
+                </h1>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <!-- <div style="height: stretch;display: flex;flex-direction: column;justify-content: space-between;"> -->
+                <div>
+                    <p class="industry-lead" style="margin-top: 0;">
+                        Letstawk’s AI voice agent helps hospitals, clinics, diagnostic centres, healthcare providers,
+                        and medical businesses handle patient calls, answer routine questions, schedule appointments,
+                        send reminders, manage follow-ups, and connect patients with the right team
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html">
+                            <i class="fas fa-book"></i> Request a Healthcare Demo
+                        </a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                            <i class="fa-solid fa-headset"></i> Hear a Live AI Agent
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true">
+                </div>
+            </div>
+            <div class="wrap banner-count">
+                <span>
+                    <i class="fas fa-clock"></i>
+                    &ensp;24/7 Availability
+                </span>
+                <span>
+                    <i class="fas fa-globe"></i>
+                    &ensp;40+ Languages
+                </span>
+                <span>
+                    <i class="fas fa-comment"></i>
+                    &ensp;Natural Conversations
+                </span>
+                <span>
+                    <i class="fas fa-mobile-screen-button"></i>
+                    &ensp;Inbound + Outbound
+                </span>
+            </div>
+        </section>
+        <!-- CHALLENGE -->
+        <style>
+            .business-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .business-card {
+                background: var(--white);
+                padding: 28px 24px;
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                border-left: 3px solid var(--indigo);
+            }
+
+            .business-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .business-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: #1a1a2e;
+            }
+
+            .business-card h3 i {
+                color: #4338E8;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+
+            .business-card>p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #4a4a6a;
+            }
+
+            .qualification-full {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+
+            .col-2 {
+                grid-column: 2 / -1;
+            }
+
+            @media(max-width:900px) {
+
+                .col-2 {
+                    grid-column: 1 / -1;
+                }
+            }
+
+            @media(max-width:600px) {
+                .business-grid {
+                    grid-template-columns: 1fr
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">THE PATIENT COMMUNICATION GAP</div>
+                    <h2>Your Healthcare Team Should Be Caring for Patients — Not Repeating the Same Answers All Day.
+                    </h2>
+                    <p>
+                        Healthcare organizations manage hundreds or thousands of calls every day.
+                        Patients want quick answers. Staff need to manage appointments. Doctors need to focus on care.
+                        Operations teams need to keep everything moving.
+                        When every conversation depends on a human being available, delays and missed calls become
+                        unavoidable.
+                    </p>
+                </div>
+                <div class="business-grid ">
+                    <div class="business-card">
+                        <h3>
+                            <i class="fas fa-clock"></i>
+                            Patients don’t always call during convenient hours.
+                        </h3>
+                        <p>
+                            Appointment enquiries, cancellations and routine questions can arrive outside normal working
+                            hours.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3>
+                            <i class="fas fa-phone-volume"></i>
+                            Staff spend too much time on repetitive calls.
+                        </h3>
+                        <p>
+                            Appointment availability, timings, location, preparation instructions and other common
+                            questions consume valuable staff capacity.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3>
+                            <i class="fas fa-calendar-xmark"></i>
+                            Missed calls can become missed appointments
+                        </h3>
+                        <p>
+                            A patient who doesn’t reach someone quickly may call another provider or postpone their
+                            appointment.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3>
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Appointment coordination creates unnecessary workload.
+                        </h3>
+                        <p>
+                            Booking, confirming, rescheduling and reminding patients requires repeated manual
+                            communication.
+                        </p>
+                    </div>
+                    <div class="business-card qualification-full">
+                        <h3>
+                            <i class="fas fa-arrows-rotate"></i>
+                            Follow-ups are difficult to maintain consistently.
+                        </h3>
+                        <p>
+                            Patients may need reminders, post-appointment communication or a callback, but busy teams
+                            can struggle to follow every communication schedule.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SOLUTION -->
+        <style>
+            .linear-bg {
+                background: var(--linear-bg);
+            }
+
+            .roi-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+
+            .roi-metric {
+                background: #fff;
+                padding: 20px;
+                border-radius: 16px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.123);
+                transition: all 0.3s ease;
+                text-align: center;
+            }
+
+            .roi-metric:hover {
+                background: var(--paper);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.27);
+            }
+
+            .roi-full {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+
+            .roi-number {
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: var(--indigo);
+                margin-bottom: 4px;
+                opacity: 0.6;
+            }
+
+            .roi-metric h3 {
+                font-size: 1rem;
+                font-weight: 700;
+                margin: 0 0 6px;
+                color: #1a1a2e;
+            }
+
+            .roi-metric p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                color: #4a4a6a;
+                margin: 0;
+            }
+
+
+            @media (max-width: 900px) {
+                .roi-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .roi-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .roi-full {
+                    text-align: start;
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: 100%;">
+                    <div class="sec-eyebrow">HEALTHCARE AI VOICE AGENT</div>
+                    <h2>One AI Agent for the Conversations Your Healthcare Team Can’t Always Answer.</h2>
+                    <p>
+                        Letstawk gives healthcare organizations an intelligent voice layer that can handle routine
+                        conversations while keeping human teams involved when needed.
+                        The agent can understand what patients need, answer approved questions, perform configured
+                        actions, and route conversations to the appropriate person.
+                    </p>
+                </div>
+                <div class="roi-grid">
+                    <div class="roi-metric">
+                        <div class="roi-number">01</div>
+                        <h3>Answer Immediately</h3>
+                        <p>
+                            Respond to incoming patient calls without requiring staff availability for every
+                            conversation.
+                        </p>
+                    </div>
+                    <div class="roi-metric">
+                        <div class="roi-number">02</div>
+                        <h3>Understand the Request</h3>
+                        <p>
+                            Letstawk can identify whether the patient wants an appointment, needs information, wants to
+                            reschedule, requires a callback or needs a human representative.
+                        </p>
+                    </div>
+                    <div class="roi-metric">
+                        <div class="roi-number">03</div>
+                        <h3>Take the Next Action</h3>
+                        <p>
+                            Schedule appointments, confirm details, trigger reminders, update workflows and initiate
+                            follow-ups.
+                        </p>
+                    </div>
+                    <div class="roi-metric">
+                        <div class="roi-number">04</div>
+                        <h3>Escalate When Necessary</h3>
+                        <p>
+                            When a conversation requires a human, Letstawk can transfer it to the appropriate team
+                            member.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="text-center">
+                    <a href="/contact.html" class="btn btn-primary">See How Letstawk Works</a>
+                </div> -->
+            </div>
+        </section>
+        <!-- HOW IT WORKS (STEPS) -->
+        <style>
+            .step-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .step-item {
+                padding: 10px;
+                border-radius: 16px;
+                background: #fff;
+                transition: all 0.3s ease;
+            }
+
+            .step-item:hover {
+                background: #f0f0f8;
+                transform: translateX(4px);
+            }
+
+            .step-p p {
+                font-size: 14px;
+            }
+
+            .stat-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            .stat-item {
+                background: white;
+                padding: 2rem 1rem;
+                border-radius: 2rem;
+                box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+                transition: all 0.3s ease;
+            }
+
+            .stat-item:hover {
+                transform: translateY(-8px);
+            }
+
+            .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                background: linear-gradient(135deg, #4338E8, #FF6B8B);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .step-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .step-item {
+                display: flex;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+
+            .step-num {
+                font-weight: 800;
+                font-size: 1.8rem;
+                color: var(--indigo);
+            }
+
+            @media(max-width:600px) {
+                .step-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @media (max-width: 768px) {
+
+                .stat-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div>
+                    <div class="sec-head" style="max-width: 100%;">
+                        <div class="sec-eyebrow">how it works</div>
+                        <h2>From Patient Call To Completed Action</h2>
+                        <p>
+                            A Better Patient Communication Journey — Automatically Managed.
+                        </p>
+                    </div>
+                    <div class="story-grid" style="gap: 30px;">
+                        <div
+                            style="background: #1e293b; border-radius:2rem; padding:2rem; color:white;height: stretch;align-content: center;">
+                            <i class="fas fa-headset" style="font-size:3rem; color:var(--violet);"></i>
+                            <p style="font-size:1.2rem; margin-top:1rem;font-style: italic;">
+                                “Letstawk reduced our average call handling time by 40% and improved first-call
+                                resolution
+                                for routine queries.”
+                            </p>
+                            <div style="display:flex; align-items:center; gap:1rem; margin-top:1.5rem;">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg"
+                                    style="border-radius:50%; width:50px;">
+                                <div><strong>Priya Sharma</strong><br>VP Digital Banking, Axis Bank</div>
+                            </div>
+                        </div>
+                        <div class="step-grid">
+                            <div class="step-item"><span class="step-num">1</span>
+                                <div class="step-p">
+                                    <strong>Patient Calls or Enquires</strong>
+                                    <p>
+                                        A patient contacts your hospital, clinic, diagnostic centre or healthcare
+                                        business.
+                                        Letstawk answers according to your configured workflow.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item"><span class="step-num">2</span>
+                                <div class="step-p">
+                                    <strong>Understand the Request</strong>
+                                    <p>
+                                        The AI agent determines what the patient needs through a natural conversation.
+                                        <strong>Examples include:</strong>
+                                        <span style="font-size: 12px;">
+                                            Appointment request - Doctor availability - Clinic timings - Location
+                                            information -
+                                            Rescheduling - Cancellation - Test information - General FAQs - Callback
+                                            request
+                                        </span>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="step-item"><span class="step-num">3</span>
+                                <div class="step-p">
+                                    <strong>Provide the Right Information</strong>
+                                    <p>
+                                        Letstawk uses your approved knowledge sources and configured workflows to
+                                        provide
+                                        relevant information.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item"><span class="step-num">4</span>
+                                <div class="step-p">
+                                    <strong>Complete the Task</strong>
+                                    <p>
+                                        Where configured, the agent can schedule appointments, confirm availability,
+                                        create
+                                        follow-up actions or trigger the next step.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item"><span class="step-num">5</span>
+                                <div class="step-p">
+                                    <strong>Confirm the Details</strong>
+                                    <p>
+                                        The patient receives a clear confirmation of the agreed next step.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item"><span class="step-num">6</span>
+                                <div class="step-p">
+                                    <strong>Connect a Human When Needed</strong>
+                                    <p>
+                                        Complex or sensitive conversations can be transferred to your staff according to
+                                        your escalation rules.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- STATS / SOCIAL PROOF -->
+                <div class="stat-grid" style="padding: 24px 0;">
+                    <div class="stat-item" style="padding: 0.9rem;">
+                        <div class="stat-number">87%</div>
+                        <div>faster query resolution</div>
+                    </div>
+                    <div class="stat-item" style="padding: 0.9rem;">
+                        <div class="stat-number">2.5x</div>
+                        <div>more leads qualified</div>
+                    </div>
+                    <div class="stat-item" style="padding: 0.9rem;">
+                        <div class="stat-number">99.9%</div>
+                        <div>call uptime</div>
+                    </div>
+                    <div class="stat-item" style="padding: 0.9rem;">
+                        <div class="stat-number">12+</div>
+                        <div>languages supported</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- THE SOLUTION -->
+        <style>
+            .grid-card {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                transition: all 0.3s ease;
+                background: var(--paper);
+            }
+
+            .grid-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .grid-head {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--paper-2);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #7a5cea, rgb(255 107 139 / 97%));
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .grid-card:hover .icon {
+                transform: scale(1.02) rotate(-30deg);
+            }
+
+            .grid-head h3 {
+                background: var(--muted);
+                color: #fff;
+                padding: 12px;
+                margin: 0;
+                position: relative;
+                left: -5px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .grid-card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .grid-card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            .grid-card li i {
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: 100%;">
+                    <div class="sec-eyebrow">HEALTHCARE USE CASES</div>
+                    <h2>One voice experience, across your operation.</h2>
+                    <p>
+                        From appointment booking and reminders to patient follow-up and support.
+                    </p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Health Campaigns & Outreach</h3>
+                        </div>
+                        <p>
+                            Healthcare organizations can use outbound voice workflows for approved communication
+                            campaigns such as:
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Preventive-care campaigns
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Appointment reminders
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Health-check campaigns
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Screening invitations
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Follow-up campaigns
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Patient re-engagement
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Service announcements
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-square-xmark"></i>
+                            </div>
+                            <h3>Patient Enquiry Handling</h3>
+                        </div>
+                        <p>
+                            Answer common questions about:
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Location
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Services
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Clinic timings
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Doctor availability
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Contact information
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Appointment process
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                Other approved FAQs
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                                General preparation instructions
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-business-time"></i>
+                            </div>
+                            <h3>Appointment Booking</h3>
+                        </div>
+                        <p>
+                            Make it easier for patients to schedule appointments without waiting for staff.
+                        </p>
+                        <p>
+                            Letstawk can ask for the required information, identify available slots through your
+                            connected workflow and schedule the appointment.
+                        </p>
+                        <p>
+                            <strong>Best for:</strong>
+                            Hospitals · Clinics · Specialist Centres · Dental Clinics · Wellness Providers
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3>Appointment Confirmation</h3>
+                        </div>
+                        <p>
+                            Automatically confirm upcoming appointments and make sure patients have the information they
+                            need.
+                        </p>
+                        <p>
+                            Reduce unnecessary manual confirmation calls while keeping patients informed.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Appointment Reminders</h3>
+                        </div>
+                        <p>
+                            Help reduce forgotten appointments with automated voice reminders.
+                        </p>
+                        <p>
+                            Patients can receive reminders and, where configured, confirm, reschedule or request
+                            assistance.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-timeline"></i>
+                            </div>
+                            <h3>Appointment Rescheduling</h3>
+                        </div>
+                        <p>
+                            Patients don’t always know their schedule when they book.
+                        </p>
+                        <p>
+                            Letstawk can handle configured rescheduling workflows and move the patient toward a new
+                            appointment without requiring staff intervention for every request.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-square-xmark"></i>
+                            </div>
+                            <h3>Appointment Cancellation</h3>
+                        </div>
+                        <p>
+                            Make cancellations easier to manage while ensuring the appropriate workflow is triggered.
+                        </p>
+                        <p>
+                            This can help healthcare teams keep appointment schedules more accurate.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-phone-slash" style="rotate: 170deg;"></i>
+                            </div>
+                            <h3>Missed Call Automation</h3>
+                        </div>
+                        <p>
+                            A missed patient call shouldn’t automatically become a lost opportunity.
+                        </p>
+                        <p>
+                            Letstawk can support callback workflows that reconnect with patients after unanswered calls.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <h3>Patient Follow-Up</h3>
+                        </div>
+                        <p>
+                            Automate configured follow-up conversations after appointments, enquiries or other
+                            healthcare interactions.
+
+                        </p>
+                        <p>
+                            The agent can collect responses and route relevant conversations to staff.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-person-dots-from-line"></i>
+                            </div>
+                            <h3>Diagnostic & Test Enquiries</h3>
+                        </div>
+                        <p>
+                            Help patients get answers to routine questions about diagnostic services, test availability,
+                            preparation information and appointment workflows based on your approved knowledge.
+                        </p>
+                    </div>
+                    <div class="grid-card col-2">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Prescription / Report Collection Notifications</h3>
+                        </div>
+                        <p>
+                            Use voice workflows to notify patients about configured operational updates such as report
+                            availability or collection instructions.
+                        </p>
+                        <p>
+                            Human escalation can be added whenever the conversation requires staff involvement.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- UNDERSTAND WHAT THE PATIENT NEEDS -->
+        <style>
+            .section-img {
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+                background: url("images/pages/healthcare/healthcare.webp") center center / cover no-repeat;
+            }
+
+            .need-head {
+                background: var(--dark-grand);
+                padding: 2px 10px;
+                border-radius: 8px;
+            }
+
+            .need-head h4 {
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--white);
+            }
+
+            @media(max-width:760px) {
+                .section-img {
+                    height: 250px;
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="grid grid-col-2 wrap" style="padding: 0 24px;">
+                <div class="sec-head" style="margin-bottom: 0;">
+                    <div class="sec-eyebrow">UNDERSTAND WHAT THE PATIENT NEEDS</div>
+                    <h2>Give Every Patient the Right Next Step</h2>
+                    <p>
+                        Patients don’t always explain their needs in the same way.
+                        Letstawk can use conversational questions to understand the purpose of the call and determine
+                        the appropriate workflow.
+                    </p>
+                    <div class="grid grid-col-2 margin-top" style="gap: 10px;">
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Appointment Request</h4>
+                            </div>
+                            <p>
+                                Understand the patient’s preferred service, doctor or appointment requirement.
+                            </p>
+                        </div>
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Scheduling</h4>
+                            </div>
+                            <p>
+                                Identify suitable appointment preferences and move toward booking.
+                            </p>
+                        </div>
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Rescheduling</h4>
+                            </div>
+                            <p>
+                                Understand the patient’s existing appointment and preferred alternative.
+                            </p>
+                        </div>
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Information Request</h4>
+                            </div>
+                            <p>
+                                Provide approved information without requiring staff intervention.
+                            </p>
+                        </div>
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Callback Request</h4>
+                            </div>
+                            <p>
+                                Capture the appropriate callback information and trigger the configured workflow.
+                            </p>
+                        </div>
+                        <div class="grid-card"
+                            style="background: #fff;box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
+                            <div class="need-head">
+                                <h4>Human Assistance</h4>
+                            </div>
+                            <p>
+                                Recognize when the conversation should be handled by a member of the healthcare team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-img"></div>
+            </div>
+        </section>
+        <!-- WHY LETSTAWK -->
+        <style>
+            .card {
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background: var(--paper);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .head h3 {
+                font-size: 16px;
+            }
+
+            .card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: 100%;">
+                    <div class="sec-eyebrow">WHY LETSTAWK FOR HEALTHCARE</div>
+                    <h2>An AI Voice Agent Designed Around Patient Conversations.</h2>
+                    <p>
+                        Traditional IVR systems can route calls.
+                        Basic bots can answer predefined questions.
+                        Letstawk is designed to <strong>understand conversations and move them toward an
+                            outcome</strong>.
+                    </p>
+                </div>
+                <div class="grid grid-col-4">
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <h3>Natural Conversations</h3>
+                        </div>
+                        <p>
+                            Patients can speak naturally instead of navigating complicated phone menus.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>24/7 Availability</h3>
+                        </div>
+                        <p>
+                            Provide support outside regular working hours for routine enquiries and configured
+                            workflows.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>40+ Languages</h3>
+                        </div>
+                        <p>
+                            Support multilingual conversations for patients across different regions and language
+                            preferences.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h3>Appointment Automation</h3>
+                        </div>
+                        <p>
+                            Move appointment booking, confirmation and reminder workflows away from repetitive manual
+                            calls.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Human Handoff</h3>
+                        </div>
+                        <p>
+                            Transfer conversations that require staff involvement according to your configured
+                            escalation rules.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>Inbound + Outbound</h3>
+                        </div>
+                        <p>
+                            Use the same platform for incoming calls and proactive communication workflows.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Conversation Intelligence</h3>
+                        </div>
+                        <p>
+                            Transcribe, summarise and analyse conversations to help teams understand common patient
+                            requests
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="head">
+                            <div class="icon">
+                                <i class="fas fa-gear"></i>
+                            </div>
+                            <h3>Configurable Workflows</h3>
+                        </div>
+                        <p>
+                            Build conversations around your specific healthcare operation instead of forcing your
+                            process into a generic call tree.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <div data-component="faq">
+        </div>
+        <script id="faqData" type="application/json">
+        {"title":"Healthcare voice AI FAQs","description":"Answers to common questions about building a voice experience for patient conversations.","items":[{"question":"What can an AI voice agent do for healthcare organizations?","answer":"A healthcare AI voice agent can answer routine enquiries, schedule appointments, confirm appointments, send reminders, handle configured rescheduling workflows, support follow-ups, provide approved information and transfer conversations to human staff when required."},{"question":"Can Letstawk book patient appointments?","answer":"Yes. Letstawk can be configured to support appointment booking through your connected calendar, scheduling system or business workflow."},{"question":"Can Letstawk handle appointment reminders?","answer":"Yes. Healthcare teams can use outbound voice workflows for configured appointment reminders and confirmation processes."},{"question":"Can the AI answer patient questions?","answer":"Yes. Letstawk can use your approved knowledge sources and configured workflows to answer routine questions about services, timings, locations, appointment processes and other information."},{"question":"Can patients talk naturally to the AI?","answer":"Yes. Letstawk is designed for conversational voice interactions rather than traditional press-number IVR flows."},{"question":"Can Letstawk transfer patients to staff?","answer":"Yes. Human handoff can be configured for conversations that require staff involvement or fall outside the AI agent's defined scope."},{"question":"Does Letstawk support multiple languages?","answer":"Yes. Letstawk supports 40+ languages, helping healthcare organizations serve patients across multilingual markets."},{"question":"Can Letstawk make outbound calls?","answer":"Yes. It can support configured outbound workflows including appointment reminders, confirmations, follow-ups and approved patient outreach."}]}
+        </script>
+    </main>
+    <!-- Footer  -->
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>
