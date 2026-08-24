@@ -185,3 +185,32 @@
 .banner-img img {
     width: 100%;
 }
+
+.banner-img2 {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: contain;
+    height: stretch;
+}
+
+.banner-count {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: balance;
+    gap: 24px;
+    color: var(--d-text);
+    justify-content: space-between;
+    border: 1px solid var(--muted-2);
+    padding: 20px;
+    border-radius: 999px;
+}
+
+.banner-count span {
+    display: flex;
+    align-items: center;
+}
+
+.banner-count i {
+    color: var(--violet);
+    font-size: 20px;
+}

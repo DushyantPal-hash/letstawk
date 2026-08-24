@@ -16,7 +16,7 @@
 /* Story Grid */
 .story-grid {
     display: grid;
-    grid-template-columns: 1.1fr .9fr;
+    grid-template-columns: 0.7fr 1fr;
     gap: 76px;
     align-items: center
 }

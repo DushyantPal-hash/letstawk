@@ -82,7 +82,7 @@
     .industry-hero-grid,
     .industry-problem-grid,
     .industry-use-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 30px;
     }
 
@@ -122,8 +122,9 @@
         min-height: 360px
     }
 
-    .journey-grid {
-        grid-template-columns: repeat(2, 1fr)
+    .journey-grid,
+    .roi-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .real-estate-feature-grid {
@@ -215,6 +216,16 @@
 
     .custom-cta {
         font-size: 2rem;
+    }
+
+    .banner-count {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .banner-img2 {
+        height: 190px;
     }
 }
 
