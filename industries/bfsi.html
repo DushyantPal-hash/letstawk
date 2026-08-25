@@ -260,17 +260,6 @@
                 text-align: center;
             }
 
-            .col-2 {
-                grid-column: 2 / -1;
-            }
-
-            @media(max-width:900px) {
-
-                .col-2 {
-                    grid-column: 1 / -1;
-                }
-            }
-
             @media(max-width:600px) {
                 .business-grid {
                     grid-template-columns: 1fr
@@ -610,7 +599,6 @@
                 margin-left: 10px;
                 display: flex;
                 gap: 0.75rem;
-                /* margin-bottom: 0.75rem; */
                 align-items: center;
             }
         </style>
@@ -1462,6 +1450,14 @@
         </section>
         <!-- TRADITIONAL IVR VS LETSTAWK -->
         <style>
+            .traditional-list li {
+                transition: all 0.3s ease;
+            }
+
+            .traditional-list li:hover {
+                transform: translateX(6px);
+            }
+
             @media (max-width: 768px) {
                 .traditional-mob {
                     grid-template-columns: 1fr !important;
@@ -1479,7 +1475,7 @@
                     style="display:grid; grid-template-columns:1fr 1fr; gap:40px;margin:0 auto;">
                     <div style="background:#fff; border-radius:2rem; padding:2rem;">
                         <h3 style="color:#475569;">Traditional IVR</h3>
-                        <ul style="list-style:none; padding:0; margin-top:1rem;">
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
                             <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Press numbers</li>
                             <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Fixed menu structure</li>
                             <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Limited predefined paths</li>
@@ -1493,7 +1489,7 @@
                     </div>
                     <div style="background:#1e293b; border-radius:2rem; padding:2rem; color:white;">
                         <h3 style="color:#94a3b8;">Letstawk AI Voice Agent</h3>
-                        <ul style="list-style:none; padding:0; margin-top:1rem;">
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
                             <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Speak naturally</li>
                             <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Conversational interaction
                             </li>
