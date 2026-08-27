@@ -368,6 +368,17 @@
         </section>
         <!-- USE CASES -->
         <style>
+            .use-card {
+                background: var(--paper);
+            }
+
+            .use-card .head {
+                background: var(--white);
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
             .use-card li {
                 list-style: disc;
             }
@@ -660,10 +671,1067 @@
                 </div>
             </div>
         </section>
+        <!-- Student Conversation Loop -->
+        <style>
+            .loop-flow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 40px 0;
+                padding: 30px;
+                background: var(--linear-bg);
+
+                border-radius: 20px;
+            }
+
+            .loop-step {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .loop-step span {
+                display: inline-block;
+                background: #fff;
+                padding: 10px 20px;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 0.85rem;
+                color: #1a1a2e;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                transition: all 0.3s ease;
+            }
+
+            .loop-step span:hover {
+                border-color: var(--line-2);
+                transform: scale(1.09);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .loop-step i {
+                color: #4338E8;
+                opacity: 0.4;
+            }
+
+            .loop-sales span {
+                background: linear-gradient(135deg, #4338E8, #7A5CEA);
+                color: #fff;
+                border: none;
+            }
+
+            .loop-cta {
+                max-width: 950px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .loop-cta p {
+                font-size: 1.05rem;
+                line-height: 1.7;
+                color: #4a4a6a;
+                margin: 0 0 16px;
+            }
+
+            .loop-cta ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 16px;
+            }
+
+            .loop-cta ul li {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                color: #3a3a5a;
+                padding: 12px 20px;
+                background: var(--paper);
+                border-radius: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+            }
+
+            @media (max-width: 768px) {
+
+                .loop-step,
+                .loop-flow {
+                    flex-direction: column;
+                }
+
+                .loop-step i {
+                    transform: rotate(90deg);
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="conversation-loop">
+                    <div class="sec-head sec-head-left" style="max-width: 100%;">
+                        <div class="sec-eyebrow">THE STUDENT CONVERSATION LOOP</div>
+                        <h2>Keep Every Enquiry Moving</h2>
+                        <p>
+                            Make every student interaction faster, simpler, and easier to manage with intelligent voice
+                            automation.
+                        </p>
+                    </div>
+                    <div class="loop-flow">
+                        <div class="loop-step"><span>Enquiry</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Conversation</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Qualification</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Counselling</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Follow-Up</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step loop-sales"><span>Enrolment</span></div>
+                    </div>
+                    <div class="loop-cta">
+                        <p>
+                            Letstawk helps turn admission leads into connected conversations.
+                        </p>
+                        <ul>
+                            <li
+                                style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px 20px; font-weight:600;background: var(--white);">
+                                <span>Student enquiry</span> <span style="color:#94a3b8;">→</span>
+                                <span>AI conversation</span> <span style="color:#94a3b8;">→</span>
+                                <span>Requirement identified</span> <span style="color:#94a3b8;">→</span>
+                                <span>Lead qualified</span> <span style="color:#94a3b8;">→</span>
+                                <span>Counselling / demo / campus visit</span> <span style="color:#94a3b8;">→</span>
+                                <span>Follow-up</span> <span style="color:#94a3b8;">→</span>
+                                <span>Admission decision</span> <span style="color:#94a3b8;">→</span>
+                                <span>Enrolment</span>
+                            </li>
+                        </ul>
+                        <p>
+                            This helps reduce the number of prospective students who become inactive simply because
+                            nobody followed up at the right time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOR EVERY TYPE OF EDUCATION BUSINESS -->
+        <style>
+            .ic i {
+                color: var(--indigo);
+            }
+
+            .feat li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">FOR EVERY TYPE OF EDUCATION BUSINESS</div>
+                    <h2>One Voice AI Platform. Multiple Education Workflows.</h2>
+                    <p>
+                        One intelligent voice platform to connect students, parents, and education teams across every
+                        interaction.
+                    </p>
+                </div>
+                <div class="feat-grid">
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Schools</h3>
+                        </div>
+
+                        <p>
+                            Support parent and student communication across admissions and routine enquiries.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Admission enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Campus visits
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Reminders
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Parent communication
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                FAQs
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Colleges & Universities</h3>
+                        </div>
+
+                        <p>
+                            Handle high volumes of enquiries during admission and application periods.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Admission qualification
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Application follow-ups
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Course enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Counselling booking
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Events
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-chalkboard-user"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Coaching Institutes</h3>
+                        </div>
+
+                        <p>
+                            Convert large volumes of campaign and enquiry leads into counselling conversations.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Admission campaigns
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Lead qualification
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Course enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Demo classes
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Follow-ups
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-building-columns"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">EdTech Companies</h3>
+                        </div>
+
+                        <p>
+                            Scale sales and student support conversations across large lead volumes.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Lead qualification
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Course enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Demo bookings
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Re-engagement
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Follow-ups
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-comment-medical"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Vocational & Training Institutes</h3>
+                        </div>
+                        <p>
+                            Help prospective students understand programs and move toward enrolment.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Course enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Demo classes
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Counselling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Eligibility FAQs
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Follow-ups
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-book-open-reader"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Test Preparation Providers</h3>
+                        </div>
+                        <p>
+                            Support students exploring competitive exam preparation programs.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Batch information
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Demo classes
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Counselling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Course enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Lead follow-ups
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ADMISSION CAMPAIGN -->
+        <style>
+            .admission-img {
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+            }
+
+            .admission-img img {
+                width: 100%;
+            }
+        </style>
+        <section class="page-section" style="background: var(--linear-bg);">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">ADMISSION CAMPAIGN</div>
+                    <h2>
+                        Scale Your Admission Outreach Without Scaling Every Manual Task
+                    </h2>
+                    <p>
+                        Admission campaigns can generate thousands of enquiries within a short period.
+                        Letstawk can help education businesses support campaign workflows such as:
+                    </p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="grid grid-col-2">
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-rocket"></i>
+                                <h3>New Course Launches</h3>
+                            </div>
+                            <p>
+                                Engage prospects who enquire about a newly launched program.
+                            </p>
+                        </div>
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>Admission Campaigns</h3>
+                            </div>
+                            <p>
+                                Follow up with campaign leads and identify students ready to speak with a counsellor.
+                            </p>
+                        </div>
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-user-graduate"></i>
+                                <h3>Scholarship Campaigns</h3>
+                            </div>
+                            <p>
+                                Answer approved questions and connect interested students to the appropriate team.
+                            </p>
+                        </div>
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-door-open"></i>
+                                <h3>Open Days</h3>
+                            </div>
+                            <p>
+                                Invite prospects, confirm attendance and provide event information.
+                            </p>
+                        </div>
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-chalkboard-user"></i>
+                                <h3>Demo Classes</h3>
+                            </div>
+                            <p>
+                                Contact interested students and schedule demo sessions.
+                            </p>
+                        </div>
+                        <div class="card admission-card">
+                            <div class="head">
+                                <i class="fas fa-user-group"></i>
+                                <h3>Lead Re-Engagement</h3>
+                            </div>
+                            <p>
+                                Reconnect with previous enquiries before a new admission cycle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="admission-img">
+                        <img src="images/pages/education/ban.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TRADITIONAL IVR VS LETSTAWK -->
+        <style>
+            .traditional-list li {
+                transition: all 0.3s ease;
+            }
+
+            .traditional-list li:hover {
+                transform: translateX(6px);
+            }
+
+            @media (max-width: 768px) {
+                .traditional-mob {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">Traditional IVR vs Letstawk</div>
+                    <h2>
+                        Make Student Communication More Natural
+                    </h2>
+                    <p>
+                        Students Shouldn’t Have to Navigate a Phone Tree to Ask About a Course.
+                    </p>
+                </div>
+                <div class="traditional-mob"
+                    style="display:grid; grid-template-columns:1fr 1fr; gap:40px;margin:0 auto;">
+                    <div style="background:#fff; border-radius:2rem; padding:2rem;">
+                        <h3 style="color:#475569;">Traditional IVR</h3>
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Press numbers to navigate
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Fixed menu structure</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Limited predefined responses
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Primarily routes calls</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Manual lead qualification
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Manual follow-ups</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Basic appointment handling
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Basic call transfer</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Primarily inbound</li>
+                            <li style="padding:0.4rem 0;">Difficult to personalise</li>
+                        </ul>
+                    </div>
+                    <div style="background:#1e293b; border-radius:2rem; padding:2rem; color:white;">
+                        <h3 style="color:#94a3b8;">Letstawk AI Voice Agent</h3>
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Speak naturally</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Conversational interaction
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Context-aware conversations
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Answers and takes configured
+                                actions</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Automated qualification
+                                workflows</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Automated follow-up journeys
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Counselling & appointment
+                                workflows</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Context-aware human handoff
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Inbound + outbound</li>
+                            <li style="padding:0.4rem 0;">Configure for your institution</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="text-align:center; margin-top:2rem; font-weight:500;color: var(--muted);">
+                    Let students talk naturally. Let AI handle the repetitive admission work.
+                </p>
+            </div>
+        </section>
+        <!-- Process -->
+        <style>
+            .step-card {
+                justify-content: space-between;
+            }
+
+            .step-card {
+                background: #fafcff;
+                border-radius: 1.8rem;
+                padding: 1.6rem 1.5rem 1.6rem 1.6rem;
+                border: 2px solid #e7eef9;
+                transition: 0.4s ease;
+                box-shadow: 0 4px 8px -6px rgba(0, 20, 40, 0.03);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .step-card.completed {
+                border-color: var(--indigo);
+                background: #f2f9ff;
+                opacity: 0.85;
+            }
+
+            .step-card.active {
+                border-color: #1f6bc0;
+                background: #ffffff;
+                box-shadow: 0 8px 24px -10px rgba(26, 80, 170, 0.25);
+                transform: scale(1.02);
+            }
+
+            .step-card.locked {
+                opacity: 0.5;
+                filter: grayscale(0.4);
+                border-color: #dfe8f2;
+            }
+
+            .card-head {
+                display: flex;
+                align-items: center;
+            }
+
+            .step-icon {
+                color: var(--white);
+                background: var(--muted);
+                padding: 5px 10px;
+                border-radius: 8px;
+            }
+
+            .step-icon i {
+                color: var(--white);
+            }
+
+            .step-card.active .step-icon,
+            .step-card.completed .step-icon {
+                background: var(--violet);
+            }
+
+            .step-number {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #dce8fa;
+                color: #12457a;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 40px;
+                font-weight: 700;
+                font-size: 1rem;
+                transition: 0.3s;
+                flex-shrink: 0;
+            }
+
+            .step-card.completed .step-number {
+                background: var(--wa-teal);
+                color: white;
+            }
+
+            .step-card.active .step-number {
+                background: var(--indigo);
+                color: white;
+                box-shadow: 0 4px 8px rgba(26, 80, 170, 0.25);
+            }
+
+            .step-tag {
+                margin-top: 0.6rem;
+                font-size: 0.65rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                color: #3d6a9b;
+                background: #e2edfc;
+                align-self: flex-start;
+                padding: 0.2rem 0.9rem;
+                border-radius: 30px;
+                border: 1px solid #c8dcf7;
+                transition: 0.3s;
+            }
+
+            .step-card.completed .step-tag {
+                background: #d4e4fc;
+                border-color: #aac0e5;
+            }
+
+            .step-card.active .step-tag {
+                background: #cfe0fc;
+                border-color: #98b7e6;
+            }
+
+            .step-status {
+                margin-top: 0.8rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #3d6a9b;
+                transition: 0.3s;
+            }
+
+            .step-status i {
+                font-size: 0.9rem;
+            }
+
+            .step-card.completed .step-status i {
+                color: #1f8b4c;
+            }
+
+            .step-card.active .step-status i {
+                color: #1f6bc0;
+            }
+
+            .step-card.locked .step-status i {
+                color: #8899b0;
+            }
+
+            .divider-wrap {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin: 1.5rem 0 1.2rem;
+            }
+
+            .divider-line {
+                flex: 1;
+                height: 2px;
+                background: linear-gradient(90deg, #c0d6f0, #eaf1fb, #c0d6f0);
+            }
+
+            .insight-quote {
+                background: #f0f7ff;
+                padding: 0.5rem 1.8rem;
+                border-radius: 60px;
+                font-weight: 500;
+                color: #0a2b4a;
+                font-size: 1rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                border: 1px solid #d3e2fa;
+            }
+
+            .insight-quote i {
+                color: #1f6bc0;
+                font-size: 1rem;
+            }
+
+            /* expand section */
+            .expand-section {
+                margin-top: 2.2rem;
+                background: linear-gradient(145deg, #f1f8ff, #ffffff);
+                border-radius: 2rem;
+                padding: 1.4rem 2rem;
+                border: 1px solid #deeaf9;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .expand-section .expand-text {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+            }
+
+            .expand-section .expand-text i {
+                font-size: 1.6rem;
+                color: #1f6bc0;
+            }
+
+            .expand-section .expand-text h4 {
+                font-weight: 600;
+                font-size: 1.1rem;
+                color: #0b2a41;
+            }
+
+            .expand-section .expand-text span {
+                color: #2e577d;
+                font-weight: 400;
+            }
+
+            @media (max-width:600px) {
+                .card-head h3 {
+                    font-size: 15px;
+                }
+
+                .expand-section {
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        </style>
+        <section class="page-section ">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">IMPLEMENTATION</div>
+                    <h2>
+                        Start With Your Biggest Admission Bottleneck
+                    </h2>
+                    <p>
+                        Launch Your First Education Voice AI Workflow Without Rebuilding Your Admissions Process.
+                    </p>
+                </div>
+                <!-- workflow grid -->
+                <div class="workflow-grid grid grid-col-3" id="workflowGrid">
+                    <!-- step 1 -->
+                    <div class="card step-card active" data-step="1">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-database"></i></div>
+                                <h3>
+                                    Add Your Knowledge
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">1</div>
+                        </div>
+                        <p>
+                            Provide approved course information, FAQs, admission details, schedules, locations and other
+                            relevant content
+                        </p>
+                        <span class="step-tag"><i class="far fa-file-alt"></i> knowledge base</span>
+                        <div class="step-status"><i class="fas fa-play"></i> current step</div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="card step-card locked" data-step="2">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-comment-dots"></i></div>
+                                <h3>Define the Conversation <i class="fas fa-check-circle"
+                                        style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">2</div>
+                        </div>
+                        <p>
+                            Configure greetings, qualification questions, responses, appointment workflows and
+                            escalation rules.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-code-branch"></i> dialog design</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="card step-card locked" data-step="3">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-plug"></i></div>
+                                <h3>
+                                    Connect Your Systems
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">3</div>
+                        </div>
+                        <p>
+                            Connect your CRM, admissions platform, calendar, telephony and relevant workflows.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-cloud-upload-alt"></i> integrations</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 4 -->
+                    <div class="card step-card locked" data-step="4">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-flask"></i></div>
+                                <h3>Test the Agent
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">4</div>
+                        </div>
+                        <p>
+                            Run realistic student and parent conversations and refine the agent.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-check-circle"></i> validation</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 5 -->
+                    <div class="card step-card locked" data-step="5">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                                <h3>Launch <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">5</div>
+                        </div>
+                        <p>
+                            Start handling real enquiries through your Letstawk AI voice agent.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-play"></i> go live</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 6 -->
+                    <div class="card step-card locked" data-step="6">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                                <h3>Expand <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">6</div>
+                        </div>
+                        <p>
+                            Use conversation insights to identify additional admission and student-support workflows.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-expand-alt"></i> scale</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                </div>
+                <!-- action bar -->
+                <div class="action-bar" style="display: none;">
+                    <div class="step-counter" id="stepCounter">Step 1 of 6</div>
+                </div>
+                <!-- divider + quote -->
+                <div class="divider-wrap">
+                    <span class="divider-line"></span>
+                    <div class="insight-quote">
+                        <i class="fas fa-quote-left"></i> Start small. Prove the workflow. Scale what works.
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="divider-line"></span>
+                </div>
+                <!-- CTA -->
+                <div class="expand-section">
+                    <div class="expand-text">
+                        <i class="fas fa-arrows-expand"></i>
+                        <h4>Expand with confidence</h4>
+                        <span>— use conversation insights to automate more student workflows.</span>
+                    </div>
+                    <div class="expand-cta">
+                        <a class="btn btn-primary btn-lg" href="tel:+919500069296">
+                            <i class="fas fa-microphone-alt"></i> Letstawk AI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            (function () {
+                const totalSteps = 6;
+                let currentStep = 1;
+                const completed = new Array(totalSteps + 1).fill(false);
+
+                const cards = document.querySelectorAll('.step-card');
+                const stepCounter = document.getElementById('stepCounter');
+
+                // Automatically move to the next step forever.
+                // When the last step is completed, start again from step 1.
+                const STEP_DELAY = 1000;
+
+                function render() {
+                    cards.forEach((card, index) => {
+                        const stepNum = index + 1;
+                        const isCompleted = completed[stepNum];
+                        const isActive = stepNum === currentStep;
+                        const isLocked = !isCompleted && !isActive && stepNum > currentStep;
+
+                        card.classList.remove('active', 'completed', 'locked');
+
+                        if (isCompleted) {
+                            card.classList.add('completed');
+                        } else if (isActive) {
+                            card.classList.add('active');
+                        } else if (isLocked) {
+                            card.classList.add('locked');
+                        }
+
+                        const statusDiv = card.querySelector('.step-status');
+
+                        if (statusDiv) {
+                            if (isCompleted) {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-check-circle" style="color:#1f8b4c;"></i> completed';
+                            } else if (isActive) {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-play" style="color:#1f6bc0;"></i> current step';
+                            } else {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-lock"></i> locked';
+                            }
+                        }
+
+                        const checkIcon = card.querySelector('h3 i.fa-check-circle');
+
+                        if (checkIcon) {
+                            checkIcon.style.opacity = isCompleted ? '1' : '0';
+                            checkIcon.style.color = '#1f8b4c';
+                        }
+                    });
+
+                    stepCounter.textContent = `Step ${currentStep} of ${totalSteps}`;
+                }
+
+                function nextStep() {
+                    completed[currentStep] = true;
+
+                    if (currentStep < totalSteps) {
+                        currentStep++;
+                    } else {
+                        // Start the workflow again after the last step.
+                        for (let i = 1; i <= totalSteps; i++) {
+                            completed[i] = false;
+                        }
+                        currentStep = 1;
+                    }
+
+                    render();
+                    setTimeout(nextStep, STEP_DELAY);
+                }
+
+                render();
+                setTimeout(nextStep, STEP_DELAY);
+            })();
+        </script>
 
 
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
 
+            .cta-head {
+                flex: 0.9;
+            }
 
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 48px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+                background: url(images/pages/education/cta.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img img {
+                    display: block;
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">YOUR NEXT STUDENT COULD ALREADY BE LOOKING FOR YOU.</div>
+                        <h2>Stop Losing Admission Leads to Slow Follow-Ups.</h2>
+                        <p>
+                            Letstawk helps education businesses respond, qualify, schedule, follow up and re-engage
+                            prospective students automatically.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-book"></i>
+                                Request an Demo
+                            </a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
+                                <i class="fa-solid fa-headset"></i>
+                                Talk to an expert
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                        <img src="images/pages/education/cta.webp" alt="CTA">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- FAQ (data-component injected, but also keep static fallback) -->
         <div data-component="faq">
         </div>

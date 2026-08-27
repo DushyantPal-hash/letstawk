@@ -23,6 +23,7 @@
     --d-muted: #A4A9B8;
     --d-line: rgba(245, 246, 250, 0.12);
     --d-line-2: rgba(245, 246, 250, 0.20);
+    --radius-sm: 10px;
     --radius: 16px;
     --radius-lg: 24px;
     --maxw: 1160px;
