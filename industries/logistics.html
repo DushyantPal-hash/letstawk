@@ -300,9 +300,1694 @@
                 </div>
             </div>
         </section>
+        <!-- How It Works -->
+        <style>
+            .card {
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background: var(--paper);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .head h3 {
+
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .heading-back h3 {
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: baseline;
+            }
+
+            .card i {
+                /* color: var(--indigo); */
+                color: var(--muted);
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--white);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--dark-grand);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .icon i {
+                color: var(--white);
+            }
+
+            .card:hover .icon {
+                transform: scale(1.02) rotate(-30deg);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">How It Works</div>
+                    <h2>
+                        From Shipment Enquiry To Delivery Completion
+                    </h2>
+                    <p>
+                        A Smarter Logistics Communication Journey.
+                    </p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-user-tag"></i>
+                            </div>
+                            <h3>
+                                Customer or Driver Calls
+                            </h3>
+                        </div>
+                        <p>
+                            A customer, driver, delivery partner or business contact calls your logistics operation.
+                            Letstawk answers according to your configured workflow.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <h3>
+                                Provide the Right Information
+                            </h3>
+                        </div>
+                        <p>
+                            Letstawk can use approved knowledge and connected workflows to provide relevant information.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-point-right"></i>
+                            </div>
+                            <h3>
+                                Complete the Next Action
+                            </h3>
+                        </div>
+                        <p>
+                            Depending on your setup, the AI can schedule appointments, capture information, trigger
+                            callbacks, confirm delivery preferences or initiate another workflow.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-square-check"></i>
+                            </div>
+                            <h3>
+                                Confirm
+                            </h3>
+                        </div>
+                        <p>
+                            The agent confirms the agreed action or next step with the customer or driver.
+                        </p>
+                    </div>
+                    <div class="card col-2">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+                            <h3>
+                                Escalate When Required
+                            </h3>
+                        </div>
+                        <p>
+                            Exceptions, complaints, sensitive issues or operational problems can be transferred to the
+                            appropriate human team.
+                        </p>
+                    </div>
+                    <div class="card col-1">
+                        <div class="head heading-back">
+                            <div class="icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3>
+                                Understand the Situation
+                            </h3>
+                        </div>
+                        <p>
+                            The AI agent identifies what the person needs.
+                            <strong> Examples include:</strong>
+                        <ul class="grid grid-col-2" style="gap: 0;margin-top: 5px;">
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Shipment enquiry
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Delivery timing
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Address confirmation
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Delivery rescheduling
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Failed delivery
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Driver assistance
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Pickup request
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                Callback request
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward"></i>
+                                General logistics support
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Use Cases -->
+        <style>
+            .use-card {
+                background: var(--white);
+            }
+
+            .use-card h3 {
+                background: var(--paper-2);
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">Use Cases</div>
+                    <h2>
+                        Voice AI for Faster, Smarter Logistics Conversations
+                    </h2>
+                    <p>
+                        Automate the calls that keep shipments moving—from delivery updates and booking requests to
+                        driver coordination and customer support.
+                    </p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3> <i class="fa-solid fa-truck-fast"></i>&ensp;Delivery Confirmation</h3>
+                        </div>
+                        <p>
+                            Contact customers to confirm delivery availability, preferred timing or other configured
+                            delivery details.
+                            <strong>Help reduce unnecessary failed delivery attempts.</strong>
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-user-clock"></i>&ensp;Delivery Scheduling</h3>
+                        </div>
+                        <p>
+                            Allow customers to select or confirm suitable delivery windows according to your configured
+                            scheduling workflow.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-calendar-days"></i>&ensp;Delivery Rescheduling</h3>
+                        </div>
+                        <p>
+                            Customers aren’t always available when the shipment arrives. <br>
+                            Letstawk can handle configured rescheduling conversations and move the customer toward
+                            another delivery slot.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-truck-ramp-box"></i>&ensp;Shipment Enquiries</h3>
+                        </div>
+                        <p>
+                            Answer routine customer questions related to shipment status, delivery expectations, pickup
+                            information and other approved logistics information.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-triangle-exclamation"></i>&ensp;Failed Delivery Follow-Up</h3>
+                        </div>
+                        <p>
+                            When a delivery attempt fails, initiate a configured follow-up workflow. <br>
+                            The AI can understand the reason, collect the required information and determine the next
+                            action.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-phone-slash"></i>&ensp;Missed Call Automation</h3>
+                        </div>
+                        <p>
+                            A customer may call while your support team is busy. <br>
+                            Letstawk can support automated callback workflows so the conversation doesn’t disappear.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-truck-pickup"></i>&ensp;Pickup Scheduling</h3>
+                        </div>
+                        <p>
+                            Support pickup requests and appointment workflows for businesses, sellers and customers.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-taxi"></i>&ensp;Driver Communication</h3>
+                        </div>
+                        <p>
+                            Use voice workflows to support configured driver communications around schedules,
+                            assignments, pickup information, delivery instructions and operational updates
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-user-tag"></i>&ensp;Customer Availability Confirmation</h3>
+                        </div>
+                        <p>
+                            Before a delivery or pickup, confirm whether the customer or business will be available
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-credit-card"></i>&ensp;COD / Payment-Related Communication</h3>
+                        </div>
+                        <p>
+                            Support configured conversations related to cash-on-delivery or payment instructions.
+                            The AI should provide only approved information and route payment-related issues to the
+                            appropriate workflow.
+
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-arrow-rotate-left"></i>&ensp;Return & Reverse Logistics</h3>
+                        </div>
+                        <p>
+                            Support configured conversations around return pickups, scheduling, confirmation and
+                            customer communication
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-cart-flatbed"></i>&ensp;Freight & Shipment Enquiries</h3>
+                        </div>
+                        <p>
+                            For freight and B2B logistics businesses, Letstawk can handle initial enquiries and collect
+                            configured shipment requirements before routing the opportunity to the operations or sales
+                            team.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-id-badge"></i>&ensp;Customer Re-Engagement</h3>
+                        </div>
+                        <p>
+                            Reconnect with inactive customers, previous enquiries or business prospects and determine
+                            whether they have a current logistics requirement.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-warehouse"></i>&ensp;Logistics Lead Qualification</h3>
+                        </div>
+                        <p>
+                            For 3PL, freight forwarding and transportation companies, Letstawk can qualify new business
+                            enquiries.
+                            <br><strong>Capture information such as:</strong><br>
+                        <ul class="grid grid-col-2" style="margin-top: 5px;gap: 0;">
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Shipment type
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Origin
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Destination
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Frequency
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Required service
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Timeline
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Business requirements
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Preferred callback time
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-boxes-stacked"></i>&ensp;Delivery Campaigns & Notifications</h3>
+                        </div>
+                        <p>
+                            <strong>Support outbound workflows for:</strong><br>
+                        <ul class="grid grid-col-2" style="margin-top: 5px;gap: 0;">
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Delivery reminders
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Pickup confirmations
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Delivery attempts
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Rescheduling
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Return pickups
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Business follow-ups
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Customer notifications
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-right-long"></i>
+                                Service announcements
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHY LETSTAWK -->
+        <style>
+            .use-case-card {
+                padding: 15px !important;
+                transition: all 0.3s ease;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .use-case-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .use-case-tag {
+                font-size: 0.5rem;
+                color: #6a6a8a;
+                background: #f0f0f8;
+                padding: 6px 14px;
+                border-radius: 100px;
+                display: inline-block;
+                align-self: flex-start;
+            }
+
+            .journey-grid article {
+                min-height: auto;
+                background: var(--paper);
+            }
+
+            .use-case-head {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .use-case-icon {
+                font-size: 1.5rem;
+                color: var(--paper-2);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #7a5cea, rgb(255 107 139 / 97%));
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .use-case-card:hover .use-case-icon {
+                transform: scale(1.02) rotate(-30deg);
+            }
+
+            .use-case-head h3 {
+                background: var(--muted);
+                color: #fff;
+                padding: 12px;
+                margin: 0;
+                position: relative;
+                left: -5px;
+                z-index: 1;
+                font-size: 13px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            @media (max-width: 900px) {
+                .journey-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .use-case-head h3 {
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .journey-grid {
+                    grid-template-columns: 1fr !important
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head sec-head-left" style="max-width: 100%;">
+                    <div class="sec-eyebrow">WHY LETSTAWK FOR LOGISTICS</div>
+                    <h2>Give Customers a Conversation. Give Operations a Completed Action.</h2>
+                    <p>
+                        Traditional logistics phone systems can route calls.
+                        Letstawk is designed to have conversations and connect those conversations to operational
+                        workflows.
+                    </p>
+                </div>
+                <div class="journey-grid">
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <h3>Natural Conversations</h3>
+                        </div>
+                        <p>
+                            Customers and drivers can explain their requirements naturally
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>24/7 Availability</h3>
+                        </div>
+                        <p>
+                            Support configured workflows beyond traditional support hours.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>40+ Languages</h3>
+                        </div>
+                        <p>
+                            Communicate with customers and logistics stakeholders across multilingual markets.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-filter"></i>
+                            </div>
+                            <h3>Delivery Workflows</h3>
+                        </div>
+                        <p>
+                            Automate configured delivery confirmations, reminders and rescheduling conversations.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Outbound Calling</h3>
+                        </div>
+                        <p>
+                            Proactively contact customers, drivers or business prospects when the workflow requires it.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>Missed Call Automation</h3>
+                        </div>
+                        <p>
+                            Reconnect with customers who couldn’t reach your team.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Human Handoff</h3>
+                        </div>
+                        <p>
+                            Escalate operational exceptions and complex conversations.
+                        </p>
+                    </article>
+                    <article class="use-case-card">
+                        <div class="use-case-head">
+                            <div class="use-case-icon">
+                                <i class="fas fa-gear"></i>
+                            </div>
+                            <h3>Conversation Intelligence</h3>
+                        </div>
+                        <p>
+                            Understand why customers call, what problems occur repeatedly and where operational
+                            improvements may be needed.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- FOR EVERY TYPE OF EDUCATION BUSINESS -->
+        <style>
+            .feat:hover .ic {
+                transform: scale(1.02) rotate(-30deg);
+            }
+
+            .ic {
+                transition: transform .35s ease;
+            }
+
+            .ic i {
+                color: var(--indigo);
+                font-size: 20px;
+            }
+
+            .feat li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">FOR EVERY TYPE OF LOGISTICS BUSINESS</div>
+                    <h2>One Voice AI Platform. Multiple Logistics Workflows.</h2>
+                    <p>
+                        From freight and transportation to warehousing and delivery, our AI-powered voice platform
+                        automates conversations, streamlines operations, and delivers faster, more reliable customer
+                        experiences across every logistics workflow.
+                    </p>
+                </div>
+                <div class="feat-grid">
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-box-open"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Courier & Parcel Companies</h3>
+                        </div>
+
+                        <p>
+                            Handle high volumes of customer delivery communication
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Delivery confirmation
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Rescheduling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Shipment enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Failed delivery follow-ups
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer support
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">3PL Providers</h3>
+                        </div>
+
+                        <p>
+                            Support both customer communication and business lead qualification.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Shipment enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer support
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Lead qualification
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Follow-ups
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Appointment booking
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-cart-flatbed"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Freight & Transportation Companies</h3>
+                        </div>
+
+                        <p>
+                            Handle inbound business enquiries and operational communication.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Freight enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Lead qualification
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Shipment communication
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Callbacks
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer support
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">E-Commerce Logistics</h3>
+                        </div>
+
+                        <p>
+                            Support high-volume last-mile communication across large delivery networks.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Delivery confirmation
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Rescheduling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Failed deliveries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Returns
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer notifications
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Last-Mile Delivery Networks</h3>
+                        </div>
+                        <p>
+                            Keep customers and delivery partners connected throughout the final delivery stage.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer availability
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Delivery reminders
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Driver communication
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Rescheduling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Exceptions
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fa-solid fa-warehouse"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0;">Warehousing & Distribution</h3>
+                        </div>
+                        <p>
+                            Support communication around pickups, deliveries and business coordination.
+                        </p>
+                        <ul>
+                            <strong style="font-size: 15px;">Automate:</strong>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Pickup scheduling
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Delivery coordination
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Customer enquiries
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Business follow-ups
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
+                                Follow-ups
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Integrations Section -->
+        <style>
+            article {
+                transition: transform .35s ease;
+            }
+
+            article:hover {
+                transform: translateX(6px);
+            }
+        </style>
+        <section class="page-section industry-use-section">
+            <div class="wrap industry-use-grid">
+                <div style="justify-content: space-between;display: flex;flex-direction: column;height: stretch;">
+                    <div class="sec-eyebrow">YOUR LOGISTICS SYSTEMS. ONE CONVERSATION LAYER.</div>
+                    <h2>Bring Voice AI Into the Systems Your Operations Team Already Uses.</h2>
+                    <p>
+                        Connect Voice AI seamlessly with the tools and systems your operations team already relies on.
+                        Automate routine tasks, manage conversations in real time, and turn every interaction into
+                        action—without disrupting your existing workflows or changing the way your team works.
+                    </p>
+                    <a class="btn btn-primary" href="contact.html">
+                        <i class="fa-solid fa-diagram-project"></i>Explore Integrations
+                    </a>
+                </div>
+                <div class="use-case-list">
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fas fa-database"></i>
+                            <h3>CRM</h3>
+                        </div>
+                        <p>
+                            Capture business leads, customer information, conversation outcomes and follow-up actions.
+                        </p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fas fa-calendar"></i>
+                            <h3>Calendar & Scheduling</h3>
+                        </div>
+                        <p>
+                            Book delivery windows, pickup appointments, callbacks and other configured appointments.
+                        </p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fas fa-book"></i>
+                            <h3>Knowledge Base</h3>
+                        </div>
+                        <p>
+                            Give the AI access to approved service information, FAQs and operational content.
+                        </p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fas fa-phone"></i>
+                            <h3>Telephony</h3>
+                        </div>
+                        <p>
+                            Connect your existing phone infrastructure or configure a dedicated AI voice setup.
+                        </p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Business Automation</h3>
+                        </div>
+                        <p>
+                            Trigger the next action based on the outcome of each conversation.
+                        </p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <h3>Logistics / Shipment Management</h3>
+                        </div>
+                        <p>
+                            Connect conversations with configured shipment and delivery workflows.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Conversation Loop Section -->
+        <style>
+            .loop-flow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 40px 0;
+                padding: 30px;
+                background: var(--linear-bg);
+
+                border-radius: 20px;
+            }
+
+            .loop-step {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .loop-step span {
+                display: inline-block;
+                background: #fff;
+                padding: 10px 20px;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 0.85rem;
+                color: #1a1a2e;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                transition: all 0.3s ease;
+            }
+
+            .loop-step span:hover {
+                border-color: var(--line-2);
+                transform: scale(1.09);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .loop-step i {
+                color: #4338E8;
+                opacity: 0.4;
+            }
+
+            .loop-sales span {
+                background: linear-gradient(135deg, #4338E8, #7A5CEA);
+                color: #fff;
+                border: none;
+            }
+
+            .loop-cta {
+                max-width: 950px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .loop-cta p {
+                font-size: 1.05rem;
+                line-height: 1.7;
+                color: #4a4a6a;
+                margin: 0 0 16px;
+            }
+
+            .loop-cta ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 16px;
+            }
+
+            .loop-cta ul li {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                color: #3a3a5a;
+                padding: 12px 20px;
+                background: var(--paper);
+                border-radius: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+            }
+
+            @media (max-width: 768px) {
+
+                .loop-step,
+                .loop-flow {
+                    flex-direction: column;
+                }
+
+                .loop-step i {
+                    transform: rotate(90deg);
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="conversation-loop">
+                    <div class="sec-head sec-head-left" style="max-width: 100%;">
+                        <div class="sec-eyebrow">THE LOGISTICS CONVERSATION LOOP</div>
+                        <h2>Keep Every Shipment Moving</h2>
+                    </div>
+                    <div class="loop-flow">
+                        <div class="loop-step"><span>Shipment</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Communication</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Confirmation</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Delivery</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step"><span>Exception</span> <i class="fas fa-arrow-right"></i></div>
+                        <div class="loop-step loop-sales"><span>Resolution</span></div>
+                    </div>
+                    <div class="loop-cta">
+                        <p>
+                            Letstawk can turn individual calls into connected workflows.
+                        </p>
+                        <ul>
+                            <li>
+                                Shipment created → Customer notified → Availability confirmed → Delivery scheduled →
+                                Delivery completed → Feedback / follow-up → Exception handled when required
+                            </li>
+                        </ul>
+                        <p>
+                            This helps reduce unnecessary back-and-forth communication between customers, drivers and
+                            operations teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TRADITIONAL IVR VS LETSTAWK -->
+        <style>
+            .traditional-list li {
+                transition: all 0.3s ease;
+            }
+
+            .traditional-list li:hover {
+                transform: translateX(6px);
+            }
+
+            @media (max-width: 768px) {
+                .traditional-mob {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">Traditional IVR vs Letstawk</div>
+                    <h2>
+                        Make Logistics Communication More Natural
+                    </h2>
+                    <p>
+                        Customers Want Answers — Not Another Phone Menu.
+                    </p>
+                </div>
+                <div class="traditional-mob"
+                    style="display:grid; grid-template-columns:1fr 1fr; gap:40px;margin:0 auto;">
+                    <div style="background:#fff; border-radius:2rem; padding:2rem;">
+                        <h3 style="color:#475569;">Traditional IVR</h3>
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Press numbers to navigate
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Fixed menu structure</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Limited predefined paths
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Primarily routes calls</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Manual delivery calls</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Manual follow-ups</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Basic call transfer</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #e2e8f0;">Primarily inbound</li>
+                            <li style="padding:0.4rem 0;">Difficult to customise</li>
+                        </ul>
+                    </div>
+                    <div style="background:#1e293b; border-radius:2rem; padding:2rem; color:white;">
+                        <h3 style="color:#94a3b8;">Letstawk AI Voice Agent</h3>
+                        <ul class="traditional-list" style="list-style:none; padding:0; margin-top:1rem;">
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Speak naturally</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Conversational interaction
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Context-aware conversations
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Answers and takes configured
+                                actions</li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Automated delivery workflows
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Automated follow-up journeys
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Context-aware human handoff
+                            </li>
+                            <li style="padding:0.4rem 0; border-bottom:1px solid #334155;">Inbound + outbound</li>
+                            <li style="padding:0.4rem 0;">Configure around your operation</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="text-align:center; margin-top:2rem; font-weight:500;color: var(--muted);">
+                    Let customers talk naturally. Let AI handle the repetitive logistics work.
+                </p>
+            </div>
+        </section>
+        <!-- Process -->
+        <style>
+            .step-card {
+                justify-content: space-between;
+            }
+
+            .step-card {
+                background: #fafcff;
+                border-radius: 1.8rem;
+                padding: 1.6rem 1.5rem 1.6rem 1.6rem;
+                border: 2px solid #e7eef9;
+                transition: 0.4s ease;
+                box-shadow: 0 4px 8px -6px rgba(0, 20, 40, 0.03);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .step-card.completed {
+                border-color: var(--indigo);
+                background: #f2f9ff;
+                opacity: 0.85;
+            }
+
+            .step-card.active {
+                border-color: #1f6bc0;
+                background: #ffffff;
+                box-shadow: 0 8px 24px -10px rgba(26, 80, 170, 0.25);
+                transform: scale(1.02);
+            }
+
+            .step-card.locked {
+                opacity: 0.5;
+                filter: grayscale(0.4);
+                border-color: #dfe8f2;
+            }
+
+            .card-head {
+                display: flex;
+                align-items: center;
+            }
+
+            .card-heading {
+                padding: 8px 10px !important;
+            }
+
+            .step-icon {
+                color: var(--white);
+                background: var(--muted);
+                padding: 5px 10px;
+                border-radius: 8px;
+            }
+
+            .step-icon i {
+                color: var(--white);
+            }
+
+            .step-card.active .step-icon,
+            .step-card.completed .step-icon {
+                background: var(--violet);
+            }
+
+            .step-number {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: #dce8fa;
+                color: #12457a;
+                width: 2.4rem;
+                height: 2.4rem;
+                border-radius: 40px;
+                font-weight: 700;
+                font-size: 1rem;
+                transition: 0.3s;
+                flex-shrink: 0;
+            }
+
+            .step-card.completed .step-number {
+                background: var(--wa-teal);
+                color: white;
+            }
+
+            .step-card.active .step-number {
+                background: var(--indigo);
+                color: white;
+                box-shadow: 0 4px 8px rgba(26, 80, 170, 0.25);
+            }
+
+            .step-tag {
+                margin-top: 0.6rem;
+                font-size: 0.65rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                color: #3d6a9b;
+                background: #e2edfc;
+                align-self: flex-start;
+                padding: 0.2rem 0.9rem;
+                border-radius: 30px;
+                border: 1px solid #c8dcf7;
+                transition: 0.3s;
+            }
+
+            .step-card.completed .step-tag {
+                background: #d4e4fc;
+                border-color: #aac0e5;
+            }
+
+            .step-card.active .step-tag {
+                background: #cfe0fc;
+                border-color: #98b7e6;
+            }
+
+            .step-status {
+                margin-top: 0.8rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #3d6a9b;
+                transition: 0.3s;
+            }
+
+            .step-status i {
+                font-size: 0.9rem;
+            }
+
+            .step-card.completed .step-status i {
+                color: #1f8b4c;
+            }
+
+            .step-card.active .step-status i {
+                color: #1f6bc0;
+            }
+
+            .step-card.locked .step-status i {
+                color: #8899b0;
+            }
+
+            .divider-wrap {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin: 1.5rem 0 1.2rem;
+            }
+
+            .divider-line {
+                flex: 1;
+                height: 2px;
+                background: linear-gradient(90deg, #c0d6f0, #eaf1fb, #c0d6f0);
+            }
+
+            .insight-quote {
+                background: #f0f7ff;
+                padding: 0.5rem 1.8rem;
+                border-radius: 60px;
+                font-weight: 500;
+                color: #0a2b4a;
+                font-size: 1rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                border: 1px solid #d3e2fa;
+            }
+
+            .insight-quote i {
+                color: #1f6bc0;
+                font-size: 1rem;
+            }
+
+            /* expand section */
+            .expand-section {
+                margin-top: 2.2rem;
+                background: linear-gradient(145deg, #f1f8ff, #ffffff);
+                border-radius: 2rem;
+                padding: 1.4rem 2rem;
+                border: 1px solid #deeaf9;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .expand-section .expand-text {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                flex-wrap: wrap;
+            }
+
+            .expand-section .expand-text i {
+                font-size: 1.6rem;
+                color: #1f6bc0;
+            }
+
+            .expand-section .expand-text h4 {
+                font-weight: 600;
+                font-size: 1.1rem;
+                color: #0b2a41;
+            }
+
+            .expand-section .expand-text span {
+                color: #2e577d;
+                font-weight: 400;
+            }
+
+            @media (max-width:600px) {
+                .card-head h3 {
+                    font-size: 15px;
+                }
+
+                .expand-section {
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        </style>
+        <section class="page-section ">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">IMPLEMENTATION</div>
+                    <h2>
+                        Start With Your Biggest Highest-Volume Call Type
+                    </h2>
+                    <p>
+                        Launch Logistics Voice AI Without Rebuilding Your Operations.
+                    </p>
+                </div>
+                <!-- workflow grid -->
+                <div class="workflow-grid grid grid-col-3" id="workflowGrid">
+                    <!-- step 1 -->
+                    <div class="card step-card active" data-step="1">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-database"></i></div>
+                                <h3 class="card-heading">
+                                    Add Your Knowledge
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">1</div>
+                        </div>
+                        <p>
+                            Provide approved service information, delivery FAQs, operating information and communication
+                            guidelines.
+                        </p>
+                        <span class="step-tag"><i class="far fa-file-alt"></i> knowledge base</span>
+                        <div class="step-status"><i class="fas fa-play"></i> current step</div>
+                    </div>
+                    <!-- step 2 -->
+                    <div class="card step-card locked" data-step="2">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-comment-dots"></i></div>
+                                <h3 class="card-heading">Define the Conversation <i class="fas fa-check-circle"
+                                        style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">2</div>
+                        </div>
+                        <p>
+                            Configure greetings, questions, responses, workflows and escalation rules.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-code-branch"></i> dialog design</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 3 -->
+                    <div class="card step-card locked" data-step="3">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-plug"></i></div>
+                                <h3 class="card-heading">
+                                    Connect Your Systems
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">3</div>
+                        </div>
+                        <p>
+                            Connect your CRM, logistics platform, calendar, telephony and relevant business workflows.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-cloud-upload-alt"></i> integrations</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 4 -->
+                    <div class="card step-card locked" data-step="4">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-flask"></i></div>
+                                <h3 class="card-heading">Test the Agent
+                                    <i class="fas fa-check-circle" style="opacity:0; transition:0.3s;"></i>
+                                </h3>
+                            </div>
+                            <div class="step-number">4</div>
+                        </div>
+                        <p>
+                            Run realistic customer, driver and operations conversations.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-check-circle"></i> validation</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 5 -->
+                    <div class="card step-card locked" data-step="5">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                                <h3 class="card-heading">Launch <i class="fas fa-check-circle"
+                                        style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">5</div>
+                        </div>
+                        <p>
+                            Start handling real logistics conversations through your Letstawk AI voice agent.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-play"></i> go live</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                    <!-- step 6 -->
+                    <div class="card step-card locked" data-step="6">
+                        <div class="card-head">
+                            <div class="head">
+                                <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                                <h3 class="card-heading">Expand <i class="fas fa-check-circle"
+                                        style="opacity:0; transition:0.3s;"></i></h3>
+                            </div>
+                            <div class="step-number">6</div>
+                        </div>
+                        <p>
+                            Use conversation insights to identify additional workflows for automation.
+                        </p>
+                        <span class="step-tag"><i class="fas fa-expand-alt"></i> scale</span>
+                        <div class="step-status"><i class="fas fa-lock"></i> locked</div>
+                    </div>
+                </div>
+                <!-- action bar -->
+                <div class="action-bar" style="display: none;">
+                    <div class="step-counter" id="stepCounter">Step 1 of 6</div>
+                </div>
+                <!-- divider + quote -->
+                <div class="divider-wrap">
+                    <span class="divider-line"></span>
+                    <div class="insight-quote">
+                        <i class="fas fa-quote-left"></i> Start with one call type. Automate the next one when you’re
+                        ready.
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="divider-line"></span>
+                </div>
+                <!-- CTA -->
+                <div class="expand-section">
+                    <div class="expand-text">
+                        <i class="fas fa-arrows-expand"></i>
+                        <h4>Expand with confidence</h4>
+                        <span>— use conversation insights to automate more logistics workflows.</span>
+                    </div>
+                    <div class="expand-cta">
+                        <a class="btn btn-primary btn-lg" href="tel:+919500069296">
+                            <i class="fas fa-microphone-alt"></i> Letstawk AI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            (function () {
+                const totalSteps = 6;
+                let currentStep = 1;
+                const completed = new Array(totalSteps + 1).fill(false);
+
+                const cards = document.querySelectorAll('.step-card');
+                const stepCounter = document.getElementById('stepCounter');
+
+                // Automatically move to the next step forever.
+                // When the last step is completed, start again from step 1.
+                const STEP_DELAY = 1000;
+
+                function render() {
+                    cards.forEach((card, index) => {
+                        const stepNum = index + 1;
+                        const isCompleted = completed[stepNum];
+                        const isActive = stepNum === currentStep;
+                        const isLocked = !isCompleted && !isActive && stepNum > currentStep;
+
+                        card.classList.remove('active', 'completed', 'locked');
+
+                        if (isCompleted) {
+                            card.classList.add('completed');
+                        } else if (isActive) {
+                            card.classList.add('active');
+                        } else if (isLocked) {
+                            card.classList.add('locked');
+                        }
+
+                        const statusDiv = card.querySelector('.step-status');
+
+                        if (statusDiv) {
+                            if (isCompleted) {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-check-circle" style="color:#1f8b4c;"></i> completed';
+                            } else if (isActive) {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-play" style="color:#1f6bc0;"></i> current step';
+                            } else {
+                                statusDiv.innerHTML =
+                                    '<i class="fas fa-lock"></i> locked';
+                            }
+                        }
+
+                        const checkIcon = card.querySelector('h3 i.fa-check-circle');
+
+                        if (checkIcon) {
+                            checkIcon.style.opacity = isCompleted ? '1' : '0';
+                            checkIcon.style.color = '#1f8b4c';
+                        }
+                    });
+
+                    stepCounter.textContent = `Step ${currentStep} of ${totalSteps}`;
+                }
+
+                function nextStep() {
+                    completed[currentStep] = true;
+
+                    if (currentStep < totalSteps) {
+                        currentStep++;
+                    } else {
+                        // Start the workflow again after the last step.
+                        for (let i = 1; i <= totalSteps; i++) {
+                            completed[i] = false;
+                        }
+                        currentStep = 1;
+                    }
+
+                    render();
+                    setTimeout(nextStep, STEP_DELAY);
+                }
+
+                render();
+                setTimeout(nextStep, STEP_DELAY);
+            })();
+        </script>
 
 
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
 
+            .cta-head {
+                flex: 0.9;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+                background: url(images/cta/logistics.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img img {
+                    display: block;
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">YOUR NEXT DELIVERY CALL DOESN’T HAVE TO WAIT.</div>
+                        <h2>Keep Your Customers Moving and Your Operations Focused</h2>
+                        <p>
+                            Letstawk helps logistics companies answer, confirm, schedule, follow up and resolve routine
+                            delivery conversations automatically.
+                            <!-- Give your operations team fewer repetitive calls and more time for the exceptions that
+                            actually require human attention. -->
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-book"></i>
+                                Request an Demo
+                            </a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
+                                <i class="fa-solid fa-headset"></i>
+                                Talk to an expert
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                        <img src="images/cta/logistics.webp" alt="CTA">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- FAQ (data-component injected, but also keep static fallback) -->
         <div data-component="faq">
         </div>
