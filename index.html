@@ -320,9 +320,98 @@
   </section>
 
   <!-- METRICS -->
-  <section class="block">
+  <style>
+    .stat-item {
+      background: var(--ink);
+      padding: 20px 0;
+    }
+  </style>
+  <section class="page-section">
     <div class="wrap">
-      <div class="metrics">
+      <div class="stats-grid" style="padding: 45px 0;border-bottom: 1px solid rgba(0, 0, 0, 0.06);">
+        <div class="stat-item">
+          <div class="number">24/7</div>
+          <div class="label">Calls answered, every hour</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">40+</div>
+          <div class="label">Languages, switchable mid-call</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">&lt;400<span style="font-size:.5em">ms</span></div>
+          <div class="label">Response latency, human-paced</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">Mins</div>
+          <div class="label">From sign-up to live agent</div>
+        </div>
+      </div>
+      <div class="cta-card" id="request" style="margin-top: 40px;">
+        <div class="cta-copy">
+          <div class="sec-eyebrow">Request access</div>
+          <h2>See your own voice agent, live.</h2>
+          <p>Tell us about your business and we'll set up a tailored demo on your use case - and get you into the
+            early-access programme.</p>
+          <ul class="cta-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg> A demo agent built around your industry</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg> Early-access pricing for first partners</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg> Hands-on setup - you don't lift a finger</li>
+          </ul>
+        </div>
+        <div class="form-side">
+          <form name="demo-request" method="POST" data-netlify="true" netlify-honeypot="company-website" id="demoForm"
+            class="form-grid" action="#request">
+            <input type="hidden" name="form-name" value="demo-request">
+            <p class="hp"><label>Leave blank <input name="company-website"></label></p>
+            <div class="field"><label for="fname">First name</label><input id="fname" name="first-name" type="text"
+                required placeholder="Priya"></div>
+            <div class="field"><label for="lname">Last name</label><input id="lname" name="last-name" type="text"
+                required placeholder="Sharma"></div>
+            <div class="field full"><label for="email">Work email</label><input id="email" name="email" type="email"
+                required placeholder="you@company.com"></div>
+            <div class="field"><label for="company">Company</label><input id="company" name="company" type="text"
+                required placeholder="Acme Inc."></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"
+                placeholder="+91 ●●●●●●●●●"></div>
+            <div class="field full"><label for="industry">Industry</label><select id="industry" name="industry"
+                required>
+                <option value="" disabled selected>Choose one...</option>
+                <option>Retail &amp; e-commerce</option>
+                <option>Education</option>
+                <option>Travel &amp; hospitality</option>
+                <option>Healthcare</option>
+                <option>Real estate</option>
+                <option>Logistics</option>
+                <option>Other</option>
+              </select></div>
+            <div class="field full"><label for="usecase">What would the agent handle?</label><textarea id="usecase"
+                name="use-case"
+                placeholder="e.g. answering support calls, booking appointments, order status..."></textarea></div>
+            <div class="checkbox-row"><input id="reg" name="early-access" type="checkbox" checked><label for="reg"
+                style="margin:0">Also add me to the early-access programme</label></div>
+            <div class="form-submit"><button type="submit" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-paper-plane"></i>
+                Request my demo</button></div>
+            <p class="form-note">We'll only use your details to set up your demo. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="check"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#7C8BF5"
+                stroke-width="2.4">
+                <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
+            <h3>You're on the list.</h3>
+            <p>Thanks - we've got your request. Our team will reach out within one business day to set up your tailored
+              demo.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="metrics">
         <div class="metric">
           <div class="big"><span>24/7</span></div>
           <div class="lbl">Calls answered, every hour</div>
@@ -339,14 +428,14 @@
           <div class="big">Mins</div>
           <div class="lbl">From sign-up to live agent</div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- CTA / FORM -->
-  <section class="cta-block" id="request">
+  <!-- <section class="cta-block" id="request">
     <div class="wrap">
-      <div class="cta-card">
+      <div class="cta-card" id="request">
         <div class="cta-copy">
           <div class="sec-eyebrow">Request access</div>
           <h2>See your own voice agent, live.</h2>
@@ -412,7 +501,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <div data-component="footer"></div>
