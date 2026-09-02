@@ -657,6 +657,15 @@
             </div>
         </section>
         <!-- Integrations Section -->
+        <style>
+            article {
+                transition: transform .35s ease;
+            }
+
+            article:hover {
+                transform: translateX(6px);
+            }
+        </style>
         <section class="page-section industry-use-section">
             <div class="wrap industry-use-grid">
                 <div style="justify-content: space-between;display: flex;flex-direction: column;height: stretch;">
@@ -732,7 +741,6 @@
                 gap: 8px;
                 margin: 40px 0;
                 padding: 30px;
-                /* background: linear-gradient(135deg, #f8f8fc, #f0f0f8); */
                 background: var(--linear-bg);
 
                 border-radius: 20px;
@@ -753,6 +761,14 @@
                 font-size: 0.85rem;
                 color: #1a1a2e;
                 border: 1px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                transition: all 0.3s ease;
+            }
+
+            .loop-step span:hover {
+                border-color: var(--line-2);
+                transform: scale(1.09);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
             }
 
             .loop-step i {
@@ -767,7 +783,7 @@
             }
 
             .loop-cta {
-                max-width: 700px;
+                max-width: 950px;
                 margin: 0 auto;
                 text-align: center;
             }
