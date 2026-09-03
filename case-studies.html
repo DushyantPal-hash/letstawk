@@ -605,7 +605,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Case Study Stats
         ================================= -->
@@ -639,10 +638,19 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Featured Case Studies
         ================================= -->
+        <style>
+            .conversation-line {
+                background: #e4e4e4 !important;
+            }
+
+            .conversation-line span,
+            .visual-label {
+                opacity: 0.7 !important;
+            }
+        </style>
         <section class="page-section tint">
             <div class="wrap">
                 <div class="sec-head sec-head-left" style="max-width: max-content;">
@@ -814,7 +822,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             How It Works
         ================================= -->
@@ -900,10 +907,18 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Business Outcomes
         ================================= -->
+        <style>
+            .outcome-item {
+                transition: all 0.3s ease;
+            }
+
+            .outcome-item:hover {
+                transform: translateX(6px);
+            }
+        </style>
         <section class="page-section dark-section">
             <div class="wrap">
                 <div class="outcomes-grid">
@@ -994,10 +1009,25 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Use Cases
         ================================= -->
+        <style>
+            .case-head {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .case-head i {
+                font-size: 1.4rem;
+            }
+
+            .case-head h3 {
+                margin-bottom: 0;
+            }
+        </style>
         <section class="page-section tint">
             <div class="wrap">
                 <div class="sec-head sec-head-left" style="max-width: max-content;">
@@ -1008,51 +1038,62 @@
                         team discovers more opportunities.
                     </p>
                 </div>
-
                 <div class="use-case-grid">
                     <article class="use-case-card">
-                        <i class="fas fa-headset"></i>
-                        <h3>Customer support</h3>
+                        <div class="case-head">
+                            <i class="fas fa-headset"></i>
+                            <h3>Customer support</h3>
+                        </div>
                         <p>
                             Answer FAQs, troubleshoot common issues and route
                             complex cases to the right team.
                         </p>
                     </article>
                     <article class="use-case-card">
-                        <i class="fas fa-calendar-check"></i>
-                        <h3>Appointments</h3>
+                        <div class="case-head">
+                            <i class="fas fa-calendar-check"></i>
+                            <h3>Appointments</h3>
+                        </div>
                         <p>
                             Let callers book, reschedule or cancel appointments
                             without waiting for an employee.
                         </p>
                     </article>
                     <article class="use-case-card">
-                        <i class="fas fa-phone-volume"></i>
-                        <h3>Outbound calls</h3>
+                        <div class="case-head">
+                            <i class="fas fa-phone-volume"></i>
+                            <h3>Outbound calls</h3>
+                        </div>
                         <p>
                             Handle reminders, follow-ups, confirmations and
                             customer re-engagement at scale.
                         </p>
                     </article>
                     <article class="use-case-card">
-                        <i class="fas fa-shopping-cart"></i>
-                        <h3>Lead qualification</h3>
+                        <div class="case-head">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Lead qualification</h3>
+                        </div>
                         <p>
                             Ask the right questions, qualify prospects and
                             pass high-intent leads to your sales team.
                         </p>
                     </article>
                     <article class="use-case-card">
-                        <i class="fas fa-bell"></i>
-                        <h3>Notifications</h3>
+                        <div class="case-head">
+                            <i class="fas fa-bell"></i>
+                            <h3>Notifications</h3>
+                        </div>
                         <p>
                             Keep customers informed about orders, bookings,
                             payments and important updates.
                         </p>
                     </article>
                     <article class="use-case-card">
-                        <i class="fas fa-route"></i>
-                        <h3>Call routing</h3>
+                        <div class="case-head">
+                            <i class="fas fa-route"></i>
+                            <h3>Call routing</h3>
+                        </div>
                         <p>
                             Understand the caller's intent and connect them with
                             the right person or workflow.
@@ -1061,10 +1102,29 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Testimonial
         ================================= -->
+        <style>
+            .test-card {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                background: var(--white);
+                padding: 10px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .test-card:hover {
+                transform: scale(1.08);
+            }
+
+            .testimonial-avatar {
+                background: var(--paper);
+            }
+        </style>
         <section class="page-section">
             <div class="wrap">
                 <div class="testimonial-card">
@@ -1077,17 +1137,17 @@
                     </blockquote>
                     <div class="testimonial-mark left">❞</div>
                     <div class="testimonial-person">
-                        <div class="testimonial-avatar">A</div>
-
-                        <div>
-                            <strong>Operations Leader</strong>
-                            <span>Customer Experience Team</span>
+                        <div class="test-card">
+                            <div class="testimonial-avatar">A</div>
+                            <div>
+                                <strong>Operations Leader</strong>
+                                <span>Customer Experience Team</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Industries
         ================================= -->
@@ -1143,32 +1203,95 @@
                 </div>
             </div>
         </section>
-
         <!-- ================================
             Final CTA
         ================================= -->
+        <style>
+            .cta-card-case .sec-eyebrow {
+                color: var(--paper) !important;
+                border: 1px solid var(--paper) !important;
+            }
+
+            .cta {
+                padding: 20px 40px;
+                border-radius: var(--radius);
+                display: flex;
+            }
+
+            .cta-head {
+                flex: 0.9;
+                text-align: left;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--d-muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+                background: url(images/cta/case-studies.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img img {
+                    display: block;
+                }
+            }
+        </style>
         <section class="page-section final-cta">
             <div class="wrap">
-                <div class="cta-card-case">
-                    <div class="sec-head sec-head-left">
+                <div class="cta cta-card-case">
+                    <div class="cta-head">
                         <div class="sec-eyebrow">Ready to explore your use case?</div>
-                        <h2>Your next great
-                            customer conversation
-                            could start here.</h2>
+                        <h2>Your next great customer conversation could start here.</h2>
                         <p>
                             Tell us what your team spends time answering today.
                             We'll help you find the conversations worth automating.
                         </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-book"></i>
+                                Request an Demo
+                            </a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
+                                <i class="fa-solid fa-headset"></i>
+                                Talk to an expert
+                            </a>
+                        </div>
                     </div>
-                    <div class="industry-actions">
-                        <a href="contact.html" class="btn btn-primary btn-lg">
-                            <i class="fas fa-book"></i>
-                            Book a demo
-                        </a>
-                        <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
-                            <i class="fa-solid fa-headset"></i>
-                            Talk to an expert
-                        </a>
+                    <div class="cta-img">
+                        <img src="images/cta/case-studies.webp" alt="CTA">
                     </div>
                 </div>
             </div>
