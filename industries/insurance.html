@@ -116,12 +116,24 @@
                 background-position: center;
             }
 
+            .section-img img {
+                display: none;
+                width: 100%;
+            }
+
             .list-card strong {
                 font-size: 16px;
             }
 
             .list-card p {
                 font-size: 14px;
+            }
+
+            @media(max-width:760px) {
+
+                .section-img img {
+                    display: block;
+                }
             }
         </style>
         <section class="page-section">
@@ -142,6 +154,7 @@
                 </div>
                 <div class="grid grid-col-2">
                     <div class="section-img">
+                        <img src="images/pages/insurance/side.webp" alt="Side">
                     </div>
                     <div class="grid grid-col-2">
                         <div class="list-card">
@@ -583,6 +596,11 @@
                 transition: all 0.3s ease;
             }
 
+            .section-img2 img {
+                display: none;
+                width: 100%;
+            }
+
             .section-img2:hover {
                 transform: scale(1.02);
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
@@ -605,8 +623,9 @@
             }
 
             @media(max-width:760px) {
-                .section-img2 {
-                    height: 250px;
+
+                .section-img2 img {
+                    display: block;
                 }
             }
         </style>
@@ -679,7 +698,9 @@
                     </div>
                 </div>
 
-                <div class="section-img2"></div>
+                <div class="section-img2">
+                    <img src="images/pages/insurance/side2.webp" alt="Side">
+                </div>
             </div>
         </section>
         <!-- WHY LETSTAWK -->
@@ -1694,8 +1715,58 @@
         <div data-component="faq">
         </div>
         <script id="faqData" type="application/json">
-    {"title":"Insurance Voice AI FAQs","description":"Answers to common questions about using AI voice agents for insurance, policy enquiries, claims, renewals, and customer conversations.","items":[{"question":"What can an AI voice agent do for insurance companies?","answer":"It can handle policy enquiries, claims-related questions, premium information, renewals, payment reminders, document requests, customer support, follow-ups, and configured outbound communication."},{"question":"Can Letstawk help insurance companies handle customer enquiries?","answer":"Yes. Letstawk can answer routine policy questions, provide approved insurance information, collect customer details, and route complex enquiries to the appropriate team."},{"question":"Can Letstawk support insurance claims?","answer":"Yes. Configured claims workflows can help customers understand the claims process, collect required information, provide status updates, and escalate complex cases to human agents."},{"question":"Can the AI answer policy and coverage questions?","answer":"Yes. Letstawk can use your approved policy information, FAQs, and knowledge sources to answer routine questions about coverage, benefits, exclusions, premiums, and policy terms."},{"question":"Can Letstawk help with policy renewals?","answer":"Yes. It can support renewal reminders, answer routine renewal questions, collect required information, and guide customers through configured renewal workflows."},{"question":"Can Letstawk provide premium and payment information?","answer":"Yes. Letstawk can provide configured premium, payment, due-date, and payment-reminder information based on the systems and workflows connected to it."},{"question":"Does Letstawk support outbound calls for insurance?","answer":"Yes. Outbound workflows can be configured for renewal reminders, payment reminders, claim follow-ups, customer notifications, and other approved communication."},{"question":"Does Letstawk support multiple languages?","answer":"Yes. Letstawk supports 40+ languages for multilingual voice conversations, helping insurance businesses communicate with customers in their preferred language."},{"question":"Can Letstawk collect information from customers during calls?","answer":"Yes. The AI can collect configured customer information, enquiry details, and other required data during conversations and pass it into connected workflows."},{"question":"Can Letstawk transfer calls to human agents?","answer":"Yes. Letstawk can escalate conversations to human teams when a request is complex, sensitive, outside the configured workflow, or requires human assistance."},{"question":"Can Letstawk replace insurance customer service teams?","answer":"No. Letstawk is designed to automate repetitive voice communication and support insurance teams. Human staff remain essential for complex claims, sensitive situations, exceptions, and decisions requiring human judgment."}]}
-</script>
+            {
+                "title":"Insurance Voice AI FAQs",
+                "description":"Answers to common questions about using AI voice agents for insurance, policy enquiries, claims, renewals, and customer conversations.",
+                "items":
+                [
+                {
+                    "question":"What can an AI voice agent do for insurance companies?",
+                    "answer":"It can handle policy enquiries, claims-related questions, premium information, renewals, payment reminders, document requests, customer support, follow-ups, and configured outbound communication."
+                },
+                {
+                    "question":"Can Letstawk help insurance companies handle customer enquiries?",
+                    "answer":"Yes. Letstawk can answer routine policy questions, provide approved insurance information, collect customer details, and route complex enquiries to the appropriate team."
+                },
+                {
+                    "question":"Can Letstawk support insurance claims?",
+                    "answer":"Yes. Configured claims workflows can help customers understand the claims process, collect required information, provide status updates, and escalate complex cases to human agents."
+                },
+                {
+                    "question":"Can the AI answer policy and coverage questions?",
+                    "answer":"Yes. Letstawk can use your approved policy information, FAQs, and knowledge sources to answer routine questions about coverage, benefits, exclusions, premiums, and policy terms."
+                },
+                {
+                    "question":"Can Letstawk help with policy renewals?",
+                    "answer":"Yes. It can support renewal reminders, answer routine renewal questions, collect required information, and guide customers through configured renewal workflows."
+                },
+                {
+                    "question":"Can Letstawk provide premium and payment information?",
+                    "answer":"Yes. Letstawk can provide configured premium, payment, due-date, and payment-reminder information based on the systems and workflows connected to it."
+                },
+                {
+                    "question":"Does Letstawk support outbound calls for insurance?",
+                    "answer":"Yes. Outbound workflows can be configured for renewal reminders, payment reminders, claim follow-ups, customer notifications, and other approved communication."
+                },
+                {
+                    "question":"Does Letstawk support multiple languages?",
+                    "answer":"Yes. Letstawk supports 40+ languages for multilingual voice conversations, helping insurance businesses communicate with customers in their preferred language."
+                },
+                {
+                    "question":"Can Letstawk collect information from customers during calls?",
+                    "answer":"Yes. The AI can collect configured customer information, enquiry details, and other required data during conversations and pass it into connected workflows."
+                },
+                {
+                    "question":"Can Letstawk transfer calls to human agents?",
+                    "answer":"Yes. Letstawk can escalate conversations to human teams when a request is complex, sensitive, outside the configured workflow, or requires human assistance."
+                },
+                {
+                    "question":"Can Letstawk replace insurance customer service teams?",
+                    "answer":"No. Letstawk is designed to automate repetitive voice communication and support insurance teams. Human staff remain essential for complex claims, sensitive situations, exceptions, and decisions requiring human judgment."
+                }
+                ]
+            }
+        </script>
     </main>
     <!-- Footer  -->
     <div data-component="footer"></div>

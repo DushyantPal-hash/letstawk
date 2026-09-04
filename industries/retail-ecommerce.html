@@ -691,6 +691,11 @@
                 transition: all 0.3s ease;
             }
 
+            .section-img2 img {
+                display: none;
+                width: 100%;
+            }
+
             .section-img2:hover {
                 transform: scale(1.02);
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
@@ -715,6 +720,10 @@
             @media(max-width:760px) {
                 .section-img {
                     height: 250px;
+                }
+
+                .section-img2 img {
+                    display: block;
                 }
             }
         </style>
@@ -763,7 +772,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-img2"></div>
+                <div class="section-img2">
+                    <img src="images/pages/retail/side3.webp" alt="Side">
+                </div>
             </div>
         </section>
         <!-- WHY LETSTAWK -->
@@ -1778,7 +1789,45 @@
         <!-- FAQ (data-component injected, but also keep static fallback) -->
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
-        {"title":"Retail & Ecommerce Voice AI FAQs","description":"Answers to common questions about building a voice experience for retail and customer conversations.","items":[{"question":"What can an AI voice agent do for ecommerce?","answer":"It can handle order enquiries, product questions, stock checks, shipping updates, returns, cancellations, follow-ups, and configured outbound customer communication."},{"question":"Can Letstawk help increase sales?","answer":"Yes. It helps retailers respond faster to enquiries, answer product questions, qualify purchase intent, support order workflows, and follow up with prospects."},{"question":"Can Letstawk handle returns and exchanges?","answer":"Configured return and exchange workflows can be supported, with human escalation where needed."},{"question":"Can the AI answer product questions?","answer":"Yes. Letstawk can use your approved product information, FAQs, and knowledge sources to answer routine questions."},{"question":"Can Letstawk provide shipping updates?","answer":"Yes. It can provide configured shipping, delivery, and tracking information."},{"question":"Does Letstawk support outbound calls?","answer":"Yes. Outbound workflows can be configured for order confirmations, reminders, and follow-ups."},{"question":"Does Letstawk support multiple languages?","answer":"Yes. Letstawk supports 40+ languages for multilingual voice conversations."},{"question":"Can Letstawk replace customer service teams?","answer":"No. Letstawk is designed to automate repetitive voice communication and support retail teams. Human staff remain essential for complex requests."}]}
+        {
+            "title":"Retail & Ecommerce Voice AI FAQs",
+            "description":"Answers to common questions about building a voice experience for retail and customer conversations.",
+            "items":
+            [
+            {
+                "question":"What can an AI voice agent do for ecommerce?",
+                "answer":"It can handle order enquiries, product questions, stock checks, shipping updates, returns, cancellations, follow-ups, and configured outbound customer communication."
+            },
+            {
+                "question":"Can Letstawk help increase sales?",
+                "answer":"Yes. It helps retailers respond faster to enquiries, answer product questions, qualify purchase intent, support order workflows, and follow up with prospects."
+            },
+            {
+                "question":"Can Letstawk handle returns and exchanges?",
+                "answer":"Configured return and exchange workflows can be supported, with human escalation where needed."
+            },
+            {
+                "question":"Can the AI answer product questions?",
+                "answer":"Yes. Letstawk can use your approved product information, FAQs, and knowledge sources to answer routine questions."
+            },
+            {
+                "question":"Can Letstawk provide shipping updates?",
+                "answer":"Yes. It can provide configured shipping, delivery, and tracking information."
+            },
+            {
+                "question":"Does Letstawk support outbound calls?",
+                "answer":"Yes. Outbound workflows can be configured for order confirmations, reminders, and follow-ups."
+            },
+            {
+                "question":"Does Letstawk support multiple languages?",
+                "answer":"Yes. Letstawk supports 40+ languages for multilingual voice conversations."
+            },
+            {
+                "question":"Can Letstawk replace customer service teams?",
+                "answer":"No. Letstawk is designed to automate repetitive voice communication and support retail teams. Human staff remain essential for complex requests."
+            }
+            ]
+        }
         </script>
     </main>
     <!-- Footer  -->
