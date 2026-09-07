@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <title>AI Voice Agent for Order Confirmation | Letstawk</title>
+    <meta name="description"
+        content="Automate order confirmation, status updates, and post-purchase follow-ups with Letstawk AI voice agents for ecommerce and service businesses.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--indigo)" />
+                <stop offset=".5" stop-color="var(--violet)" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <main>
+        <style>
+            .banner-img2 {
+                background: url("images/pages/retail/banner.webp") center center / cover no-repeat;
+            }
+
+            .list-card {
+                display: block;
+            }
+
+            .list-card span {
+                color: var(--indigo);
+                font-weight: 700;
+            }
+
+            .section-img {
+                background: url("images/pages/retail/side.webp");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .business-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .business-card {
+                background: var(--white);
+                padding: 28px 24px;
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                border-left: 3px solid var(--indigo);
+            }
+
+            .business-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .business-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: #1a1a2e;
+            }
+
+            .business-card h3 i {
+                color: #4338E8;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+
+            .business-card>p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #4a4a6a;
+            }
+
+            @media(max-width:600px) {
+                .business-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        <!-- HERO -->
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom: 0px;margin-top: 10px;">
+                    <span class="pulse"></span>USE CASE · ORDER CONFIRMATION
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Solutions <span>›</span>
+                    Use Cases <span>›</span>
+                    Order Confirmation
+                </p>
+                <h1 style="max-width: 100%; margin-bottom: 20px;">AI-Powered Order Confirmation That Closes the Sale
+                </h1>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <p class="industry-lead" style="margin-top: 0;">
+                        Letstawk confirms orders automatically, answers purchase questions, provides fulfilment updates,
+                        and routes exceptions to the right team — so customers feel informed and confident at every
+                        step.
+                    </p>
+                    <p class="industry-lead"><strong>Turn every purchase into a confident post-sale experience.</strong>
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html"><i class="fas fa-check-circle"></i> See AI
+                            in Action</a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296"><i
+                                class="fa-solid fa-headset"></i> Hear a Live AI Agent</a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-box"></i> &ensp;Faster Confirmations</span>
+                <span><i class="fas fa-globe"></i> &ensp;40+ Languages</span>
+                <span><i class="fas fa-comments"></i> &ensp;Natural Conversations</span>
+                <span><i class="fas fa-clock"></i> &ensp;24/7 Support</span>
+            </div>
+        </section>
+        <!-- The Challenge -->
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">THE CHALLENGE</div>
+                    <h2>Order Confirmation Is Being Missed or Delayed</h2>
+                    <p>
+                        In ecommerce and services, the moment after a purchase is often the most fragile. If customers
+                        don't get an instant confirmation, answers to basic questions, or follow-up information, they
+                        become uncertain, contact support, or abandon trust.
+                    </p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="section-img"></div>
+                    <div class="grid grid-col-2">
+                        <div class="list-card"><span>01</span>
+                            <p><strong>Delayed confirmations create doubt.</strong><br>Customers are left wondering
+                                whether their order is complete.</p>
+                        </div>
+                        <div class="list-card"><span>02</span>
+                            <p><strong>Support queues get flooded.</strong><br>Routine “where is my order?” questions
+                                eat up agent time.</p>
+                        </div>
+                        <div class="list-card"><span>03</span>
+                            <p><strong>Customers miss critical next steps.</strong><br>Payment, shipping, appointment,
+                                or fulfilment details are not always clear.</p>
+                        </div>
+                        <div class="list-card"><span>04</span>
+                            <p><strong>Manual follow-ups are inconsistent.</strong><br>Teams cannot keep up with every
+                                order across channels.</p>
+                        </div>
+                        <div class="list-card"><span>05</span>
+                            <p><strong>Post-purchase issues go unresolved.</strong><br>Customers need reassurance on
+                                delivery dates or service onboarding.</p>
+                        </div>
+                        <div class="list-card"><span>06</span>
+                            <p><strong>High-value orders need human escalation.</strong><br>Without the right context,
+                                service teams cannot act fast.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Solution -->
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">The Solution</div>
+                    <h2>Automated Confirmation Without Losing the Human Touch</h2>
+                    <p>
+                        Letstawk confirms orders in real time, answers common questions, and supports next-step actions
+                        — while escalating exceptions to people when needed.
+                    </p>
+                </div>
+                <div class="business-grid">
+                    <div class="business-card">
+                        <h3><i class="fas fa-receipt"></i>Instant Confirmation</h3>
+                        <p>Verify purchases immediately and share order details, total, and what happens next.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-truck"></i>Fulfilment Updates</h3>
+                        <p>Give delivery, installation, or booking timelines based on your workflow and latest status
+                            data.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-question-circle"></i>Answer Common Questions</h3>
+                        <p>Resolve “when will it ship?”, “what’s included?”, or “can I reschedule?” without human
+                            intervention.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-route"></i>Smart Escalation</h3>
+                        <p>Send payments, exceptions, or VIP orders to an agent with all the context ready for handling.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-bolt"></i>Reduce Support Load</h3>
+                        <p>Free your team from repetitive post-purchase conversations and ensure scale during busy
+                            periods.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-chart-line"></i>Track Confidence</h3>
+                        <p>Measure confirmation rates, query trends, and conversion impact to optimise the post-purchase
+                            flow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How It Works -->
+        <style>
+            .card {
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background: var(--paper);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .head h3 {
+
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .heading-back h3 {
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: baseline;
+            }
+
+            .card i {
+                /* color: var(--indigo); */
+                color: var(--muted);
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--white);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--dark-grand);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .icon i {
+                color: var(--white);
+            }
+
+            .card:hover .icon {
+                transform: scale(1.02) rotate(-45deg);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">How It Works</div>
+                    <h2>From Purchase to Confirmation — Fully Automated</h2>
+                    <p>Letstawk keeps customers informed, reassured, and ready for the next step without manual
+                        back-and-forth.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <h3>Purchase Received</h3>
+                        </div>
+                        <p>The customer completes the order or service booking and the AI recognises the transaction
+                            immediately.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Confirm Details</h3>
+                        </div>
+                        <p>Letstawk verifies the order, amount, delivery window, service date, and other key details in
+                            plain language.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-message"></i></div>
+                            <h3>Explain Next Steps</h3>
+                        </div>
+                        <p>It clearly tells the customer what happens next, relevant updates, and how to reach support
+                            if required.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                            <h3>Check for Exceptions</h3>
+                        </div>
+                        <p>Payment issues, address mismatches, or service exceptions are flagged and escalated
+                            automatically.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-bell"></i></div>
+                            <h3>Trigger Follow-Ups</h3>
+                        </div>
+                        <p>Reminders, delivery updates, or scheduling nudges are sent based on the status of the order.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+                            <h3>Human Handoff</h3>
+                        </div>
+                        <p>Any complex or high-risk case is transferred with all details, so the team can resolve
+                            faster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ORDER CONFIRMATION USE CASES -->
+        <style>
+            .use-card {
+                background: var(--white);
+            }
+
+            .use-card h3 {
+                background: var(--paper-2);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-card h3 i {
+                /* color: var(--violet); */
+                font-size: 20px;
+            }
+
+            .txt i {
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width: 100%;">
+                    <div class="sec-eyebrow">ORDER CONFIRMATION USE CASES</div>
+                    <h2>Built for Post-Purchase Confidence</h2>
+                    <p>Whether you sell online, deliver services, or manage bookings, Letstawk improves certainty after
+                        the purchase.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-bag-shopping"></i>&ensp;Ecommerce</h3>
+                        </div>
+                        <p>Confirm purchases, share shipping windows, and answer routine post-sale questions without
+                            support delays.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-ticket"></i>&ensp;Travel & Reservations</h3>
+                        </div>
+                        <p>Confirm itineraries, payment success, service dates, and next steps for travellers and
+                            guests.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-user-doctor"></i>&ensp;Healthcare</h3>
+                        </div>
+                        <p>Confirm appointments, patient onboarding steps, and follow-ups while reducing call volume.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-cubes"></i>&ensp;SaaS & Subscriptions</h3>
+                        </div>
+                        <p>Validate activation, plan selection, and setup instructions with automatic confirmation
+                            flows.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-handshake"></i>&ensp;B2B Orders</h3>
+                        </div>
+                        <p>Confirm deals, contracts, purchase details, and service onboarding for corporate customers.
+                        </p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-building"></i>&ensp;Hospitality</h3>
+                        </div>
+                        <p>Confirm room bookings, event reservations, or room upgrades and guide guests through the
+                            arrival experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONNECT LETSTAWK TO YOUR EXISTING WORKFLOW -->
+        <section class="page-section industry-use-section">
+            <div class="wrap industry-use-grid">
+                <div style="justify-content: space-between;display: flex;flex-direction: column;height: stretch;">
+                    <div class="sec-eyebrow">CONNECT LETSTAWK TO YOUR EXISTING WORKFLOW</div>
+                    <h2>Integrate Order Confirmation with Your Systems</h2>
+                    <p>Letstawk connects to your CRM, order management, fulfilment, and communication tools to confirm
+                        and update every order smoothly.</p>
+                    <p>When the purchase is successful, the AI can confirm details, trigger team actions, and keep
+                        customers reassured throughout fulfilment.</p>
+                    <a class="btn btn-primary" href="contact.html"><i class="fa-solid fa-diagram-project"></i> Explore
+                        Integrations</a>
+                </div>
+                <div class="use-case-list">
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-database"></i>
+                            <h3>CRM</h3>
+                        </div>
+                        <p>Capture order confirmation data, customer status, and follow-up instructions in your CRM
+                            instantly.</p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-box"></i>
+                            <h3>Order Management</h3>
+                        </div>
+                        <p>Check order status, validate fulfilment milestones, and provide updates without manual
+                            rework.</p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-comment-dots"></i>
+                            <h3>Messaging</h3>
+                        </div>
+                        <p>Send confirmations and reminders by WhatsApp, SMS, or voice in the customer’s language and
+                            preferred channel.</p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i
+                                class="fas fa-money-bill-wave"></i>
+                            <h3>Payments</h3>
+                        </div>
+                        <p>Verify transaction success, identify failed payments, and guide payment resubmission when
+                            needed.</p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-cogs"></i>
+                            <h3>Business Automation</h3>
+                        </div>
+                        <p>Trigger fulfilment tasks, escalation workflows, or loyalty follow-ups automatically after
+                            each order.</p>
+                    </article>
+                    <article>
+                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fa-solid fa-book-open"></i>
+                            <h3>Knowledge Base</h3>
+                        </div>
+                        <p>Keep the AI aligned with products, shipping policies, return rules, and service details so
+                            it’s accurate every time.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
+
+            .cta-head {
+                flex: 0.9;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                object-fit: contain;
+                height: stretch;
+                background: url(images/cta/cta4.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img img {
+                    display: block;
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">START CONFIRMING ORDERS.</div>
+                        <h2>Turn Every Purchase into a Positive Post-Sale Experience.</h2>
+                        <p>
+                            Letstawk automates order confirmation, clarifies next steps, and protects customer trust —
+                            so
+                            purchase confidence stays high even at scale.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar-plus"></i>
+                                Request an Demo
+                            </a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
+                                <i class="fa-solid fa-headset"></i>
+                                Talk to an expert
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                        <img src="images/cta/cta4.webp" alt="CTA">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-component="faq"></div>
+        <script id="faqData" type="application/json">
+        {
+            "title":"Order Confirmation FAQs",
+            "description":"Answers to common questions about AI-powered order confirmation for ecommerce, services, and bookings.",
+            "items":[
+              {"question":"What does Letstawk confirm after a purchase?","answer":"It can confirm the order, payment status, delivery timeline, service date, and next-step instructions tailored to your business rules."},
+              {"question":"Can it answer repeating customer questions?","answer":"Yes. It handles questions like shipping windows, next steps, return policy, payment receipt, and appointment changes without requiring a live agent."},
+              {"question":"Can it escalate exceptions?","answer":"Yes. Cases like payment failures, address mismatch, or order anomalies can be transferred with full context to the appropriate team."},
+              {"question":"Does it work across channels?","answer":"Yes. Letstawk can confirm orders over phone, SMS, WhatsApp, or web interactions depending on your workflow."},
+              {"question":"How does it reduce support load?","answer":"It resolves routine support queries instantly, which frees the team to focus on complex problems and higher-value interactions."},
+              {"question":"Is it suitable for service businesses?","answer":"Absolutely. It is useful for appointment-based businesses, healthcare, travel, and any company that needs to confirm bookings or purchases."}
+            ]
+        }
+        </script>
+    </main>
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>
