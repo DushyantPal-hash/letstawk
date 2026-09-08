@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <title>REST API | APIs | Letstawk</title>
+    <meta name="description"
+        content="Integrate Letstawk's AI voice automation via REST API for custom workflows and applications.">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--indigo)" />
+                <stop offset=".5" stop-color="var(--violet)" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <style>
+            .banner-img2 {
+                background: url("images/pages/apis/rest-api/banner.webp") center center / cover no-repeat;
+            }
+
+            .api-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(13, 138, 255, 0.419);
+                padding: 6px 16px 6px 12px;
+                border-radius: 40px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-bottom: 12px;
+            }
+
+            .api-badge i {
+                font-size: 1rem;
+            }
+        </style>
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>APIs · REST API
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Integrations <span>›</span>
+                    APIs <span>›</span>
+                    REST API
+                </p>
+                <h1 style="max-width:100%; margin-bottom:20px;">
+                    REST API — Build Custom AI Voice Automation Workflows
+                </h1>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="api-badge"><i class="fas fa-code"></i> Developer-first integration</div>
+                    <p class="industry-lead" style="margin-top:0;">
+                        Letstawk's REST API gives you complete control to integrate AI voice automation into your custom
+                        applications, CRMs, and workflows. Build, scale, and automate with full flexibility.
+                    </p>
+                    <p class="industry-lead">
+                        <strong>Turn every voice conversation into structured data you can use anywhere — via simple,
+                            secure REST endpoints.</strong>
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html">
+                            <i class="fas fa-calendar-plus"></i> Get API Access
+                        </a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                            <i class="fa-solid fa-headset"></i> Talk to a Developer
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-code"></i>&ensp;RESTful Endpoints</span>
+                <span><i class="fas fa-shield-alt"></i>&ensp;Secure & Scalable</span>
+                <span><i class="fas fa-globe"></i>&ensp;40+ Languages</span>
+                <span><i class="fas fa-comment"></i>&ensp;Natural Conversations</span>
+                <span><i class="fas fa-clock"></i>&ensp;24/7 Availability</span>
+            </div>
+        </section>
+        <!-- THE CHALLENGE -->
+        <style>
+            .list-card {
+                display: block;
+            }
+
+            .list-card span {
+                color: var(--indigo);
+                font-weight: 700;
+            }
+
+            .section-img {
+                background: url(images/pages/apis/rest-api/side.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .list-card strong {
+                font-size: 16px;
+            }
+
+            .list-card p {
+                font-size: 14px;
+            }
+
+            @media (max-width: 760px) {
+                .section-img {
+                    height: 250px;
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE CHALLENGE</div>
+                    <h2>Building Custom AI Voice Integrations Should Be Simple, Not Complex</h2>
+                    <p>Developers often struggle with rigid, closed platforms that limit customization and flexibility.
+                        Building custom voice automation workflows shouldn't require reinventing the wheel or dealing
+                        with unnecessary complexity.</p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="section-img"></div>
+                    <div class="grid grid-col-2">
+                        <div class="list-card"><span>01</span>
+                            <p><strong>Limited platform flexibility.</strong><br>Most tools only work within their own
+                                ecosystem.</p>
+                        </div>
+                        <div class="list-card"><span>02</span>
+                            <p><strong>Complex integration requirements.</strong><br>Custom integrations often require
+                                months of development.</p>
+                        </div>
+                        <div class="list-card"><span>03</span>
+                            <p><strong>Data silos.</strong><br>Voice data gets locked in proprietary systems.</p>
+                        </div>
+                        <div class="list-card"><span>04</span>
+                            <p><strong>Lack of control.</strong><br>You can't customize conversations or workflows to
+                                your needs.</p>
+                        </div>
+                        <div class="list-card"><span>05</span>
+                            <p><strong>Slow feature development.</strong><br>Platforms don't move fast enough for your
+                                business needs.</p>
+                        </div>
+                        <div class="list-card"><span>06</span>
+                            <p><strong>Security and compliance concerns.</strong><br>Your data should stay under your
+                                control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- THE SOLUTION -->
+        <style>
+            .business-card {
+                background: var(--white);
+                padding: 28px 24px;
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                border-left: 3px solid var(--indigo);
+            }
+
+            .business-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .business-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: #1a1a2e;
+            }
+
+            .business-card h3 i {
+                color: #4338E8;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+
+            .business-card>p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #4a4a6a;
+            }
+
+            .qualification-full {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE SOLUTION</div>
+                    <h2>Full Control with Letstawk's REST API</h2>
+                    <p>Our REST API gives you complete flexibility to build, customize, and scale AI voice automation
+                        for your unique business needs. Simple, secure, and built for developers.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="business-card">
+                        <h3><i class="fas fa-plug"></i>Simple Integration</h3>
+                        <p>Standard REST endpoints with clear documentation make integration straightforward and fast.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-lock"></i>Secure & Scalable</h3>
+                        <p>Enterprise-grade authentication, encryption, and rate limiting ensure your data stays safe.
+                        </p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-cogs"></i>Full Customization</h3>
+                        <p>Build custom conversation flows, qualification logic, and workflows exactly how you need
+                            them.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-exchange-alt"></i>Real-time Data Sync</h3>
+                        <p>Push and pull data in real-time to keep your applications and CRM always up-to-date.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-chart-line"></i>Webhooks & Events</h3>
+                        <p>Subscribe to real-time events and trigger actions in your applications automatically.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-file-alt"></i>Comprehensive Docs</h3>
+                        <p>Detailed API documentation, SDKs, and code examples to get you started quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CODE EXAMPLE -->
+        <style>
+            .code-block {
+                background: #1a1a2e;
+                color: #e2e8f0;
+                padding: 20px 24px;
+                border-radius: 12px;
+                font-family: 'Courier New', monospace;
+                font-size: 0.85rem;
+                overflow-x: auto;
+                margin: 12px 0;
+                border-left: 4px solid var(--api-blue);
+            }
+
+            .code-block .comment {
+                color: #94a3b8;
+            }
+
+            .code-block .key {
+                color: #f472b6;
+            }
+
+            .code-block .string {
+                color: #34d399;
+            }
+
+            .code-block .method {
+                color: #60a5fa;
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">GET STARTED</div>
+                    <h2>REST API in Action</h2>
+                    <p>Simple, clean, and powerful. Here's how to initiate a voice call with Letstawk's REST API.</p>
+                </div>
+                <div
+                    style="background: #0f0f1f; border-radius: 16px; padding: 24px; overflow-x: auto; border: 1px solid rgba(255,255,255,0.06);">
+                    <div class="code-block">
+                        <span class="comment">// Initiate an outbound voice call with Letstawk</span><br>
+                        <span class="method">POST</span> <span
+                            style="color: #60a5fa;">https://api.letstawk.com/v1/calls</span><br>
+                        <span style="color: #94a3b8;">Content-Type: application/json</span><br>
+                        <span style="color: #94a3b8;">Authorization: Bearer YOUR_API_KEY</span><br><br>
+                        {<br>
+                        &nbsp;&nbsp;<span class="key">"to"</span>: <span class="string">"+1234567890"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"from"</span>: <span class="string">"+1234567890"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"flow_id"</span>: <span
+                            class="string">"qualification_flow_123"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"context"</span>: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"lead_name"</span>: <span class="string">"John
+                            Doe"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"source"</span>: <span
+                            class="string">"website"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"campaign"</span>: <span
+                            class="string">"Q4_outreach"</span><br>
+                        &nbsp;&nbsp;},<br>
+                        &nbsp;&nbsp;<span class="key">"webhook_url"</span>: <span
+                            class="string">"https://your-app.com/webhook"</span><br>
+                        }
+                    </div>
+                    <div class="code-block" style="margin-top:12px; border-left-color: var(--api-purple);">
+                        <span class="comment">// Response: Call initiated successfully</span><br>
+                        {<br>
+                        &nbsp;&nbsp;<span class="key">"call_id"</span>: <span
+                            class="string">"call_abc123xyz"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"status"</span>: <span class="string">"initiated"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"created_at"</span>: <span
+                            class="string">"2026-09-08T10:30:00Z"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"estimated_duration"</span>: <span
+                            class="string">"120s"</span><br>
+                        }
+                    </div>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-book"></i> Read Full Docs</a>
+                    <a href="contact.html" class="btn btn-third-dark on-dark btn-lg"
+                        style="border: 1px solid var(--ink-soft);"><i class="fas fa-download"></i>
+                        SDKs & Examples</a>
+                </div>
+            </div>
+        </section>
+        <!-- HOW IT WORKS -->
+        <style>
+            .card {
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background: var(--white);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .head h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .heading-back h3 {
+                background: var(--paper-2);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: baseline;
+            }
+
+            .card i {
+                /* color: var(--indigo); */
+                color: var(--muted);
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--white);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--dark-grand);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .icon i {
+                color: var(--white);
+            }
+
+            .card:hover .icon {
+                transform: scale(1.02) rotate(-45deg);
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">HOW IT WORKS</div>
+                    <h2>From API Call to Voice Conversation — In Seconds</h2>
+                    <p>Letstawk's REST API makes it easy to integrate AI voice automation into your applications.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-key"></i></div>
+                            <h3>Authenticate</h3>
+                        </div>
+                        <p>Get your API key from the dashboard and include it in every request header.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <h3>Initiate Call</h3>
+                        </div>
+                        <p>Send a POST request to initiate an inbound or outbound voice call with your custom flow.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h3>Real-time Updates</h3>
+                        </div>
+                        <p>Receive webhook notifications for call status, transcript, and qualification results.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-database"></i></div>
+                            <h3>Sync Data</h3>
+                        </div>
+                        <p>Push and pull conversation data, insights, and actions to your applications instantly.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-cog"></i></div>
+                            <h3>Custom Logic</h3>
+                        </div>
+                        <p>Build and deploy custom conversation flows using our flow builder or API.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Monitor & Optimize</h3>
+                        </div>
+                        <p>Track performance, engagement, and conversion metrics through the API or dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHY DEVELOPERS LOVE THIS -->
+        <style>
+            .use-card {
+                background: var(--paper);
+            }
+
+            .use-card h3 {
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-card h3 i {
+                /* color: var(--violet); */
+                font-size: 20px;
+            }
+
+            .txt i {
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">WHY DEVELOPERS LOVE THIS</div>
+                    <h2>Built for Developers, By Developers</h2>
+                    <p>Letstawk's REST API is designed with developer experience in mind — simple, documented, and
+                        flexible.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-check-double"></i>&ensp;Clean, RESTful endpoints</h3>
+                        </div>
+                        <p>Predictable, well-structured endpoints following REST best practices.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-clock"></i>&ensp;Fast integration time</h3>
+                        </div>
+                        <p>Most integrations take less than a day to get up and running.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-book"></i>&ensp;Comprehensive docs</h3>
+                        </div>
+                        <p>Detailed documentation with code examples in multiple languages.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-shield-alt"></i>&ensp;Enterprise-grade security</h3>
+                        </div>
+                        <p>OAuth 2.0, API key authentication, and strict rate limiting.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-code-branch"></i>&ensp;Flexible integration</h3>
+                        </div>
+                        <p>Works with any programming language and framework.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-users"></i>&ensp;Community & support</h3>
+                        </div>
+                        <p>Active developer community and dedicated engineering support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- API FEATURES -->
+        <style>
+            .feat {
+                background: var(--white);
+            }
+
+            .feat h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--paper);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .feat:hover .ic {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .ic {
+                transition: transform .35s ease;
+                background: linear-gradient(120deg, #aecdfc, #dea8ba) !important;
+                z-index: 9;
+            }
+
+            .ic i {
+                color: var(--indigo);
+                font-size: 20px;
+            }
+
+            .feat li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">API FEATURES</div>
+                    <h2>Everything You Need to Build Voice AI Workflows</h2>
+                    <p>From call initiation to conversation analytics, Letstawk's API has you covered.</p>
+                </div>
+                <div class="grid grid-col-3">
+
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3 style="margin:0;">Call Management</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Initiate, monitor, and manage
+                            inbound and outbound voice calls programmatically.</p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h3 style="margin:0;">Conversation Flows</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Create, deploy, and update
+                            custom conversation flows via API or visual builder.</p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 style="margin:0;">Data Sync</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Push and pull call data,
+                            transcripts, notes, and qualification results in real-time.</p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 style="margin:0;">Webhooks</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Subscribe to real-time events
+                            like call start, completion, and qualification results.</p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 style="margin:0;">Analytics</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Access call metrics,
+                            conversion data, and conversation insights through the API.</p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h3 style="margin:0;">Team Management</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">Manage users, permissions,
+                            and team settings programmatically.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
+
+            .cta-head {
+                flex: 0.9;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                height: stretch;
+                background: url("images/cta/contact-us.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img {
+                    min-height: 250px;
+
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">START BUILDING WITH THE API.</div>
+                        <h2 style="color:var(--text);margin-top: 0;">
+                            Get API Access and Start Building Today.
+                        </h2>
+                        <p style="color:var(--muted);">
+                            Join hundreds of developers building custom AI voice automation workflows with Letstawk's
+                            REST API. Get started with our comprehensive docs and SDKs.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-plug"></i> Request a
+                                Demo</a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg"><i
+                                    class="fa-solid fa-headset"></i> Talk to an expert</a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <div data-component="faq"></div>
+        <script id="faqData" type="application/json">
+        {
+            "title":"REST API FAQs",
+            "description":"Answers to common questions about Letstawk's REST API and AI voice automation.",
+            "items":[
+              {"question":"What authentication methods does the API support?","answer":"We support API key authentication and OAuth 2.0 for secure, enterprise-grade access."},
+              {"question":"What endpoints are available?","answer":"We offer endpoints for call management, conversation flows, data sync, webhooks, analytics, and team management."},
+              {"question":"Can I integrate with my existing systems?","answer":"Yes. Our REST API works with any programming language and framework, making it easy to integrate with your existing applications."},
+              {"question":"What are the rate limits?","answer":"Rate limits depend on your plan. All plans include generous limits with the option to scale."},
+              {"question":"Do you provide SDKs?","answer":"Yes. We offer SDKs for popular languages including Python, JavaScript, Java, and PHP."},
+              {"question":"Is there a free tier for testing?","answer":"Yes. We offer a free tier for testing and development with full API access."}
+            ]
+        }
+        </script>
+    </main>
+    <!-- Footer  -->
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

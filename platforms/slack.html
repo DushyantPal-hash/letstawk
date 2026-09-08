@@ -5,17 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <base href="/">
-    <title>AI Voice Agent for Salesforce | Letstawk</title>
-    <meta name="description"
-        content="Connect Letstawk with Salesforce to qualify leads, automate outbound workflows, and turn every sales conversation into structured CRM-ready action.">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Slack Integration | Platforms | Letstawk</title>
+    <meta name="description" content="Integrate Letstawk with Slack to sync leads, notifications, and team activities.">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
@@ -32,68 +30,73 @@
     <div data-component="navbar"></div>
     <!-- Page Body -->
     <main>
+        <!-- HERO -->
         <style>
             .banner-img2 {
-                background: url("images/pages/salesforce/banner.webp") center center / cover no-repeat;
+                background: url("images/pages/slack/banner.webp") center center / cover no-repeat;
+            }
+
+            .slack-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(13, 138, 255, 0.419);
+                padding: 6px 16px 6px 12px;
+                border-radius: 40px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-bottom: 12px;
+            }
+
+            .slack-badge i {
+                font-size: 1rem;
             }
         </style>
-        <!-- HERO -->
         <section class="industry-hero">
             <div class="wrap">
-                <div class="eyebrow" style="margin-bottom: 0px;margin-top: 10px;">
-                    <span class="pulse"></span>Integrations · Salesforce
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>Integrations · Slack
                 </div>
                 <p class="industry-breadcrumb">
                     <a href="index.html">Home</a><span>›</span>
                     Integrations <span>›</span>
                     Platforms <span>›</span>
-                    Salesforce
+                    Slack
                 </p>
-                <h1 style="max-width: 100%; margin-bottom: 20px;">
-                    AI Voice Automation for Salesforce That Keeps Every Lead Moving
+                <h1 style="max-width:100%; margin-bottom:20px;">
+                    AI Voice Automation for Slack That Keeps Every Lead & Team Moving
                 </h1>
             </div>
             <div class="wrap industry-hero-grid">
                 <div>
-                    <p class="industry-lead" style="margin-top: 0;">
-                        Letstawk connects directly with Salesforce to qualify leads, automate follow-ups, capture call
-                        details, and route the right customers to the right rep with a complete context record.
+                    <div class="slack-badge"><i class="fab fa-slack"></i> Real-time team collaboration</div>
+                    <p class="industry-lead" style="margin-top:0;">
+                        Letstawk connects directly with Slack to qualify leads, automate follow-ups, capture call
+                        details, and route the right customers to the right team member with complete context - all
+                        delivered to your Slack channels.
                     </p>
                     <p class="industry-lead">
-                        <strong>
-                            Turn every inbound and outbound sales conversation into structured
-                            CRM value.
-                        </strong>
+                        <strong>Turn every inbound and outbound conversation into structured Slack notifications and
+                            team actions - automatically.</strong>
                     </p>
                     <div class="industry-actions on-dark">
                         <a class="btn btn-primary btn-lg" href="contact.html">
-                            <i class="fas fa-calendar-plus"></i> Connect with Salesforce
+                            <i class="fas fa-calendar-plus"></i> Connect with Slack
                         </a>
                         <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
                             <i class="fa-solid fa-headset"></i> Hear a Live AI Agent
                         </a>
                     </div>
                 </div>
-                <div class="banner-img2" aria-hidden="true">
-                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
             </div>
             <div class="wrap banner-count">
-                <span>
-                    <i class="fas fa-calendar"></i>
-                    &ensp;Auto-Schedule
-                </span>
-                <span>
-                    <i class="fas fa-globe"></i>
-                    &ensp;40+ Languages
-                </span>
-                <span>
-                    <i class="fas fa-comment"></i>
-                    &ensp;Natural Conversations
-                </span>
-                <span>
-                    <i class="fas fa-clock"></i>
-                    &ensp;24/7 Booking
-                </span>
+                <span><i class="fab fa-slack"></i>&ensp;Real-time Alerts</span>
+                <span><i class="fas fa-calendar"></i>&ensp;Auto-Schedule</span>
+                <span><i class="fas fa-globe"></i>&ensp;40+ Languages</span>
+                <span><i class="fas fa-comment"></i>&ensp;Natural Conversations</span>
+                <span><i class="fas fa-clock"></i>&ensp;24/7 Availability</span>
             </div>
         </section>
         <!-- THE CHALLENGE -->
@@ -108,18 +111,18 @@
             }
 
             .section-img {
-                background: url(images/pages/salesforce/side3.webp);
-                background-size: contain;
+                background: url(images/pages/slack/side.webp);
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
             }
 
             .list-card strong {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .list-card p {
-                font-size: 16px;
+                font-size: 14px;
             }
 
             @media (max-width: 760px) {
@@ -130,30 +133,30 @@
         </style>
         <section class="page-section">
             <div class="wrap">
-                <div class="sec-head" style="max-width: 100%;">
+                <div class="sec-head" style="max-width:100%;">
                     <div class="sec-eyebrow">THE CHALLENGE</div>
-                    <h2>Salesforce Data Is Only Useful When It Is Captured and Actioned</h2>
-                    <p>Manual qualification, missed calls, and incomplete records cause sales opportunities to stall
-                        before they reach the right rep or campaign. Teams end up doing repetitive administrative work
-                        instead of selling.</p>
+                    <h2>Team Communication Is Only Useful When It Is Timely and Actionable</h2>
+                    <p>Manual lead routing, missed notifications, and incomplete context cause opportunities to stall
+                        before they reach the right team member. Teams end up chasing information instead of closing
+                        deals.</p>
                 </div>
                 <div class="grid grid-col-2">
                     <div class="section-img"></div>
                     <div class="grid grid-col-2">
                         <div class="list-card"><span>01</span>
-                            <p><strong>Inbound calls aren’t fully captured.</strong><br>Important information gets lost
-                                or sticks in notes.</p>
+                            <p><strong>Leads aren't routed quickly.</strong><br>Important opportunities sit waiting for
+                                manual assignment.</p>
                         </div>
                         <div class="list-card"><span>02</span>
-                            <p><strong>Lead qualification is inconsistent.</strong><br>Different sales reps ask
-                                different questions and score differently.</p>
+                            <p><strong>Context is lost in translation.</strong><br>Notes and call details don't reach
+                                the right person.</p>
                         </div>
                         <div class="list-card"><span>03</span>
-                            <p><strong>CRM hygiene suffers.</strong><br>Leads sit unqualified or with partial
-                                information.</p>
+                            <p><strong>Team members miss notifications.</strong><br>Follow-ups are delayed or forgotten.
+                            </p>
                         </div>
                         <div class="list-card"><span>04</span>
-                            <p><strong>Follow-up is delayed.</strong><br>Sales reps don’t get enough context fast
+                            <p><strong>Follow-up is delayed.</strong><br>Team members don't get enough context fast
                                 enough.</p>
                         </div>
                         <div class="list-card"><span>05</span>
@@ -168,7 +171,7 @@
                 </div>
             </div>
         </section>
-        <!-- The Solution -->
+        <!-- THE SOLUTION -->
         <style>
             .business-card {
                 background: var(--white);
@@ -210,31 +213,30 @@
         </style>
         <section class="page-section tint">
             <div class="wrap">
-                <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">The Solution</div>
-                    <h2>Bring Sales Conversations Into Salesforce Automatically</h2>
-                    <p>Letstawk captures the relevant lead details, scores intent, segments the conversation, and writes
-                        the outcome back to Salesforce so your sales teams can act immediately.</p>
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE SOLUTION</div>
+                    <h2>Bring Team Conversations Into Slack Automatically</h2>
+                    <p>Letstawk captures the relevant lead details, scores intent, segments the conversation, and sends
+                        structured updates to Slack channels so your teams can act immediately.</p>
                 </div>
                 <div class="grid grid-col-3">
                     <div class="business-card">
                         <h3><i class="fas fa-filter"></i>Lead Qualification</h3>
-                        <p>Ask the right qualification questions and route only the best-fit leads to the correct rep or
-                            queue.</p>
+                        <p>Ask the right qualification questions and route only the best-fit leads to the correct Slack
+                            channel or team member.</p>
                     </div>
                     <div class="business-card">
-                        <h3><i class="fas fa-database"></i>CRM Capture</h3>
-                        <p>Write structured customer responses, intent scores, notes, and status updates directly into
-                            Salesforce.</p>
+                        <h3><i class="fas fa-bell"></i>Real-time Notifications</h3>
+                        <p>Send structured updates, call summaries, and lead details directly to Slack channels.</p>
                     </div>
                     <div class="business-card">
                         <h3><i class="fas fa-route"></i>Intelligent Routing</h3>
-                        <p>Send the right lead to the right owner or territory based on deal type, region, or
-                            qualification rules.</p>
+                        <p>Route leads to the right Slack channel or team member based on type, region, or qualification
+                            rules.</p>
                     </div>
                     <div class="business-card">
-                        <h3><i class="fas fa-bell"></i>Automated Follow-Up</h3>
-                        <p>Trigger reminders, nurture flows, and callback campaigns after each conversation.</p>
+                        <h3><i class="fas fa-comment-dots"></i>Threaded Context</h3>
+                        <p>Maintain conversation context in Slack threads so team members have full visibility.</p>
                     </div>
                     <div class="business-card">
                         <h3><i class="fas fa-chart-bar"></i>Insights & Reporting</h3>
@@ -243,13 +245,13 @@
                     </div>
                     <div class="business-card">
                         <h3><i class="fas fa-user-check"></i>Human Handoff</h3>
-                        <p>Escalate complex or high-value leads with full call context and qualification summary already
-                            in the record.</p>
+                        <p>Escalate complex or high-value leads with full call context and qualification summary
+                            delivered to Slack.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- How It Works -->
+        <!-- HOW IT WORKS -->
         <style>
             .card {
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
@@ -326,11 +328,11 @@
         </style>
         <section class="page-section">
             <div class="wrap">
-                <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">How It Works</div>
-                    <h2>From Call to CRM Update - In Real Time</h2>
-                    <p>Letstawk integrates with Salesforce to keep lead data clean, fresh, and ready for sales teams to
-                        act on.</p>
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">HOW IT WORKS</div>
+                    <h2>From Call to Slack Notification - In Real Time</h2>
+                    <p>Letstawk integrates with Slack to keep your team informed and ready to act on every conversation.
+                    </p>
                 </div>
                 <div class="grid grid-col-3">
                     <div class="card">
@@ -338,8 +340,7 @@
                             <div class="icon"><i class="fa-solid fa-phone"></i></div>
                             <h3>Inbound or Outbound Call</h3>
                         </div>
-                        <p>A lead calls in or the AI initiates outreach based on a Salesforce list, campaign, or
-                            segment.</p>
+                        <p>A lead calls in or the AI initiates outreach based on a campaign or segment.</p>
                     </div>
                     <div class="card">
                         <div class="head heading-back">
@@ -354,24 +355,23 @@
                             <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
                             <h3>Score and Categorise</h3>
                         </div>
-                        <p>The conversation is scored and tagged to the right sales stage, lead type, or interest
-                            category.</p>
+                        <p>The conversation is scored and tagged to the right stage, lead type, or interest category.
+                        </p>
                     </div>
                     <div class="card">
                         <div class="head heading-back">
-                            <div class="icon"><i class="fa-solid fa-database"></i></div>
-                            <h3>Write Back to Salesforce</h3>
+                            <div class="icon"><i class="fab fa-slack"></i></div>
+                            <h3>Send to Slack Channel</h3>
                         </div>
-                        <p>Notes, field updates, and next actions are pushed into Salesforce automatically with zero
-                            manual re-entry.</p>
+                        <p>Structured lead data, call summary, and next actions are pushed to the relevant Slack
+                            channel.</p>
                     </div>
                     <div class="card">
                         <div class="head heading-back">
                             <div class="icon"><i class="fa-solid fa-route"></i></div>
                             <h3>Route to the Right Owner</h3>
                         </div>
-                        <p>Lead continuity is maintained through rep assignment, queueing, and workflow rules built
-                            around Salesforce.</p>
+                        <p>Team members are tagged and notified based on assignment rules and workflows.</p>
                     </div>
                     <div class="card">
                         <div class="head heading-back">
@@ -400,11 +400,11 @@
         </style>
         <section class="page-section industry-use-section">
             <div class="wrap industry-use-grid">
-                <div style="justify-content: space-between;display: flex;flex-direction: column;height: stretch;">
-                    <div class="sec-eyebrow">CONNECT LETSTAWK TO YOUR SALES STACK</div>
-                    <h2>Built for Salesforce and your broader sales workflow</h2>
-                    <p>Letstawk connects with your Salesforce environment and surrounding tools to make every
-                        conversation feed directly into your sales engine.</p>
+                <div style="justify-content:space-between;display:flex;flex-direction:column;">
+                    <div class="sec-eyebrow">CONNECT LETSTAWK TO YOUR TEAM STACK</div>
+                    <h2>Built for Slack and your broader team workflow</h2>
+                    <p>Letstawk connects with your Slack environment and surrounding tools to make every conversation
+                        feed directly into your team's workflow.</p>
                     <p>From qualification to follow-up, the AI helps your team act faster with cleaner records and
                         stronger lead management.</p>
                     <a class="btn btn-primary" href="contact.html"><i class="fa-solid fa-diagram-project"></i> Explore
@@ -412,42 +412,39 @@
                 </div>
                 <div class="use-case-list">
                     <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-database"></i>
-                            <h3>Salesforce Objects</h3>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fab fa-slack"></i>
+                            <h3>Slack Channels</h3>
                         </div>
-                        <p>Map calls, lead data, notes, tasks, and statuses into the correct objects and fields in
-                            Salesforce.</p>
+                        <p>Route leads, call summaries, and notifications to the right Slack channels automatically.</p>
                     </article>
                     <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-route"></i>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fas fa-route"></i>
                             <h3>Lead Routing</h3>
                         </div>
                         <p>Route new and existing leads to the right owner and queue based on score, geography, or
                             business rules.</p>
                     </article>
                     <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-calendar-alt"></i>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fas fa-calendar-alt"></i>
                             <h3>Scheduling</h3>
                         </div>
-                        <p>Book appointments or meetings and sync the activity back to Salesforce without manual admin.
+                        <p>Book appointments or meetings and sync the activity to Slack without manual admin.</p>
+                    </article>
+                    <article>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fas fa-bullhorn"></i>
+                            <h3>Campaigns</h3>
+                        </div>
+                        <p>Trigger campaign flows and nurture outreach based on lead status and engagement.</p>
+                    </article>
+                    <article>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fas fa-cogs"></i>
+                            <h3>Automation</h3>
+                        </div>
+                        <p>Sync call outcomes to tasks, assignment rules, or next-step actions without lifting a finger.
                         </p>
                     </article>
                     <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-bullhorn"></i>
-                            <h3>Campaigns</h3>
-                        </div>
-                        <p>Trigger campaign flows and nurture outreach based on lead status and engagement inside
-                            Salesforce.</p>
-                    </article>
-                    <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fas fa-cogs"></i>
-                            <h3>Automation</h3>
-                        </div>
-                        <p>Sync a call outcome to tasks, assignment rules, or next-step actions without lifting a
-                            finger.</p>
-                    </article>
-                    <article>
-                        <div style="display: flex; align-items: center;gap: 20px;"><i class="fa-solid fa-book-open"></i>
+                        <div style="display:flex;align-items:center;gap:20px;"><i class="fa-solid fa-book-open"></i>
                             <h3>Knowledge</h3>
                         </div>
                         <p>Pull business rules, product information, and objection handling into the AI so qualification
@@ -456,7 +453,7 @@
                 </div>
             </div>
         </section>
-        <!-- WHY SALESFORCE TEAMS LOVE THIS -->
+        <!-- WHY TEAMS LOVE THIS -->
         <style>
             .use-card {
                 background: var(--white);
@@ -478,25 +475,24 @@
         </style>
         <section class="page-section tint">
             <div class="wrap">
-                <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">WHY SALESFORCE TEAMS LOVE THIS</div>
-                    <h2>Sales Enablement Without the Manual Work</h2>
-                    <p>Letstawk helps sales teams work faster and more accurately by automating the entry,
-                        qualification, and follow-up work around every conversation.</p>
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">WHY TEAMS LOVE THIS</div>
+                    <h2>Team Enablement Without the Manual Work</h2>
+                    <p>Letstawk helps teams work faster and more accurately by automating the routing, notification, and
+                        follow-up work around every conversation.</p>
                 </div>
                 <div class="grid grid-col-3">
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-check-double"></i>&ensp;Cleaner lead data</h3>
+                            <h3><i class="fa-solid fa-check-double"></i>&ensp;Real-time lead visibility</h3>
                         </div>
-                        <p>Capture structured, consistent details that make Salesforce records immediately actionable.
-                        </p>
+                        <p>Capture structured, consistent details that make Slack records immediately actionable.</p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
                             <h3><i class="fa-solid fa-clock"></i>&ensp;Faster response times</h3>
                         </div>
-                        <p>Prospects never wait long for an answer or a rep follow-up when intent is high.</p>
+                        <p>Team members never miss a high-intent lead with instant Slack notifications.</p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
@@ -509,7 +505,7 @@
                         <div class="head">
                             <h3><i class="fa-solid fa-clipboard-list"></i>&ensp;Less manual admin</h3>
                         </div>
-                        <p>Sales reps drop fewer notes and spend less time updating records after each call.</p>
+                        <p>Team members spend less time updating records and chasing context.</p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
@@ -563,12 +559,12 @@
                 flex: 0.5;
                 border-radius: 20px;
                 overflow: hidden;
-                object-fit: contain;
                 height: stretch;
-                background: url(images/cta/salesforce.webp);
-                background-size: contain;
+                background: url("images/cta/contact-us.webp");
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: right;
+
             }
 
             .cta-img img {
@@ -581,8 +577,9 @@
                     flex-direction: column-reverse;
                 }
 
-                .cta-img img {
-                    display: block;
+                .cta-img {
+                    min-height: 250px;
+
                 }
             }
         </style>
@@ -591,10 +588,15 @@
             <div class="wrap">
                 <div class="cta">
                     <div class="cta-head">
-                        <div class="sec-eyebrow">BRING AI INTO SALESFORCE.</div>
-                        <h2>Let Every Sales Conversation Update the CRM Automatically.</h2>
-                        <p>With Letstawk and Salesforce, your team can capture lead intent faster, route better, and
-                            move prospects forward with data that is already structured and ready for action.</p>
+                        <!-- <div class="sec-eyebrow">BRING AI INTO SLACK.</div> -->
+                        <h2 style="color:var(--text);margin-top: 0;">
+                            Let Every Conversation Update Your Team's Slack Channel Automatically.
+                        </h2>
+                        <p style="color:var(--muted);">
+                            With Letstawk and Slack, your team can capture lead intent faster, route better, and move
+                            prospects forward with data that is already structured and ready for action - all delivered
+                            to your team's communication hub.
+                        </p>
                         <div class="cta-actions">
                             <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-plug"></i> Request a
                                 Demo</a>
@@ -611,15 +613,15 @@
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
         {
-            "title":"Salesforce Integration FAQs",
-            "description":"Answers to common questions about Letstawk's Salesforce integration and AI-powered sales automation.",
+            "title":"Slack Integration FAQs",
+            "description":"Answers to common questions about Letstawk's Slack integration and AI-powered team automation.",
             "items":[
-              {"question":"Can Letstawk write data back into Salesforce?","answer":"Yes. It can update fields, create notes, add tasks, log outcomes, and route leads based on the conversation and custom rules you define."},
-              {"question":"Does it work for lead qualification?","answer":"Yes. It can ask qualification questions, score the lead, and push quality and routing data directly into the CRM before a human touches it."},
-              {"question":"Can it handle inbound and outbound sales conversations?","answer":"Yes. The AI can answer inbound leads and initiate outbound follow-up or nurture flows based on campaign or opportunity rules."},
-              {"question":"Does the integration support existing Salesforce workflows?","answer":"Yes. Logic can be aligned to your lead statuses, assignment rules, territories, and campaign orchestration to fit your current process."},
-              {"question":"How does it help sales teams?","answer":"It reduces manual admin work, speeds up lead qualification, and ensures your sales reps always have the information they need before a call or follow-up."},
-              {"question":"Is it suitable for teams with many leads?","answer":"Absolutely. It scales across high-volume sales operations and keeps CRM records reliable without additional headcount."}
+              {"question":"Can Letstawk send notifications to Slack?","answer":"Yes. It can send structured lead data, call summaries, and next actions directly to specific Slack channels or direct messages."},
+              {"question":"Does it work for lead qualification?","answer":"Yes. It can ask qualification questions, score the lead, and push quality and routing data directly to Slack before a human touches it."},
+              {"question":"Can it handle inbound and outbound conversations?","answer":"Yes. The AI can answer inbound leads and initiate outbound follow-up or nurture flows based on campaign or opportunity rules."},
+              {"question":"Does the integration support existing Slack workflows?","answer":"Yes. Logic can be aligned to your team's channels, assignment rules, and campaign orchestration to fit your current process."},
+              {"question":"How does it help teams?","answer":"It reduces manual admin work, speeds up lead qualification, and ensures your team always has the information they need before a call or follow-up."},
+              {"question":"Is it suitable for teams with many leads?","answer":"Absolutely. It scales across high-volume operations and keeps team members informed without additional headcount."}
             ]
         }
         </script>
