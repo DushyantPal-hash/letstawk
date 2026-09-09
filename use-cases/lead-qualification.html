@@ -7,7 +7,7 @@
     <base href="/">
     <title>AI Voice Agent for Travel Lead Qualification | Letstawk</title>
     <meta name="description"
-        content="Qualify travel leads automatically with Letstawk AI voice agents. Capture traveller preferences, budgets, itineraries and route high-intent prospects to your travel team.">
+        content="Qualify travel leads automatically with Letstawk AI voice agents. Capture traveller preferences, budgets, itineraries and route high-intent prospects to your travel team through natural voice conversations.">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,133 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 0.8rem 1rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            transition: 0.2s;
+            border: 1px solid #eef2f6;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 1.85rem;
+            color: var(--indigo);
+            margin: 0.5rem 0;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 2rem 1rem;
+            border-radius: 2rem;
+            box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4338E8, #FF6B8B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--indigo);
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 2rem;
+            border-left: 6px solid var(--violet);
+        }
+
+        .testimonial p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial .author {
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .pill {
+            background: #eef2ff;
+            color: var(--indigo);
+            padding: 0.2rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2col {
+                grid-template-columns: 1fr;
+                gap: 0px;
+            }
+
+            .grid-3col {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -41,36 +168,39 @@
         <section class="industry-hero">
             <div class="wrap">
                 <div class="eyebrow" style="margin-bottom: 0px;margin-top: 10px;">
-                    <span class="pulse"></span>USE CASE · LEAD QUALIFICATION
+                    <span class="pulse"></span>USE CASE · VOICE LEAD QUALIFICATION
                 </div>
                 <p class="industry-breadcrumb">
                     <a href="index.html">Home</a><span>›</span>
                     Solutions <span>›</span>
                     Use Cases <span>›</span>
-                    Lead Qualification
+                    Voice Lead Qualification
                 </p>
                 <h1 style="max-width: 100%; margin-bottom: 20px;">
-                    Qualify More Travel Leads Without Tying Up Your Team
+                    Qualify More Travel Leads Through Natural Voice Conversations
                 </h1>
             </div>
             <div class="wrap industry-hero-grid">
                 <div>
                     <p class="industry-lead" style="margin-top: 0;">
-                        Letstawk’s AI voice agent helps travel agencies, tour operators, DMCs, and hospitality brands
-                        qualify leads at scale - capturing traveller preferences, budgets, group size, destinations, and
-                        intent before passing high-potential prospects to your sales team.
+                        Letstawk's <strong>voice-first AI agent</strong> helps travel agencies, tour operators, DMCs,
+                        and hospitality brands
+                        qualify leads at scale over the phone — capturing traveller preferences, budgets, group size,
+                        destinations, and
+                        intent through natural voice conversations before passing high-potential prospects to your sales
+                        team.
                     </p>
                     <p class="industry-lead">
                         <strong>
-                            Turn every inbound call into a qualified opportunity - automatically.
+                            Turn every inbound voice call into a qualified opportunity — automatically.
                         </strong>
                     </p>
                     <div class="industry-actions on-dark">
                         <a class="btn btn-primary btn-lg" href="contact.html">
-                            <i class="fas fa-filter"></i> Lead Qualification in Action
+                            <i class="fas fa-phone-volume"></i> See Voice in Action
                         </a>
                         <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
-                            <i class="fa-solid fa-headset"></i> Hear a Live AI Agent
+                            <i class="fa-solid fa-headset"></i> Hear a Live Voice Agent
                         </a>
                     </div>
                 </div>
@@ -80,15 +210,15 @@
             <div class="wrap banner-count">
                 <span>
                     <i class="fas fa-user-check"></i>
-                    &ensp;Qualify in Real-Time
+                    &ensp;Voice Qualification
                 </span>
                 <span>
                     <i class="fas fa-globe"></i>
-                    &ensp;40+ Languages
+                    &ensp;40+ Voice Languages
                 </span>
                 <span>
                     <i class="fas fa-comment"></i>
-                    &ensp;Natural Conversations
+                    &ensp;Natural Voice Conversations
                 </span>
                 <span>
                     <i class="fas fa-arrow-right"></i>
@@ -125,16 +255,17 @@
         <section class="page-section">
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">THE CHALLENGE</div>
+                    <div class="sec-eyebrow">THE VOICE QUALIFICATION CHALLENGE</div>
                     <h2>
-                        Most Travel Enquiries Are Not Ready to Book - But They Could Be
+                        Most Travel Voice Enquiries Are Not Ready to Book — But They Could Be
                     </h2>
                     <p>
-                        Your team spends hours on calls that start with “I’m just looking” or “Can you tell me
-                        about...”.
-                        Without a structured qualification process, sales reps waste time on low-intent leads while
-                        high-value opportunities wait. Letstawk automates the first conversation - capturing key
-                        qualifiers and routing only the best leads to your team.
+                        Your team spends hours on phone calls that start with "I'm just looking" or "Can you tell me
+                        about...". Without a structured voice qualification process, sales reps waste time on low-intent
+                        calls while high-value opportunities wait on hold. Letstawk automates the first voice
+                        conversation
+                        — capturing key qualifiers through natural dialogue and routing only the best leads to your
+                        team.
                     </p>
                 </div>
                 <div class="grid grid-col-2">
@@ -144,38 +275,39 @@
                         <div class="list-card">
                             <span>01</span>
                             <p>
-                                <strong>Low-intent calls drain sales time.</strong><br>
-                                Many callers are just browsing - but you can’t afford to ignore them.
+                                <strong>Low-intent voice calls drain sales time.</strong><br>
+                                Many callers are just browsing — but you can't afford to ignore them.
                             </p>
                         </div>
                         <div class="list-card"><span>02</span>
                             <p>
-                                <strong>Qualification is inconsistent.</strong><br>
-                                Different agents ask different questions, leading to incomplete lead data.
+                                <strong>Voice qualification is inconsistent.</strong><br>
+                                Different agents ask different questions over the phone, leading to incomplete lead
+                                data.
                             </p>
                         </div>
                         <div class="list-card"><span>03</span>
                             <p>
-                                <strong>Follow-ups are manual and slow.</strong><br>
-                                Without captured data, re-engaging leads feels like starting from scratch.
+                                <strong>Voice follow-ups are manual and slow.</strong><br>
+                                Without captured data from calls, re-engaging leads feels like starting from scratch.
                             </p>
                         </div>
                         <div class="list-card"><span>04</span>
                             <p>
-                                <strong>High-intent leads get lost in the queue.</strong><br>
-                                A traveller ready to book today shouldn’t wait for a callback.
+                                <strong>High-intent voice leads get lost in the queue.</strong><br>
+                                A traveller ready to book today shouldn't wait for a callback.
                             </p>
                         </div>
                         <div class="list-card"><span>05</span>
                             <p>
-                                <strong>Seasonal spikes overwhelm staff.</strong><br>
-                                Peak enquiry periods create backlogs and missed opportunities.
+                                <strong>Seasonal voice spikes overwhelm staff.</strong><br>
+                                Peak enquiry periods create backlogs and missed voice opportunities.
                             </p>
                         </div>
                         <div class="list-card"><span>06</span>
                             <p>
-                                <strong>Data capture is fragmented.</strong><br>
-                                Without a unified system, lead details are scattered across notes and emails.
+                                <strong>Voice data capture is fragmented.</strong><br>
+                                Without a unified system, lead details from calls are scattered across notes and emails.
                             </p>
                         </div>
                     </div>
@@ -237,74 +369,79 @@
         <section class="page-section tint">
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">The Solution</div>
+                    <div class="sec-eyebrow">THE VOICE SOLUTION</div>
                     <h2>
-                        AI-Powered Lead Qualification That Captures, Scores, and Routes
+                        AI-Powered Voice Qualification That Captures, Scores, and Routes
                     </h2>
                     <p>
-                        Letstawk turns every incoming call into a structured qualification conversation. The AI asks the
-                        right questions, captures traveller needs, scores intent, and delivers qualified leads to your
-                        sales team - with context and priority.
+                        Letstawk turns every incoming phone call into a structured qualification conversation. The AI
+                        speaks
+                        naturally, asks the right questions, captures traveller needs through voice, scores intent, and
+                        delivers
+                        qualified leads to your sales team — with context and priority.
                     </p>
                 </div>
                 <div class="business-grid ">
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-question-circle"></i>
-                            Ask the Right Questions
+                            Ask the Right Voice Questions
                         </h3>
                         <p>
                             Automatically ask about destination, travel dates, group size, budget, interests, and more —
-                            consistently, every call.
+                            spoken
+                            naturally, consistently, every call.
                         </p>
                     </div>
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-bolt"></i>
-                            Score & Prioritise
+                            Score & Prioritise by Voice
                         </h3>
                         <p>
-                            Use rules or AI to score leads based on intent, budget, timeline, and other qualifiers.
-                            High-priority leads go to the front of the queue.
+                            Use rules or AI to score leads based on intent, budget, timeline, and other qualifiers
+                            captured
+                            through voice. High-priority leads go to the front of the queue.
                         </p>
                     </div>
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-route"></i>
-                            Route with Context
+                            Route with Voice Context
                         </h3>
                         <p>
                             Pass qualified leads to the right agent or team with full conversation history and captured
-                            data - no more cold transfers.
+                            voice data — no more cold transfers.
                         </p>
                     </div>
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-sync-alt"></i>
-                            Nurture & Follow Up
+                            Nurture & Follow Up by Voice
                         </h3>
                         <p>
-                            Not ready to book? Letstawk can schedule follow-ups, send reminders, or re-engage leads
+                            Not ready to book? Letstawk can schedule voice follow-ups, send reminders, or re-engage
+                            leads
                             automatically when the time is right.
                         </p>
                     </div>
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-chart-pie"></i>
-                            Analyse & Optimise
+                            Analyse Voice Qualification Metrics
                         </h3>
                         <p>
                             Track qualification metrics, conversion rates, and lead quality to continuously improve your
-                            sales funnel.
+                            sales funnel through voice insights.
                         </p>
                     </div>
                     <div class="business-card">
                         <h3>
                             <i class="fas fa-hand-holding-heart"></i>
-                            Human Handoff
+                            Human Voice Handoff
                         </h3>
                         <p>
-                            Transfer high-intent leads to your sales team with full context, or escalate complex
+                            Transfer high-intent leads to your sales team with full voice context, or escalate complex
                             requests that need personal attention.
                         </p>
                     </div>
@@ -359,7 +496,6 @@
             }
 
             .card i {
-                /* color: var(--indigo); */
                 color: var(--muted);
             }
 
@@ -380,22 +516,28 @@
 
             .icon i {
                 color: var(--white);
+                transition: transform .35s ease;
             }
 
             .card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
             }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
+            }
         </style>
         <section class="page-section">
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">How It Works</div>
+                    <div class="sec-eyebrow">HOW VOICE QUALIFICATION WORKS</div>
                     <h2>
-                        From First Call to Qualified Lead - Fully Automated
+                        From First Voice Call to Qualified Lead — Fully Automated
                     </h2>
                     <p>
-                        Letstawk guides every traveller through a structured qualification journey, capturing the data
-                        you need to prioritise and convert.
+                        Letstawk guides every traveller through a structured voice qualification journey, capturing the
+                        data
+                        you need to prioritise and convert — all through natural conversation.
                     </p>
                 </div>
                 <div class="grid grid-col-3">
@@ -405,12 +547,13 @@
                                 <i class="fa-solid fa-square-phone"></i>
                             </div>
                             <h3>
-                                Call or Enquiry
+                                Incoming Voice Call
                             </h3>
                         </div>
                         <p>
-                            A traveller calls or enquires via your travel agency, tour operator, or DMC. Letstawk
-                            answers with a personalised greeting.
+                            A traveller calls your travel agency, tour operator, or DMC. Letstawk answers with a
+                            personalised
+                            voice greeting.
                         </p>
                     </div>
                     <div class="card">
@@ -419,12 +562,12 @@
                                 <i class="fa-solid fa-circle-question"></i>
                             </div>
                             <h3>
-                                Qualification Questions
+                                Voice Qualification Questions
                             </h3>
                         </div>
                         <p>
-                            The AI asks a configurable set of questions: destination, dates, budget, group size,
-                            interests, and more.
+                            The AI asks a configurable set of questions through natural voice dialogue: destination,
+                            dates, budget, group size, interests, and more.
                         </p>
                     </div>
                     <div class="card">
@@ -433,11 +576,12 @@
                                 <i class="fa-solid fa-check-double"></i>
                             </div>
                             <h3>
-                                Score & Prioritise
+                                Score & Prioritise by Voice
                             </h3>
                         </div>
                         <p>
-                            Based on answers, the lead is scored and prioritised. High-intent leads are flagged for
+                            Based on voice responses, the lead is scored and prioritised. High-intent leads are flagged
+                            for
                             immediate follow-up.
                         </p>
                     </div>
@@ -447,11 +591,12 @@
                                 <i class="fa-solid fa-check-to-slot"></i>
                             </div>
                             <h3>
-                                Route to Sales
+                                Route to Sales with Voice Context
                             </h3>
                         </div>
                         <p>
-                            Qualified leads are routed to the right sales rep or team with full context - no more
+                            Qualified leads are routed to the right sales rep or team with full conversation context —
+                            no more
                             cold handoffs.
                         </p>
                     </div>
@@ -461,12 +606,12 @@
                                 <i class="fa-solid fa-person-running"></i>
                             </div>
                             <h3>
-                                Follow Up
+                                Voice Follow-Up
                             </h3>
                         </div>
                         <p>
-                            Not ready? Letstawk schedules follow-ups, sends reminders, or nurtures the lead
-                            automatically.
+                            Not ready? Letstawk schedules voice follow-ups, sends reminders, or nurtures the lead
+                            automatically through outbound calls.
                         </p>
                     </div>
                     <div class="card">
@@ -475,11 +620,13 @@
                                 <i class="fa-solid fa-user-group"></i>
                             </div>
                             <h3>
-                                Human Handoff
+                                Human Voice Handoff
                             </h3>
                         </div>
                         <p>
-                            Complex requests or VIP leads are escalated to your most experienced consultants.
+                            Complex requests or VIP leads are escalated to your most experienced consultants with full
+                            voice
+                            context.
                         </p>
                     </div>
                     <div class="card col-1">
@@ -488,11 +635,12 @@
                                 <i class="fa-solid fa-triangle-exclamation"></i>
                             </div>
                             <h3>
-                                Capture Key Qualifiers
+                                Capture Key Voice Qualifiers
                             </h3>
                         </div>
                         <p>
-                            The AI captures structured data that your sales team can act on immediately.
+                            The AI captures structured data from voice conversations that your sales team can act on
+                            immediately.
                             <br><strong>Examples include:</strong>
                         <ul class="grid grid-col-2" style="gap: 0;margin-top: 5px;">
                             <li>
@@ -553,7 +701,6 @@
             }
 
             .use-card h3 i {
-                /* color: var(--violet); */
                 font-size: 20px;
             }
 
@@ -564,105 +711,107 @@
         <section class="page-section tint">
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">Lead Qualification Use Cases</div>
+                    <div class="sec-eyebrow">VOICE LEAD QUALIFICATION USE CASES</div>
                     <h2>
-                        Qualify Every Type of Travel Lead
+                        Qualify Every Type of Travel Lead Through Voice
                     </h2>
                     <p>
-                        From leisure travellers to corporate groups, Letstawk adapts to your qualification needs across
+                        From leisure travellers to corporate groups, Letstawk adapts to your voice qualification needs
+                        across
                         every travel segment.
                     </p>
                 </div>
                 <div class="grid grid-col-3">
                     <div class="card use-card">
                         <div class="head">
-                            <h3> <i class="fa-solid fa-umbrella-beach"></i>&ensp;Leisure Travel</h3>
+                            <h3> <i class="fa-solid fa-umbrella-beach"></i>&ensp;Leisure Travel Voice</h3>
                         </div>
                         <p>
-                            Qualify holidaymakers by destination, budget, accommodation preferences, and travel dates.
-                            Capture interests like culture, adventure, or relaxation.
+                            Qualify holidaymakers through natural voice conversations by destination, budget,
+                            accommodation preferences, and travel dates. Capture interests like culture, adventure, or
+                            relaxation.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-briefcase"></i>&ensp;Corporate Travel</h3>
+                            <h3><i class="fa-solid fa-briefcase"></i>&ensp;Corporate Travel Voice</h3>
                         </div>
                         <p>
-                            Qualify business travellers by company, travel policy, preferred airlines, hotel tiers, and
-                            meeting/event requirements.
+                            Qualify business travellers over the phone by company, travel policy, preferred airlines,
+                            hotel tiers, and meeting/event requirements.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-users"></i>&ensp;Group & MICE Travel</h3>
+                            <h3><i class="fa-solid fa-users"></i>&ensp;Group & MICE Voice</h3>
                         </div>
                         <p>
                             Qualify groups by size, purpose, budget per person, preferred venues, and special
-                            requirements for conferences, incentives, and events.
+                            requirements for conferences, incentives, and events — all through voice.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-ring"></i>&ensp;Destination Weddings</h3>
+                            <h3><i class="fa-solid fa-ring"></i>&ensp;Destination Weddings Voice</h3>
                         </div>
                         <p>
-                            Qualify couples by guest count, venue preferences, budget, and wedding dates. Capture
-                            requirements for accommodation, catering, and logistics.
+                            Qualify couples by guest count, venue preferences, budget, and wedding dates through natural
+                            voice conversations. Capture requirements for accommodation, catering, and logistics.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-suitcase"></i>&ensp;Luxury & VIP Travel</h3>
+                            <h3><i class="fa-solid fa-suitcase"></i>&ensp;Luxury & VIP Voice</h3>
                         </div>
                         <p>
-                            Qualify high-net-worth travellers by preferred destinations, accommodation style, private
-                            transport needs, and bespoke experience requests.
+                            Qualify high-net-worth travellers over the phone by preferred destinations, accommodation
+                            style, private transport needs, and bespoke experience requests.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-route"></i>&ensp;Adventure & Niche Travel</h3>
+                            <h3><i class="fa-solid fa-route"></i>&ensp;Adventure & Niche Voice</h3>
                         </div>
                         <p>
-                            Qualify adventure travellers by activity type (trekking, diving, safari), fitness level,
-                            duration, and group composition.
+                            Qualify adventure travellers through voice by activity type (trekking, diving, safari),
+                            fitness level, duration, and group composition.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-plane"></i>&ensp;Tour & Package Enquiries</h3>
+                            <h3><i class="fa-solid fa-plane"></i>&ensp;Tour & Package Voice Enquiries</h3>
                         </div>
                         <p>
                             Qualify travellers interested in specific tours or packages by duration, departure date,
-                            accommodation grade, and included services.
+                            accommodation grade, and included services — captured through natural voice dialogue.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-headset"></i>&ensp;Customer Support Qualification</h3>
+                            <h3><i class="fa-solid fa-headset"></i>&ensp;Customer Support Voice Qualification</h3>
                         </div>
                         <p>
                             Qualify support calls to determine urgency, issue type, and whether the caller is a
-                            high-priority customer or needs immediate escalation.
+                            high-priority customer or needs immediate escalation — all through voice.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-user-tag"></i>&ensp;Re-engagement Qualification</h3>
+                            <h3><i class="fa-solid fa-user-tag"></i>&ensp;Re-engagement Voice Qualification</h3>
                         </div>
                         <p>
-                            Qualify past travellers for repeat business by capturing new preferences, changes in travel
-                            habits, and interest in future offers.
+                            Qualify past travellers for repeat business over the phone by capturing new preferences,
+                            changes in travel habits, and interest in future offers.
                         </p>
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-credit-card"></i>&ensp;Booking & Reservation Qualification</h3>
+                            <h3><i class="fa-solid fa-credit-card"></i>&ensp;Booking Voice Qualification</h3>
                         </div>
                         <p>
-                            Qualify booking enquiries by room type, check-in/out dates, special requests, and loyalty
-                            status to prioritise high-value reservations.
-                            <br><strong>Support conversations around:</strong><br>
+                            Qualify booking enquiries over the phone by room type, check-in/out dates, special requests,
+                            and loyalty status to prioritise high-value reservations.
+                            <br><strong>Support voice conversations around:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
@@ -697,10 +846,11 @@
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-circle-question"></i>&ensp;General Enquiry Qualification</h3>
+                            <h3><i class="fa-solid fa-circle-question"></i>&ensp;General Enquiry Voice Qualification
+                            </h3>
                         </div>
                         <p>
-                            <strong>Qualify general enquirers by capturing:</strong><br>
+                            <strong>Qualify general enquirers over the phone by capturing:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
@@ -747,13 +897,13 @@
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-map-location-dot"></i>&ensp;Destination & Activity Qualification
+                            <h3><i class="fa-solid fa-map-location-dot"></i>&ensp;Destination Voice Qualification
                             </h3>
                         </div>
                         <p>
-                            Qualify travellers by preferred destinations, must-see attractions, activity intensity, and
-                            flexibility in itinerary.
-                            <br><strong>Capture:</strong><br>
+                            Qualify travellers over the phone by preferred destinations, must-see attractions, activity
+                            intensity, and flexibility in itinerary.
+                            <br><strong>Capture through voice:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
@@ -792,10 +942,10 @@
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-warehouse"></i>&ensp;Pre-Booking Qualification</h3>
+                            <h3><i class="fa-solid fa-warehouse"></i>&ensp;Pre-Booking Voice Qualification</h3>
                         </div>
                         <p>
-                            <strong>Qualify prospects before they book by capturing:</strong><br>
+                            <strong>Qualify prospects over the phone before they book by capturing:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
@@ -834,11 +984,11 @@
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-house"></i>&ensp;Post-Booking Qualification</h3>
+                            <h3><i class="fa-solid fa-house"></i>&ensp;Post-Booking Voice Qualification</h3>
                         </div>
                         <p>
-                            Qualify booked customers for upsells, upgrades, and ancillary services.
-                            <br><strong>Capture:</strong><br>
+                            Qualify booked customers over the phone for upsells, upgrades, and ancillary services.
+                            <br><strong>Capture through voice:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
                                 <i class="fa-solid fa-caret-right"></i>
@@ -869,10 +1019,11 @@
                     </div>
                     <div class="card use-card">
                         <div class="head">
-                            <h3><i class="fa-solid fa-file-invoice"></i>&ensp;Upsell & Cross-Sell Qualification</h3>
+                            <h3><i class="fa-solid fa-file-invoice"></i>&ensp;Upsell & Cross-Sell Voice Qualification
+                            </h3>
                         </div>
                         <p>
-                            Qualify customers for additional travel products and services.
+                            Qualify customers over the phone for additional travel products and services.
                             <br><strong>Examples:</strong><br>
                         <ul class="grid grid-col-2 txt" style="margin-top: 5px;gap: 0;">
                             <li>
@@ -964,54 +1115,58 @@
         <section class="page-section">
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
-                    <div class="sec-eyebrow">QUALIFICATION JOURNEY</div>
+                    <div class="sec-eyebrow">VOICE QUALIFICATION JOURNEY</div>
                     <h2>
-                        From First Contact to Qualified Lead - Every Step Mapped
+                        From First Voice Contact to Qualified Lead — Every Step Mapped
                     </h2>
                 </div>
             </div>
             <div class="grid grid-col-2 wrap" style="padding: 0 24px;">
                 <div class="sec-head" style="margin-bottom: 0;">
                     <p style="margin-top: 0;">
-                        Letstawk doesn't just capture data - it guides the conversation to uncover intent, urgency, and
-                        fit. Each interaction builds a complete lead profile that your sales team can act on with
+                        Letstawk doesn't just capture data from voice calls — it guides the conversation to uncover
+                        intent, urgency, and
+                        fit. Each voice interaction builds a complete lead profile that your sales team can act on with
                         confidence.
                     </p>
                     <div class="problem-list" style="margin-top: 20px;">
-                        <div class="list-card"><span>01</span><strong style="margin-left: 5px;">Initial
+                        <div class="list-card"><span>01</span><strong style="margin-left: 5px;">Initial Voice
                                 Enquiry</strong>
                             <p>
-                                Greet the caller and understand the purpose of their enquiry.
+                                Greet the caller and understand the purpose of their voice enquiry.
                             </p>
                         </div>
-                        <div class="list-card"><span>02</span><strong style="margin-left: 5px;">Needs
+                        <div class="list-card"><span>02</span><strong style="margin-left: 5px;">Voice Needs
                                 Discovery</strong>
                             <p>
-                                Ask open-ended questions to understand traveller needs and preferences.
+                                Ask open-ended questions to understand traveller needs and preferences through natural
+                                dialogue.
                             </p>
                         </div>
-                        <div class="list-card"><span>03</span><strong style="margin-left: 5px;">Qualification
+                        <div class="list-card"><span>03</span><strong style="margin-left: 5px;">Voice Qualification
                                 Questions</strong>
                             <p>
-                                Capture key data: destination, dates, budget, group size, interests, and more.
+                                Capture key data through voice: destination, dates, budget, group size, interests, and
+                                more.
                             </p>
                         </div>
-                        <div class="list-card"><span>04</span><strong style="margin-left: 5px;">Intent
+                        <div class="list-card"><span>04</span><strong style="margin-left: 5px;">Voice Intent
                                 Assessment</strong>
                             <p>
-                                Score the lead based on urgency, fit, and readiness to book.
+                                Score the lead based on urgency, fit, and readiness to book — captured through voice
+                                responses.
                             </p>
                         </div>
-                        <div class="list-card"><span>05</span><strong style="margin-left: 5px;">Routing &
+                        <div class="list-card"><span>05</span><strong style="margin-left: 5px;">Voice Routing &amp;
                                 Handoff</strong>
                             <p>
-                                Route high-intent leads to sales with full context. Nurture others automatically.
+                                Route high-intent leads to sales with full voice context. Nurture others automatically.
                             </p>
                         </div>
-                        <div class="list-card"><span>06</span><strong style="margin-left: 5px;">Follow-Up &
+                        <div class="list-card"><span>06</span><strong style="margin-left: 5px;">Voice Follow-Up &amp;
                                 Nurture</strong>
                             <p>
-                                Keep leads warm with automated follow-ups and re-engagement campaigns.
+                                Keep leads warm with automated voice follow-ups and re-engagement campaigns.
                             </p>
                         </div>
                     </div>
@@ -1072,8 +1227,16 @@
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
             }
 
+            .use-case-icon i {
+                transition: transform .35s ease;
+            }
+
             .use-case-card:hover .use-case-icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .use-case-card:hover .use-case-icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .use-case-head h3 {
@@ -1110,11 +1273,12 @@
         <section class="page-section tint">
             <div class="wrap">
                 <div class="sec-head sec-head-left" style="max-width: 100%;">
-                    <div class="sec-eyebrow">WHY LETSTAWK FOR LEAD QUALIFICATION</div>
-                    <h2>Qualify Smarter. Convert Faster.</h2>
+                    <div class="sec-eyebrow">WHY LETSTAWK FOR VOICE LEAD QUALIFICATION</div>
+                    <h2>Qualify Smarter Through Voice. Convert Faster.</h2>
                     <p>
                         Traditional lead qualification is manual, inconsistent, and slow. Letstawk automates the first
-                        conversation, captures structured data, and prioritises leads so your team focuses on
+                        voice conversation, captures structured data through natural dialogue, and prioritises leads so
+                        your team focuses on
                         conversations that convert.
                     </p>
                 </div>
@@ -1124,10 +1288,11 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-comments"></i>
                             </div>
-                            <h3>Natural Conversations</h3>
+                            <h3>Natural Voice Conversations</h3>
                         </div>
                         <p>
-                            Travellers explain their needs naturally - no forms, no menus. The AI captures qualifiers
+                            Travellers explain their needs naturally over the phone — no forms, no menus. The AI
+                            captures qualifiers
                             conversationally.
                         </p>
                     </article>
@@ -1136,10 +1301,11 @@
                             <div class="use-case-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <h3>24/7 Qualification</h3>
+                            <h3>24/7 Voice Qualification</h3>
                         </div>
                         <p>
-                            Leads call when they're ready. Letstawk qualifies them - day or night, weekends and
+                            Leads call when they're ready. Letstawk qualifies them through voice — day or night,
+                            weekends and
                             holidays.
                         </p>
                     </article>
@@ -1148,10 +1314,11 @@
                             <div class="use-case-icon">
                                 <i class="fas fa-language"></i>
                             </div>
-                            <h3>40+ Languages</h3>
+                            <h3>40+ Languages for Voice</h3>
                         </div>
                         <p>
-                            Qualify international travellers in their preferred language, capturing global leads without
+                            Qualify international travellers in their preferred language over the phone, capturing
+                            global leads without
                             language barriers.
                         </p>
                     </article>
@@ -1160,10 +1327,11 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-headset"></i>
                             </div>
-                            <h3>AI Scoring & Routing</h3>
+                            <h3>AI Scoring &amp; Voice Routing</h3>
                         </div>
                         <p>
-                            Automatically score leads and route the highest-potential opportunities to your best sales
+                            Automatically score leads from voice conversations and route the highest-potential
+                            opportunities to your best sales
                             reps.
                         </p>
                     </article>
@@ -1172,10 +1340,10 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-user-large"></i>
                             </div>
-                            <h3>Context-Rich Handoff</h3>
+                            <h3>Context-Rich Voice Handoff</h3>
                         </div>
                         <p>
-                            Hand off leads with full conversation history and captured data - so sales can pick up
+                            Hand off leads with full voice conversation history and captured data — so sales can pick up
                             seamlessly.
                         </p>
                     </article>
@@ -1184,10 +1352,10 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-phone-volume" style="rotate: 35deg;"></i>
                             </div>
-                            <h3>Outbound Nurture</h3>
+                            <h3>Outbound Voice Nurture</h3>
                         </div>
                         <p>
-                            Automate follow-ups and re-engagement campaigns to convert leads over time.
+                            Automate voice follow-ups and re-engagement campaigns to convert leads over time.
                         </p>
                     </article>
                     <article class="use-case-card">
@@ -1195,11 +1363,11 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-handshake-angle"></i>
                             </div>
-                            <h3>Human Escalation</h3>
+                            <h3>Human Voice Escalation</h3>
                         </div>
                         <p>
                             Complex or VIP leads are escalated to your most experienced consultants for personal
-                            handling.
+                            handling — with full voice context.
                         </p>
                     </article>
                     <article class="use-case-card">
@@ -1207,11 +1375,11 @@
                             <div class="use-case-icon">
                                 <i class="fa-solid fa-brain"></i>
                             </div>
-                            <h3>Conversation Intelligence</h3>
+                            <h3>Voice Conversation Intelligence</h3>
                         </div>
                         <p>
                             Analyse qualification conversations to refine questions, improve scoring, and optimise your
-                            sales funnel.
+                            sales funnel through voice insights.
                         </p>
                     </article>
                 </div>
@@ -1230,18 +1398,20 @@
         <section class="page-section industry-use-section">
             <div class="wrap industry-use-grid">
                 <div style="justify-content: space-between;display: flex;flex-direction: column;height: stretch;">
-                    <div class="sec-eyebrow">CONNECT LETSTAWK TO YOUR EXISTING WORKFLOW</div>
-                    <h2>Make Lead Qualification Part of Your Sales Stack.</h2>
+                    <div class="sec-eyebrow">CONNECT VOICE QUALIFICATION TO YOUR SALES STACK</div>
+                    <h2>Make Voice Lead Qualification Part of Your Sales Workflow.</h2>
                     <p>
-                        Connect Letstawk with your CRM, marketing automation, and sales tools to keep lead data flowing
-                        - from first call to closed deal.
+                        Connect Letstawk with your CRM, marketing automation, and sales tools to keep voice lead data
+                        flowing
+                        — from first call to closed deal.
                     </p>
                     <p>
-                        Letstawk integrates with the tools you already use, so qualification data reaches the right team
+                        Letstawk integrates with the tools you already use, so voice qualification data reaches the
+                        right team
                         at the right time.
                     </p>
                     <a class="btn btn-primary" href="contact.html">
-                        <i class="fa-solid fa-diagram-project"></i>Explore Integrations
+                        <i class="fa-solid fa-diagram-project"></i>Explore Voice Integrations
                     </a>
                 </div>
                 <div class="use-case-list">
@@ -1251,7 +1421,8 @@
                             <h3>CRM</h3>
                         </div>
                         <p>
-                            Capture lead data, qualification scores, and conversation outcomes directly in your CRM.
+                            Capture voice lead data, qualification scores, and conversation outcomes directly in your
+                            CRM.
                         </p>
                     </article>
                     <article>
@@ -1260,7 +1431,7 @@
                             <h3>Sales Engagement</h3>
                         </div>
                         <p>
-                            Trigger follow-up tasks, meetings, and outreach based on qualification outcomes.
+                            Trigger follow-up tasks, meetings, and outreach based on voice qualification outcomes.
                         </p>
                     </article>
                     <article>
@@ -1270,7 +1441,7 @@
                         </div>
                         <p>
                             Provide the AI with approved destination, product, and service information for accurate
-                            qualification.
+                            voice qualification.
                         </p>
                     </article>
                     <article>
@@ -1289,7 +1460,8 @@
                             <h3>Business Automation</h3>
                         </div>
                         <p>
-                            Automate workflows based on qualification scores, lead status, and conversation outcomes.
+                            Automate workflows based on voice qualification scores, lead status, and conversation
+                            outcomes.
                         </p>
                     </article>
                     <article>
@@ -1298,7 +1470,8 @@
                             <h3>Booking Systems</h3>
                         </div>
                         <p>
-                            Connect qualification data with booking and reservation workflows for seamless conversion.
+                            Connect voice qualification data with booking and reservation workflows for seamless
+                            conversion.
                         </p>
                     </article>
                 </div>
@@ -1314,6 +1487,10 @@
                 transform: scale(1.02) rotate(-45deg);
             }
 
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
             .ic {
                 transition: transform .35s ease;
             }
@@ -1321,6 +1498,7 @@
             .ic i {
                 color: var(--indigo);
                 font-size: 20px;
+                transition: transform .35s ease;
             }
 
             .feat li {
@@ -1336,10 +1514,11 @@
             <div class="wrap">
                 <div class="sec-head" style="max-width: 100%;">
                     <div class="sec-eyebrow">FOR EVERY TYPE OF TRAVEL BUSINESS</div>
-                    <h2>One AI Platform. Every Qualification Workflow.</h2>
+                    <h2>One Voice AI Platform. Every Qualification Workflow.</h2>
                     <p>
-                        From travel agencies to tour operators, DMCs, and hotels, Letstawk adapts to your qualification
-                        needs - capturing the data that matters most to your sales team.
+                        From travel agencies to tour operators, DMCs, and hotels, Letstawk adapts to your voice
+                        qualification
+                        needs — capturing the data that matters most to your sales team through natural conversation.
                     </p>
                 </div>
                 <div class="feat-grid">
@@ -1352,11 +1531,12 @@
                         </div>
 
                         <p>
-                            Qualify leisure and corporate travellers, capture itinerary needs, and route qualified leads
+                            Qualify leisure and corporate travellers over the phone, capture itinerary needs, and route
+                            qualified leads
                             to consultants.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 Destination qualification
@@ -1375,7 +1555,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Follow-up nurturing
+                                Voice follow-up nurturing
                             </li>
                         </ul>
                     </div>
@@ -1388,11 +1568,12 @@
                         </div>
 
                         <p>
-                            Qualify travellers for specific tours, packages, and itineraries - matching them with the
+                            Qualify travellers for specific tours, packages, and itineraries over the phone — matching
+                            them with the
                             right experiences.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 Tour interest qualification
@@ -1411,7 +1592,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Lead prioritisation
+                                Voice lead prioritisation
                             </li>
                         </ul>
                     </div>
@@ -1424,11 +1605,12 @@
                         </div>
 
                         <p>
-                            Qualify inbound travel agents and corporate clients for complex destination services and
+                            Qualify inbound travel agents and corporate clients over the phone for complex destination
+                            services and
                             logistics.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 B2B lead qualification
@@ -1447,7 +1629,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Escalation to experts
+                                Voice escalation to experts
                             </li>
                         </ul>
                     </div>
@@ -1460,11 +1642,12 @@
                         </div>
 
                         <p>
-                            Qualify booking enquiries by room type, dates, special requests, and loyalty status to
+                            Qualify booking enquiries over the phone by room type, dates, special requests, and loyalty
+                            status to
                             prioritise high-value reservations.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 Availability & rates
@@ -1483,7 +1666,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Upsell opportunities
+                                Voice upsell opportunities
                             </li>
                         </ul>
                     </div>
@@ -1495,11 +1678,11 @@
                             <h3 style="margin-bottom: 0;">Hospitality Groups</h3>
                         </div>
                         <p>
-                            Standardise lead qualification across multiple properties and brands, ensuring consistent
-                            data capture.
+                            Standardise voice lead qualification across multiple properties and brands, ensuring
+                            consistent data capture.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 Multi-property qualification
@@ -1510,7 +1693,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Lead distribution
+                                Voice lead distribution
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
@@ -1518,7 +1701,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Cross-sell opportunities
+                                Voice cross-sell opportunities
                             </li>
                         </ul>
                     </div>
@@ -1530,11 +1713,12 @@
                             <h3 style="margin-bottom: 0;">Corporate Travel</h3>
                         </div>
                         <p>
-                            Qualify corporate travellers and accounts by company policy, travel volume, and preferred
+                            Qualify corporate travellers and accounts over the phone by company policy, travel volume,
+                            and preferred
                             partners.
                         </p>
                         <ul>
-                            <strong style="font-size: 15px;">Automate:</strong>
+                            <strong style="font-size: 15px;">Automate voice:</strong>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
                                 Company profile capture
@@ -1553,7 +1737,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-check-circle" style="color:var(--indigo);"></i>
-                                Account prioritisation
+                                Voice account prioritisation
                             </li>
                         </ul>
                     </div>
@@ -1624,20 +1808,21 @@
             <div class="wrap">
                 <div class="cta">
                     <div class="cta-head">
-                        <div class="sec-eyebrow">START CONVERTING FASTER.</div>
-                        <h2>Let AI Qualify Every Lead So Your Team Can Close Every Deal.</h2>
+                        <div class="sec-eyebrow">START CONVERTING FASTER WITH VOICE.</div>
+                        <h2>Let AI Qualify Every Voice Lead So Your Team Can Close Every Deal.</h2>
                         <p>
-                            Letstawk handles the first conversation, captures the right data, and routes high-intent
-                            leads to your sales team. You focus on closing - we'll handle the rest.
+                            Letstawk handles the first voice conversation, captures the right data through natural
+                            dialogue, and routes high-intent
+                            leads to your sales team. You focus on closing — we'll handle the voice qualification.
                         </p>
                         <div class="cta-actions">
                             <a href="contact.html" class="btn btn-primary btn-lg">
-                                <i class="fas fa-filter"></i>
-                                Request an Demo
+                                <i class="fas fa-phone-volume"></i>
+                                Request a Voice Demo
                             </a>
                             <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg">
                                 <i class="fa-solid fa-headset"></i>
-                                Talk to an expert
+                                Hear a Live Voice Agent
                             </a>
                         </div>
                     </div>
@@ -1652,41 +1837,41 @@
         </div>
         <script id="faqData" type="application/json">
         {
-            "title":"Travel Lead Qualification FAQs",
-            "description":"Answers to common questions about AI-powered lead qualification for travel businesses.",
+            "title":"Travel Voice Lead Qualification FAQs",
+            "description":"Answers to common questions about AI-powered voice lead qualification for travel businesses.",
             "items":
             [
             {
-                "question":"What is AI lead qualification?",
-                "answer":"AI lead qualification uses conversational AI to automate the first conversation with a potential traveller, capturing key qualifiers like destination, budget, group size, and intent, and scoring leads for sales readiness."
+                "question":"What is AI voice lead qualification?",
+                "answer":"AI voice lead qualification uses conversational AI to automate the first voice conversation with a potential traveller, capturing key qualifiers like destination, budget, group size, and intent through natural dialogue, and scoring leads for sales readiness."
             },
             {
-                "question":"How does Letstawk qualify travel leads?",
-                "answer":"Letstawk asks a configurable set of questions, captures the traveller's responses, scores the lead based on intent and fit, and routes high-priority leads to your sales team with full context."
+                "question":"How does Letstawk qualify travel leads over the phone?",
+                "answer":"Letstawk answers calls with a natural voice, asks a configurable set of qualification questions, captures the traveller's responses, scores the lead based on intent and fit, and routes high-priority leads to your sales team with full voice context."
             },
             {
-                "question":"What data does Letstawk capture?",
-                "answer":"It captures destination, travel dates, budget, group size, interests, accommodation preferences, special requirements, urgency, and more. All data is structured and ready for your CRM."
+                "question":"What data does Letstawk capture from voice calls?",
+                "answer":"It captures destination, travel dates, budget, group size, interests, accommodation preferences, special requirements, urgency, and more — all through natural voice conversation. All data is structured and ready for your CRM."
             },
             {
-                "question":"Can Letstawk qualify leads in multiple languages?",
-                "answer":"Yes, Letstawk supports 40+ languages, so you can qualify international travellers in their preferred language."
+                "question":"Can Letstawk qualify leads in multiple languages over the phone?",
+                "answer":"Yes, Letstawk supports 40+ languages for voice conversations, so you can qualify international travellers in their preferred language."
             },
             {
-                "question":"How are leads scored?",
-                "answer":"You can configure scoring rules based on qualifiers like budget, timeline, group size, and interest. The AI can also use machine learning to predict lead quality."
+                "question":"How are voice leads scored?",
+                "answer":"You can configure scoring rules based on qualifiers like budget, timeline, group size, and interest captured through voice. The AI can also use machine learning to predict lead quality from voice conversations."
             },
             {
                 "question":"Can Letstawk integrate with my CRM?",
-                "answer":"Yes, Letstawk integrates with major CRMs and sales tools, so lead data flows directly into your existing workflows."
+                "answer":"Yes, Letstawk integrates with major CRMs and sales tools, so voice lead data flows directly into your existing workflows."
             },
             {
-                "question":"How does Letstawk handle low-intent leads?",
-                "answer":"Low-intent leads can be nurtured automatically with follow-ups, reminders, and re-engagement campaigns until they are ready to convert."
+                "question":"How does Letstawk handle low-intent voice leads?",
+                "answer":"Low-intent leads can be nurtured automatically with voice follow-ups, reminders, and re-engagement campaigns until they are ready to convert."
             },
             {
-                "question":"Can Letstawk qualify leads for hotels?",
-                "answer":"Yes, for hotels, Letstawk can qualify booking enquiries by room type, dates, special requests, and loyalty status to prioritise high-value reservations."
+                "question":"Can Letstawk qualify hotel booking enquiries over the phone?",
+                "answer":"Yes, for hotels, Letstawk can qualify booking enquiries through voice by room type, dates, special requests, and loyalty status to prioritise high-value reservations."
             }
             ]
         }
