@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <title>Webhooks API | APIs | Letstawk</title>
+    <meta name="description" content="Letstawk Webhooks API - Real-time event notifications for AI voice automation.">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--indigo)" />
+                <stop offset=".5" stop-color="var(--violet)" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <style>
+            .banner-img2 {
+                background: url("images/pages/apis/webhooks/banner.webp") center center / cover no-repeat;
+            }
+
+            .webhook-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(13, 138, 255, 0.419);
+                padding: 6px 16px 6px 12px;
+                border-radius: 40px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-bottom: 12px;
+            }
+
+            .webhook-badge i {
+                font-size: 1rem;
+            }
+        </style>
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>APIs · Webhooks
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Integrations <span>›</span>
+                    APIs <span>›</span>
+                    Webhooks
+                </p>
+                <h1 style="max-width:100%; margin-bottom:20px;">
+                    Webhooks API - Real-Time Event Notifications for AI Voice Automation
+                </h1>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="webhook-badge"><i class="fas fa-bolt"></i> Event-driven architecture</div>
+                    <p class="industry-lead" style="margin-top:0;">
+                        Letstawk's Webhooks API delivers real-time event notifications directly to your applications.
+                        Get instant updates on call events, conversation outcomes, and qualification results - no
+                        polling required.
+                    </p>
+                    <p class="industry-lead">
+                        <strong>Build responsive, event-driven applications that react instantly to every voice
+                            conversation.</strong>
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html">
+                            <i class="fas fa-calendar-plus"></i> Get Webhook Access
+                        </a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                            <i class="fa-solid fa-headset"></i> Talk to a Developer
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-bolt"></i>&ensp;Real-time Events</span>
+                <span><i class="fas fa-shield-alt"></i>&ensp;Secure Delivery</span>
+                <span><i class="fas fa-redo-alt"></i>&ensp;Retry Mechanism</span>
+                <span><i class="fas fa-code"></i>&ensp;Easy Integration</span>
+                <span><i class="fas fa-clock"></i>&ensp;Instant Updates</span>
+            </div>
+        </section>
+        <!-- THE CHALLENGE -->
+        <style>
+            .list-card {
+                display: block;
+            }
+
+            .list-card span {
+                color: var(--indigo);
+                font-weight: 700;
+            }
+
+            .section-img {
+                background: url(images/pages/apis/webhooks/side.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .list-card strong {
+                font-size: 16px;
+            }
+
+            .list-card p {
+                font-size: 14px;
+            }
+
+            @media (max-width: 760px) {
+                .section-img {
+                    height: 250px;
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE CHALLENGE</div>
+                    <h2>Waiting for Data Slows Down Your Applications</h2>
+                    <p>Polling APIs for updates is inefficient, resource-intensive, and introduces latency. You need
+                        real-time notifications to build responsive applications that react instantly to voice
+                        conversations and customer interactions.</p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="section-img"></div>
+                    <div class="grid grid-col-2">
+                        <div class="list-card"><span>01</span>
+                            <p><strong>Polling wastes resources.</strong><br>Constant API calls consume bandwidth and
+                                compute power.</p>
+                        </div>
+                        <div class="list-card"><span>02</span>
+                            <p><strong>Delayed reactions.</strong><br>Your application only knows about events when you
+                                poll.</p>
+                        </div>
+                        <div class="list-card"><span>03</span>
+                            <p><strong>Missed opportunities.</strong><br>Customers expect immediate responses and
+                                actions.</p>
+                        </div>
+                        <div class="list-card"><span>04</span>
+                            <p><strong>Complex synchronization.</strong><br>Keeping data in sync across systems is
+                                challenging.</p>
+                        </div>
+                        <div class="list-card"><span>05</span>
+                            <p><strong>Scalability issues.</strong><br>Polling doesn't scale well with high-volume
+                                operations.</p>
+                        </div>
+                        <div class="list-card"><span>06</span>
+                            <p><strong>Inefficient workflows.</strong><br>Manual checks and updates slow down your
+                                processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- THE SOLUTION -->
+        <style>
+            .business-card {
+                background: var(--white);
+                padding: 28px 24px;
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                border-left: 3px solid var(--indigo);
+            }
+
+            .business-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .business-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: #1a1a2e;
+            }
+
+            .business-card h3 i {
+                color: #4338E8;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+
+            .business-card>p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #4a4a6a;
+            }
+
+            .qualification-full {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE SOLUTION</div>
+                    <h2>Real-Time Webhooks for Instant Event Delivery</h2>
+                    <p>Letstawk's Webhooks API delivers real-time events directly to your application. Get notified
+                        instantly when calls start, complete, qualify, or any other event occurs - so you can react
+                        immediately.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="business-card">
+                        <h3><i class="fas fa-bolt"></i>Instant Notifications</h3>
+                        <p>Get real-time HTTP POST requests to your endpoint for every significant event.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-shield-alt"></i>Secure Delivery</h3>
+                        <p>HMAC signatures and HTTPS ensure your webhook payloads are secure and authenticated.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-redo-alt"></i>Automatic Retry</h3>
+                        <p>Built-in retry mechanism with exponential backoff ensures you never miss an event.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-list"></i>Comprehensive Events</h3>
+                        <p>Subscribe to any combination of events - from call lifecycle to qualification results.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-code"></i>Simple Integration</h3>
+                        <p>Just create an endpoint, subscribe to events, and start receiving data instantly.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-chart-line"></i>Event Logging</h3>
+                        <p>Detailed audit logs for every webhook delivery, including status and payload.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CODE EXAMPLE -->
+        <style>
+            .code-block {
+                background: #1a1a2e;
+                color: #e2e8f0;
+                padding: 20px 24px;
+                border-radius: 12px;
+                font-size: 0.85rem;
+                font-family: 'Courier New', monospace;
+                overflow-x: auto;
+                margin: 12px 0;
+                border-left: 4px solid var(--indigo);
+            }
+
+            .code-block .comment {
+                color: #94a3b8;
+            }
+
+            .code-block .key {
+                color: #f472b6;
+            }
+
+            .code-block .string {
+                color: #34d399;
+            }
+
+            .code-block .method {
+                color: #60a5fa;
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">GET STARTED</div>
+                    <h2>Webhooks in Action</h2>
+                    <p>Here's what a typical webhook payload looks like when a call completes with qualification data.
+                    </p>
+                </div>
+                <div
+                    style="background: #0f0f1f; border-radius: 16px; padding: 24px; overflow-x: auto; border: 1px solid rgba(255,255,255,0.06);">
+                    <div class="code-block">
+                        <span class="comment">// Webhook payload for call.completed event</span><br>
+                        {<br>
+                        &nbsp;&nbsp;<span class="key">"event"</span>: <span class="string">"call.completed"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"timestamp"</span>: <span
+                            class="string">"2026-09-08T10:30:00Z"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"call_id"</span>: <span
+                            class="string">"call_abc123xyz"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"duration"</span>: <span class="string">"145"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"status"</span>: <span class="string">"completed"</span>,<br>
+                        &nbsp;&nbsp;<span class="key">"qualification"</span>: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"score"</span>: <span class="string">"85"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"stage"</span>: <span
+                            class="string">"qualified"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"intent"</span>: <span
+                            class="string">"high"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"answers"</span>: {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"need"</span>: <span class="string">"CRM
+                            integration"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"timeline"</span>: <span
+                            class="string">"immediate"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key">"budget"</span>: <span
+                            class="string">"5000"</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;},<br>
+                        &nbsp;&nbsp;<span class="key">"transcript"</span>: <span
+                            class="string">"https://api.letstawk.com/transcripts/call_abc123xyz"</span><br>
+                        }
+                    </div>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-book"></i> Webhook Docs</a>
+                    <a href="contact.html" class="btn btn-third-dark on-dark btn-lg"
+                        style="border: 1px solid var(--ink-soft);"><i class="fas fa-download"></i>
+                        Example Endpoints</a>
+                </div>
+            </div>
+        </section>
+        <!-- HOW IT WORKS -->
+        <style>
+            .card {
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background: var(--white);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .head h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .heading-back h3 {
+                background: var(--paper-2);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .card p {
+                margin-top: 11px;
+                color: var(--muted);
+                line-height: 1.55;
+            }
+
+            .card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: baseline;
+            }
+
+            .card i {
+                /* color: var(--indigo); */
+                color: var(--muted);
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--white);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--dark-grand);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .icon i {
+                color: var(--white);
+                transition: transform .35s ease;
+            }
+
+            .card:hover .icon {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">HOW IT WORKS</div>
+                    <h2>Simple, Reliable, and Real-Time</h2>
+                    <p>Set up webhooks in minutes and start receiving events instantly.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-server"></i></div>
+                            <h3>Create Endpoint</h3>
+                        </div>
+                        <p>Set up a public HTTP/HTTPS endpoint on your server to receive webhook notifications.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-bell"></i></div>
+                            <h3>Subscribe to Events</h3>
+                        </div>
+                        <p>Choose which events you want to receive - calls, qualifications, transcripts, and more.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+                            <h3>Receive & React</h3>
+                        </div>
+                        <p>Process incoming webhook payloads and trigger actions in your application instantly.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Verify Security</h3>
+                        </div>
+                        <p>Use HMAC signatures to verify webhook authenticity and prevent spoofing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-redo-alt"></i></div>
+                            <h3>Handle Retries</h3>
+                        </div>
+                        <p>Failed deliveries are automatically retried with exponential backoff.</p>
+                    </div>
+                    <div class="card">
+                        <div class="head heading-back">
+                            <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Monitor Delivery</h3>
+                        </div>
+                        <p>Track webhook delivery status, response times, and error rates in the dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- EVENTS -->
+        <style>
+            .event-card {
+                background: var(--paper);
+            }
+
+            .event-name {
+                font-size: 1.5rem;
+                color: var(--white);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--indigo);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .event-name i {
+                color: var(--white);
+                transition: transform .35s ease;
+            }
+
+            .event-card:hover .event-name {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .event-card:hover i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
+            .event-card-head h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">AVAILABLE EVENTS</div>
+                    <h2>Subscribe to the Events That Matter to You</h2>
+                    <p>Choose from a comprehensive set of events to power your workflows.</p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>call.initiated</h3>
+                        </div>
+                        <p class="event-desc">Triggered when a call is initiated - both inbound and outbound.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <h3>call.in_progress</h3>
+                        </div>
+                        <p class="event-desc">Sent during the call to provide real-time status updates.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>call.completed</h3>
+                        </div>
+                        <p class="event-desc">Fired when a call ends successfully with full transcript and data.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <h3>call.failed</h3>
+                        </div>
+                        <p class="event-desc">Triggered when a call fails due to technical issues or no answer.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>qualification.completed</h3>
+                        </div>
+                        <p class="event-desc">Sent when qualification is complete with score, intent, and answers.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>transcript.generated</h3>
+                        </div>
+                        <p class="event-desc">Fired when call transcript is ready with timestamp and full text.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>lead.qualified</h3>
+                        </div>
+                        <p class="event-desc">Triggered when a lead meets qualification criteria and is ready for
+                            routing.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-user-times"></i>
+                            </div>
+                            <h3>lead.disqualified</h3>
+                        </div>
+                        <p class="event-desc">Sent when a lead doesn't meet qualification criteria.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <h3>lead.routed</h3>
+                        </div>
+                        <p class="event-desc">Fired when a lead is routed to a specific team member or queue.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>meeting.scheduled</h3>
+                        </div>
+                        <p class="event-desc">Triggered when a meeting or appointment is scheduled through the AI.</p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>follow_up.triggered</h3>
+                        </div>
+                        <p class="event-desc">Sent when a follow-up action is triggered based on conversation outcomes.
+                        </p>
+                    </div>
+                    <div class="card event-card">
+                        <div class="event-card-head flex">
+                            <div class="event-name">
+                                <i class="fas fa-triangle-exclamation"></i>
+                            </div>
+                            <h3>webhook.failed</h3>
+                        </div>
+                        <p class="event-desc">Notification when a webhook delivery fails after all retry attempts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- WHY DEVELOPERS LOVE THIS -->
+        <style>
+            .use-card {
+                background: var(--white);
+            }
+
+            .use-card h3 {
+                background: var(--paper);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-card h3 i {
+                /* color: var(--violet); */
+                font-size: 20px;
+            }
+
+            .txt i {
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">WHY DEVELOPERS LOVE THIS</div>
+                    <h2>Built for Event-Driven Architectures</h2>
+                    <p>Letstawk's webhooks integrate seamlessly with modern application architectures and workflows.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-check-double"></i>&ensp;Zero polling required</h3>
+                        </div>
+                        <p>Eliminate unnecessary API calls and reduce resource usage.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-clock"></i>&ensp;Sub-second delivery</h3>
+                        </div>
+                        <p>Events are delivered instantly for real-time responsiveness.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-shield-alt"></i>&ensp;Secure by default</h3>
+                        </div>
+                        <p>HTTPS and HMAC signatures ensure data integrity and authenticity.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-code-branch"></i>&ensp;Flexible integration</h3>
+                        </div>
+                        <p>Works with any language, framework, or platform that accepts HTTP requests.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-undo-alt"></i>&ensp;Retry with backoff</h3>
+                        </div>
+                        <p>Automatic retries with exponential backoff for reliable delivery.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-chart-line"></i>&ensp;Full visibility</h3>
+                        </div>
+                        <p>Detailed delivery logs and monitoring in your dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- USE CASES -->
+        <style>
+            article {
+                transition: transform .35s ease;
+                background: var(--paper-2) !important;
+            }
+
+            article:hover {
+                transform: translateX(6px);
+            }
+
+            .case-head {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .case-head h3 {
+                font-size: 18px !important;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+
+            .case-head i {
+                font-size: 20px;
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">USE CASES</div>
+                    <h2>Powerful Webhook Workflows</h2>
+                    <p>See how developers are using Letstawk webhooks to build amazing applications.</p>
+                </div>
+                <div class="industry-use-grid">
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-handshake"></i>
+                            <h3 style="margin:0;">CRM Sync</h3>
+                        </div>
+                        <p>Automatically create or
+                            update leads in your CRM when qualification is complete.</p>
+                    </article>
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-bell"></i>
+                            <h3 style="margin:0;">Team Notifications</h3>
+                        </div>
+                        <p>Send real-time alerts to
+                            Slack, Teams, or email when a lead qualifies.</p>
+                    </article>
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-robot"></i>
+                            <h3 style="margin:0;">AI Workflows</h3>
+                        </div>
+                        <p>Trigger AI-powered actions
+                            like personalized email or SMS sequences.</p>
+                    </article>
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3 style="margin:0;">Analytics Pipelines</h3>
+                        </div>
+                        <p>Stream conversation data to
+                            analytics platforms for real-time insights.</p>
+                    </article>
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-tasks"></i>
+                            <h3 style="margin:0;">Task Automation</h3>
+                        </div>
+                        <p>Create tasks, update
+                            statuses, and trigger workflows in project management tools.</p>
+                    </article>
+                    <article class="card">
+                        <div class="case-head" style="display:flex;align-items:center;gap:14px;">
+                            <i class="fas fa-database"></i>
+                            <h3 style="margin:0;">Data Warehousing</h3>
+                        </div>
+                        <p>Archive call transcripts and
+                            qualification data to data warehouses for analysis.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+                gap: 20px;
+            }
+
+            .cta-head {
+                flex: 1;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.85;
+                border-radius: 20px;
+                overflow: hidden;
+                height: stretch;
+                background: url("images/cta/cta18.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column;
+                }
+
+                .cta-img {
+                    min-height: 125px;
+
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-img">
+                    </div>
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">START RECEIVING WEBHOOKS.</div>
+                        <h2 style="color:var(--text);margin-top: 0;">
+                            Get Webhook Access and Build Real-Time Applications.
+                        </h2>
+                        <p style="color:var(--muted);">
+                            Join hundreds of developers building event-driven applications with Letstawk webhooks. Get
+                            started in minutes and start receiving real-time events.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-plug"></i> Request a
+                                Demo</a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg"><i
+                                    class="fa-solid fa-headset"></i> Talk to an expert</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <div data-component="faq"></div>
+        <script id="faqData" type="application/json">
+        {
+            "title":"Webhooks API FAQs",
+            "description":"Answers to common questions about Letstawk's Webhooks API and event-driven integration.",
+            "items":[
+              {"question":"What events can I subscribe to?","answer":"You can subscribe to call lifecycle events (initiated, in_progress, completed, failed), qualification events, transcript events, lead events, meeting events, and follow-up events."},
+              {"question":"How do I secure my webhook endpoint?","answer":"We support HMAC-SHA256 signatures to verify webhook authenticity. You can also use HTTPS and IP whitelisting for additional security."},
+              {"question":"What happens if my endpoint is down?","answer":"We automatically retry failed deliveries with exponential backoff up to 72 hours. You'll also receive webhook.failed notifications to alert you of issues."},
+              {"question":"Can I test webhooks before going live?","answer":"Yes. Our dashboard includes a webhook testing tool and a delivery log to monitor and debug webhook deliveries."},
+              {"question":"What's the delivery latency?","answer":"Webhooks are delivered in real-time, typically within sub-second latency after the event occurs."},
+              {"question":"Can I use webhooks with serverless functions?","answer":"Absolutely. Webhooks work perfectly with AWS Lambda, Google Cloud Functions, Azure Functions, and other serverless platforms."}
+            ]
+        }
+        </script>
+    </main>
+    <!-- Footer  -->
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

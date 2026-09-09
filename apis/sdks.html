@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <title>SDKs | APIs | Letstawk</title>
+    <meta name="description"
+        content="Letstawk SDKs — Fast, idiomatic integration for AI voice automation in your preferred language.">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--indigo)" />
+                <stop offset=".5" stop-color="var(--violet)" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <style>
+            .banner-img2 {
+                background: url("images/pages/apis/sdks/banner.webp") center center / cover no-repeat;
+            }
+
+            .sdk-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(13, 138, 255, 0.419);
+                padding: 6px 16px 6px 12px;
+                border-radius: 40px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-bottom: 12px;
+            }
+
+            .sdk-badge i {
+                font-size: 1rem;
+            }
+        </style>
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>APIs · SDKs
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Integrations <span>›</span>
+                    APIs <span>›</span>
+                    SDKs
+                </p>
+                <h1 style="max-width:100%; margin-bottom:20px;">
+                    SDKs — Fast, Idiomatic Integration for AI Voice Automation
+                </h1>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <div class="sdk-badge"><i class="fas fa-code"></i> Developer-first SDKs</div>
+                    <p class="industry-lead" style="margin-top:0;">
+                        Letstawk provides official SDKs for popular programming languages. Get started in minutes with
+                        idiomatic, type-safe integration for AI voice automation in your preferred language.
+                    </p>
+                    <p class="industry-lead">
+                        <strong>Build faster with SDKs that handle authentication, retries, and error handling for
+                            you.</strong>
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-primary btn-lg" href="contact.html">
+                            <i class="fas fa-calendar-plus"></i> Get SDK Access
+                        </a>
+                        <a class="btn btn-outline on-dark btn-lg" href="tel:+919500069296">
+                            <i class="fa-solid fa-headset"></i> Talk to a Developer
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-code"></i>&ensp;8+ Languages</span>
+                <span><i class="fas fa-shield-alt"></i>&ensp;Type-Safe</span>
+                <span><i class="fas fa-redo-alt"></i>&ensp;Auto-Retry</span>
+                <span><i class="fas fa-book"></i>&ensp;Full Docs</span>
+                <span><i class="fas fa-clock"></i>&ensp;Quick Start</span>
+            </div>
+        </section>
+        <!-- THE CHALLENGE -->
+        <style>
+            .list-card {
+                display: block;
+            }
+
+            .list-card span {
+                color: var(--indigo);
+                font-weight: 700;
+            }
+
+            .section-img {
+                background: url(images/pages/apis/sdks/side.webp);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .list-card strong {
+                font-size: 16px;
+            }
+
+            .list-card p {
+                font-size: 14px;
+            }
+
+            @media (max-width: 760px) {
+                .section-img {
+                    height: 250px;
+                }
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE CHALLENGE</div>
+                    <h2>API Integration Should Be Fast and Intuitive</h2>
+                    <p>Manual API integrations are time-consuming, error-prone, and require boilerplate code for
+                        authentication, error handling, and retries. Developers need idiomatic, well-documented SDKs to
+                        accelerate development.</p>
+                </div>
+                <div class="grid grid-col-2">
+                    <div class="section-img"></div>
+                    <div class="grid grid-col-2">
+                        <div class="list-card"><span>01</span>
+                            <p><strong>Boilerplate code.</strong><br>Authentication, headers, and retries require
+                                repetitive code.</p>
+                        </div>
+                        <div class="list-card"><span>02</span>
+                            <p><strong>Error handling complexity.</strong><br>API errors need consistent handling across
+                                your application.</p>
+                        </div>
+                        <div class="list-card"><span>03</span>
+                            <p><strong>Slow development.</strong><br>Writing and testing API calls takes valuable
+                                development time.</p>
+                        </div>
+                        <div class="list-card"><span>04</span>
+                            <p><strong>Inconsistent patterns.</strong><br>Different APIs use different conventions and
+                                formats.</p>
+                        </div>
+                        <div class="list-card"><span>05</span>
+                            <p><strong>Documentation gaps.</strong><br>API docs don't always translate to working code
+                                quickly.</p>
+                        </div>
+                        <div class="list-card"><span>06</span>
+                            <p><strong>Type safety issues.</strong><br>Without proper types, you're prone to runtime
+                                errors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- THE SOLUTION -->
+        <style>
+            .business-card {
+                background: var(--white);
+                padding: 28px 24px;
+                border-radius: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: all 0.3s ease;
+                border-left: 3px solid var(--indigo);
+            }
+
+            .business-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .business-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin: 0 0 10px;
+                color: #1a1a2e;
+            }
+
+            .business-card h3 i {
+                color: #4338E8;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+
+            .business-card>p {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #4a4a6a;
+            }
+
+            .qualification-full {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">THE SOLUTION</div>
+                    <h2>Official SDKs for Every Major Language</h2>
+                    <p>Letstawk provides production-ready SDKs with full type support, automatic retries, and
+                        comprehensive documentation. Focus on building your application, not integrating APIs.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="business-card">
+                        <h3><i class="fas fa-bolt"></i>Quick Start</h3>
+                        <p>Install with your favorite package manager and start making calls in minutes.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-shield-alt"></i>Type-Safe</h3>
+                        <p>Full TypeScript, Python type hints, and Java generics for compile-time safety.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-redo-alt"></i>Auto-Retry</h3>
+                        <p>Built-in retry logic with exponential backoff for reliable API calls.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-book"></i>Full Documentation</h3>
+                        <p>Comprehensive docs with examples, guides, and API references for every SDK.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-code"></i>Idiomatic Design</h3>
+                        <p>SDKs follow language best practices and conventions for natural integration.</p>
+                    </div>
+                    <div class="business-card">
+                        <h3><i class="fas fa-users"></i>Open Source</h3>
+                        <p>All SDKs are open source with community contributions and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- AVAILABLE SDKS -->
+        <style>
+            .sdk-card {
+                background: var(--paper);
+                padding: 24px 20px;
+                border-radius: 16px;
+                text-align: center;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                transition: 0.3s;
+                text-decoration: none;
+                color: var(--text);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .sdk-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+                border-color: var(--indigo);
+            }
+
+            .sdk-card .sdk-icon {
+                font-size: 3rem;
+                margin-bottom: 12px;
+                display: block;
+            }
+
+            .sdk-card .sdk-icon.python {
+                color: #3776AB;
+            }
+
+            .sdk-card .sdk-icon.javascript {
+                color: #F7DF1E;
+            }
+
+            .sdk-card .sdk-icon.java {
+                color: #007396;
+            }
+
+            .sdk-card .sdk-icon.php {
+                color: #777BB4;
+            }
+
+            .sdk-card .sdk-icon.ruby {
+                color: #CC342D;
+            }
+
+            .sdk-card .sdk-icon.go {
+                color: #00ADD8;
+            }
+
+            .sdk-card .sdk-icon.dotnet {
+                color: #512BD4;
+            }
+
+            .sdk-card .sdk-icon.node {
+                color: #339933;
+            }
+
+            .sdk-card h3 {
+                font-size: 1.1rem;
+                margin: 8px 0;
+            }
+
+            .sdk-card p {
+                color: var(--muted);
+                font-size: 0.85rem;
+                margin: 0;
+            }
+
+            .sdk-card .version {
+                display: inline-block;
+                background: var(--paper-2);
+                padding: 2px 10px;
+                border-radius: 20px;
+                font-size: 0.7rem;
+                font-weight: 600;
+                color: var(--muted);
+                margin-top: 8px;
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">AVAILABLE SDKS</div>
+                    <h2>Choose Your Language</h2>
+                    <p>Official SDKs for the languages you use every day.</p>
+                </div>
+                <div class="grid grid-col-4">
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon python"><i class="fab fa-python"></i></span>
+                        <h3>Python</h3>
+                        <p>Full support with type hints and async/await.</p>
+                        <span class="version">v2.1.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon javascript"><i class="fab fa-js"></i></span>
+                        <h3>JavaScript</h3>
+                        <p>Node.js and browser support with TypeScript types.</p>
+                        <span class="version">v3.0.1</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon java"><i class="fab fa-java"></i></span>
+                        <h3>Java</h3>
+                        <p>Android and Spring compatible with generics.</p>
+                        <span class="version">v1.8.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon php"><i class="fab fa-php"></i></span>
+                        <h3>PHP</h3>
+                        <p>PSR-7 compliant with Laravel and Symfony support.</p>
+                        <span class="version">v2.0.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon ruby"><i class="fas fa-gem"></i></span>
+                        <h3>Ruby</h3>
+                        <p>Ruby on Rails compatible with idiomatic Ruby style.</p>
+                        <span class="version">v1.5.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon go"><i class="fab fa-golang"></i></span>
+                        <h3>Go</h3>
+                        <p>High-performance with goroutines and context support.</p>
+                        <span class="version">v1.2.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon dotnet"><i class="fab fa-microsoft"></i></span>
+                        <h3>.NET</h3>
+                        <p>C# and F# support with async/await and LINQ.</p>
+                        <span class="version">v1.9.0</span>
+                    </a>
+                    <a href="contact.html" class="sdk-card">
+                        <span class="sdk-icon node"><i class="fab fa-node-js"></i></span>
+                        <h3>Node.js</h3>
+                        <p>Optimized for Node.js with streaming support.</p>
+                        <span class="version">v3.0.1</span>
+                    </a>
+                </div>
+                <div style="text-align:center;margin-top:24px;">
+                    <p style="color:var(--muted);">Looking for a language not listed? <a href="contact.html"
+                            style="color:var(--sdk-blue);font-weight:600;">Request it →</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- CODE EXAMPLE -->
+        <style>
+            .code-block {
+                background: #1a1a2e;
+                color: #e2e8f0;
+                padding: 20px 24px;
+                border-radius: 12px;
+                font-size: 0.85rem;
+                font-family: 'Courier New', monospace;
+                overflow-x: auto;
+                margin: 12px 0;
+                border-left: 4px solid var(--indigo);
+            }
+
+            .code-block .comment {
+                color: #94a3b8;
+            }
+
+            .code-block .key {
+                color: #f472b6;
+            }
+
+            .code-block .string {
+                color: #34d399;
+            }
+
+            .code-block .method {
+                color: #60a5fa;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">GET STARTED</div>
+                    <h2>SDK in Action — Python Example</h2>
+                    <p>Here's how simple it is to initiate a voice call with the Letstawk Python SDK.</p>
+                </div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+                    <div
+                        style="background: #0f0f1f; border-radius: 16px; padding: 24px; overflow-x: auto; border: 1px solid rgba(255,255,255,0.06);">
+                        <div class="code-block" style="border-left-color: #3b82f6;">
+                            <span class="comment"># Install: pip install letstawk</span><br><br>
+                            <span class="keyword">from</span> letstawk <span class="keyword">import</span> Letstawk<br>
+                            <span class="keyword">from</span> letstawk.models <span class="keyword">import</span>
+                            CallRequest<br><br>
+                            <span class="comment"># Initialize the client</span><br>
+                            client = Letstawk(api_key=<span class="string">"your_api_key"</span>)<br><br>
+                            <span class="comment"># Create a call request</span><br>
+                            call = CallRequest(<br>
+                            &nbsp;&nbsp;to=<span class="string">"+1234567890"</span>,<br>
+                            &nbsp;&nbsp;from=<span class="string">"+1234567890"</span>,<br>
+                            &nbsp;&nbsp;flow_id=<span class="string">"qualification_flow_123"</span>,<br>
+                            &nbsp;&nbsp;context={<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"lead_name"</span>: <span class="string">"John
+                                Doe"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"source"</span>: <span
+                                class="string">"website"</span><br>
+                            &nbsp;&nbsp;}<br>
+                            )<br><br>
+                            <span class="comment"># Initiate the call</span><br>
+                            response = client.calls.create(call)<br>
+                            print(response.call_id)<br>
+                            <span class="comment"># => "call_abc123xyz"</span>
+                        </div>
+                    </div>
+                    <div
+                        style="background: #0f0f1f; border-radius: 16px; padding: 24px; overflow-x: auto; border: 1px solid rgba(255,255,255,0.06);">
+                        <div class="code-block" style="border-left-color: #10b981;">
+                            <span class="comment">// Install: npm install letstawk</span><br><br>
+                            <span class="keyword">import</span> { Letstawk, CallRequest } <span
+                                class="keyword">from</span> <span class="string">'letstawk'</span>;<br><br>
+                            <span class="comment">// Initialize the client</span><br>
+                            <span class="keyword">const</span> client = <span class="keyword">new</span> Letstawk({<br>
+                            &nbsp;&nbsp;apiKey: <span class="string">'your_api_key'</span><br>
+                            });<br><br>
+                            <span class="comment">// Create a call request</span><br>
+                            <span class="keyword">const</span> call = <span class="keyword">new</span> CallRequest({<br>
+                            &nbsp;&nbsp;to: <span class="string">'+1234567890'</span>,<br>
+                            &nbsp;&nbsp;from: <span class="string">'+1234567890'</span>,<br>
+                            &nbsp;&nbsp;flowId: <span class="string">'qualification_flow_123'</span>,<br>
+                            &nbsp;&nbsp;context: {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;leadName: <span class="string">'John Doe'</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;source: <span class="string">'website'</span><br>
+                            &nbsp;&nbsp;}<br>
+                            });<br><br>
+                            <span class="comment">// Initiate the call</span><br>
+                            <span class="keyword">const</span> response = <span class="keyword">await</span>
+                            client.calls.create(call);<br>
+                            console.log(response.callId);<br>
+                            <span class="comment">// => "call_abc123xyz"</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; display: flex; gap: 16px; flex-wrap: wrap; justify-content:center;">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-book"></i> View All SDK Docs
+                    </a>
+                    <a href="contact.html" class="btn btn-third-dark on-dark btn-lg"
+                        style="border: 1px solid var(--ink-soft);">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- WHY DEVELOPERS LOVE THIS -->
+        <style>
+            .card:hover {
+                transform: translateY(-4px);
+            }
+
+            .use-card {
+                background: var(--paper);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-card h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--white);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-card h3 i {
+                color: var(--violet);
+                font-size: 20px;
+            }
+
+            .txt i {
+                color: var(--indigo);
+            }
+        </style>
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">WHY DEVELOPERS LOVE THIS</div>
+                    <h2>Built for Developer Productivity</h2>
+                    <p>Letstawk SDKs are designed to make you more productive from day one.</p>
+                </div>
+                <div class="grid grid-col-3">
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-check-double"></i>&ensp;Zero boilerplate</h3>
+                        </div>
+                        <p>No need to write authentication, headers, or retry logic — it's all handled.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-clock"></i>&ensp;Fast integration</h3>
+                        </div>
+                        <p>Most developers get a working integration in under 15 minutes.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-shield-alt"></i>&ensp;Type-safe</h3>
+                        </div>
+                        <p>Catch errors at compile time with full type definitions and IntelliSense.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-code-branch"></i>&ensp;Open source</h3>
+                        </div>
+                        <p>All SDKs are open source with community contributions welcome.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-book"></i>&ensp;Excellent docs</h3>
+                        </div>
+                        <p>Comprehensive guides, examples, and API references for every SDK.</p>
+                    </div>
+                    <div class="card use-card">
+                        <div class="head">
+                            <h3><i class="fa-solid fa-users"></i>&ensp;Community support</h3>
+                        </div>
+                        <p>Active community and dedicated support to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SDK FEATURES -->
+        <style>
+            .feat {
+                background: var(--white);
+            }
+
+            .feat h3 {
+                color: var(--text);
+                padding: 8px 12px;
+                margin: 0;
+                position: relative;
+                left: -15px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--paper);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .feat:hover .ic {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
+            .ic {
+                transition: transform .35s ease;
+                background: linear-gradient(120deg, #aecdfc, #dea8ba) !important;
+                z-index: 9;
+            }
+
+            .ic i {
+                color: var(--indigo);
+                font-size: 22px;
+                transition: all 0.3s ease;
+            }
+
+            .feat li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+        </style>
+        <section class="page-section tint">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">SDK FEATURES</div>
+                    <h2>Everything You Need to Build Great Applications</h2>
+                    <p>Our SDKs come packed with features to accelerate your development.</p>
+                </div>
+                <div class="grid grid-col-2">
+
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h3 style="margin:0;">Full API Coverage</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Every Letstawk API endpoint is available in every SDK with full type support.
+                        </p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-redo-alt"></i>
+                            </div>
+                            <h3 style="margin:0;">Automatic Retries</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Built-in retry logic with exponential backoff and jitter for reliability.
+                        </p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 style="margin:0;">Async Support</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Full async/await support in Python, JavaScript, .NET, and Go for non-blocking code.
+                        </p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 style="margin:0;">Security First</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Automatic HMAC signing, TLS validation, and secure defaults.
+                        </p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h3 style="margin:0;">Customizable</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Configurable timeouts, retry settings, and custom HTTP clients.
+                        </p>
+                    </article>
+                    <article class="feat">
+                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                            <div class="ic" style="margin-bottom: 0;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 style="margin:0;">Examples & Guides</h3>
+                        </div>
+                        <p style="color:var(--muted);margin:8px 0 0;font-size:0.9rem;">
+                            Step-by-step guides and code examples for common use cases.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
+
+            .cta-head {
+                flex: 0.9;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.5;
+                border-radius: 20px;
+                overflow: hidden;
+                height: stretch;
+                background: url("images/cta/cta26.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img {
+                    min-height: 250px;
+
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">START BUILDING WITH SDKS.</div>
+                        <h2 style="color:var(--text);margin-top: 0;">
+                            Get SDK Access and Start Building Today.
+                        </h2>
+                        <p style="color:var(--muted);">
+                            Join thousands of developers building AI voice automation applications with Letstawk SDKs.
+                            Get started with our comprehensive docs and examples.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-plug"></i> Request a
+                                Demo</a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg"><i
+                                    class="fa-solid fa-headset"></i> Talk to an expert</a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <div data-component="faq"></div>
+        <script id="faqData" type="application/json">
+        {
+            "title":"SDKs FAQs",
+            "description":"Answers to common questions about Letstawk's SDKs and API integration.",
+            "items":[
+              {"question":"Which languages are supported?","answer":"We currently offer official SDKs for Python, JavaScript/TypeScript, Java, PHP, Ruby, Go, .NET/C#, and Node.js. More languages are in development."},
+              {"question":"Are the SDKs open source?","answer":"Yes! All of our SDKs are open source and available on GitHub. Contributions are welcome."},
+              {"question":"How do I install an SDK?","answer":"Each SDK can be installed via the standard package manager for that language — pip, npm, composer, gem, go get, nuget, etc."},
+              {"question":"Do the SDKs support async/await?","answer":"Yes. Our SDKs support async/await in Python, JavaScript, .NET, and Go for non-blocking, high-performance applications."},
+              {"question":"Are the SDKs type-safe?","answer":"Absolutely. We provide full type hints in Python, TypeScript definitions in JavaScript, generics in Java, and strong typing in all supported languages."},
+              {"question":"How do I get help with an SDK?","answer":"Check our comprehensive documentation, join our community Slack channel, or open an issue on GitHub. We're here to help!"}
+            ]
+        }
+        </script>
+    </main>
+    <!-- Footer  -->
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>
