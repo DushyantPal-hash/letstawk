@@ -384,6 +384,11 @@
 
             .icon i {
                 color: var(--white);
+                transition: transform .35s ease;
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .card:hover .icon {
@@ -1053,6 +1058,14 @@
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
             }
 
+            .use-case-icon i {
+                transition: transform .35s ease;
+            }
+
+            .use-case-card:hover .use-case-icon i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
             .use-case-card:hover .use-case-icon {
                 transform: scale(1.02) rotate(-45deg);
             }
@@ -1204,6 +1217,10 @@
                 transform: scale(1.02) rotate(-45deg);
             }
 
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
             .ic {
                 transition: transform .35s ease;
             }
@@ -1211,6 +1228,7 @@
             .ic i {
                 color: var(--indigo);
                 font-size: 20px;
+                transition: transform .35s ease;
             }
 
             .feat li {

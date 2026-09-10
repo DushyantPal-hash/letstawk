@@ -356,6 +356,7 @@
             .card i {
                 /* color: var(--indigo); */
                 color: var(--muted);
+                transition: transform .35s ease;
             }
 
             .icon {
@@ -379,6 +380,10 @@
 
             .card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
         </style>
         <section class="page-section">
@@ -784,6 +789,10 @@
                 width: 100%;
             }
 
+            .use-case-icon i {
+                transition: transform .35s ease;
+            }
+
             .use-case-icon {
                 font-size: 1.5rem;
                 color: var(--paper-2);
@@ -800,6 +809,10 @@
 
             .use-case-card:hover .use-case-icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .use-case-card:hover .use-case-icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .use-case-head h3 {
