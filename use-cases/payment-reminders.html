@@ -267,7 +267,6 @@
             }
 
             .card i {
-                /* color: var(--indigo); */
                 color: var(--muted);
             }
 
@@ -288,10 +287,15 @@
 
             .icon i {
                 color: var(--white);
+                transition: transform .35s ease;
             }
 
             .card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
         </style>
         <section class="page-section">

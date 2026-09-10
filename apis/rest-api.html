@@ -336,7 +336,7 @@
         <style>
             .card {
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
-                background: var(--white);
+                background: var(--paper);
             }
 
             .card:hover {
@@ -344,6 +344,7 @@
             }
 
             .head h3 {
+
                 color: var(--text);
                 padding: 8px 12px;
                 margin: 0;
@@ -358,7 +359,7 @@
             }
 
             .heading-back h3 {
-                background: var(--paper-2);
+                background: var(--white);
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
             }
 
@@ -379,7 +380,6 @@
             }
 
             .card i {
-                /* color: var(--indigo); */
                 color: var(--muted);
             }
 
@@ -400,10 +400,15 @@
 
             .icon i {
                 color: var(--white);
+                transition: transform .35s ease;
             }
 
             .card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
         </style>
         <section class="page-section tint">
@@ -553,6 +558,10 @@
                 transform: scale(1.02) rotate(-45deg);
             }
 
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
             .ic {
                 transition: transform .35s ease;
                 background: linear-gradient(120deg, #aecdfc, #dea8ba) !important;
@@ -561,7 +570,8 @@
 
             .ic i {
                 color: var(--indigo);
-                font-size: 20px;
+                font-size: 22px;
+                transition: all 0.3s ease;
             }
 
             .feat li {

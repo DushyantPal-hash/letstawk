@@ -533,7 +533,7 @@
                 </div>
             </div>
         </section>
-        <!-- THE SOLUTION -->
+        <!-- USE CASES -->
         <style>
             .grid-card {
                 display: flex;
@@ -556,6 +556,10 @@
                 width: 100%;
             }
 
+            .icon i {
+                transition: transform .35s ease;
+            }
+
             .icon {
                 font-size: 1.5rem;
                 color: var(--paper-2);
@@ -572,6 +576,10 @@
 
             .grid-card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .grid-card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .grid-head h3 {

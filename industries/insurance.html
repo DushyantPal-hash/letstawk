@@ -376,6 +376,7 @@
             .card i {
                 /* color: var(--indigo); */
                 color: var(--muted);
+                transition: transform .35s ease;
             }
 
             .icon {
@@ -399,6 +400,10 @@
 
             .card:hover .icon {
                 transform: scale(1.02) rotate(-45deg);
+            }
+
+            .card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
             }
         </style>
         <section class="page-section">
@@ -752,6 +757,14 @@
                 z-index: 3;
                 transition: transform .35s ease;
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-case-icon i {
+                transition: transform .35s ease;
+            }
+
+            .use-case-card:hover .use-case-icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .use-case-card:hover .use-case-icon {
