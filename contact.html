@@ -13,9 +13,25 @@
         href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navbar -->
     <svg width="0" height="0" style="position:absolute">
         <defs>
@@ -98,7 +114,7 @@
             }
 
             .image-div {
-                background: #fff;
+                background: url(images/contact.webp)center center / cover no-repeat;
                 border: 1px solid var(--line);
                 border-radius: var(--radius-lg);
             }
@@ -106,6 +122,13 @@
             .image-div img {
                 width: 100%;
                 border-radius: var(--radius-lg);
+                display: none;
+            }
+
+            @media (max-width: 760px) {
+                .image-div img {
+                    display: block;
+                }
             }
         </style>
         <section class="page-section">
