@@ -357,7 +357,7 @@
         <!-- Think -->
         <section class="page-section tint">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
+                <div class="sec-head sec-head-left" style="max-width:100%;">
                     <div class="sec-eyebrow">How we think</div>
                     <h2>Voice AI built for real customer moments.</h2>
                     <p>From the first hello to the final follow-up, our work is grounded in conversations that make
@@ -405,7 +405,7 @@
         <!-- Approach -->
         <section class="page-section">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
+                <div class="sec-head sec-head-left" style="max-width:100%;">
                     <div class="sec-eyebrow">Our approach</div>
                     <h2>Designed around your business, not the other way around.</h2>
                 </div>
@@ -467,33 +467,168 @@
             </div>
         </section>
         <!-- Team Section -->
+        <style>
+            .grid-card {
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                transition: all 0.3s ease;
+                background: var(--paper);
+            }
+
+            .grid-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+            }
+
+            .grid-head {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            .icon i {
+                transition: transform .35s ease;
+            }
+
+            .icon {
+                font-size: 1.5rem;
+                color: var(--paper-2);
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #7a5cea, rgb(255 107 139 / 97%));
+                z-index: 3;
+                transition: transform .35s ease;
+            }
+
+            .grid-card:hover .icon {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .grid-card:hover .icon i {
+                transform: scale(1.02) rotate(45deg);
+            }
+
+            .grid-head h3 {
+                background: var(--muted);
+                color: #fff;
+                padding: 12px;
+                margin: 0;
+                position: relative;
+                left: -5px;
+                z-index: 1;
+                font-size: 16px;
+                font-weight: 600;
+                flex: 1;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .grid-card p {
+                margin-top: 11px;
+                color: var(--muted);
+                font-size: 15px;
+                line-height: 1.55;
+            }
+
+            .grid-card li {
+                font-size: 13px;
+                color: var(--muted);
+                margin-left: 10px;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            .grid-card li i {
+                color: var(--indigo);
+            }
+        </style>
         <section class="page-section tint">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
-                    <div class="sec-eyebrow">Meet the team</div>
-                    <h2>People behind the voice.</h2>
-                    <p>We're a diverse group of engineers, designers, and customer experience experts passionate about
-                        making every conversation better.</p>
+                <div class="sec-head sec-head-left" style="max-width:100%;">
+                    <div class="sec-eyebrow">Use Case</div>
+                    <h2>Built for every customer conversation.</h2>
+                    <p>
+                        From answering questions to booking appointments and resolving issues, Letstawk helps businesses
+                        handle customer conversations faster, smarter, and more naturally.
+                    </p>
                 </div>
-                <div class="team-grid">
-                    <div class="team-card" style=" box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
-                        <div class="avatar">AK</div>
-                        <h4>Alex Kowalski</h4>
-                        <div class="role">CEO & Co-founder</div>
-                        <p>Former VP of Product at VoiceTech, obsessed with natural language and human-centered design.
+                <div class="grid grid-col-3">
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <h3>Answer Customer Questions</h3>
+                        </div>
+                        <p>
+                            Give customers instant, natural responses without making them wait for an agent.
                         </p>
                     </div>
-                    <div class="team-card" style=" box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
-                        <div class="avatar">SR</div>
-                        <h4>Samira Riaz</h4>
-                        <div class="role">CTO & Co-founder</div>
-                        <p>AI researcher with 10+ years in speech recognition and real-time systems architecture.</p>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <h3>Book & Manage Appointments</h3>
+                        </div>
+                        <p>
+                            Let customers schedule, reschedule, or confirm appointments through simple voice
+                            conversations.
+                        </p>
                     </div>
-                    <div class="team-card" style=" box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);">
-                        <div class="avatar">JM</div>
-                        <h4>Jordan Miles</h4>
-                        <div class="role">Head of Customer Experience</div>
-                        <p>Former support leader who believes every caller deserves to feel heard and valued.</p>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-business-time"></i>
+                            </div>
+                            <h3>Handle Support Requests</h3>
+                        </div>
+                        <p>
+                            Resolve common customer issues automatically while handing complex conversations to your
+                            team.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </div>
+                            <h3> Capture Every Lead</h3>
+                        </div>
+                        <p>
+                            Engage visitors and callers instantly, qualify prospects, and keep potential customers from
+                            slipping away.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Follow Up Automatically</h3>
+                        </div>
+                        <p>
+                            Stay connected with customers through timely calls, reminders, and follow-ups.
+                        </p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="grid-head">
+                            <div class="icon">
+                                <i class="fas fa-timeline"></i>
+                            </div>
+                            <h3>Escalate When It Matters</h3>
+                        </div>
+                        <p>
+                            When human expertise is needed, seamlessly hand the conversation over to your team.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -501,7 +636,7 @@
         <!-- Testimonials Section -->
         <section class="page-section">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
+                <div class="sec-head sec-head-left" style="max-width:100%;">
                     <div class="sec-eyebrow">What our customers say</div>
                     <h2>Real results, real conversations.</h2>
                     <p>Hear from teams who've transformed their customer experience with letstawk.</p>
@@ -530,7 +665,7 @@
         <!-- How It Works / Timeline -->
         <section class="page-section tint">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
+                <div class="sec-head sec-head-left" style="max-width:100%;">
                     <div class="sec-eyebrow">How it works</div>
                     <h2>From hello to resolution in 3 steps.</h2>
                     <p>Our voice agents are designed to understand, act, and hand off seamlessly.</p>
@@ -569,7 +704,7 @@
         </style>
         <section class="page-section">
             <div class="wrap">
-                <div class="sec-head sec-head-left">
+                <div class="sec-head sec-head-left" style="max-width:100%;">
                     <div class="sec-eyebrow">Built for your stack</div>
                     <h2>Works with the tools you love.</h2>
                     <p>letstawk integrates directly with your existing systems to keep workflows smooth.</p>
