@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | letstawk</title>
+    <base href="/">
+    <meta name="description" content="Explore the letstawk voice AI features and the solutions they power.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons (consistent with existing classes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })
+            (window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+        /* ----- GLOBAL REFINEMENTS (only for this page, scoped where possible) ----- */
+        :root {
+            --white: #ffffff;
+            --primary: #4338E8;
+            --primary-dark: #2d25b0;
+            --accent: #FF6B8B;
+            --text-dark: #1a1a2e;
+            --text-soft: #4a4a6a;
+            --bg-light: #f8f9fe;
+            --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.06);
+            --radius-card: 28px;
+            --radius-btn: 100px;
+            --transition: all 0.25s ease;
+        }
+
+        /* Keep existing variables but reinforce typography */
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-dark);
+            background: var(--white);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .sec-eyebrow,
+        .eyebrow {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        /* ----- HERO SECTION – polished ----- */
+        .industry-hero {
+            position: relative;
+            background: linear-gradient(145deg, #0b0a1a 0%, #1a1833 100%);
+            color: var(--white);
+            padding: 80px 0 48px;
+            overflow: hidden;
+            border-radius: 0 0 60px 60px;
+            margin-bottom: 20px;
+        }
+
+        .industry-hero::after {
+            content: "";
+            position: absolute;
+            inset: auto -10% -220px auto;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(124, 139, 245, 0.35), transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .industry-hero .wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .industry-hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: center;
+            padding: 40px 0 20px;
+        }
+
+        .industry-hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--white);
+            margin: 0 0 24px;
+        }
+
+        .industry-lead {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.78);
+            max-width: 550px;
+            margin-bottom: 32px;
+        }
+
+        .industry-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        /* Buttons – refined */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: var(--radius-btn);
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .btn-lg {
+            padding: 16px 34px;
+            font-size: 1.05rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 12px 24px -8px rgba(67, 56, 232, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 20px 30px -8px rgba(67, 56, 232, 0.5);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #0b0a1a;
+            font-weight: 700;
+            box-shadow: 0 12px 24px -8px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebe5a;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 30px -8px rgba(37, 211, 102, 0.5);
+        }
+
+        .btn-whatsapp i {
+            font-size: 1.1rem;
+        }
+
+        .btn-primary i {
+            margin-left: 4px;
+        }
+
+        /* Eyebrow + Breadcrumb */
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(4px);
+            padding: 6px 18px 6px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .eyebrow .pulse {
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 8px rgba(74, 222, 128, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+            }
+        }
+
+        .industry-breadcrumb {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0 0 8px;
+        }
+
+        .industry-breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .industry-breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .industry-breadcrumb span {
+            margin: 0 8px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Banner image */
+        .banner-img2 {
+            background: url("images/features.webp") center center / cover no-repeat;
+            min-height: 280px;
+            border-radius: 32px;
+            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        .banner-img2:hover {
+            transform: scale(1.01);
+            box-shadow: 0 40px 60px -20px rgba(67, 56, 232, 0.5);
+        }
+
+        /* Stats row */
+        .banner-count {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 32px 0 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 24px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .banner-count span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .banner-count i {
+            color: var(--accent);
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* ----- FEATURES GRID SECTION ----- */
+        .page-section {
+            padding: 80px 0;
+        }
+
+        .page-section.tint {
+            background: var(--bg-light);
+            border-radius: 60px 60px 0 0;
+            margin-top: 20px;
+        }
+
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .sec-head {
+            margin-bottom: 48px;
+        }
+
+        .sec-eyebrow {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sec-eyebrow::before {
+            content: "";
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .sec-head h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0 16px;
+            color: var(--text-dark);
+        }
+
+        .sec-head p {
+            font-size: 1.15rem;
+            color: var(--text-soft);
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        /* Feature grid — modern & professional */
+        .feat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 28px;
+        }
+
+        .feat {
+            background: var(--white);
+            border-radius: var(--radius-card);
+            padding: 32px 28px 28px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(67, 56, 232, 0.06);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feat::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .feat:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(67, 56, 232, 0.15);
+        }
+
+        .feat:hover::after {
+            opacity: 1;
+        }
+
+        .feat .ic {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--primary);
+            background: rgba(67, 56, 232, 0.08);
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            transition: var(--transition);
+        }
+
+        .feat:hover .ic {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .feat h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 0 0 12px;
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+
+        .feat p {
+            font-size: 0.98rem;
+            color: var(--text-soft);
+            line-height: 1.6;
+            margin: 0 0 24px;
+            flex-grow: 1;
+        }
+
+        .feat span {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            margin-top: auto;
+        }
+
+        .feat span::after {
+            content: "→";
+            transition: var(--transition);
+        }
+
+        .feat:hover span {
+            color: var(--accent);
+            gap: 12px;
+        }
+
+        .feat:hover span::after {
+            content: "→";
+            transform: translateX(4px);
+        }
+
+        /* ----- INNER CTA SECTION ----- */
+        .inner-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(135deg, #0b0a1a 0%, #1a1833 100%);
+            border-radius: 48px;
+            padding: 56px 64px;
+            color: var(--white);
+            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.3);
+        }
+
+        .inner-cta .sec-eyebrow {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .inner-cta .sec-eyebrow::before {
+            background: var(--accent);
+        }
+
+        .inner-cta h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 800;
+            margin: 0 0 8px;
+            color: var(--white);
+        }
+
+        .inner-cta p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0;
+            max-width: 500px;
+        }
+
+        .inner-cta .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: 0 12px 24px -8px rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+        }
+
+        .inner-cta .btn-primary:hover {
+            background: #f0f0ff;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 30px -8px rgba(255, 255, 255, 0.3);
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 1024px) {
+            .industry-hero-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .banner-img2 {
+                min-height: 220px;
+                order: -1;
+            }
+
+            .banner-count {
+                justify-content: flex-start;
+                gap: 24px 32px;
+            }
+
+            .inner-cta {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 48px 40px;
+            }
+
+            .inner-cta .btn-primary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .industry-hero {
+                padding: 60px 0 32px;
+                border-radius: 0 0 40px 40px;
+            }
+
+            .industry-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .industry-actions .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .banner-count {
+                font-size: 0.85rem;
+                gap: 12px 20px;
+            }
+
+            .page-section {
+                padding: 56px 0;
+            }
+
+            .feat-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .inner-cta {
+                padding: 36px 24px;
+                border-radius: 32px;
+            }
+
+            .inner-cta h2 {
+                font-size: 1.8rem;
+            }
+
+            .inner-cta p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .wrap {
+                padding: 0 18px;
+            }
+
+            .industry-hero h1 {
+                font-size: 2rem;
+            }
+
+            .industry-lead {
+                font-size: 1rem;
+            }
+
+            .banner-img2 {
+                min-height: 180px;
+                border-radius: 24px;
+            }
+
+            .sec-head h2 {
+                font-size: 1.8rem;
+            }
+
+            .sec-head p {
+                font-size: 1rem;
+            }
+
+            .feat {
+                padding: 24px 20px;
+            }
+
+            .feat h3 {
+                font-size: 1.2rem;
+            }
+
+            .inner-cta {
+                padding: 28px 20px;
+            }
+
+            .inner-cta h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Ensure existing navbar/footer components look right */
+        [data-component="navbar"],
+        [data-component="footer"] {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Fix for any potential overflow from base href */
+        img,
+        svg {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4338E8" />
+                <stop offset=".5" stop-color="#7A5CEA" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>Features
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>Features
+                </p>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <h1 style="max-width:100%; margin-bottom:20px;margin-top: 0;">
+                        Everything your voice agent needs to get work done.
+                    </h1>
+                    <p class="industry-lead" style="margin-top:0;">
+                        From natural conversations to connected workflows, explore every capability and jump straight to
+                        the solution that fits your team.
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-whatsapp btn-lg"
+                            href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk%20features"
+                            target="_blank"><i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i>
+                            Request a demo
+                        </a>
+                        <a class="btn btn-primary btn-lg" href="tel:+91-95000 69296"><i
+                                class="fas fa-mobile-alt"></i>Try Free Demo Now
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-code"></i>&ensp;40+ Languages</span>
+                <span><i class="fas fa-shield-alt"></i>&ensp;Type-Safe</span>
+                <span><i class="fas fa-redo-alt"></i>&ensp;Auto-Retry</span>
+                <span><i class="fas fa-book"></i>&ensp;Full Docs</span>
+                <span><i class="fas fa-clock"></i>&ensp;Quick Start</span>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">The complete toolkit</div>
+                    <h2>One platform. Every conversation covered.</h2>
+                    <p>Choose a capability to learn how letstawk applies it to real customer and business workflows.</p>
+                </div>
+                <div class="feat-grid">
+                    <a class="feat feature-link" href="use-cases/customer-support.html">
+                        <div class="ic">01</div>
+                        <h3>Human-sounding speech</h3>
+                        <p>Low-latency, natural voice with the pauses and tone of a real conversation.</p><span>Explore
+                            customer support →</span>
+                    </a>
+                    <a class="feat feature-link" href="use-cases/customer-support.html">
+                        <div class="ic">02</div>
+                        <h3>Answers 24/7</h3>
+                        <p>Every call is picked up on the first ring, including nights, weekends and peak hours.</p>
+                        <span>Explore customer support →</span>
+                    </a>
+                    <a class="feat feature-link" href="industries.html">
+                        <div class="ic">03</div>
+                        <h3>40+ languages</h3>
+                        <p>Serve callers in their own language and switch naturally during the call.</p><span>View
+                            industries →</span>
+                    </a>
+                    <a class="feat feature-link" href="use-cases/appointment-booking.html">
+                        <div class="ic">04</div>
+                        <h3>Books &amp; takes action</h3>
+                        <p>Schedule appointments, check orders and update records in connected tools.</p><span>Explore
+                            appointment booking →</span>
+                    </a>
+                    <a class="feat feature-link" href="use-cases/customer-support.html">
+                        <div class="ic">05</div>
+                        <h3>Seamless human handoff</h3>
+                        <p>Transfer the conversation to the right person with the full context included.</p>
+                        <span>Explore customer support →</span>
+                    </a>
+                    <a class="feat feature-link" href="apis/rest-api.html">
+                        <div class="ic">06</div>
+                        <h3>Analytics &amp; call insights</h3>
+                        <p>Transcribe, summarise and tag every call to reveal what customers need.</p><span>Explore REST
+                            API →</span>
+                    </a>
+                    <a class="feat feature-link" href="apis/sdks.html">
+                        <div class="ic">07</div>
+                        <h3>No-code agent builder</h3>
+                        <p>Connect knowledge, set workflows in plain language and go live without engineering.</p>
+                        <span>Explore SDKs →</span>
+                    </a>
+                    <a class="feat feature-link" href="industries/bfsi.html">
+                        <div class="ic">08</div>
+                        <h3>Secure &amp; compliant</h3>
+                        <p>Encryption, sensitive-data redaction, audit logs and role-based access for regulated teams.
+                        </p><span>Explore BFSI →</span>
+                    </a>
+                    <a class="feat feature-link" href="use-cases/payment-reminders.html">
+                        <div class="ic">09</div>
+                        <h3>Outbound campaigns too</h3>
+                        <p>Run reminders, confirmations, follow-ups and win-back calls from the same agent.</p>
+                        <span>Explore payment reminders →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section tint">
+            <div class="wrap inner-cta">
+                <div>
+                    <div class="sec-eyebrow">Ready to start?</div>
+                    <h2>Put every feature to work.</h2>
+                    <p>Tell us what your team needs and we will tailor a voice agent around it.</p>
+                </div><a class="btn btn-primary btn-lg" href="contact.html">Book a demo <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

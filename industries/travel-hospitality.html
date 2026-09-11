@@ -60,10 +60,10 @@
                     <span class="pulse"></span>TRAVEL & HOSPITALITY VOICE AI
                 </div>
                 <p class="industry-breadcrumb">
-                    <a href="index.html">Home</a><span>›</span>
-                    Solutions <span>›</span>
-                    Industries <span>›</span>
-                    Travel & Hospitality
+                    <a href="index.html">Home</a>
+                    <span>›</span>Solutions
+                    <span>›</span><a href="industries.html">Industries</a>
+                    <span>›</span> Travel & Hospitality
                 </p>
                 <h1 style="max-width: 100%; margin-bottom: 20px;">
                     Turn Every Guest Conversation Into a Better Travel Experience
@@ -2135,9 +2135,6 @@
 
                 const cards = document.querySelectorAll('.step-card');
                 const stepCounter = document.getElementById('stepCounter');
-
-                // Automatically move to the next step forever.
-                // When the last step is completed, start again from step 1.
                 const STEP_DELAY = 1000;
 
                 function render() {
