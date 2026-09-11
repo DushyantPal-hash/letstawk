@@ -108,7 +108,7 @@
                 <div class="banner-img2" aria-hidden="true"></div>
             </div>
             <div class="wrap banner-count">
-                <span><i class="fas fa-code"></i>&ensp;8+ Languages</span>
+                <span><i class="fas fa-code"></i>&ensp;40+ Languages</span>
                 <span><i class="fas fa-shield-alt"></i>&ensp;Type-Safe</span>
                 <span><i class="fas fa-redo-alt"></i>&ensp;Auto-Retry</span>
                 <span><i class="fas fa-book"></i>&ensp;Full Docs</span>
@@ -443,7 +443,7 @@
                     <h2>SDK in Action - Python Example</h2>
                     <p>Here's how simple it is to initiate a voice call with the Letstawk Python SDK.</p>
                 </div>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+                <div class="grid grid-col-2">
                     <div
                         style="background: #0f0f1f; border-radius: 16px; padding: 24px; overflow-x: auto; border: 1px solid rgba(255,255,255,0.06);">
                         <div class="code-block" style="border-left-color: #3b82f6;">
@@ -656,6 +656,27 @@
                 gap: 0.75rem;
                 align-items: center;
             }
+
+            .feature-img {
+                background-image: url(images/cta/cta2.webp);
+                background-color: var(--violet);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 20px;
+                border: 1px solid var(--indigo);
+            }
+
+            @media (max-width: 760px) {
+                .feature-img {
+                    height: 400px;
+                }
+
+                .feature-mob {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
         </style>
         <section class="page-section tint">
             <div class="wrap">
@@ -664,74 +685,76 @@
                     <h2>Everything You Need to Build Great Applications</h2>
                     <p>Our SDKs come packed with features to accelerate your development.</p>
                 </div>
-                <div class="grid grid-col-2">
-
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-plug"></i>
+                <div class="grid grid-col-2 feature-mob">
+                    <div class="grid grid-col-2">
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-plug"></i>
+                                </div>
+                                <h3 style="margin:0;">Full API Coverage</h3>
                             </div>
-                            <h3 style="margin:0;">Full API Coverage</h3>
-                        </div>
-                        <p>
-                            Every Letstawk API endpoint is available in every SDK with full type support.
-                        </p>
-                    </article>
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-redo-alt"></i>
+                            <p>
+                                Every Letstawk API endpoint is available in every SDK with full type support.
+                            </p>
+                        </article>
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-redo-alt"></i>
+                                </div>
+                                <h3 style="margin:0;">Automatic Retries</h3>
                             </div>
-                            <h3 style="margin:0;">Automatic Retries</h3>
-                        </div>
-                        <p>
-                            Built-in retry logic with exponential backoff and jitter for reliability.
-                        </p>
-                    </article>
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-bolt"></i>
+                            <p>
+                                Built-in retry logic with exponential backoff and jitter for reliability.
+                            </p>
+                        </article>
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3 style="margin:0;">Async Support</h3>
                             </div>
-                            <h3 style="margin:0;">Async Support</h3>
-                        </div>
-                        <p>
-                            Full async/await support in Python, JavaScript, .NET, and Go for non-blocking code.
-                        </p>
-                    </article>
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-shield-alt"></i>
+                            <p>
+                                Full async/await support in Python, JavaScript, .NET, and Go for non-blocking code.
+                            </p>
+                        </article>
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 style="margin:0;">Security First</h3>
                             </div>
-                            <h3 style="margin:0;">Security First</h3>
-                        </div>
-                        <p>
-                            Automatic HMAC signing, TLS validation, and secure defaults.
-                        </p>
-                    </article>
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-cog"></i>
+                            <p>
+                                Automatic HMAC signing, TLS validation, and secure defaults.
+                            </p>
+                        </article>
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <h3 style="margin:0;">Customizable</h3>
                             </div>
-                            <h3 style="margin:0;">Customizable</h3>
-                        </div>
-                        <p>
-                            Configurable timeouts, retry settings, and custom HTTP clients.
-                        </p>
-                    </article>
-                    <article class="feat">
-                        <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
-                            <div class="ic" style="margin-bottom: 0;">
-                                <i class="fas fa-code"></i>
+                            <p>
+                                Configurable timeouts, retry settings, and custom HTTP clients.
+                            </p>
+                        </article>
+                        <article class="feat">
+                            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                                <div class="ic" style="margin-bottom: 0;">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 style="margin:0;">Examples & Guides</h3>
                             </div>
-                            <h3 style="margin:0;">Examples & Guides</h3>
-                        </div>
-                        <p>
-                            Step-by-step guides and code examples for common use cases.
-                        </p>
-                    </article>
+                            <p>
+                                Step-by-step guides and code examples for common use cases.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="feature-img"></div>
                 </div>
             </div>
         </section>

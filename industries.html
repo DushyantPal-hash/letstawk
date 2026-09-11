@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries | letstawk</title>
+    <base href="/">
+    <meta name="description" content="Discover how letstawk voice agents work across industries.">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })
+            (window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4338E8" />
+                <stop offset=".5" stop-color="#7A5CEA" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
+    <main>
+        <!-- HERO -->
+        <style>
+            .banner-img2 {
+                background: url("images/industries.webp") center center / cover no-repeat;
+            }
+
+            .sdk-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(13, 138, 255, 0.419);
+                padding: 6px 16px 6px 12px;
+                border-radius: 40px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--white);
+                margin-bottom: 12px;
+            }
+
+            .sdk-badge i {
+                font-size: 1rem;
+            }
+        </style>
+        <section class="industry-hero">
+            <div class="wrap">
+                <div class="eyebrow" style="margin-bottom:0;margin-top:10px;">
+                    <span class="pulse"></span>Industries
+                </div>
+                <p class="industry-breadcrumb">
+                    <a href="index.html">Home</a><span>›</span>
+                    Industries
+                </p>
+            </div>
+            <div class="wrap industry-hero-grid">
+                <div>
+                    <h1 style="max-width:100%; margin-bottom:20px;margin-top: 0;">
+                        Voice AI tuned to the way your industry works.
+                    </h1>
+                    <p class="industry-lead" style="margin-top:0;">
+                        Choose your industry to see practical workflows, use cases and customer conversations that
+                        letstawk
+                        can handle for your team.
+                    </p>
+                    <div class="industry-actions on-dark">
+                        <a class="btn btn-whatsapp btn-lg"
+                            href="https://wa.me/9500069296?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20letstawk%20features"
+                            target="_blank"><i class="si si-whatsapp" style="font-size: 15px; color: #25D366;"></i>
+                            Request a demo
+                        </a>
+                        <a class="btn btn-primary btn-lg" href="tel:+91-95000 69296"><i
+                                class="fas fa-mobile-alt"></i>Try Free Demo Now
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-img2" aria-hidden="true"></div>
+            </div>
+            <div class="wrap banner-count">
+                <span><i class="fas fa-code"></i>&ensp;40+ Languages</span>
+                <span><i class="fas fa-shield-alt"></i>&ensp;Type-Safe</span>
+                <span><i class="fas fa-redo-alt"></i>&ensp;Auto-Retry</span>
+                <span><i class="fas fa-book"></i>&ensp;Full Docs</span>
+                <span><i class="fas fa-clock"></i>&ensp;Quick Start</span>
+            </div>
+        </section>
+        <!-- Explore your industry -->
+        <style>
+            .ind-card {
+                background: var(--paper);
+            }
+
+            .card-image {
+                width: 100%;
+                height: 220px;
+                border-radius: 20px;
+                margin-bottom: 10px;
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                transition: all 0.3s ease;
+            }
+
+            .ind-card:hover .card-image {
+                transform: scale(1.05);
+                box-shadow: 0px 0px 4px 5px rgb(16 17 20 / 33%);
+            }
+
+            .ind-card::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0%;
+                height: 4px;
+                background: linear-gradient(90deg, var(--indigo), var(--coral));
+                opacity: 0;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+            }
+
+            .ind-card:hover {
+                transform: translateY(-8px);
+                box-shadow: var(--shadow-md);
+                border-color: rgba(67, 56, 232, 0.15);
+            }
+
+            .ind-card:hover::after {
+                opacity: 1;
+                left: 15px;
+                width: 90%;
+            }
+
+            .ind-card span {
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: var(--indigo);
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                transition: all 0.3s ease;
+                margin-top: auto;
+            }
+
+            .ind-card ul {
+                font-size: 0.9rem;
+                margin: 10px 25px;
+            }
+
+            .ind-card span::after {
+                content: "➜";
+                transition: all 0.3s ease;
+            }
+
+            .ind-card:hover span {
+                color: var(--coral);
+                gap: 12px;
+            }
+
+            .ind-card:hover span::after {
+                content: "➜";
+                transform: translateX(4px);
+            }
+
+            .ind-head h3 {
+                margin-bottom: 10px;
+            }
+        </style>
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">Explore your industry</div>
+                    <h2>Purpose-built conversations for every team.</h2>
+                    <p>Each industry page includes the workflows, examples and outcomes most relevant to your business.
+                    </p>
+                </div>
+                <div class="grid grid-col-3">
+                    <a class="card ind-card" href="industries/bfsi.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">BFSI</div>
+                            <img src="images/banner-side/ban.webp" alt="Cart" class="card-image">
+                            <h3>Make financial support more accessible.</h3>
+                            <p>Secure conversations for banking and financial services.</p>
+                        </div>
+                        <ul>
+                            <li>Account and product queries</li>
+                            <li>Loan and policy support</li>
+                            <li>Secure escalation</li>
+                        </ul><span>Explore BFSI</span>
+                    </a>
+                    <a class="card ind-card" href="industries/education.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Education &amp; EdTech</div>
+                            <img src="images/pages/education/ban.webp" alt="Cart" class="card-image">
+                            <h3>Answer every applicant instantly.</h3>
+                            <p>Support students, parents and admissions teams.</p>
+                        </div>
+                        <ul>
+                            <li>Admissions enquiries</li>
+                            <li>Course and fee information</li>
+                            <li>Counselling bookings</li>
+                        </ul><span>Explore education</span>
+                    </a>
+                    <a class="card ind-card" href="industries/healthcare.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Healthcare</div>
+                            <img src="images/pages/healthcare/ban.webp" alt="Cart" class="card-image">
+                            <h3>Help patients get care sooner.</h3>
+                            <p>Always-on support for patients and providers.</p>
+                        </div>
+                        <ul>
+                            <li>Appointments and reminders</li>
+                            <li>Patient FAQs</li>
+                            <li>Care navigation</li>
+                        </ul><span>Explore healthcare</span>
+                    </a>
+                    <a class="card ind-card" href="industries/insurance.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Insurance</div>
+                            <img src="images/pages/insurance/banner.webp" alt="Cart" class="card-image">
+                            <h3>Make every policy conversation simpler.</h3>
+                            <p>Guide customers through questions and next steps.</p>
+                        </div>
+                        <ul>
+                            <li>Policy enquiries</li>
+                            <li>Claims support</li>
+                            <li>Renewal reminders</li>
+                        </ul><span>Explore insurance</span>
+                    </a>
+                    <a class="card ind-card" href="industries/logistics.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Logistics &amp; transportation</div>
+                            <img src="images/pages/logistics/side2.webp" alt="Cart" class="card-image">
+                            <h3>Keep every delivery conversation moving.</h3>
+                            <p>Automate status updates and dispatch support.</p>
+                        </div>
+                        <ul>
+                            <li>Delivery tracking</li>
+                            <li>Dispatch coordination</li>
+                            <li>Customer notifications</li>
+                        </ul><span>Explore logistics</span>
+                    </a>
+                    <a class="card ind-card" href="industries/real-estate.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Real estate</div>
+                            <img src="images/pages/real-estate/banner.webp" alt="Cart" class="card-image">
+                            <h3>Qualify leads and keep properties moving.</h3>
+                            <p>Instant responses for buyers, sellers and tenants.</p>
+                        </div>
+                        <ul>
+                            <li>Lead qualification</li>
+                            <li>Property enquiries</li>
+                            <li>Viewing appointments</li>
+                        </ul>
+                        <span>Explore real estate</span>
+                    </a>
+                    <a class="card ind-card" href="industries/retail-ecommerce.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Retail &amp; ecommerce</div>
+                            <img src="images/pages/retail/banner.webp" alt="Cart" class="card-image">
+                            <h3>Turn every call into a sale kept.</h3>
+                            <p>Support that deflects tickets and recovers revenue.</p>
+                        </div>
+                        <ul>
+                            <li>Order and returns</li>
+                            <li>Product recommendations</li>
+                            <li>Cart recovery</li>
+                        </ul><span>Explore retail &amp; ecommerce</span>
+                    </a>
+                    <a class="card ind-card" href="industries/travel-hospitality.html">
+                        <div class="ind-head">
+                            <div class="sec-eyebrow">Travel &amp; hospitality</div>
+                            <img src="images/pages/travel/banner.webp" alt="Cart" class="card-image">
+                            <h3>Guests helped across every time zone.</h3>
+                            <p>Bookings and support that never sleep.</p>
+                        </div>
+                        <ul>
+                            <li>Reservations and changes</li>
+                            <li>Availability and itinerary questions</li>
+                            <li>Multilingual guest support</li>
+                        </ul><span>Explore travel &amp; hospitality</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <style>
+            .cta {
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--radius);
+                display: flex;
+            }
+
+            .cta-head {
+                flex: 0.8;
+            }
+
+            .cta-head h2 {
+                margin-top: 9px;
+                font-size: clamp(30px, 4vw, 40px);
+            }
+
+            .cta-head p {
+                margin-top: 14px;
+                color: var(--muted);
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .cta-actions {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .cta-img {
+                flex: 0.6;
+                border-radius: 20px;
+                overflow: hidden;
+                height: stretch;
+                background: url("images/cta/salesforce.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+
+            }
+
+            .cta-img img {
+                width: 100%;
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                .cta {
+                    flex-direction: column-reverse;
+                }
+
+                .cta-img {
+                    min-height: 250px;
+
+                }
+            }
+        </style>
+        <section class="page-section"
+            style="background: radial-gradient(circle at 80% 20%, rgba(255, 107, 139, .35), transparent 30%), radial-gradient(circle at 20% 80%, rgba(67, 56, 232, .45), transparent 35%), #17152b;">
+            <div class="wrap">
+                <div class="cta">
+                    <div class="cta-head">
+                        <div class="sec-eyebrow">Let’s Build Your Voice AI</div>
+                        <h2 style="color:var(--text);margin-top: 0;">
+                            Your Calls. Your Workflow. Your AI.
+                        </h2>
+                        <p style="color:var(--muted);">
+                            Tell us what your team needs, and we’ll build a voice agent around your workflows, customer
+                            conversations, and business goals—so you can automate more and focus on what matters.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-plug"></i> Request a
+                                Demo</a>
+                            <a href="tel:+919500069296" class="btn btn-third-dark on-dark btn-lg"><i
+                                    class="fa-solid fa-headset"></i> Talk to an expert</a>
+                        </div>
+                    </div>
+                    <div class="cta-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>
