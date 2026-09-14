@@ -94,74 +94,128 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4338E8" />
+                <stop offset=".5" stop-color="#7A5CEA" />
+                <stop offset="1" stop-color="#FF6B8B" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div data-component="navbar"></div>
+    <!-- Page Body -->
     <main>
-        <h1>letstawk Sitemap</h1>
-        <p class="intro">Browse all public pages on letstawk.</p>
+        <section class="page-hero">
+            <div class="wrap" style="margin-top: 40px; ">
+                <div class="sec-head" style="max-width:100%;margin-bottom: 0;">
+                    <div class="sec-eyebrow">letstawk Sitemap</div>
+                    <h2>Browse all public pages on letstawk.</h2>
+                    <!-- <p>Choose a capability to learn how letstawk applies it to real customer and business workflows.</p> -->
+                </div>
+            </div>
+        </section>
+        <style>
+            .card {
+                /* background-color: var(--paper); */
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
 
-        <div class="sections">
-            <section>
-                <h2>General</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="industries.html">Industries</a></li>
-                    <li><a href="case-studies.html">Case Studies</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </section>
+            .card:hover {
+                transform: scale(1.05);
+            }
 
-            <section>
-                <h2>Industries</h2>
-                <ul>
-                    <li><a href="industries/bfsi.html">BFSI</a></li>
-                    <li><a href="industries/education.html">Education &amp; EdTech</a></li>
-                    <li><a href="industries/healthcare.html">Healthcare</a></li>
-                    <li><a href="industries/insurance.html">Insurance</a></li>
-                    <li><a href="industries/logistics.html">Logistics &amp; Transportation</a></li>
-                    <li><a href="industries/real-estate.html">Real Estate</a></li>
-                    <li><a href="industries/retail-ecommerce.html">Retail &amp; Ecommerce</a></li>
-                    <li><a href="industries/travel-hospitality.html">Travel &amp; Hospitality</a></li>
-                </ul>
-            </section>
+            .card h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
 
-            <section>
-                <h2>Use Cases</h2>
-                <ul>
-                    <li><a href="use-cases/appointment-booking.html">Appointment Booking</a></li>
-                    <li><a href="use-cases/cart-recovery.html">Cart Recovery</a></li>
-                    <li><a href="use-cases/customer-support.html">Customer Support</a></li>
-                    <li><a href="use-cases/event-promotions.html">Event Promotions</a></li>
-                    <li><a href="use-cases/feedback-surveys.html">Feedback &amp; Surveys</a></li>
-                    <li><a href="use-cases/lead-qualification.html">Lead Qualification</a></li>
-                    <li><a href="use-cases/order-confirmation.html">Order Confirmation</a></li>
-                    <li><a href="use-cases/payment-reminders.html">Payment Reminders</a></li>
-                </ul>
-            </section>
+            .card ul {
+                font-size: 16px;
+                font-weight: 600;
+            }
 
-            <section>
-                <h2>Platforms</h2>
-                <ul>
-                    <li><a href="platforms/hubspot.html">HubSpot</a></li>
-                    <li><a href="platforms/salesforce.html">Salesforce</a></li>
-                    <li><a href="platforms/shopify.html">Shopify</a></li>
-                    <li><a href="platforms/slack.html">Slack</a></li>
-                    <li><a href="platforms/wordpress.html">WordPress</a></li>
-                    <li><a href="platforms/zendesk.html">Zendesk</a></li>
-                </ul>
-            </section>
+            .card li {
+                color: var(--violet);
+                transition: all 0.3s ease;
+                list-style: none;
+                padding-left: 10px;
+            }
 
-            <section>
-                <h2>APIs</h2>
-                <ul>
-                    <li><a href="apis/custom-connectors.html">Custom Connectors</a></li>
-                    <li><a href="apis/rest-api.html">REST API</a></li>
-                    <li><a href="apis/sdks.html">SDKs</a></li>
-                    <li><a href="apis/webhooks.html">Webhooks</a></li>
-                </ul>
-            </section>
-        </div>
+            .card li:hover {
+                color: var(--coral);
+                transform: scale(1.05);
+                box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+                background-color: #4050be1f;
+                border-radius: 20px;
+            }
+        </style>
+        <section class="page-section wrap">
+            <div class="grid grid-col-3">
+                <div class="card">
+                    <h2>General</h2>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Industries</h2>
+                    <ul>
+                        <li><a href="industries/bfsi.html">BFSI</a></li>
+                        <li><a href="industries/education.html">Education &amp; EdTech</a></li>
+                        <li><a href="industries/healthcare.html">Healthcare</a></li>
+                        <li><a href="industries/insurance.html">Insurance</a></li>
+                        <li><a href="industries/logistics.html">Logistics &amp; Transportation</a></li>
+                        <li><a href="industries/real-estate.html">Real Estate</a></li>
+                        <li><a href="industries/retail-ecommerce.html">Retail &amp; Ecommerce</a></li>
+                        <li><a href="industries/travel-hospitality.html">Travel &amp; Hospitality</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Use Cases</h2>
+                    <ul>
+                        <li><a href="use-cases/appointment-booking.html">Appointment Booking</a></li>
+                        <li><a href="use-cases/cart-recovery.html">Cart Recovery</a></li>
+                        <li><a href="use-cases/customer-support.html">Customer Support</a></li>
+                        <li><a href="use-cases/event-promotions.html">Event Promotions</a></li>
+                        <li><a href="use-cases/feedback-surveys.html">Feedback &amp; Surveys</a></li>
+                        <li><a href="use-cases/lead-qualification.html">Lead Qualification</a></li>
+                        <li><a href="use-cases/order-confirmation.html">Order Confirmation</a></li>
+                        <li><a href="use-cases/payment-reminders.html">Payment Reminders</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Platforms</h2>
+                    <ul>
+                        <li><a href="platforms/hubspot.html">HubSpot</a></li>
+                        <li><a href="platforms/salesforce.html">Salesforce</a></li>
+                        <li><a href="platforms/shopify.html">Shopify</a></li>
+                        <li><a href="platforms/slack.html">Slack</a></li>
+                        <li><a href="platforms/wordpress.html">WordPress</a></li>
+                        <li><a href="platforms/zendesk.html">Zendesk</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>APIs</h2>
+                    <ul>
+                        <li><a href="apis/custom-connectors.html">Custom Connectors</a></li>
+                        <li><a href="apis/rest-api.html">REST API</a></li>
+                        <li><a href="apis/sdks.html">SDKs</a></li>
+                        <li><a href="apis/webhooks.html">Webhooks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <div data-component="footer"></div>
+    <script src="assets/js/components.js"></script>
 </body>
 
 </html>
