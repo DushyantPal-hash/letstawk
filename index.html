@@ -26,14 +26,9 @@
   <meta name="twitter:description"
     content="Deploy conversational AI voice agents that answer calls, book appointments, and resolve requests 24/7 with human-like voice AI. Sub-400ms latency and 40+ languages.">
   <meta name="twitter:image" content="https://letstawk.ai/images/pages/og-index.png">
-
   <!-- <link rel="icon" href="images/logo.svg"> -->
   <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Google Tag Manager -->
@@ -54,6 +49,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Navigation -->
   <svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true" focusable="false">
     <defs>
       <linearGradient id="lt-tile" x1="0" y1="0" x2="1" y2="1">
@@ -63,7 +59,6 @@
       </linearGradient>
     </defs>
   </svg>
-  <!-- Navigation -->
   <div data-component="navbar"></div>
   <!-- Page Body -->
   <main>
@@ -218,6 +213,20 @@
       </div>
     </section>
     <!-- HOW IT WORKS -->
+    <style>
+      .step {
+        position: relative;
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+      }
+
+      .step:hover {
+        transform: scale(1.02);
+      }
+    </style>
     <section class="block tint" id="how">
       <div class="wrap">
         <div class="sec-head" style="max-width: 100%;">
@@ -251,6 +260,16 @@
       </div>
     </section>
     <!-- INDUSTRIES -->
+    <style>
+      .ind {
+        transition: all 0.3s ease;
+        box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+      }
+
+      .ind:hover {
+        transform: scale(1.02);
+      }
+    </style>
     <section class="block" id="industries">
       <div class="wrap">
         <div class="sec-head" style="max-width: 100%;">
@@ -309,6 +328,19 @@
       </div>
     </section>
     <!-- WHY / COMPARE -->
+    <style>
+      .lbl,
+      .us,
+      .them {
+        transition: all 0.3s ease;
+      }
+
+      .lbl:hover,
+      .us:hover,
+      .them:hover {
+        transform: translateX(4px);
+      }
+    </style>
     <section class="block tint" id="why">
       <div class="wrap">
         <div class="sec-head" style="max-width: 100%;">
@@ -436,7 +468,6 @@
         </div>
       </div>
     </section>
-
     <!-- METRICS -->
     <!-- <style>
     .stat-item {
@@ -531,13 +562,11 @@
       </div>
     </div>
   </section> -->
-
   </main>
   <!-- Footer -->
   <div data-component="footer"></div>
-
   <script src="assets/js/components.js"></script>
-
+  <!-- Scripts -->
   <script>
     (function () {
       var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

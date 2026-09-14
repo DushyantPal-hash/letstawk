@@ -1,5 +1,3 @@
-/* footer.css - Footer styles */
-
 /* FOOTER */
 footer {
     background: var(--ink);
@@ -8,14 +6,14 @@ footer {
 }
 
 .foot-grid {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap
 }
 
 .foot-brand {
-    max-width: 300px
+    max-width: 420px
 }
 
 .foot-brand p {

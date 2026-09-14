@@ -28,13 +28,7 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/banner-side/about.webp">
 
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -44,7 +38,8 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
 
     <style>
@@ -275,8 +270,11 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -347,6 +345,35 @@
             </div>
         </section>
         <!-- Mission -->
+        <style>
+            .principle-list div {
+                transition: all 0.3s ease;
+            }
+
+            .principle-list div:hover {
+                transform: translateX(8px);
+            }
+
+            .mob-span {
+                transition: all 0.3s ease;
+            }
+
+            .mob-span:hover {
+                transform: scale(1.1);
+            }
+
+            .story-grid {
+                gap: 30px;
+                background: #4338e81a;
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+            .story-copy h2 {
+                max-width: 100%;
+                font-size: clamp(34px, 4vw, 44px);
+            }
+        </style>
         <section class="page-section">
             <div class="wrap">
                 <div class="story-grid" style="grid-template-columns: 1.1fr .9fr;">
@@ -504,7 +531,7 @@
                 </div>
             </div>
         </section>
-        <!-- Team Section -->
+        <!-- Use Case -->
         <style>
             .grid-card {
                 display: flex;
@@ -513,7 +540,7 @@
                 border: 1px solid var(--line);
                 border-radius: var(--radius);
                 transition: all 0.3s ease;
-                background: var(--paper);
+                background: var(--white);
             }
 
             .grid-card:hover {
@@ -533,7 +560,7 @@
 
             .icon {
                 font-size: 1.5rem;
-                color: var(--paper-2);
+                color: var(--white);
                 width: 50px;
                 height: 50px;
                 border-radius: 12px;
@@ -797,13 +824,29 @@
         {
           "title": "About letstawk",
           "description": "A few answers about our mission, approach and how we build voice agents.",
-          "items": [
-            {"question": "What does letstawk do?", "answer": "letstawk builds conversational voice agents that answer calls, understand what customers need and help teams take the next step."},
-            {"question": "Who is letstawk for?", "answer": "We work with businesses that rely on customer conversations and want to make every caller feel heard, even during busy periods or outside office hours."},
-            {"question": "Can the voice agent work with our existing tools?", "answer": "Yes. A letstawk agent can be designed to support the workflows and systems your team already uses."},
-            {"question": "How do we begin working with letstawk?", "answer": "Start with a conversation about your callers, priorities and existing processes. Together, we can identify the right voice-agent experience for your team."},
-            {"question": "What makes letstawk different?", "answer": "We combine natural language understanding with a human-centered design, so your customers feel heard—not processed."}
-          ]
+          "items": 
+          [
+                {
+                    "question": "What does letstawk do?", 
+                    "answer": "letstawk builds conversational voice agents that answer calls, understand what customers need and help teams take the next step."
+                },
+                {
+                    "question": "Who is letstawk for?",
+                    "answer": "We work with businesses that rely on customer conversations and want to make every caller feel heard, even during busy periods or outside office hours."
+                },
+                {
+                    "question": "Can the voice agent work with our existing tools?", 
+                    "answer": "Yes. A letstawk agent can be designed to support the workflows and systems your team already uses."
+                },
+                {
+                    "question": "How do we begin working with letstawk?", 
+                    "answer": "Start with a conversation about your callers, priorities and existing processes. Together, we can identify the right voice-agent experience for your team."
+                },
+                {
+                    "question": "What makes letstawk different?", 
+                    "answer": "We combine natural language understanding with a human-centered design, so your customers feel heard—not processed."
+                }
+            ]
         }
         </script>
     </main>
