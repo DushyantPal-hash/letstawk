@@ -28,11 +28,6 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/pages/apis/custom-connectors/banner.webp">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Google Tag Manager -->
@@ -43,14 +38,18 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -891,17 +890,35 @@
             "title":"Custom Connectors FAQs",
             "description":"Answers to common questions about Letstawk Custom Connectors and integration development.",
             "items":[
-              {"question":"What systems can I connect to with custom connectors?","answer":"You can connect to any system with an API - CRMs, ERPs, marketing platforms, internal databases, legacy systems, and more."},
-              {"question":"Do I need to write code to build a connector?","answer":"No! We offer a low-code framework for simple integrations. For complex use cases, you can write full custom code for complete control."},
-              {"question":"How do I handle authentication?","answer":"We support all major authentication methods - API keys, OAuth 2.0, basic auth, and custom authentication methods."},
-              {"question":"Can I transform and map data?","answer":"Yes. Our mapping framework lets you transform data, map fields, and handle complex relationships between systems."},
-              {"question":"Is data secure?","answer":"Absolutely. We use enterprise-grade encryption, secure authentication, and give you full control over data flow and access."},
-              {"question":"How long does it take to build a connector?","answer":"Simple connectors can be built in a day. Complex connectors typically take 2-5 days depending on requirements."}
+            {
+                "question":"What systems can I connect to with custom connectors?",
+                "answer":"You can connect to any system with an API - CRMs, ERPs, marketing platforms, internal databases, legacy systems, and more."
+            },
+            {
+                "question":"Do I need to write code to build a connector?",
+                "answer":"No! We offer a low-code framework for simple integrations. For complex use cases, you can write full custom code for complete control."
+            },
+            {
+                "question":"How do I handle authentication?",
+                "answer":"We support all major authentication methods - API keys, OAuth 2.0, basic auth, and custom authentication methods."
+            },
+            {
+                "question":"Can I transform and map data?",
+                "answer":"Yes. Our mapping framework lets you transform data, map fields, and handle complex relationships between systems."
+            },
+            {
+                "question":"Is data secure?",
+                "answer":"Absolutely. We use enterprise-grade encryption, secure authentication, and give you full control over data flow and access."
+            },
+            {
+                "question":"How long does it take to build a connector?",
+                "answer":"Simple connectors can be built in a day. Complex connectors typically take 2-5 days depending on requirements."
+            }
             ]
         }
         </script>
     </main>
-
+    <!-- Footer  -->
     <div data-component="footer"></div>
     <script src="assets/js/components.js"></script>
 </body>

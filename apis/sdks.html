@@ -28,11 +28,6 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/pages/apis/sdks/banner.webp">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Google Tag Manager -->
@@ -43,14 +38,18 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -862,7 +861,6 @@
                 </div>
             </div>
         </section>
-
         <!-- FAQ -->
         <div data-component="faq"></div>
         <script id="faqData" type="application/json">
@@ -870,12 +868,30 @@
             "title":"SDKs FAQs",
             "description":"Answers to common questions about Letstawk's SDKs and API integration.",
             "items":[
-              {"question":"Which languages are supported?","answer":"We currently offer official SDKs for Python, JavaScript/TypeScript, Java, PHP, Ruby, Go, .NET/C#, and Node.js. More languages are in development."},
-              {"question":"Are the SDKs open source?","answer":"Yes! All of our SDKs are open source and available on GitHub. Contributions are welcome."},
-              {"question":"How do I install an SDK?","answer":"Each SDK can be installed via the standard package manager for that language - pip, npm, composer, gem, go get, nuget, etc."},
-              {"question":"Do the SDKs support async/await?","answer":"Yes. Our SDKs support async/await in Python, JavaScript, .NET, and Go for non-blocking, high-performance applications."},
-              {"question":"Are the SDKs type-safe?","answer":"Absolutely. We provide full type hints in Python, TypeScript definitions in JavaScript, generics in Java, and strong typing in all supported languages."},
-              {"question":"How do I get help with an SDK?","answer":"Check our comprehensive documentation, join our community Slack channel, or open an issue on GitHub. We're here to help!"}
+            {
+                "question":"Which languages are supported?",
+                "answer":"We currently offer official SDKs for Python, JavaScript/TypeScript, Java, PHP, Ruby, Go, .NET/C#, and Node.js. More languages are in development."
+            },
+            {
+                "question":"Are the SDKs open source?",
+                "answer":"Yes! All of our SDKs are open source and available on GitHub. Contributions are welcome."
+            },
+            {
+                "question":"How do I install an SDK?",
+                "answer":"Each SDK can be installed via the standard package manager for that language - pip, npm, composer, gem, go get, nuget, etc."
+            },
+            {
+                "question":"Do the SDKs support async/await?",
+                "answer":"Yes. Our SDKs support async/await in Python, JavaScript, .NET, and Go for non-blocking, high-performance applications."
+            },
+            {
+                "question":"Are the SDKs type-safe?",
+                "answer":"Absolutely. We provide full type hints in Python, TypeScript definitions in JavaScript, generics in Java, and strong typing in all supported languages."
+            },
+            {
+                "question":"How do I get help with an SDK?",
+                "answer":"Check our comprehensive documentation, join our community Slack channel, or open an issue on GitHub. We're here to help!"
+            }
             ]
         }
         </script>

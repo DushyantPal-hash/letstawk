@@ -28,11 +28,6 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/pages/apis/webhooks/banner.webp">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Google Tag Manager -->
@@ -43,14 +38,18 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -924,12 +923,30 @@
             "title":"Webhooks API FAQs",
             "description":"Answers to common questions about Letstawk's Webhooks API and event-driven integration.",
             "items":[
-              {"question":"What events can I subscribe to?","answer":"You can subscribe to call lifecycle events (initiated, in_progress, completed, failed), qualification events, transcript events, lead events, meeting events, and follow-up events."},
-              {"question":"How do I secure my webhook endpoint?","answer":"We support HMAC-SHA256 signatures to verify webhook authenticity. You can also use HTTPS and IP whitelisting for additional security."},
-              {"question":"What happens if my endpoint is down?","answer":"We automatically retry failed deliveries with exponential backoff up to 72 hours. You'll also receive webhook.failed notifications to alert you of issues."},
-              {"question":"Can I test webhooks before going live?","answer":"Yes. Our dashboard includes a webhook testing tool and a delivery log to monitor and debug webhook deliveries."},
-              {"question":"What's the delivery latency?","answer":"Webhooks are delivered in real-time, typically within sub-second latency after the event occurs."},
-              {"question":"Can I use webhooks with serverless functions?","answer":"Absolutely. Webhooks work perfectly with AWS Lambda, Google Cloud Functions, Azure Functions, and other serverless platforms."}
+            {
+                "question":"What events can I subscribe to?",
+                "answer":"You can subscribe to call lifecycle events (initiated, in_progress, completed, failed), qualification events, transcript events, lead events, meeting events, and follow-up events."
+            },
+            {
+                "question":"How do I secure my webhook endpoint?",
+                "answer":"We support HMAC-SHA256 signatures to verify webhook authenticity. You can also use HTTPS and IP whitelisting for additional security."
+            },
+            {
+                "question":"What happens if my endpoint is down?",
+                "answer":"We automatically retry failed deliveries with exponential backoff up to 72 hours. You'll also receive webhook.failed notifications to alert you of issues."
+            },
+            {
+                "question":"Can I test webhooks before going live?",
+                "answer":"Yes. Our dashboard includes a webhook testing tool and a delivery log to monitor and debug webhook deliveries."
+            },
+            {
+                "question":"What's the delivery latency?",
+                "answer":"Webhooks are delivered in real-time, typically within sub-second latency after the event occurs."
+            },
+            {
+                "question":"Can I use webhooks with serverless functions?",
+                "answer":"Absolutely. Webhooks work perfectly with AWS Lambda, Google Cloud Functions, Azure Functions, and other serverless platforms."
+            }
             ]
         }
         </script>

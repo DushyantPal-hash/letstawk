@@ -28,11 +28,6 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/banner-side/case-studies.webp">
 
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Google Tag Manager -->
@@ -43,14 +38,13 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
-
+    /* =========================================
+    FEATURED CASE STUDIES
+    ========================================= */
     <style>
-        /* =========================================
-   FEATURED CASE STUDIES
-========================================= */
-
         .case-study-list {
             display: flex;
             flex-direction: column;
@@ -189,12 +183,18 @@
             gap: 8px;
             font-size: .85rem;
             font-weight: 700;
+            color: var(--muted);
+            /* opacity: .45; */
         }
 
+        .conversation-status i {
+            font-size: 1.25rem;
+            color: var(--indigo-deep);
+        }
 
         /* =========================================
-   STEPS
-========================================= */
+            STEPS
+        ========================================= */
 
         .steps-grid {
             display: grid;
@@ -216,10 +216,9 @@
             color: var(--indigo-deep);
         }
 
-
         /* =========================================
-   DARK OUTCOMES SECTION
-========================================= */
+             DARK OUTCOMES SECTION
+        ========================================= */
 
         .dark-section {
             background: #11101c;
@@ -256,7 +255,7 @@
             display: grid;
             grid-template-columns: 60px 1fr;
             gap: 22px;
-            padding: 15px 0;
+            padding: 10px 0;
             border-bottom: 1px solid rgba(255, 255, 255, .12);
             align-items: center;
         }
@@ -281,10 +280,9 @@
             opacity: .58;
         }
 
-
         /* =========================================
-   USE CASE GRID
-========================================= */
+            USE CASE GRID
+        ========================================= */
 
         .use-case-grid {
             display: grid;
@@ -323,10 +321,9 @@
             opacity: .62;
         }
 
-
         /* =========================================
-   TESTIMONIAL
-========================================= */
+            TESTIMONIAL
+        ========================================= */
 
         .testimonial-card {
             margin: 0 auto;
@@ -384,10 +381,9 @@
             opacity: .55;
         }
 
-
         /* =========================================
-   INDUSTRIES
-========================================= */
+            INDUSTRIES
+        ========================================= */
 
         .industry-grid {
             display: grid;
@@ -425,10 +421,9 @@
             opacity: .6;
         }
 
-
         /* =========================================
-   FINAL CTA
-========================================= */
+            FINAL CTA
+        ========================================= */
 
         .final-cta {
             padding-bottom: 100px;
@@ -481,10 +476,9 @@
             border: 1px solid var(--muted-2);
         }
 
-
         /* =========================================
-   RESPONSIVE
-========================================= */
+            RESPONSIVE
+        ========================================= */
 
         @media (max-width: 1000px) {
 
@@ -570,8 +564,11 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -1240,7 +1237,7 @@
             </div>
         </section>
         <!-- ================================
-            Use Cases
+            Workflow
         ================================= -->
         <style>
             .case-head {
@@ -1252,6 +1249,7 @@
 
             .case-head i {
                 font-size: 1.4rem;
+                color: var(--indigo-deep);
             }
 
             .case-head h3 {

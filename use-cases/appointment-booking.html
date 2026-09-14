@@ -28,13 +28,7 @@
     <meta name="twitter:image" content="https://letstawk.ai/images/pages/appointment/ban.webp">
 
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -44,14 +38,18 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-NXRNFG7L');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXRNFG7L" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -1132,7 +1130,7 @@
 
             .use-case-icon {
                 font-size: 1.5rem;
-                color: var(--paper-2);
+                color: var(--white);
                 width: 50px;
                 height: 50px;
                 border-radius: 12px;
@@ -1143,6 +1141,14 @@
                 z-index: 3;
                 transition: transform .35s ease;
                 box-shadow: 1px 3px 4px 0px rgb(16 17 20 / 33%);
+            }
+
+            .use-case-icon i {
+                transition: transform .35s ease;
+            }
+
+            .use-case-card:hover .use-case-icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .use-case-card:hover .use-case-icon {
@@ -1385,6 +1391,7 @@
             }
 
             .feat:hover .ic {
+                background: var(--indigo);
                 transform: scale(1.02) rotate(-45deg);
             }
 
@@ -1395,6 +1402,12 @@
             .ic i {
                 color: var(--indigo);
                 font-size: 20px;
+                transition: transform .35s ease;
+            }
+
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+                color: var(--white);
             }
 
             .feat li {
