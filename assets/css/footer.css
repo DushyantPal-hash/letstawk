@@ -25,7 +25,8 @@ footer {
 .foot-cols {
     display: flex;
     gap: 64px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .foot-col h4 {
