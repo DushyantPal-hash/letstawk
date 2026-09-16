@@ -920,6 +920,11 @@
                 border: 1px solid rgba(0, 0, 0, 0.04);
                 display: flex;
                 align-items: center;
+                transition: all 0.3s ease;
+            }
+
+            .analytics-column ul li:hover {
+                transform: translateX(8px);
             }
 
             .analytics-column ul li::before {
@@ -931,14 +936,19 @@
 
             .analytics-column blockquote {
                 font-size: 1.1rem;
+                margin: 12px 0;
                 font-weight: 500;
                 color: #1a1a2e;
                 background: #fff;
                 padding: 16px 24px;
-                border-radius: 12px;
-                border-left: 4px solid #4338E8;
-                margin: 12px 0;
                 font-style: italic;
+                border-radius: 12px;
+                transition: all 0.3s ease;
+                border-left: 4px solid #4338E8;
+            }
+
+            .analytics-column blockquote:hover {
+                transform: translateX(8px);
             }
 
             @media (max-width: 768px) {

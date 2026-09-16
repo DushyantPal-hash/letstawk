@@ -55,5 +55,8 @@
         grid-template-columns: 1fr;
     }
 
+    .mob-flex {
+        flex-direction: column;
+    }
 
 }
