@@ -272,15 +272,34 @@
             </div>
         </section>
         <!-- Location -->
+        <style>
+            .contact-btn {
+                display: inline-flex;
+                align-items: center;
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn i {
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn:hover i {
+                transform: translateX(5px);
+            }
+        </style>
         <section class="location-section">
             <div class="wrap location-grid">
                 <div class="location-copy">
                     <div class="sec-eyebrow">Our location</div>
                     <h2>Meet the team in Noida.</h2>
-                    <p>Prefer a conversation in person? Visit our headquarters or connect with us remotely—wherever you
-                        are.</p><a class="text-link"
+                    <p>
+                        Prefer a conversation in person? Visit our headquarters or connect with us remotely—wherever you
+                        are.
+                    </p>
+                    <a class="text-link contact-btn"
                         href="https://www.google.com/maps?q=HashStudioz+Technologies+PVT.+LTD.+Product+Development+Company,+Noida,+Uttar+Pradesh"
-                        target="_blank" rel="noopener">Get directions <span aria-hidden="true">→</span></a>
+                        target="_blank" rel="noopener">Get directions <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 <div class="map-container">
                     <iframe

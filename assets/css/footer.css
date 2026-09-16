@@ -19,7 +19,7 @@ footer {
 .foot-brand p {
     color: var(--muted-2);
     font-size: 14px;
-    margin-top: 14px
+    margin-top: 10px
 }
 
 .foot-cols {

@@ -288,7 +288,7 @@
                 padding: 24px 20px;
                 border-radius: 16px;
                 text-align: center;
-                border: 1px solid rgba(0, 0, 0, 0.04);
+                border: 2px solid rgba(0, 0, 0, 0.04);
                 transition: 0.3s;
                 text-decoration: none;
                 color: var(--text);
@@ -300,6 +300,11 @@
                 transform: translateY(-4px);
                 box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
                 border-color: var(--indigo);
+            }
+
+            .sdk-card:hover .version {
+                background: var(--indigo);
+                color: var(--white);
             }
 
             .sdk-card .sdk-icon {
@@ -361,6 +366,59 @@
                 color: var(--muted);
                 margin-top: 8px;
             }
+
+            .divider-wrap {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin: 1.5rem 0 1.2rem;
+            }
+
+            .divider-line {
+                flex: 1;
+                height: 2px;
+                background: linear-gradient(90deg, #c0d6f0, #eaf1fb, #c0d6f0);
+            }
+
+            .insight-quote {
+                background: #f0f7ff;
+                padding: 0.5rem 1.8rem;
+                border-radius: 60px;
+                font-weight: 500;
+                color: #0a2b4a;
+                font-size: 1rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                border: 1px solid #d3e2fa;
+            }
+
+            .insight-quote i {
+                color: #1f6bc0;
+                font-size: 1rem;
+            }
+
+            .contact-btn {
+                color: var(--sdk-blue);
+                font-weight: 600;
+                margin-left: 2px;
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn i {
+                color: var(--sdk-blue);
+                font-weight: 600;
+                margin-left: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn:hover i {
+                transform: translateX(5px);
+            }
+
+            .contact a:hover {
+                color: var(--muted) !important;
+            }
         </style>
         <section class="page-section">
             <div class="wrap">
@@ -419,9 +477,20 @@
                         <span class="version">v3.0.1</span>
                     </a>
                 </div>
-                <div style="text-align:center;margin-top:24px;">
-                    <p style="color:var(--muted);">Looking for a language not listed? <a href="contact.html"
-                            style="color:var(--sdk-blue);font-weight:600;">Request it →</a></p>
+                <!-- divider + quote -->
+                <div class="divider-wrap" style="margin-top: 2rem;">
+                    <span class="divider-line"></span>
+                    <div class="insight-quote flex mob-flex">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="flex mob-flex contact">
+                            Looking for a language not listed?
+                            <a href="contact.html" class="contact-btn">Request
+                                it <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="divider-line"></span>
                 </div>
             </div>
         </section>

@@ -581,7 +581,9 @@
     <div data-component="navbar"></div>
     <!-- Page Body -->
     <main>
-        <!-- Banner -->
+        <!-- ================================
+            Banner
+        ================================= -->
         <style>
             .banner-img2 {
                 background: url("images/banner-side/case-studies.webp") center center / cover no-repeat;
@@ -682,6 +684,18 @@
             .visual-label {
                 opacity: 0.7 !important;
             }
+
+            .contact-btn {
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn i {
+                transition: all 0.3s ease;
+            }
+
+            .contact-btn:hover i {
+                transform: translateX(5px);
+            }
         </style>
         <section class="page-section tint">
             <div class="wrap">
@@ -714,7 +728,7 @@
                                 <li>Product and address verification</li>
                                 <li>Post-purchase questions</li>
                             </ul>
-                            <a href="use-cases/order-confirmation.html" class="btn btn-primary">
+                            <a href="use-cases/order-confirmation.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -764,7 +778,7 @@
                                 <li>Consistent data capture</li>
                             </ul>
 
-                            <a href="use-cases/appointment-booking.html" class="btn btn-primary">
+                            <a href="use-cases/appointment-booking.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -818,7 +832,7 @@
                                 <li>Escalation to human support</li>
                             </ul>
 
-                            <a href="use-cases/customer-support.html" class="btn btn-primary">
+                            <a href="use-cases/customer-support.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -867,7 +881,7 @@
                                 <li>Personalised offers and reassurance</li>
                                 <li>Checkout recovery tracking</li>
                             </ul>
-                            <a href="use-cases/cart-recovery.html" class="btn btn-primary">
+                            <a href="use-cases/cart-recovery.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -906,7 +920,7 @@
                                 <li>Flexible follow-up workflows</li>
                                 <li>Secure escalation when needed</li>
                             </ul>
-                            <a href="use-cases/payment-reminders.html" class="btn btn-primary">
+                            <a href="use-cases/payment-reminders.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -945,7 +959,7 @@
                                 <li>Sentiment and response capture</li>
                                 <li>Actionable insight summaries</li>
                             </ul>
-                            <a href="use-cases/feedback-surveys.html" class="btn btn-primary">
+                            <a href="use-cases/feedback-surveys.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -984,7 +998,7 @@
                                 <li>Personalised follow-ups</li>
                                 <li>Attendance reminders</li>
                             </ul>
-                            <a href="use-cases/event-promotions.html" class="btn btn-primary">
+                            <a href="use-cases/event-promotions.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -1023,7 +1037,7 @@
                                 <li>Instant routing to sales</li>
                                 <li>Follow-up scheduling</li>
                             </ul>
-                            <a href="use-cases/lead-qualification.html" class="btn btn-primary">
+                            <a href="use-cases/lead-qualification.html" class="btn btn-primary contact-btn">
                                 Explore this use case
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -1139,6 +1153,10 @@
                 transition: all 0.3s ease;
             }
 
+            .outcome-icon {
+                color: var(--paper);
+            }
+
             .outcome-item:hover {
                 transform: translateX(6px);
             }
@@ -1163,7 +1181,7 @@
                             and your team.
                         </p>
 
-                        <a href="contact.html" class="btn btn-primary btn-lg">
+                        <a href="contact.html" class="btn btn-primary contact-btn btn-lg">
                             See what we can automate
                             <i class="fas fa-arrow-right"></i>
                         </a>
@@ -1376,6 +1394,12 @@
         <!-- ================================
             Industries
         ================================= -->
+        <style>
+            .industry-card span {
+                color: var(--indigo);
+                opacity: 1.9;
+            }
+        </style>
         <section class="page-section tint" style="background: var(--dark-grand);">
             <div class="wrap">
                 <div class="sec-head sec-head-left" style="max-width: max-content;">
