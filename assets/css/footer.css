@@ -50,8 +50,8 @@ footer {
 }
 
 .foot-bottom {
-    margin-top: 44px;
-    padding-top: 22px;
+    margin-top: 15px;
+    padding-top: 15px;
     border-top: 1px solid var(--d-line);
     display: flex;
     justify-content: space-between;
@@ -59,4 +59,92 @@ footer {
     gap: 14px;
     color: var(--muted-2);
     font-size: 13px
+}
+
+.foot-legal {
+    grid-column: 1 / -1;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.foot-legal a {
+    display: inline-block;
+    color: var(--d-muted);
+    font-size: 10px;
+    min-width: auto;
+    background: #f0f3fa0a;
+    border: 1px solid var(--d-line);
+    border-radius: 20px;
+    padding: 4px 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}
+
+.foot-legal a:hover {
+    color: var(--indigo-lite);
+    transform: scale(1.1);
+}
+
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.social-links a {
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin:hover {
+    background: linear-gradient(to right, #0071f2, #2570b2, #0a69d5);
+}
+
+.threads:hover {
+    background: linear-gradient(to right, #71717a, #57534e, #18181b);
+}
+
+.twitter:hover {
+    background: linear-gradient(to right, #a5f3fc, #60a5fa, #4f46e5);
+    color: white;
+}
+
+.instagram:hover {
+    background: linear-gradient(to bottom, #ec4899, #ef4444, #f97316);
+    color: white;
+}
+
+.youtube:hover {
+    background: linear-gradient(to right, #ee0000, #b11b1b, #f40000);
+}
+
+.pinterest:hover {
+    background: linear-gradient(to bottom right, #b30303, #eb0000da, #fd0202);
+}
+
+@media(max-width:960px) {
+    .foot-legal {
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .foot-legal a {
+        min-width: 110px;
+    }
 }
