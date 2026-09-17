@@ -100,4 +100,17 @@
   <url>
     <loc>https://letstawk.ai/apis/webhooks.html</loc>
   </url>
+  <url><loc>https://letstawk.ai/legal/privacy-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/terms-of-service.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/cookie-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/data-processing-agreement.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/security.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/ai-voice-call-recording-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/acceptable-use-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/subprocessors.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/data-retention-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/refund-cancellation-policy.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/sla.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/intellectual-property.html</loc></url>
+  <url><loc>https://letstawk.ai/legal/ai-transparency.html</loc></url>
 </urlset>

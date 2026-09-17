@@ -1,7 +1,7 @@
 /* WORDMARK + MARK */
 .logo-mark {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 40px;
     flex: none;
     display: block
 }
@@ -9,7 +9,7 @@
 .wordmark {
     font-family: 'Schibsted Grotesk';
     font-weight: 800;
-    font-size: 23px;
+    font-size: 30px;
     letter-spacing: -0.04em;
     display: inline-flex;
     align-items: baseline;
@@ -144,13 +144,13 @@ header.nav {
     text-decoration: none;
 }
 
-.site-nav .logo-mark {
+/* .site-nav .logo-mark {
     width: 36px;
     height: 36px;
-}
+} */
 
 .site-nav .wordmark {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.03em;
 }
