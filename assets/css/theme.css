@@ -1,12 +1,12 @@
 :root {
     --ink: #101114;
     --ink-soft: #1A1C22;
-    --indigo: #4338E8;
-    --indigo-deep: #3A34D0;
+    --indigo: #0085FA;
+    --indigo-deep: #405FF7;
     --indigo-lite: #7C8BF5;
     --coral: #FF6B8B;
     --coral-lite: #FF8FA6;
-    --violet: #7A5CEA;
+    --violet: #8037F5;
     --grad-brand: linear-gradient(120deg, var(--indigo), var(--violet) 55%, var(--coral));
     --grad-brand1: linear-gradient(120deg, var(--coral), var(--violet) 55%, var(--indigo));
     --paper: #F3F4F7;
@@ -29,6 +29,10 @@
     --maxw: 1160px;
     --dark-grand: linear-gradient(to right, #71717B, #57534D, #18181B);
     --linear-bg: linear-gradient(120deg, #eeedff, #fdf4f7);
+    --linear-bg-test: linear-gradient(90deg,
+            #0085FA 0%,
+            #405FF7 50%,
+            #8037F5 100%);
 }
 
 * {

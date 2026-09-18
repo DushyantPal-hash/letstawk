@@ -6,6 +6,12 @@
     display: block
 }
 
+.logo {
+    width: 160px;
+    height: 42px;
+    object-fit: contain;
+}
+
 .wordmark {
     font-family: 'Schibsted Grotesk';
     font-weight: 800;
@@ -129,7 +135,7 @@ header.nav {
     height: 60px;
     max-width: var(--maxw);
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
     /* background: rgba(255, 255, 255, .97);
     border: 1px solid rgba(255, 255, 255, .9);
     border-radius: 999px; */
@@ -338,14 +344,16 @@ header.nav {
 .nav-demo-btn {
     padding: 10px 24px;
     font-size: 14px;
-    background: var(--grad-brand);
+    background: var(--linear-bg-test);
     border-radius: 999px;
     color: #ffffff;
     box-shadow: 0 4px 16px rgba(67, 56, 232, 0.25);
+    transition: all 0.3s ease;
 }
 
 .nav-demo-btn:hover {
     background: var(--grad-brand1);
+    transform: scale(1.05);
     box-shadow: 0 8px 24px rgba(67, 56, 232, 0.35);
 }
 
