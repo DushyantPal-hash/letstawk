@@ -115,6 +115,10 @@ footer {
     background: linear-gradient(to right, #0071f2, #2570b2, #0a69d5);
 }
 
+.facebook:hover {
+    background: var(--linear-bg-test);
+}
+
 .threads:hover {
     background: linear-gradient(to right, #71717a, #57534e, #18181b);
 }
