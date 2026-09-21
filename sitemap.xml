@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- General -->
   <url>
     <loc>https://letstawk.ai/</loc>
   </url>
@@ -18,7 +19,7 @@
   <url>
     <loc>https://letstawk.ai/contact.html</loc>
   </url>
-
+<!-- Industries -->
   <url>
     <loc>https://letstawk.ai/industries/bfsi.html</loc>
   </url>
@@ -43,7 +44,7 @@
   <url>
     <loc>https://letstawk.ai/industries/travel-hospitality.html</loc>
   </url>
-
+<!-- Use Cases -->
   <url>
     <loc>https://letstawk.ai/use-cases/appointment-booking.html</loc>
   </url>
@@ -68,7 +69,7 @@
   <url>
     <loc>https://letstawk.ai/use-cases/payment-reminders.html</loc>
   </url>
-
+<!-- Platforms -->
   <url>
     <loc>https://letstawk.ai/platforms/hubspot.html</loc>
   </url>
@@ -87,7 +88,7 @@
   <url>
     <loc>https://letstawk.ai/platforms/zendesk.html</loc>
   </url>
-
+<!-- APIs -->
   <url>
     <loc>https://letstawk.ai/apis/custom-connectors.html</loc>
   </url>
@@ -100,17 +101,44 @@
   <url>
     <loc>https://letstawk.ai/apis/webhooks.html</loc>
   </url>
-  <url><loc>https://letstawk.ai/legal/privacy-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/terms-of-service.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/cookie-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/data-processing-agreement.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/security.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/ai-voice-call-recording-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/acceptable-use-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/subprocessors.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/data-retention-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/refund-cancellation-policy.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/sla.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/intellectual-property.html</loc></url>
-  <url><loc>https://letstawk.ai/legal/ai-transparency.html</loc></url>
+  <!-- Legal & Compliance -->
+  <url>
+    <loc>https://letstawk.ai/legal/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/terms-of-service.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/cookie-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/data-processing-agreement.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/security.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/ai-voice-call-recording-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/acceptable-use-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/subprocessors.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/data-retention-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/refund-cancellation-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/sla.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/intellectual-property.html</loc>
+  </url>
+  <url>
+    <loc>https://letstawk.ai/legal/ai-transparency.html</loc>
+  </url>
 </urlset>

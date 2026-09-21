@@ -66,7 +66,7 @@
         <!-- HERO -->
         <style>
             .banner-img2 {
-                background: url("images/industries.webp") center center / cover no-repeat;
+                background: url("images/solutions.webp") center center / cover no-repeat;
             }
 
             .sdk-badge {
@@ -127,6 +127,7 @@
                 <span><i class="fas fa-clock"></i>&ensp;Faster Response Time</span>
             </div>
         </section>
+
         <!-- Explore your industry -->
         <style>
             .ind-card {
@@ -324,6 +325,622 @@
                 </div>
             </div>
         </section>
+
+        <!-- NEW SECTION: Solution Capabilities -->
+        <style>
+            .capability-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+                margin-top: 30px;
+            }
+
+            .cap-card {
+                background: var(--paper);
+                border-radius: var(--radius);
+                padding: 20px;
+                box-shadow: var(--shadow-sm);
+                border: 1px solid rgba(67, 56, 232, 0.08);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cap-card:hover {
+                transform: translateY(-6px);
+                box-shadow: var(--shadow-md);
+            }
+
+            .cap-icon {
+                width: 52px;
+                height: 52px;
+                border-radius: 16px;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1.4rem;
+            }
+
+            .cap-card h4 {
+                font-size: 1.15rem;
+                color: var(--text);
+            }
+
+            .cap-card p {
+                font-size: 0.95rem;
+                color: var(--muted);
+                line-height: 1.6;
+                margin-bottom: 14px;
+            }
+
+            .cap-card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .cap-card ul li {
+                font-size: 0.88rem;
+                padding: 5px 0;
+                color: var(--text-secondary, #4a4a6a);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .cap-card ul li::before {
+                content: "✓";
+                color: var(--indigo);
+                font-weight: 700;
+            }
+
+            .cap-tag {
+                display: inline-block;
+                background: rgba(67, 56, 232, 0.08);
+                color: var(--indigo);
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                margin-top: 8px;
+            }
+
+            .card-head {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 8px;
+            }
+        </style>
+        <section class="block" style="background: var(--bg-soft, #f8f8fc);">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">Core capabilities</div>
+                    <h2>One platform. Every conversation covered.</h2>
+                    <p>Letstawk voice agents handle the full spectrum of customer and prospect interactions — from the
+                        first hello to the final follow-up.</p>
+                </div>
+                <div class="capability-grid">
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-headset"></i></div>
+                            <h4>24/7 Customer Support</h4>
+                        </div>
+                        <p>Resolve common questions instantly and escalate complex issues with full context.</p>
+                        <ul>
+                            <li>Order status &amp; tracking</li>
+                            <li>Returns &amp; refunds</li>
+                            <li>Account inquiries</li>
+                            <li>Product troubleshooting</li>
+                        </ul>
+                        <span class="cap-tag">Deflect up to 70% of tickets</span>
+                    </div>
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-filter"></i></div>
+                            <h4>Lead Qualification</h4>
+                        </div>
+                        <p>Engage inbound leads in seconds, ask the right questions, and route hot prospects to sales.
+                        </p>
+                        <ul>
+                            <li>BANT qualification</li>
+                            <li>Budget &amp; timeline discovery</li>
+                            <li>Demo scheduling</li>
+                            <li>CRM sync &amp; handoff</li>
+                        </ul>
+                        <span class="cap-tag">3x faster lead response</span>
+                    </div>
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-calendar-check"></i></div>
+                            <h4>Appointment Booking</h4>
+                        </div>
+                        <p>Let customers book, reschedule, or cancel appointments without waiting on hold.</p>
+                        <ul>
+                            <li>Calendar integration</li>
+                            <li>Automated reminders</li>
+                            <li>Rescheduling flows</li>
+                            <li>No-show reduction</li>
+                        </ul>
+                        <span class="cap-tag">40% fewer no-shows</span>
+                    </div>
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-cart-plus"></i></div>
+                            <h4>Cart Recovery</h4>
+                        </div>
+                        <p>Reach out to shoppers who left items behind and bring them back to checkout.</p>
+                        <ul>
+                            <li>Personalized offers</li>
+                            <li>Urgency &amp; scarcity triggers</li>
+                            <li>Direct checkout links</li>
+                            <li>Multi-channel follow-up</li>
+                        </ul>
+                        <span class="cap-tag">Recover 15-25% of lost carts</span>
+                    </div>
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-bell"></i></div>
+                            <h4>Reminders &amp; Notifications</h4>
+                        </div>
+                        <p>Proactive voice calls for payments, renewals, deliveries, and important updates.</p>
+                        <ul>
+                            <li>Payment reminders</li>
+                            <li>Policy renewals</li>
+                            <li>Delivery windows</li>
+                            <li>Service updates</li>
+                        </ul>
+                        <span class="cap-tag">Reduce late payments by 35%</span>
+                    </div>
+                    <div class="cap-card">
+                        <div class="card-head">
+                            <div class="cap-icon"><i class="fas fa-rotate-left"></i></div>
+                            <h4>Feedback &amp; Surveys</h4>
+                        </div>
+                        <p>Collect post-interaction feedback with natural voice conversations, not robotic prompts.</p>
+                        <ul>
+                            <li>NPS &amp; CSAT surveys</li>
+                            <li>Product feedback</li>
+                            <li>Service quality checks</li>
+                            <li>Sentiment analysis</li>
+                        </ul>
+                        <span class="cap-tag">Real-time insights dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: How It Works -->
+        <style>
+            .how-it-works {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+                counter-reset: step;
+            }
+
+            .step-item {
+                position: relative;
+            }
+
+            .step-item::before {
+                counter-increment: step;
+                content: counter(step);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .card-work {
+                transition: all 0.3s ease;
+            }
+
+            .card-work:hover {
+                transform: scale(1.05);
+            }
+
+            .card-work h4 {
+                font-size: 1.1rem;
+                color: var(--text);
+            }
+
+            .card-work p {
+                font-size: 0.92rem;
+                color: var(--muted);
+                line-height: 1.6;
+            }
+
+            .step-connector {
+                display: none;
+            }
+
+            @media (min-width: 768px) {
+                .how-it-works {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        </style>
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">How it works</div>
+                    <h2>From first call to full automation in four steps.</h2>
+                    <p>We handle the heavy lifting so your team can focus on what matters most — growing the business.
+                    </p>
+                </div>
+                <div class="how-it-works">
+                    <div class="card card-work">
+                        <div class="card-head">
+                            <div class="step-item"></div>
+                            <h4>Discovery &amp; Design</h4>
+                        </div>
+                        <p>We map your workflows, identify high-impact use cases, and design conversation flows that
+                            match your brand voice.</p>
+                    </div>
+                    <div class="card card-work">
+                        <div class="card-head">
+                            <div class="step-item"></div>
+                            <h4>Build &amp; Integrate</h4>
+                        </div>
+                        <p>Our team configures your AI agents and connects them to your CRM, helpdesk, calendar, and
+                            telephony stack.</p>
+                    </div>
+                    <div class="card card-work">
+                        <div class="card-head">
+                            <div class="step-item"></div>
+                            <h4>Test &amp; Optimize</h4>
+                        </div>
+                        <p>We run pilot calls, tune responses, and refine escalation paths until performance meets your
+                            benchmarks.</p>
+                    </div>
+                    <div class="card card-work">
+                        <div class="card-head">
+                            <div class="step-item"></div>
+                            <h4>Launch &amp; Scale</h4>
+                        </div>
+                        <p>Go live with confidence. Monitor dashboards, gather insights, and expand to new use cases as
+                            you grow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Use Cases Table -->
+        <style>
+            .use-case-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 30px;
+                background: var(--white);
+                border-radius: var(--radius);
+                overflow: hidden;
+                box-shadow: var(--shadow-sm);
+            }
+
+            .use-case-table th {
+                background: linear-gradient(135deg, var(--indigo), #5a4ae0);
+                color: #fff;
+                padding: 16px 20px;
+                text-align: left;
+                font-weight: 600;
+                font-size: 0.95rem;
+            }
+
+            .use-case-table td {
+                padding: 14px 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                font-size: 0.92rem;
+                color: var(--text-secondary, #3a3a5a);
+            }
+
+            .use-case-table tr:last-child td {
+                border-bottom: none;
+            }
+
+            .use-case-table tr:hover td {
+                background: rgba(67, 56, 232, 0.03);
+            }
+
+            .use-case-table .highlight {
+                color: var(--indigo);
+                font-weight: 600;
+            }
+
+            @media (max-width: 600px) {
+                .use-case-table {
+                    display: block;
+                    overflow-x: auto;
+                }
+            }
+        </style>
+        <section class="block" style="background: var(--bg-soft, #f8f8fc);">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">Use cases at a glance</div>
+                    <h2>See where voice AI delivers the fastest ROI.</h2>
+                    <p>Every business is different, but these are the workflows where our customers see immediate
+                        impact.</p>
+                </div>
+                <table class="use-case-table">
+                    <thead>
+                        <tr>
+                            <th>Use Case</th>
+                            <th>Common Triggers</th>
+                            <th>Key Outcomes</th>
+                            <th>Typical ROI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/lead-qualification.html">Lead Qualification</a>
+                            </td>
+                            <td>Web form fill, ad click, inbound call</td>
+                            <td>Hot leads routed to sales, cold leads nurtured</td>
+                            <td>3x faster response, 25% higher conversion</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/appointment-booking.html">Appointment Booking</a>
+                            </td>
+                            <td>Website visit, phone inquiry, referral</td>
+                            <td>Self-serve scheduling, automated reminders</td>
+                            <td>40% fewer no-shows, 20% more bookings</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/cart-recovery.html">Cart Recovery</a>
+                            </td>
+                            <td>Abandoned checkout, browse abandonment</td>
+                            <td>Personalized outreach, recovered revenue</td>
+                            <td>15-25% of lost carts recovered</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/payment-reminders.html">Payment Reminders</a>
+                            </td>
+                            <td>Overdue invoice, subscription renewal</td>
+                            <td>Proactive calls, payment links sent</td>
+                            <td>35% reduction in late payments</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/customer-support.html">Customer Support</a>
+                            </td>
+                            <td>Inbound call, chat escalation, email</td>
+                            <td>Instant resolution, smart escalation</td>
+                            <td>70% ticket deflection, 50% cost reduction</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight">
+                                <a href="use-cases/feedback-surveys.html">Feedback Surveys</a>
+                            </td>
+                            <td>Post-purchase, post-service, milestone</td>
+                            <td>NPS/CSAT data, sentiment insights</td>
+                            <td>Real-time visibility, 4x survey completion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Why Letstawk / Trust Signals -->
+        <style>
+            .trust-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 24px;
+                margin-top: 35px;
+            }
+
+            .trust-card {
+                text-align: center;
+                padding: 30px 20px;
+                background: var(--paper);
+                border-radius: var(--radius);
+                border: 1px solid rgba(67, 56, 232, 0.08);
+                transition: transform 0.2s ease;
+            }
+
+            .trust-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-md);
+            }
+
+            .trust-number {
+                font-size: 2.6rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                line-height: 1.2;
+            }
+
+            .trust-label {
+                font-size: 0.95rem;
+                color: var(--muted);
+                margin-top: 8px;
+                font-weight: 500;
+            }
+
+            .trust-desc {
+                font-size: 0.85rem;
+                color: var(--text-secondary, #5a5a7a);
+                margin-top: 6px;
+            }
+        </style>
+        <section class="block">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">Why teams choose Letstawk</div>
+                    <h2>Real results, not just promises.</h2>
+                    <p>Our customers see measurable improvements within the first 30 days of going live.</p>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-number">98%</div>
+                        <div class="trust-label">Call answer rate</div>
+                        <div class="trust-desc">No more missed calls or long hold times</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number">40+</div>
+                        <div class="trust-label">Languages supported</div>
+                        <div class="trust-desc">Serve global customers in their native language</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number">60%</div>
+                        <div class="trust-label">Cost per interaction reduction</div>
+                        <div class="trust-desc">Compared to traditional call centers</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number">4.8/5</div>
+                        <div class="trust-label">Average customer rating</div>
+                        <div class="trust-desc">Across 200+ verified reviews</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Testimonials -->
+        <style>
+            .testimonial-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+                margin-top: 35px;
+            }
+
+            .testimonial-card {
+                background: var(--paper);
+                border-radius: var(--radius);
+                padding: 30px 28px;
+                border: 1px solid rgba(67, 56, 232, 0.08);
+                position: relative;
+                transition: transform 0.2s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .testimonial-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-md);
+            }
+
+
+
+            .testimonial-text {
+                font-size: 0.98rem;
+                line-height: 1.7;
+                color: var(--text-secondary, #3a3a5a);
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 1;
+                font-style: italic;
+            }
+
+            .testimonial-author {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+
+            .testimonial-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.1rem;
+                flex-shrink: 0;
+            }
+
+            .testimonial-info h5 {
+                margin: 0;
+                font-size: 0.95rem;
+                color: var(--text);
+            }
+
+            .testimonial-info p {
+                margin: 4px 0 0;
+                font-size: 0.82rem;
+                color: var(--muted);
+            }
+
+            .testimonial-stars {
+                color: #f5b342;
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+                letter-spacing: 2px;
+            }
+        </style>
+        <section class="block" style="background: var(--bg-soft, #f8f8fc);">
+            <div class="wrap">
+                <div class="sec-head" style="max-width:100%;">
+                    <div class="sec-eyebrow">Customer stories</div>
+                    <h2>Don't just take our word for it.</h2>
+                    <p>Hear from teams who transformed their customer conversations with Letstawk.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"We were drowning in inbound calls during peak season. Letstawk's
+                            voice agents now handle 80% of our routine inquiries, and our team finally has time to focus
+                            on complex customer issues. Game changer."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">PS</div>
+                            <div class="testimonial-info">
+                                <h5>Priya Sharma</h5>
+                                <p>Head of Customer Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Our sales team was wasting hours on unqualified leads. Now the AI
+                            agent does the initial qualification calls, and our reps only talk to prospects who are
+                            ready to buy. Conversion is up 32%."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">RM</div>
+                            <div class="testimonial-info">
+                                <h5>Rahul Mehta</h5>
+                                <p>VP of Sales, SaaS Company</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★☆</div>
+                        <p class="testimonial-text">"The appointment reminder calls reduced our no-show rate
+                            dramatically. Patients love the convenience, and our front desk staff can finally focus on
+                            in-person care instead of playing phone tag."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">DA</div>
+                            <div class="testimonial-info">
+                                <h5>Dr. Ananya Iyer</h5>
+                                <p>Medical Director, Multi-specialty Clinic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- CTA Section -->
         <style>
             .cta {

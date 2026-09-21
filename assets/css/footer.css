@@ -99,6 +99,9 @@ footer {
     display: flex;
     gap: 12px;
     margin-top: 16px;
+    max-width: 420px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .social-links a {
@@ -109,6 +112,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 36px;
 }
 
 .linkedin:hover {
@@ -146,6 +150,11 @@ footer {
         gap: 10px;
         overflow-x: auto;
         scrollbar-width: none;
+    }
+
+    .social-links {
+        gap: 8px;
+        max-width: 300px;
     }
 
     .foot-legal a {
