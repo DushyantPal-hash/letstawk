@@ -618,15 +618,35 @@
         <style>
             .feat-head {
                 display: flex;
-                gap: 10px;
+                gap: 8px;
                 align-items: center;
                 margin-bottom: 18px;
             }
 
             .feat .ic {
-                color: var(--indigo-deep);
-                font-size: 25px;
+                color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 50px;
+                height: 50px;
+                border-radius: 16px;
+                font-size: 1.4rem;
                 margin-bottom: 0 !important;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                transition: transform .35s ease;
+            }
+
+            .feat .ic i {
+                transition: transform .35s ease;
+            }
+
+            .feat:hover.feat .ic {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .feat:hover.feat .ic i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .feat h3 {

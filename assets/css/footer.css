@@ -94,13 +94,15 @@ footer {
     transform: scale(1.1);
 }
 
+.foot-social {
+    margin-top: 16px;
+}
 
 .social-links {
     display: flex;
     gap: 12px;
-    margin-top: 16px;
     max-width: 420px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     scrollbar-width: none;
 }
 
@@ -113,6 +115,11 @@ footer {
     align-items: center;
     justify-content: center;
     min-width: 36px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.25);
 }
 
 .linkedin:hover {

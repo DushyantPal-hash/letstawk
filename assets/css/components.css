@@ -89,7 +89,7 @@
 }
 
 .on-white:hover {
-    color: var(--text);
+    color: var(--ink);
 }
 
 .on-dark .btn-outline {

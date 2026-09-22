@@ -19,7 +19,7 @@
 }
 
 .strip b {
-    color: var(--text);
+    color: var(--ink);
     font-weight: 700
 }
 
