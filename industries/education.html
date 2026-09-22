@@ -850,8 +850,30 @@
         </section>
         <!-- FOR EVERY TYPE OF EDUCATION BUSINESS -->
         <style>
-            .ic i {
-                color: var(--indigo);
+            .feat .ic {
+                color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 50px;
+                height: 50px;
+                border-radius: 16px;
+                font-size: 1.4rem;
+                margin-bottom: 0 !important;
+                background: linear-gradient(135deg, var(--indigo), var(--coral));
+                transition: transform .35s ease;
+            }
+
+            .feat .ic i {
+                transition: transform .35s ease;
+            }
+
+            .feat:hover.feat .ic {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .feat:hover.feat .ic i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .feat li {

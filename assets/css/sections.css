@@ -34,7 +34,7 @@ section.block {
     background: var(--white);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    padding: 26px;
+    padding: 20px;
     transition: border-color .2s, transform .2s, box-shadow .2s
 }
 
@@ -176,7 +176,7 @@ section.block {
 
 .ind li {
     font-size: 14px;
-    color: var(--text);
+    color: var(--ink);
     display: flex;
     gap: 10px;
     align-items: flex-start

@@ -336,7 +336,7 @@
             }
 
             .cap-card {
-                background: var(--paper);
+                background: var(--white);
                 border-radius: var(--radius);
                 padding: 20px;
                 box-shadow: var(--shadow-sm);
@@ -362,11 +362,24 @@
                 justify-content: center;
                 color: #fff;
                 font-size: 1.4rem;
+                transition: transform .35s ease;
+            }
+
+            .cap-icon i {
+                transition: transform .35s ease;
+            }
+
+            .cap-card:hover .cap-icon {
+                transform: scale(1.02) rotate(-45deg);
+            }
+
+            .cap-card:hover .cap-icon i {
+                transform: scale(1.02) rotate(45deg);
             }
 
             .cap-card h4 {
                 font-size: 1.15rem;
-                color: var(--text);
+                color: var(--ink);
             }
 
             .cap-card p {
@@ -543,6 +556,7 @@
             }
 
             .card-work {
+                background: var(--paper);
                 transition: all 0.3s ease;
             }
 
@@ -552,7 +566,7 @@
 
             .card-work h4 {
                 font-size: 1.1rem;
-                color: var(--text);
+                color: var(--ink);
             }
 
             .card-work p {
@@ -874,7 +888,7 @@
             .testimonial-info h5 {
                 margin: 0;
                 font-size: 0.95rem;
-                color: var(--text);
+                color: var(--ink);
             }
 
             .testimonial-info p {

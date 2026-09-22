@@ -496,7 +496,7 @@
 
             .head h3 {
 
-                color: var(--text);
+                color: var(--ink);
                 padding: 8px 12px;
                 margin: 0;
                 position: relative;
@@ -1519,14 +1519,13 @@
             }
 
             .feat:hover .ic {
+                background: var(--indigo);
                 transform: scale(1.02) rotate(-45deg);
             }
 
-            .feat:hover .ic i {
-                transform: scale(1.02) rotate(45deg);
-            }
-
             .ic {
+                min-width: 50px;
+                height: 50px !important;
                 transition: transform .35s ease;
             }
 
@@ -1534,6 +1533,11 @@
                 color: var(--indigo);
                 font-size: 20px;
                 transition: transform .35s ease;
+            }
+
+            .feat:hover .ic i {
+                transform: scale(1.02) rotate(45deg);
+                color: var(--white);
             }
 
             .feat li {
