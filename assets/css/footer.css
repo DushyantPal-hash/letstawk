@@ -42,11 +42,13 @@ footer {
     display: block;
     color: var(--d-muted);
     font-size: 15px;
-    padding: 5px 0
+    padding: 5px 0;
+    transition: all 0.3s ease;
 }
 
 .foot-col a:hover {
-    color: var(--indigo-lite)
+    color: var(--indigo-lite);
+    transform: scale(1.15);
 }
 
 .foot-bottom {
@@ -58,7 +60,7 @@ footer {
     flex-wrap: wrap;
     gap: 14px;
     color: var(--muted-2);
-    font-size: 13px
+    font-size: 13px;
 }
 
 .foot-legal {
