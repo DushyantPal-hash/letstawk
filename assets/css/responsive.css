@@ -284,4 +284,12 @@
         width: 100%;
         text-align: center;
     }
+
+}
+
+@media(max-width:350px) {
+
+    .logo {
+        width: 100px;
+    }
 }
