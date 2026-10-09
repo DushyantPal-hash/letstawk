@@ -29,10 +29,7 @@
     --maxw: 1160px;
     --dark-grand: linear-gradient(to right, #71717B, #57534D, #18181B);
     --linear-bg: linear-gradient(120deg, #eeedff, #fdf4f7);
-    --linear-bg-test: linear-gradient(90deg,
-            #0085FA 0%,
-            #405FF7 50%,
-            #8037F5 100%);
+    --linear-bg-test: linear-gradient(90deg, #0085FA 0%, #405FF7 50%, #8037F5 100%);
 }
 
 * {

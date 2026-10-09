@@ -17,7 +17,7 @@ footer {
 }
 
 .foot-brand p {
-    color: var(--muted-2);
+    color: var(--d-text);
     font-size: 14px;
     margin-top: 10px
 }
@@ -33,14 +33,14 @@ footer {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: var(--muted-2);
+    color: var(--d-muted);
     margin-bottom: 14px;
     font-weight: 700
 }
 
 .foot-col a {
     display: block;
-    color: var(--d-muted);
+    color: var(--d-text);
     font-size: 15px;
     padding: 5px 0;
     transition: all 0.3s ease;
@@ -59,7 +59,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 14px;
-    color: var(--muted-2);
+    color: var(--d-text);
     font-size: 13px;
 }
 
