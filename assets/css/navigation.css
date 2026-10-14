@@ -3,7 +3,7 @@
     width: 45px;
     height: 40px;
     flex: none;
-    display: block
+    display: block;
 }
 
 .logo {
@@ -19,7 +19,7 @@
     letter-spacing: -0.04em;
     display: inline-flex;
     align-items: baseline;
-    color: inherit
+    color: inherit;
 }
 
 .white {
@@ -31,13 +31,13 @@
     height: 0.66em;
     width: auto;
     transform: translateY(0.02em);
-    margin: 0 0.01em
+    margin: 0 0.01em;
 }
 
 .brand {
     display: flex;
     align-items: center;
-    gap: 9px
+    gap: 9px;
 }
 
 .wm-tawk {
@@ -45,7 +45,7 @@
     background: linear-gradient(92deg, var(--indigo-lite), var(--coral));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 /* NAV */
@@ -55,7 +55,7 @@ header.nav {
     z-index: 50;
     backdrop-filter: blur(14px);
     background: rgba(16, 17, 20, 0.82);
-    border-bottom: 1px solid var(--d-line)
+    border-bottom: 1px solid var(--d-line);
 }
 
 .nav-in {
@@ -63,7 +63,7 @@ header.nav {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    color: var(--d-text)
+    color: var(--d-text);
 }
 
 .nav-links {
@@ -72,27 +72,27 @@ header.nav {
     gap: 30px;
     font-size: 15px;
     color: var(--d-muted);
-    font-weight: 500
+    font-weight: 500;
 }
 
 .nav-links a:hover {
-    color: var(--d-text)
+    color: var(--d-text);
 }
 
 .nav-cta {
     display: flex;
     align-items: center;
-    gap: 16px
+    gap: 16px;
 }
 
 .nav-login {
     font-size: 15px;
     color: var(--d-muted);
-    font-weight: 600
+    font-weight: 600;
 }
 
 .nav-login:hover {
-    color: var(--d-text)
+    color: var(--d-text);
 }
 
 .menu-toggle {
@@ -103,7 +103,7 @@ header.nav {
     color: var(--d-text);
     padding: 7px 10px;
     cursor: pointer;
-    font-size: 16px
+    font-size: 16px;
 }
 
 /* Active reusable navbar */

@@ -5,7 +5,7 @@
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, .14);
     border-radius: 28px;
-    background: linear-gradient(145deg, #242446, #383076 60%, #563f97)
+    background: linear-gradient(145deg, #242446, #383076 60%, #563f97);
 }
 
 .property-visual::after {
@@ -14,7 +14,7 @@
     inset: auto -40px -64px;
     height: 180px;
     border-radius: 50% 50% 0 0;
-    background: #1d1d3c
+    background: #1d1d3c;
 }
 
 .property-sun {
@@ -25,7 +25,7 @@
     height: 104px;
     border-radius: 50%;
     background: radial-gradient(circle at 34% 34%, #ffd1b4, #ff7b9a 65%, transparent 66%);
-    opacity: .9
+    opacity: .9;
 }
 
 .property-building {
@@ -33,14 +33,14 @@
     bottom: 68px;
     z-index: 1;
     border: 1px solid rgba(255, 255, 255, .14);
-    background: linear-gradient(90deg, #28284d, #40407a)
+    background: linear-gradient(90deg, #28284d, #40407a);
 }
 
 .property-building-back {
     left: 36px;
     width: 175px;
     height: 160px;
-    transform: skewY(6deg)
+    transform: skewY(6deg);
 }
 
 .property-building-main {
@@ -51,13 +51,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    box-shadow: -20px 20px 40px rgba(9, 7, 43, .3)
+    box-shadow: -20px 20px 40px rgba(9, 7, 43, .3);
 }
 
 .property-building-main i {
     height: 31px;
     background: linear-gradient(145deg, #d0caff, #8b7df4);
-    opacity: .8
+    opacity: .8;
 }
 
 .property-card {
@@ -70,13 +70,13 @@
     border: 1px solid rgba(255, 255, 255, .18);
     border-radius: 15px;
     background: rgba(19, 19, 47, .78);
-    backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px);
 }
 
 .property-card span,
 .property-card strong,
 .property-card em {
-    display: block
+    display: block;
 }
 
 .property-card span {
@@ -84,20 +84,20 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .08em;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .property-card strong {
     margin-top: 6px;
     font-size: 15px;
-    line-height: 1.35
+    line-height: 1.35;
 }
 
 .property-card em {
     margin-top: 9px;
     color: #a9d9c2;
     font-size: 11px;
-    font-style: normal
+    font-style: normal;
 }
 
 /* Industry Problem */
@@ -105,20 +105,20 @@
     display: grid;
     grid-template-columns: .94fr 1.06fr;
     gap: 96px;
-    align-items: center
+    align-items: center;
 }
 
 .industry-copy h2,
 .industry-use-grid h2 {
     margin-top: 12px;
-    font-size: clamp(34px, 4vw, 51px)
+    font-size: clamp(34px, 4vw, 51px);
 }
 
 .industry-copy>p,
 .industry-use-grid>div>p {
     margin-top: 18px;
     color: var(--muted);
-    line-height: 1.75
+    line-height: 1.75;
 }
 
 /* .problem-list {
@@ -158,13 +158,13 @@
     color: var(--indigo);
     font-size: 13px;
     font-weight: 800;
-    letter-spacing: .08em
+    letter-spacing: .08em;
 }
 
 .problem-list p {
     color: var(--muted);
     font-size: 15px;
-    line-height: 1.65
+    line-height: 1.65;
 }
 
 /* Journey */
@@ -172,7 +172,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    margin-top: 42px
+    margin-top: 42px;
 }
 
 .journey-grid article {
@@ -180,7 +180,7 @@
     padding: 20px;
     border-radius: var(--radius);
     background: #fff;
-    border: 1px solid var(--line)
+    border: 1px solid var(--line);
 }
 
 .journey-grid span {
@@ -193,19 +193,19 @@
     background: #eeedff;
     color: var(--indigo);
     font-size: 12px;
-    font-weight: 800
+    font-weight: 800;
 }
 
 .journey-grid h3 {
     margin-top: 20px;
-    font-size: 18px
+    font-size: 18px;
 }
 
 .journey-grid p {
     margin-top: 11px;
     color: var(--muted);
     font-size: 14px;
-    line-height: 1.65
+    line-height: 1.65;
 }
 
 /* Real Estate Features */
@@ -213,7 +213,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    margin-top: 38px
+    margin-top: 38px;
 }
 
 .real-estate-feature-grid article {
@@ -226,7 +226,7 @@
 
 .real-estate-feature-grid article:hover {
     transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(25, 27, 58, .07)
+    box-shadow: 0 16px 35px rgba(25, 27, 58, .07);
 }
 
 .feature-icon {
@@ -239,25 +239,25 @@
     color: var(--indigo);
     background: #eeedff;
     font-size: 21px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .real-estate-feature-grid h3 {
     margin-top: 18px;
-    font-size: 21px
+    font-size: 21px;
 }
 
 .real-estate-feature-grid p {
     margin-top: 9px;
     color: var(--muted);
     font-size: 14px;
-    line-height: 1.65
+    line-height: 1.65;
 }
 
 /* Industry Use */
 .industry-use-section {
     background: var(--ink);
-    color: var(--d-text)
+    color: var(--d-text);
 }
 
 .industry-use-grid {
@@ -268,38 +268,38 @@
 }
 
 .industry-use-grid .sec-eyebrow {
-    color: var(--indigo-lite)
+    color: var(--indigo-lite);
 }
 
 .industry-use-grid>div>p {
     color: var(--d-muted);
-    max-width: 440px
+    max-width: 440px;
 }
 
 .industry-use-grid .btn {
-    margin-top: 29px
+    margin-top: 29px;
 }
 
 .use-case-list {
-    border-top: 1px solid var(--d-line-2)
+    border-top: 1px solid var(--d-line-2);
 }
 
 .use-case-list article {
     padding: 19px 0;
-    border-bottom: 1px solid var(--d-line-2)
+    border-bottom: 1px solid var(--d-line-2);
 }
 
 .use-case-list span {
     color: #fff;
     font-family: 'Schibsted Grotesk', sans-serif;
     font-size: 19px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .use-case-list p {
     margin-top: 5px;
     color: var(--d-muted);
-    font-size: 14px
+    font-size: 14px;
 }
 
 /* Industry CTA */
@@ -311,13 +311,13 @@
     padding: 50px;
     border: 1px solid #d9d6fc;
     border-radius: var(--radius-lg);
-    background: linear-gradient(120deg, #eeedff, #fdf4f7)
+    background: linear-gradient(120deg, #eeedff, #fdf4f7);
 }
 
 .industry-cta h2 {
     max-width: 700px;
     margin-top: 9px;
-    font-size: clamp(30px, 4vw, 48px)
+    font-size: clamp(30px, 4vw, 48px);
 }
 
 .industry-cta p {
@@ -325,9 +325,9 @@
     margin-top: 14px;
     color: var(--muted);
     font-size: 16px;
-    line-height: 1.65
+    line-height: 1.65;
 }
 
 .industry-cta .btn {
-    flex: none
+    flex: none;
 }

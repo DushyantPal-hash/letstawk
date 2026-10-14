@@ -1,10 +1,8 @@
-/* strip.css - Trust strip and banner styles */
-
 /* STRIP */
 .strip {
     background: var(--paper);
     border-bottom: 1px solid var(--line);
-    padding: 22px 0
+    padding: 22px 0;
 }
 
 .strip-in {
@@ -15,12 +13,12 @@
     justify-content: center;
     color: var(--muted);
     font-size: 14px;
-    font-weight: 500
+    font-weight: 500;
 }
 
 .strip b {
     color: var(--ink);
-    font-weight: 700
+    font-weight: 700;
 }
 
 .strip .d {
@@ -28,5 +26,5 @@
     height: 4px;
     border-radius: 50%;
     background: var(--indigo);
-    opacity: .5
+    opacity: .5;
 }
