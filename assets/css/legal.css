@@ -25,22 +25,28 @@
 }
 
 .legal-layout {
-    display: grid;
-    grid-template-columns: 250px minmax(0, 780px);
-    gap: 58px;
-    align-items: start;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
 }
 
 .legal-toc {
+    flex: 0.8;
+    min-width: 300px;
     position: sticky;
     top: 100px;
-    padding: 22px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    background: #fff;
+    background: #F8FAFE;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid #eef2f6;
     overflow-y: auto;
-    height: 80vh;
+    height: max-content;
+    max-height: 100dvh;
     scrollbar-width: none;
+}
+
+[id] {
+    scroll-margin-top: 100px;
 }
 
 .legal-toc strong {
@@ -64,7 +70,8 @@
 }
 
 .legal-content {
-    min-width: 0;
+    flex: 3;
+    min-width: 300px;
 }
 
 .legal-content h2 {
@@ -89,16 +96,16 @@
 }
 
 .legal-content p {
-    margin: 10px 0;
+    margin: 0;
 }
 
 .legal-content ul,
 .legal-content ol {
-    margin: 10px 0 18px 22px;
+    margin: 10px 0 10px 22px;
 }
 
 .legal-content li {
-    margin: 6px 0;
+    margin: 0;
 }
 
 .legal-content a {
@@ -107,7 +114,6 @@
 }
 
 .legal-notice {
-    margin: 22px 0;
     padding: 18px 20px;
     border-left: 4px solid var(--indigo);
     border-radius: 0 var(--radius) var(--radius) 0;
