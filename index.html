@@ -94,8 +94,8 @@
             <div class="wave" id="wave"></div>
             <div class="transcript" id="transcript"></div>
             <div class="call-foot">
-              <span>letstawk agent Â· "Ava"</span>
-              <span class="chip" id="callStatus">â— live</span>
+              <span>letstawk agent · "Ava"</span>
+              <span class="chip" id="callStatus">● live</span>
             </div>
           </div>
         </div>
@@ -629,8 +629,8 @@
       if (!reduce) { setInterval(animateWave, 130); } else { for (i = 0; i < bars.length; i++) { bars[i].style.height = '30%'; } }
       function typeTurn(idx) {
         if (idx >= script.length) {
-          speaking = false; status.textContent = 'â— handled in 24s';
-          setTimeout(function () { transcript.innerHTML = ''; status.textContent = 'â— connectingâ€¦'; setTimeout(runCall, 700); }, 3600);
+          speaking = false; status.textContent = '● handled in 24s';
+          setTimeout(function () { transcript.innerHTML = ''; status.textContent = '● connecting…'; setTimeout(runCall, 700); }, 3600);
           return;
         }
         var turn = script[idx]; speaking = true;
@@ -642,7 +642,7 @@
         var delay = reduce ? 1400 : Math.min(3200, 1100 + turn.text.length * 22);
         setTimeout(function () { speaking = false; setTimeout(function () { typeTurn(idx + 1); }, 350); }, delay);
       }
-      function runCall() { status.textContent = 'â— live'; typeTurn(0); }
+      function runCall() { status.textContent = '● live'; typeTurn(0); }
       runCall();
     })();
 
