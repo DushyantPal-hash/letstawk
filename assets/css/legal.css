@@ -125,7 +125,7 @@
 }
 
 .legal-table-wrap {
-    overflow-x: auto;
+    overflow-x: hidden;
     margin: 18px 0;
 }
 
@@ -142,6 +142,11 @@
     border: 1px solid var(--line);
     text-align: left;
     vertical-align: top;
+    transition: all 0.3s ease;
+}
+
+.legal-table td:hover {
+    transform: translateX(8px);
 }
 
 .legal-table th {
